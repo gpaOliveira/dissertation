@@ -1,0 +1,42 @@
+\documentclass[english]{pucrs-ppgcc}
+\usepackage{blindtext, graphicx, array, color, import, enumitem, framed}
+\graphicspath{ {images/} }
+
+%No hyphenation, never
+\exhyphenpenalty=10000
+\hyphenpenalty=10000
+\hyphenchar\font=-1
+
+\author{Gabriel P.A de Oliveira}
+\title{Quality aspects of agile requirements}
+      {Quality aspects of agile requirements}
+
+\tipotrabalho{\monografia}
+\grau{\mestre}
+\selectlanguage{english}
+
+\orientador{Sabrina Marczak}
+
+\begin{document}
+
+\epigrafe{The difference between something good and something great is attention to detail.}
+         {Charles R. Swindoll}
+
+\include{sections/abstract}
+
+\include{sections/cap1-introduction}
+\include{sections/cap2-teoric}
+\include{sections/cap3-planning}
+\include{sections/cap4-protocol}
+\include{sections/cap5-execution}
+\include{sections/cap6-results}
+\include{sections/cap7-conclusion}
+
+\bibliographystyle{ppgcc-alpha}
+\bibliography{sections/bib}
+
+\anexos
+\include{sections/anexos}
+
+
+\end{document}

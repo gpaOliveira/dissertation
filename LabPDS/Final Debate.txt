@@ -1,0 +1,77 @@
+----> general
+
+user story / scenarios are easier to write (due to the lack of details) but hard to analyze 
+
+information on use cases were poor due the lack of available 
+
+agile prioriritization to documentation is reflected on that lack of details on user story / scenarios
+
+user story / scenarios is more negotiable than use cases due to that lack of details
+
+lack of conversation with client impacted use case writing negativelly but user stories / scenarios are ok 
+
+user story is harder to estimate due to the lack of writing details
+
+user story can be written by business people - use cases can't due to the need to add implementation details
+
+user story need to have a flatten team ?
+
+use cases are harder to write due to the need of details
+
+use cases are easier to be used by developers
+
+----> why user stories/scenarios are not easy to use by developers ?
+
+----> se sabemos que a ausência de detalhes técnicos das user stories/scenarios deixa muito a cargo da experiência das pessoas, vocês acham que ter um certo rigor ou padrão na escrita desses cenários importante ?
+
+talvez pela manutenção ? escrita muito livre pode ir pro lado de coisas ambiguas
+
+rigor pode ser importante para construir um common ground (mas isso também pode ser construído em conversas)
+
+saídas e entradas são importantes para que cenários sejam estimáveis
+
+----> qualquer cara sem formação (e informação) poderia escrever cenários e "tá ok" ?
+
+escrita OK, mas o problema ta no mapeamento de problema em solução (elicitação) e em como encaixar essa "parte" na solução total (design?)
+
+precisa ser alguém que dá exemplos relevantes
+
+conversas prévias (inceptions) facilitam na escrita/entendimento (common ground)
+
+----> hard to analyze user stories - hard attributes ?
+
+analisis should be done by the team on planning meeting
+
+inputs/outputs are needed
+
+----> all attributes are applied to user stories and use cases ?
+
+dificuldade de ver onde atributos não eram verdadeiros (dificuldade de usar e ter significado dos atributos em user stories)
+
+completo em user story - cenário nao fazia muito sentido (grazi)
+
+prioritizavel e estimavel nao se aplicariam a escrita dos cenários (menino da dell)
+
+use case até consegue dizer se o caso é completo ou não (cassiano), por isso botamos cenários todos juntos
+
+estranho ver cenários separados (lucas) pra entender a completude
+
+inputs/outputs como atributos na user stories
+
+mais fácil identificar "testavel" nos use cases (talvez pela falta de inputs/outputs ????)
+
+cenário quer testar o macro - o testavel é mais dificil de analisar em cenários por causa disso, por que é mais difícil evaluate a "mágica"
+
+----> atomico
+
+atomico pode ser separavel mas tendo dependencia entre eles (Cassiano)
+
+atomico não poderia ser separado (Carol)
+
+já está no menor tamanho possível (LUcas)
+
+----> independente
+
+independente == não atomico (Cassiano)
+
+pode ser independente mas nao ser atomico (Lucas), nao tem relação entre atomico e independencia

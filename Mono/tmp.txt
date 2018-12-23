@@ -1,0 +1,471 @@
+Year Count Details
+2002 1
+\cite{4911}
+2003 1
+\cite{4415.15}
+2004 2
+\cite{4875} \cite{4518.23}
+2005 1
+\cite{4852}
+2007 1
+\cite{4816}
+2011 2
+\cite{4650} \cite{4415.13}
+2012 2
+\cite{4631} \cite{4924}
+2013 2
+\cite{4415.14} \cite{4415.16}
+2014 4
+\cite{4518} \cite{4945} \cite{4968} \cite{4975.10}
+2015 3
+\cite{4484} \cite{4930} \cite{4975}
+2016 4
+\cite{4415} \cite{4518.3} \cite{4875.6} \cite{4930.1}
+2017 1
+\cite{4930.5}
+Total 24
+
+
+INVEST : Independent Count Details
+Total 24
+
+Y 11
+\cite{4415} \cite{4930} \cite{4968} \cite{4975} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{4518.23} \cite{4875.6} \cite{4975.10} \cite{4930.1}
+
+INVEST : Negotiable Count Details
+Total 24
+
+Y 9
+\cite{4415} \cite{4968} \cite{4975} \cite{4415.16} \cite{4415.15} \cite{4518.23} \cite{4875.6} \cite{4975.10} \cite{4930.1}
+
+INVEST : Valuable Count Details
+Total 24
+
+Y 14
+\cite{4415} \cite{4518} \cite{4650} \cite{4911} \cite{4968} \cite{4975} \cite{4415.13} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{4518.23} \cite{4875.6} \cite{4975.10} \cite{4930.1}
+
+INVEST : Estimable Count Details
+Total 24
+
+Y 11
+\cite{4415} \cite{4930} \cite{4968} \cite{4975} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{4518.23} \cite{4875.6} \cite{4975.10} \cite{4930.1}
+
+INVEST : Small Count Details
+Total 24
+
+Y 14
+\cite{4415} \cite{4650} \cite{4816} \cite{4930} \cite{4968} \cite{4975} \cite{4415.14} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{4518.23} \cite{4875.6} \cite{4975.10} \cite{4930.1}
+
+INVEST : Testable Count Details
+Total 24
+
+Y 14
+\cite{4415} \cite{4631} \cite{4816} \cite{4968} \cite{4975} \cite{4415.13} \cite{4415.14} \cite{4415.16} \cite{4415.15} \cite{4518.23} \cite{4875.6} \cite{4975.10} \cite{4930.5} \cite{4930.1}
+
+BABOK 3 : atomic Count Details
+Total 24
+
+Y 4
+\cite{4930} \cite{4975} \cite{4518.3} \cite{4975.10}
+
+BABOK 3 : complete Count Details
+Total 24
+
+Y 10
+\cite{4415} \cite{4631} \cite{4852} \cite{4875} \cite{4930} \cite{4945} \cite{4415.13} \cite{4518.3} \cite{4975.10} \cite{4930.5}
+
+BABOK 3 : consistent Count Details
+Total 24
+
+Y 6
+\cite{4924} \cite{4945} \cite{4968} \cite{4518.3} \cite{4875.6} \cite{4975.10}
+
+BABOK 3 : concise Count Details
+Total 24
+
+Y 3
+\cite{4816} \cite{4875} \cite{4518.3}
+
+BABOK 3 : feasible Count Details
+Total 24
+
+Y 3
+\cite{4930} \cite{4945} \cite{4415.14}
+
+BABOK 3 : unambiguous Count Details
+Total 24
+
+Y 11
+\cite{4415} \cite{4631} \cite{4650} \cite{4816} \cite{4875} \cite{4930} \cite{4968} \cite{4975} \cite{4518.3} \cite{4975.10} \cite{4930.5}
+
+BABOK 3 : testable Count Details
+Total 24
+
+Y 7
+\cite{4415} \cite{4631} \cite{4816} \cite{4875} \cite{4415.13} \cite{4415.14} \cite{4930.5}
+
+BABOK 3 : prioritized Count Details
+Total 24
+
+Y 3
+\cite{4415} \cite{4945} \cite{4518.3}
+
+BABOK 3 : understandable Count Details
+Total 24
+
+Y 8
+\cite{4484} \cite{4816} \cite{4911} \cite{4924} \cite{4945} \cite{4415.14} \cite{4875.6} \cite{4930.5}
+
+BABOK 2 : cohesion Count Details
+Total 24
+
+Y 1
+\cite{4518.3}
+
+BABOK 2 : completeness Count Details
+Total 24
+
+Y 10
+\cite{4415} \cite{4631} \cite{4852} \cite{4875} \cite{4930} \cite{4945} \cite{4415.13} \cite{4518.3} \cite{4975.10} \cite{4930.5}
+
+BABOK 2 : consistency Count Details
+Total 24
+
+Y 6
+\cite{4650} \cite{4924} \cite{4945} \cite{4518.3} \cite{4875.6} \cite{4975.10}
+
+BABOK 2 : correction Count Details
+Total 24
+
+Y 5
+\cite{4415} \cite{4415.13} \cite{4518.3} \cite{4875.6} \cite{4975.10}
+
+BABOK 2 : viability Count Details
+Total 24
+
+Y 1
+\cite{4945}
+
+BABOK 2 : adaptability Count Details
+Total 24
+
+Y 2
+\cite{4911} \cite{4975}
+
+BABOK 2 : unambiguity Count Details
+Total 24
+
+Y 7
+\cite{4415} \cite{4816} \cite{4875} \cite{4930} \cite{4975} \cite{4518.3} \cite{4975.10}
+
+BABOK 2 : testability Count Details
+Total 24
+
+Y 6
+\cite{4631} \cite{4816} \cite{4875} \cite{4945} \cite{4415.13} \cite{4415.14}
+
+Test As Requirement Count Details
+Total 24
+
+Y 6
+\cite{4415} \cite{4484} \cite{4816} \cite{4852} \cite{4875} \cite{4415.13}
+
+BABOK Count Details
+Total 408
+
+Y 19
+\cite{4415} \cite{4484} \cite{4631} \cite{4650} \cite{4816} \cite{4852} \cite{4875} \cite{4911} \cite{4924} \cite{4930} \cite{4945} \cite{4968} \cite{4975} \cite{4415.13} \cite{4415.14} \cite{4518.3} \cite{4875.6} \cite{4975.10} \cite{4930.5}
+
+BABOK 3 Count Details
+Total 216
+
+Y 19
+\cite{4415} \cite{4484} \cite{4631} \cite{4650} \cite{4816} \cite{4852} \cite{4875} \cite{4911} \cite{4924} \cite{4930} \cite{4945} \cite{4968} \cite{4975} \cite{4415.13} \cite{4415.14} \cite{4518.3} \cite{4875.6} \cite{4975.10} \cite{4930.5}
+
+BABOK 2 Count Details
+Total 192
+
+Y 17
+\cite{4415} \cite{4631} \cite{4650} \cite{4816} \cite{4852} \cite{4875} \cite{4911} \cite{4924} \cite{4930} \cite{4945} \cite{4975} \cite{4415.13} \cite{4415.14} \cite{4518.3} \cite{4875.6} \cite{4975.10} \cite{4930.5}
+
+INVEST Count Details
+Total 144
+
+Y 19
+\cite{4415} \cite{4518} \cite{4631} \cite{4650} \cite{4816} \cite{4911} \cite{4930} \cite{4968} \cite{4975} \cite{4415.13} \cite{4415.14} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{4518.23} \cite{4875.6} \cite{4975.10} \cite{4930.5} \cite{4930.1}
+
+
+4415 An empirical study of writing effective user stories
+>>> Year = 2016
+>>> (I) Describe requirements quality
+>>> (I) Evaluate requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+>>> BABOK 3 : complete
+>>> BABOK 3 : unambiguous
+>>> BABOK 3 : testable
+>>> BABOK 3 : prioritized
+>>> BABOK 2 : completeness
+>>> BABOK 2 : correction
+>>> BABOK 2 : unambiguity
+>>> Test As Requirement
+
+4484 A process to increase the model quality in the context of model-based testing
+>>> Year = 2015
+>>> (I) List aspects of requirements quality
+>>> BABOK 3 : understandable
+>>> Test As Requirement
+
+4518 Using goal net to model user stories in agile software development
+>>> Year = 2014
+>>> (I) Evaluate requirements quality
+>>> INVEST : Valuable
+
+4631 NORMATIC: A visual tool for modeling non-functional requirements in agile processes
+>>> Year = 2012
+>>> (I) List aspects of requirements quality
+>>> INVEST : Testable
+>>> BABOK 3 : complete
+>>> BABOK 3 : unambiguous
+>>> BABOK 3 : testable
+>>> BABOK 2 : completeness
+>>> BABOK 2 : testability
+
+4650 Ontology based application model for feature driven development
+>>> Year = 2011
+>>> (I) Evaluate requirements quality
+>>> INVEST : Valuable
+>>> INVEST : Small
+>>> BABOK 3 : unambiguous
+>>> BABOK 2 : consistency
+
+4816 Rule-based assessment of test quality
+>>> Year = 2007
+>>> (I) List aspects of requirements quality
+>>> INVEST : Small
+>>> INVEST : Testable
+>>> BABOK 3 : concise
+>>> BABOK 3 : unambiguous
+>>> BABOK 3 : testable
+>>> BABOK 3 : understandable
+>>> BABOK 2 : unambiguity
+>>> BABOK 2 : testability
+>>> Test As Requirement
+
+4852 Testing with guarantees and the failure of regression testing in eXtreme programming
+>>> Year = 2005
+>>> (I) List aspects of requirements quality
+>>> BABOK 3 : complete
+>>> BABOK 2 : completeness
+>>> Test As Requirement
+
+4875 Generating complete, unambiguous, and verifiable requirements from stories, scenarios, and use cases
+>>> Year = 2004
+>>> (I) Evaluate requirements quality
+>>> (I) List aspects of requirements quality
+>>> BABOK 3 : complete
+>>> BABOK 3 : concise
+>>> BABOK 3 : unambiguous
+>>> BABOK 3 : testable
+>>> BABOK 2 : completeness
+>>> BABOK 2 : unambiguity
+>>> BABOK 2 : testability
+>>> Test As Requirement
+
+4911 Using business rules in extreme requirements
+>>> Year = 2002
+>>> (I) Evaluate requirements quality
+>>> INVEST : Valuable
+>>> BABOK 3 : understandable
+>>> BABOK 2 : adaptability
+
+4924 A Framework to Diminish the Gap between the Business Specialist and the Software Designer
+>>> Year = 2012
+>>> (I) Describe requirements quality
+>>> BABOK 3 : consistent
+>>> BABOK 3 : understandable
+>>> BABOK 2 : consistency
+
+4930 Forging high-quality User Stories: Towards a discipline for Agile Requirements
+>>> Year = 2015
+>>> (I) Describe requirements quality
+>>> (I) Evaluate requirements quality
+>>> INVEST : Independent
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> BABOK 3 : atomic
+>>> BABOK 3 : complete
+>>> BABOK 3 : feasible
+>>> BABOK 3 : unambiguous
+>>> BABOK 2 : completeness
+>>> BABOK 2 : unambiguity
+
+4945 Use of Method for Elicitation, Documentation, and Validation of Software User Requirements (MEDoV) in Agile Software Development Projects
+>>> Year = 2014
+>>> (I) Evaluate requirements quality
+>>> BABOK 3 : complete
+>>> BABOK 3 : consistent
+>>> BABOK 3 : feasible
+>>> BABOK 3 : prioritized
+>>> BABOK 3 : understandable
+>>> BABOK 2 : completeness
+>>> BABOK 2 : consistency
+>>> BABOK 2 : viability
+>>> BABOK 2 : testability
+
+4968 Requirements Engineering Quality Revealed through Functional Size Measurement: An Empirical Study in an Agile Context
+>>> Year = 2014
+>>> (I) Describe requirements quality
+>>> (I) Evaluate requirements quality
+>>> (I) List aspects of requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+>>> BABOK 3 : consistent
+>>> BABOK 3 : unambiguous
+
+4975 Quality criteria for just-in-time requirements: just enough, just-in-time?
+>>> Year = 2015
+>>> (I) List aspects of requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+>>> BABOK 3 : atomic
+>>> BABOK 3 : unambiguous
+>>> BABOK 2 : adaptability
+>>> BABOK 2 : unambiguity
+
+4415.13 5 Common mistakes we make writing User Stories
+>>> Year = 2011
+>>> (I) Describe requirements quality
+>>> INVEST : Valuable
+>>> INVEST : Testable
+>>> BABOK 3 : complete
+>>> BABOK 3 : testable
+>>> BABOK 2 : completeness
+>>> BABOK 2 : correction
+>>> BABOK 2 : testability
+>>> Test As Requirement
+
+4415.14 5 Common User Story Mistakes
+>>> Year = 2013
+>>> (I) Describe requirements quality
+>>> INVEST : Small
+>>> INVEST : Testable
+>>> BABOK 3 : feasible
+>>> BABOK 3 : testable
+>>> BABOK 3 : understandable
+>>> BABOK 2 : testability
+
+4415.16 Improving the User Story Agile Technique Using the INVEST Criteria
+>>> Year = 2013
+>>> (I) List aspects of requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+
+4415.15 INVEST in Good Stories and SMART Tasks
+>>> Year = 2003
+>>> (I) Describe requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+
+4518.3 Improving agile requirements: the quality user story framework and tool
+>>> Year = 2016
+>>> (I) Describe requirements quality
+>>> (I) Evaluate requirements quality
+>>> (I) List aspects of requirements quality
+>>> INVEST : Independent
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> BABOK 3 : atomic
+>>> BABOK 3 : complete
+>>> BABOK 3 : consistent
+>>> BABOK 3 : concise
+>>> BABOK 3 : unambiguous
+>>> BABOK 3 : prioritized
+>>> BABOK 2 : cohesion
+>>> BABOK 2 : completeness
+>>> BABOK 2 : consistency
+>>> BABOK 2 : correction
+>>> BABOK 2 : unambiguity
+
+4518.23 User Stories Applied: For Agile Software Development: Addison-Wesley Professional
+>>> Year = 2004
+>>> (I) List aspects of requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+
+4875.6 A systematic literature review on quality criteria for agile requirements specifications
+>>> Year = 2016
+>>> (I) Describe requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+>>> BABOK 3 : consistent
+>>> BABOK 3 : understandable
+>>> BABOK 2 : consistency
+>>> BABOK 2 : correction
+
+4975.10 A Quality Framework for Agile Requirements: A Practitioner’s Perspective
+>>> Year = 2014
+>>> (I) Describe requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable
+>>> BABOK 3 : atomic
+>>> BABOK 3 : complete
+>>> BABOK 3 : consistent
+>>> BABOK 3 : unambiguous
+>>> BABOK 2 : completeness
+>>> BABOK 2 : consistency
+>>> BABOK 2 : correction
+>>> BABOK 2 : unambiguity
+
+4930.5 Rapid quality assurance with requirements smells.
+>>> Year = 2017
+>>> (I) Evaluate requirements quality
+>>> INVEST : Testable
+>>> BABOK 3 : complete
+>>> BABOK 3 : unambiguous
+>>> BABOK 3 : testable
+>>> BABOK 3 : understandable
+>>> BABOK 2 : completeness
+
+4930.1 The use and effectiveness of user stories in practice.
+>>> Year = 2016
+>>> (I) List aspects of requirements quality
+>>> INVEST : Independent
+>>> INVEST : Negotiable
+>>> INVEST : Valuable
+>>> INVEST : Estimable
+>>> INVEST : Small
+>>> INVEST : Testable

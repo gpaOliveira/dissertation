@@ -1,0 +1,18 @@
+Writing behavioral requirements for software systems seems easy enough - just write about how to use the system and try to sound like the examples shown on Behavior Driven Development books. Faced with writing, one suddenly comes face to face with the question, "Exactly what am I supposed to write - how much, how little, what details?" That turns out to be a difficult question to answer. The problem is that writing BDD scenarios is an exercise in writing prose essays, with all the difficulties in articulating good that comes with prose writing in general. In addition, the writer is faced with the knowledge that the complete, accurate and concise documenting of the conversations about features is of paramount importance, as errors made in the formalization of scenarios may lead to later confusion ("this is not what I remember we talked about?!", "what about that other scenario? it's not here!", "I read the scenario but the application is not working like that...").
+
+In this talk, I will present 12 questions that can aid a BDD writer to review their scenarios in a more guided way. Those questions have come from 8 quality characteristics that have emerged from the tacit knowledge of 18 BDD professionals across the world.
+
+This presentation was born from my Master's degree thesis that will be delivered in March/2018. Therefore, I can also talk in the "Research/Academic Talk" category if needed.
+
+I'm a tester and agilist from Brazil and have participated in local user groups as a listener since 2011, when I started as a tester. In 2014 I started a Hangout based initiative called "Hangout with Testers", inviting a different group of testers from Brazil and abroad to talk about testing topics each month (link below) and in 2015 I became one of the organizers of the local user group I attended to (GUTS-RS). In 2016/2017 I moved away from the community to focus on my Master's degree from the PUC-RS university - this proposed talk has come from my thesis' research.
+
+I have talked about exploratory testing in that user group (June/2015) and about mind maps test plans on The Developer's Conference (Sep/2015).
+
+Links:
+
+- Hangout With Testers - https://www.youtube.com/channel/UCTJjGb80uJfF5p9AG0EKjNw
+
+- Exploratory Testing blog post after the presentation - http://guts-rs.blogspot.nl/2015/07/saiba-o-que-rolou-no-evento-de-junho2015.html
+
+- Talk about Mind Maps on The Developer's Conference -
+ https://www.slideshare.net/GabrielOliveira2/usando-mind-maps-no-planejamento-de-testes-tdc-2015

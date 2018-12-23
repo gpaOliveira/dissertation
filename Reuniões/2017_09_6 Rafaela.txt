@@ -1,0 +1,134 @@
+0) Intro
+
+> Research Goal
+
+> We are recording !
+
+> Count to 10 before speaking !
+
+> Reinforces that you need their opinion and there's no right and wrong !!!!
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+10 years
+
+-> test automation using BDD scenarios
+-> Tree Amigos sessions
+
+2) What's your main task on the project?
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+* Steps too long/too short
+* Step few/many
+* Business language usage
+* Title description
+* Keywords (Given/When/Then) usage and order
+* Repetition of steps (Background/context usage)
+* Parameters are ok or not?
+* Tables are ok or not?
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file (aspect_navigation) to evaluate
+
+
+
+7) Do you think any of those criteria words below could help when reviewing/writing BDD scenarios? 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small
+* testable
+* understandable
+* unambiguous
+* valuable
+
+8) What could be their meaning for BDD?
+
+9) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop) and chose ANOTHER feature file (change_settings.feature) to evaluate in light of those attributes shown before.
+
+10) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+11) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+12) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small
+* testable
+* understandable
+* unambiguous
+* valuable
+
+13) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+14) General remarks about the quality criteria BDD scenario subject.
+
+=========================== Debriefing
+
+== Key points:
+
+Her criteria:
+* Scope - other scenarios are needed to test this? Exceptions/Edge Cases scenarios are covered?
+* Few steps (5 or 4 max) <- taken from a meetup with John Smart
+* No long steps
+* Language - Story Mapping the Business language (too granular/technie is bad)
+* Title should be not long and objective
+* Use Given/When/Then keywords in order
+* Given in the past, When in the present and Then in the future
+* Tags to separate scenarios - Smoke/MVP tags help to show their value/importance 
+* Dislike Data tables
+* Like to use Examples 
+
+Her interpretation of the traditional criteria:
+* Unambiguous - no two scenarios should test the same technical function. Need Domain Knowledge. The use of Examples help on it.
+* Valuable - not taken from the scenario description, Smoke/MVP/HapyPath tags help here - Edge cases are not Valuable, scenarios with work around are not Valuable. 
+* Prioritizable - Related to Valuable. Need Domain Knowledge. Smoke/MVP tags help here. If the impact of a scenario failure is too big it should improve its priority.
+* Concise - clear steps - she kept using Clear for that. Using technical jargon would hurt here. Using Business Language makes it better.
+* Negotiable - not usable on BDD scenarios
+* Small/Understandable are the same (related to the number and the length of steps). Data tables turn it less understandable as well.
+* Feasible - need Domain Knowledge. Related to Understandable and Concise (Clear)
+* Estimable - hard to develop and to test. Need Domain Knowledge. The difficult one to use.
+* Testable - represents her ability to understand what is being tested. Connected to Concise and Small/Understandable. Need Domain Knowledge.
+
+* Complete - Her "scope" attribute would be represented by the Completeness criteria tha is missing in our list.
+
+== Most Surprising:
+
+She translates the PO's scenarios to her own scenarios, that uses the automated steps she already has. Should we map it somewhat as a quality-criteria (the reuse of steps should be incentivated)?
+
+She had been using some of the quality criteria (Small, Prioritizable, Unambiguous, Understandable, Valuable) to explain BDD to people.
+
+No need to use automated code of the steps to define if a scenario is testable - should that be asked to the others ?
+
+== Pretty much what I expected:
+
+Then in the middle is bad. Many steps turns scenarios into confused. Keyword repetition turns scenarios into confused ones. Techie things in the middle is bad (need to be written on Business Language).
+
+She always focused on "what's being tested" and "is there something else that should be tested" - characteristics that reinforces her thoughts on her "scope" attribute.
+
+== Problems and fixes I didnt expected:
+
+Had to poke around the list of "BDD-things" on question 4 to force her to talk about them. If not, she would only say her criteria as being "scope".
+
+== What worked well:
+
+The first questions are natural ones - didn't even needed to look for them :) Asking her to choose a feature file and using it to refine her criteria and see how she uses them.
+
+== What didn't worked so well and could be changed:
+
+Setup session (paper, pen, new question-file) need to be done 10 minutes prior to the session.
+
+Took too much time debating her criteria before going to example. I think I should just let people talk about their criteria and not poking them with my list of "BDD-things" on that moment. Once the example is choosen, then "BDD-things" could emerge naturally.
+
+== Other comments
+
+Quote: "those words make easier to talk to people about scenarios."

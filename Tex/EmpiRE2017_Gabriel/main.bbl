@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+
+\bibitem{Smart_2014}
+J.~Smart, {\em BDD in Action: Behavior-Driven Development for the Whole
+  Software Lifecycle}.
+\newblock Manning Publications, 2014.
+
+\bibitem{Kamata_and_Tamai_2015}
+M.~I. Kamata and T.~Tamai, ``How does requirements quality relate to project
+  success or failure?,'' in {\em RE}, IEEE, 2015.
+
+\bibitem{Neely_Stolt_2013}
+S.~Neely and S.~Stolt, ``Continuous delivery? easy! just change everything
+  (well, maybe it is not that easy),'' in {\em Agile Conference}, 2013.
+
+\bibitem{Babok_2009}
+IIBA, {\em A Guide to the Business Analysis Body of Knowledge (BABOK Guide) 2nd
+  Edition}.
+\newblock International Institute of Business Analysis, 2009.
+
+\bibitem{Cockburn_2000}
+A.~Cockburn, {\em Writing Effective Use Cases}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., 2000.
+
+\bibitem{Cohn_2004}
+M.~Cohn, {\em User Stories Applied: For Agile Software Development}.
+\newblock Addison Wesley Longman Publishing Co., Inc., 2004.
+
+\bibitem{Lucassen_et_dot_al_2015}
+G.~Lucassen, F.~Dalpiaz, J.~VanDerWerf, and S.~Brinkkemper, ``Forging
+  high-quality user stories: Towards a discipline for agile requirements,'' in
+  {\em International Requirements Engineering Conference}, 2015.
+
+\bibitem{Jeffries_2001}
+R.~Jeffries, ``Essential xp: Card, conversation, confirmation.''
+  \url{http://ronjeffries.com/xprog/articles/expcardconversationconfirmation},
+  2001.
+\newblock Visited in: Jan. 2017.
+
+\bibitem{Gartner_2012}
+M.~Gartner, {\em ATDD by Example: A Practical Guide to Acceptance Test-Driven
+  Development}.
+\newblock Addison-Wesley Professional, 2012.
+
+\bibitem{Heikkila_2015}
+V.~T. Heikkila, D.~Damian, C.~Lassenius, and M.~Paasivaara, ``A mapping study
+  on requirements engineering in agile software development,'' in {\em
+  Euromicro Conference on Software Engineering and Advanced Applications},
+  2015.
+
+\bibitem{Babok_2015}
+IIBA, {\em A Guide to the Business Analysis Body of Knowledge (BABOK Guide) 3rd
+  Edition}.
+\newblock International Institute of Business Analysis, 2015.
+
+\bibitem{Heck_2014}
+P.~Heck and A.~Zaidman, ``A quality framework for agile requirements: A
+  practitioner’s perspective,'' 2014.
+
+\bibitem{Heck_2015}
+P.~Heck and A.~Zaidman, ``Quality criteria for just-in-time requirements: just
+  enough, just-in-time?,'' in {\em JITRE}, IEEE, 2015.
+
+\bibitem{Karl_et_dot_all_2014}
+K.~Cox, A.~Aurum, and R.~Jeffery, ``An experiment in inspecting the quality of
+  use case descriptions,'' {\em Journal of Research and Practice in Information
+  Technology}, 2004.
+
+\bibitem{Tiwari_and_Gupta_2015}
+S.~Tiwari and A.~Gupta, ``A systematic literature review of use case
+  specifications research,'' {\em Information and Software Technology}, 2015.
+
+\bibitem{VisionBoard}
+R.~Pichler, ``The product vision board.''
+  \url{http://www.romanpichler.com/blog/the-product-vision-board}, 2011.
+\newblock Visited in: Jan. 2017.
+
+\bibitem{White_Marsh_2006}
+M.~D. White and E.~E. Marsh, ``Content analysis: {A} flexible methodology,''
+  {\em Library Trends}, 2006.
+
+\end{thebibliography}

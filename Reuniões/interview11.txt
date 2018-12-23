@@ -1,0 +1,168 @@
+\section{Interview 11}
+
+Transcribed from 21:50 to 23:14 on 1-11-2017 (stopped at 17:52)
+
+Transcribed from 17:09 to 17:52 on 2-11-2017 (stopped at 35:02)
+
+> The plan is to acquire your opinion on what makes a "good" BDD scenario. And what are the things, what are the characteristics that composes the written scenario, the textual scenario, how good it is and how to evaluate it. So that's my goal here, focusing on textual scenarios.
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+I think I have been using BDD for 3 or 4 years now, and, ahn, I have played different kind of roles.
+
+2) What's your main task on the project?
+
+I have also worked as a test automation engineer, and also a lead automation consultant where I was reviewing people's feature file and application code in general as well. But mostly I have been working as an individual contributor, even tough you know sometimes that does involve reviewing other people's work. Obviously during this time I was not only doing BDD I was also working in other things as well.
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+So basically, BDD is, so the idea of BDD is very different from test automation in general. In the industry, when you tell anyone that "ok, you're doing test automation" people essentially are thinking about UI automation, you know, most people think about QTP or Selenium, your know, these kind of tools.
+
+But when you talk about BDD is a different style of developing software. It's a different software development methodology, you know, it's not just limited to test automation. Sometimes people say "ok, we want to do BDD, so let's have the test automation enginners work on the BDD scenarios", you know, "they will develop the scenarios and they will do BDD". But, actually BDD doesn't work like that. BDD is not just focused on the testing side of your project. It's supposed to involve your entire project, the whole team should be involved, you know, just to start it, it envolves a change of mindset, the way you develop software, the whole style of software development, they way you write code, the way you discuss your requirements all that changes with BDD.
+
+> And that's how your team is using?
+
+Yes, that's how we use it. We actually coach people as well, we give a couple of days a workshop, so we coach people, and that's how we train people to adopt BDD. I have also coached at least 4 teams in the last couple of years. And even in our internal projects that's how we do BDD.
+
+> So let me try to be more specific, what is the, what is a typical work-flow of a BDD scenario or a feature file? How is that lives, how is that born and how different people uses it?
+
+So basically what happens is, BDD fits very well in your agile methodology, so most teams these days practice agile right. So what happens is in agile you typically start with a story, a story is just an idea that could be a couple of lines, you know your product owner comes up with a nice idea. Now, what happens is, you have this meeting called example mapping which is almost a starting point for BDD, so you have, in some teams it's called 3 amigos, in some teams it's called something else, but we like to call it example mapping.
+
+That's done as the first step in your development process, once you have a story then the example mapping is the next step you would do if you're following BDD. What happens is, example mapping is a technique which is used to have a key understanding among key stakeholders, so the key stakeholders are basically your business side, which could be represented by your product-owner/business-analyst, your development side which could be represented by a developer or the dev-lead, and the testing side who is going to be represented by a tester. Now, when you have these 3 people sitting in the same room or standing in the same place and they basically they're going to discuss a particular story with the help of rules and examples. 
+
+So you basically come up with some rules and try to come up with examples for every rule. And then, you know, tester might say that "ok, what happens in this scenario", "what happens if there's an error" or "what happens if this is down" or whatever. Also, then the product owner or the business annalist could try to answer that question but, otherwise, if they can't answer it, it can be recorded as a question so, you know, that's how you would typically do an example mapping session.
+
+Ideally it should last for about 15 to 20 minutes, and of course if you have a lot of questions at the end of this session it means that you're not ready to start developing the story. Now, there are obviously many benefits of using this technique and we can talk more about that but let me proceed further with the next step. So, after example mapping, the output of it is that you have a list, you have several examples and rules, now, developer and tester they're supposed to take these examples and rules and basically write the feature file. From these examples. So, if you, I'm sure you have looked at a feature file, so a feature file would basically comprises of several scenarios and also some rules, so all these scenarios they basically, they should be derived from those examples.
+
+> So it's written by the developer or by the tester?
+
+Look, in an ideal world, the way I see it, I think it should be written by the developer while the test is pairing with him. So you know it could be written by a tester but they should be sitting together, it's supposed to be a joint exercise, a peering exercise if you would call it that. So they both need to be in sync with each other while writing the feature file, they need to be in agreement with that. It doesn't matter who writes it, as long as they write it together is fine. 
+
+Basically the point of having developer and tester pairing on this exercise is because both have a different mindset, you know, developers has a different mindset, he comes from a different perspective. Tester has totally different, he maybe much more aware of the functionality of the application, he may have sort of a pricking mindset you know, how to break this application, he may be ware of more exception flows of that, yeah, whatever, he may be able to come with even more examples, even at that point. You know, it's possible you're able to cover more and more scenarios if you have a tester sitting next to you.
+
+> Ok, that's how the ideal world would be, but in your case, in your current project, it's written by who, what role?
+
+So, in my company we don't have that many people, all of us are developers, so what we do is either, either we pair, both developers we pair, sometimes I pair with my product owner, or if there's no one available them basically and a single developer will be writing it themselves and basically he submits a pull requests that someone else may review it. 
+
+But, in other companies, I basically had a couple of big clients to adopt BDD, and there we enforced this practice of developer and tester pairing while writing the feature file. And we were able to do that, because there were 4 developers in a team and some testers so we were able to find time.
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+* Steps too long/too short
+* Step few/many
+* Business language usage
+* Title description
+* Keywords (Given/When/Then) usage and order
+* Repetition of steps (Background/context usage)
+* Parameters are ok or not?
+* Tables are ok or not?
+
+> So, let's focus on the textual scenarios now, when you're reviewing a BDD scenario, what are the things you pay attention to, what are the paint points you try to avoid and what are the good patterns you follow. 
+
+Ok, so, I think I've, I think I sent you a few points...
+
+> You did, let me go back to them here...you said about "too UI focused", so it's one possible flaw, it's a problem, that scenarios are UI focused, so that's one thing... another problem is to have written then in a language that isn't domain specific, and the third one is to use imperative way of writing versus a declarative. Would those 3 points be the whole things you pay attention to? The UI-focused, the business-language and imperative vs declarative?
+
+Well, those 3 are, you know quite generic irrespective of the project, you'd always focus on these 3 points irrespective of the domain and which project you want. Apart from these, if I'm a tester for example, and if I'm looking at a feature file, I would also be looking on what other scenarios you may be missing, for example. If I'm a product owner I'd probably do the same. I'd also be looking at the clarity or simplicity, in the way the language has been crafted. 
+
+So, those view points would only come if I'm on that project. Apart from those, one more thing I'd be looking is, whether you are covering a bit too much in your feature file, whether some scenarios could be moved to a lower level, to a unit test level for example. So that's another generic point which I'd say. Because the point of a feature file is to have a good enough coverage from a business perspective, as long as it's able to convey the message, and talk about, or describe the requirement, it should be ok, you don't really need to be testing several scenarios that for example meet the same rule, for example. So for example, boundary cases, right, you don't really need to be testing several scenarios which are basically meeting the same requirement. Some of those could be moved to a lower level. Also things like exception flows for example. Error scenarios. Some, unless your business is not really interested, you might just want to move them at a lower level, and also for the sake of testability, it's much easier to test those kind of scenarios at the unit test level rather than, on you know, at an integration test level.
+
+> So let's review the list: scenario should not be UI focused; they should be written in a business language; they should be declarative rather than imperative; they should cover all the features so what other scenarios are missing; clarity vs simplicity of language; why this scenario is tested on this level, maybe it's not needed, maybe it should be moved to a lower level; only one scenario per business rule; and bad flow should be tested on unit level;
+
+One scenario per business rule may not be entirely true. What I meant was if, you know, you could have, you could be testing multiple values, multiple boundary conditions in the feature file even though they're basically testing the same thing, I mean outcome will always be the same. So you're maybe good just testing one boundary condition value and if you want to test more values as well you could move those to the unit test level.
+
+> Ok, not always, but it's something to pay attention to, why there's more than 1 scenario focused on the same business rule?
+
+Well, you could have multiple scenarios for a rule right? SOme different conditions for the rule would be acceptable, but you'd still have there should be some other scenarios that may not be interesting from a business perspective but you would still want to test them, just to make sure your application code has been written correctly. For example, exception flows or large text for example, you know, third party downtime scenarios, so business don't really care about this so they should not be in the feature file at all. Unless, obviously, business is really interested them, they see as an important requirement and they want to have visibility to that.
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file to evaluate (search.feature)
+
+> ok, so search.feature...so tell me what you think was a good idea or a bad idea here
+
+ok, let me just read a couple of those scenarios... 
+
+> So, how are things going on that file? I mean, you don't need a full report, so just tell me whatever is crossing your mind
+
+So, a few things here, and I first have a look... lot of these seems to be imperative, and as you can see here, it's mentioning things like, I think these are elements ids, and it even says "When I click on the first search result" so even mention the word "click" which makes it imperative and also "when I press enter" right? So, all of these, if you mention exactly what action is required in terms of keyword input for example, that makes your scenario imperative.
+
+So why this is not recommended is because tomorrow you may want to change your UI but your business functionality still is the same. So, if it does happen, you would be forced to change your feature file, even tough the business intent is still the same, you may only be changing the UI behavior, so even if the business remains the same you'd have to change your feature file. And that's not recommended. A business user doesn't really care how the action is performed, it might use a button, a radio button or a checkbox, whatever, as long as the business intent is achieved and it can be expressed in that kind of language, business user would still be happy. So that's a definetly, that's something I definetly see here, as a common trend in all those scenarios.
+
+And I noticed one scenario on line 36, so the problem with this, ok, one more thing. So, in the first scenario, line number 14, so what happens, the way you write thoese scenarios is there's Given, When and Then right, they should be written in a structure similar to an hourglass, have you seen an hourglass? So hourglass is wide at the top and at the bottom and it's very thin in the center. So, your Givens, you could have multiple Givens, one or more Givens, and you could have multiple Thens, but ideally you should have only one When. So, the point behind this is that, you can have multiple pre-requisites and you could be validation multiple things, which is Then, but your action, there should only be one action, right.
+
+Otherwise, it makes it a little confusing. If you have one action you know what you're testing for Now, if you also look at line number 36, so you start with a When, I know there's a Baackground's Given, so that's fine, Given, When and, there are several Ands here. All all of these Ands after When they basically action as a When. So you have 4 When steps, and then you have a Then, then you have 2 Thens, then you have 3 Whens again. So, you know, you can't have When after Then. The structure should always be Given/When/Then. And more Givens, multiple Givens, one When and then you know you can have multiple Thens. But it doesn't make sense to have a When after Then. And then you have a Given as well after Then. 
+
+As a thumb rule, I'd suggest as you shouldn't have, you know, 5 or 6 steps in a scenario. That can be possible if you write your steps in a domain specific langguage and in a declarative manner. If you write them into an imperative manner, where you're expressing each action in a step, than you need more steps to express the same scenario right. This one definetelly should be restructured. This has, I don't know, 12 maybe more steps.
+
+> What about the scenario titles, are they ok?
+
+Scenario titles, so... search for user and go to its profile. Now this scenario title doesn't actually tells me...it tells me what is the action you're performing but it doesn't tell me what the outcome is. If I look at the scenario title I don't really know what exacty its testing. So the way we actually try to structure or try to phrase the scenario title is, it should be like a Friends episode, so you know, they say in one When, "I search for a user and go to its profile" so, it should show me, whatever. So that basically tell me what you're doing and the expected outcome.
+
+> So it should have both things, it should represent the action and the outcomes?
+
+It should briefly tell me what I'm testing and what I'm expecting as the outcome. So just, obviously if it takes too much space, you wouldn't want to overcomplicate things, you would want to keep it brief, otherwise it basically defeats the purpose. So what you could do this, if you would write more text, just add a comment below the scenario keyword. So it would basically appear as informative test, just under scenario keyword, you can do that in a feature file.
+
+So, taking as an example the line 29, "searching for a user in background", so there one, obviously you wouldn't have to write it nowhere, it's just a matter of speaking, "I search for a user in the background and see the result" or it should show the me result, whatever is appropriate. As long as it tell's me something about the outcome and the action. So what am I testing and the outcome.
+
+If you're able to do that, when this test report is shown to someone, your project manager, your business owner or your tester, they would instantly know, without looking at the steps, what exactly is being validated here, or what would you expected. 
+
+> And what do you think about that table in the background and tables in general - do you think tables are a good idea in BDD descriptions?
+
+Ahhn, Given following users exist...ok, yeah, well tables, I think tables are a good idea, actually, so instead of having to you know write several lines if you can structure then in a nice table, obviously the table shouldn't have 20 columns, you know, if it's a nice concise small table which is easy to read and as long as it doesn't have like 20 rows or 20 columns, it looks good, it's easier to read, it's better than writing 10 steps, as it's possible that you're able to summarize them in one table. And that makes much easier to read, as long it is a small, concise table with a minimum at steps, minimum rowns and columns. So that's my view about it.
+
+> And the use of example is also nice to have?
+
+Use of example is ahn good, so you can have scenario outline which uses examples, now it could be a bit of anti-pattern sometimes because, ahn, what happens is you may end up writing five or six examples, each, even tough, a business user is maybe happen with one or two. And so, things like you're testing the same requirement for different values, but even tough they give the same outcome, so you're not actually adding any value. So, examples are good, for then you need to be carefull to not go a little too far with that. It's possible that you may be able to extract few of those examples and move them to a lower level, which could be unit tests.
+
+
+6) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small - few steps
+* testable
+* understandable
+* unambiguous
+* valuable
+
+7) What could be their meaning for BDD?
+
+* concise - ?
+* estimable - ?
+* feasible - ?
+* negotiable - ?
+* prioritized - ?
+* small - ?
+* testable - ?
+* understandable - ?
+* unambiguous - ?
+* valuable - ?
+
+8) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ANOTHER feature file to evaluate in light of those attributes shown before (change\_settings.feature).
+
+9) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+10) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+11) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized - use of tags
+* small
+* testable
+* understandable
+* unambiguous
+* valuable - tags
+
+12) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+
+13) General remarks about the quality criteria BDD scenario subject
+
+
+

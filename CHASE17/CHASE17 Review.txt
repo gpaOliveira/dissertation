@@ -1,0 +1,44 @@
+
+= Summary
+
+English could be improved - many weird words, adjectives after nouns and portuguese names for Tables/References (Tabelas/Referências).
+
+Different application size and programming languages are not mentioned as a threat to validity. Also, nothing have been mentioned about the test coverage or testability of those partially implemented ones. Finally, some students opinions were missing on each category (benefits, difficulties and quality) - maybe the survey had optional questions, but it isn't explained anywhere.
+
+= Is it aligned with CHASE ?
+
+Yes - the study discourse about opinions and perceptions of novices on TDD practice, that could be understood as sociological or cultural characterizations of that software engineering practice.
+
+= Mapping
+
+On the abstract, there is (1) benefits, (2) difficulties and (3) quality improvement but on RQ we see (1) difficulties, (2) benefits and (3) quality improvement. The later is used in the results session as well.
+
+Also, I miss some follow up regarding each participant (like, S2 and S4 understood that baby steps improved the design but lacked patience to use them, and it could be explained by their profile because...)
+
+RQ 1 - difficulties - (i) lack of practice S3, S4, S8 and S11 (ii) doubts and lack of confidence S3, S5, S6 (iii) lack of patience to take small steps S2, S4, S5 (iv) control and decision making S5 and S6. Why technical problems were not considered a difficulty area if S4, S6 and S12 reported it ? Why S7 didn't reported any difficulty in particular ? Where are S1, S9 and S10 opinions ?
+
+RQ 2 - benefits - (i) security and confidence S2, S3, S5 and S12 (ii) better understanding of requirements S9, S10 and S11 (iii) design improvement S2 and S4 (iv) lean coding S1, S2, S6 and S11(v) easy maintenance S1 and S7 (vi) greater coverage of tests and encouraged refactoring S4,S5 and S12 (vii) bug detection and reduction S3, S10 and S12. Where is S8 report on benefits ?
+
+RQ 3 - quality - (i) Code quality: clean, lean and readable S1, S2, S4, S8 and S12 (ii) decrease in bugs S2, S3, S5 and S7 (iii) test coverage and refactoring S9 and S12. Where are S6, S10 and S11 reports on quality improvement ? 
+
+= Definitions
+
+what is TDD ? OK, but a figure with the 3 phases (test, code, refactor) could be added - they had plenty of space to use
+
+does the measurement makes sense ? Different program size and tools may have affected the perceptions of some students. Java/Junit perceptions (from S2, S3, S4, S9, S10 and S12) may be better for the simple fact that they have just learned it on the course. 
+
+= Study design
+
+sample selection? profiling? Subjects profiles weren't used to explain the results in any way - so, why use it ?
+
+what information was given to them? it isn't clear how the "training about TDD based on Java programming language and JUnit framework." was organized and how well they could use that knowledge on other languages
+
+what tasks were performed ? how they were performed ? we don't know by the reading how to compare the many different applications. The data on Table 3 could have been used to classify each project and explain how the data there can be read. Also, there wasn't a difference on the analysis for those projects partially implemented.  
+
+= Writing fluency
+
+Average to low - some English errors but, nothing that could affect my reading. Large use of "security" as in "confidence", subjects numbered from 1 to 12 where clearly translated from "participantes" (and some were missing). Also, the tables are called "Tabelas" and the reference "Referências".
+
+= References
+
+Page numbers before or after year (not coherent), online version for only 1 ref, 

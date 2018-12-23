@@ -1,0 +1,541 @@
+\section{Interview 18}
+
+% Transcribed from ??:?? to ??:?? on ??-??-2017 (stopped at ??)
+
+> My research is focused on discovering what a "good" BDD scenario is, and therefore I'm more concerned about what makes a "good" BDD scenario, a "good" textual description, Gherkin description. Therefore, I have been interviewing people, just like yourself, who uses BDD in their professional career, or have used it in the past, to acquire their opinion on that subject, on what makes a "good" BDD scenario. So today we want to hear your opinion, and don't worry there's no right or wrong, or I don't like that but I have to do it anyway in my company because blah.
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+Actually I used it in my first role, 4 years ago, it was a very classic organization where we were using Cucumber to add scenarios that were run on Selenium in a bunch of websites. That was the first time, and I'm in a project right now that is mobile, that I introduced BDD in the summer, I had to convince, because we are working with Atlassian like now, so first I introduced it like an idea, and they all agreed and liked it, we've been adding it sort of August we've been rolling with that.
+
+2) What's your main task on the project?
+
+> So what's your role on the projetct
+
+I'm a QA, automation QA, so the idea is I'm working on getting to automate in this case Cucumber scenarios
+
+> Cucumber on mobile as you said
+
+Yes
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+> And how is your project using BDD, what's a common lifecycle of a scenario
+
+So that's a very good question, because it started one way, but long term we wanted it to be a completely different one. Right now it started with, because one of the problems we had was no documentation, so we also didn't had high level test automation, so we introduced it to address both of these problems, documentation and test automation. The fact is that, it first was written only as documentation, meaning that a lot of details went into the features, which is something that doesn't really work well on automation, we can talk more about that later, which means that right now we have a lot of scenarios that have a lot of small details, this like every UI element and every piece of text, so that's not useful for automation but it's very useful for manual testing, because the manual QAs, if they see that, they know exactly what to test without needing any other information. So this is right now like a standard documentation source and as we automate, we transform this very massive complex into user action scenarios that are much more compact and automatable. Right now we are at a point that we started to transition from this more documentation based, or documentation oriented use to more automation initiative.
+
+> So, ahn, in my mind what I understood is that there was a point in the time when your team decided "we need some documentation" and then you started to create Gherkin scenarios, you as a QA started to do that, and then it started to evolve to the level of we need to automate that so let's rewrite it...
+
+It was not exactly like that so let me clarify it. The team had, let's say, found out that we had these issues, we don't have documentation and we don't have test automation. I had anyway been thinking on working with BDD and then I suggested that we could try that to address both. Once everyone said let's go ahead, let's try it out, it was mainly people from the business, so BA who started to write the first Gherkin scenarios, and that's where the challenge come from, they were using it as a form of specification, they were not using it as BDD, you know, it's quite different. I, as a QA, am looking how to automate and then rewrite continuously sort of with what I understand as being best practices and improve the quality of the scenarios and make them - what BDD is meant to be, which is very different from what we understood initially. So I'm now trying to get the team working in a way where they understand the best way to do it basically.
+
+> So, what's a requirement lifecycle? I mean, the BA writes everything in Gherkin and than the team starts to work and to develop features, how is that requirement flow and what is has to do with scenarios?
+
+So, I'll tell you how ideally we want to do it, we don't do that every time, you would write the requirements in a Gherkin format and then start the development of the story and at the same time start automating. Right now we have so much to automate that we are just playing catch up, so we started existing functionality that we wanted to test, because it's still new to the project, so what we want to do is get a point where we automated all the existing scenarios, and of course in the process have rewritten then accordingly, and then yeah, once we pick up a story we have a quick discussion where we decide what are the main scenarios and start working from there.
+
+It's important to remember that we probably wont capture every scenario while defining the task, so there's gonna be edge cases, there's gonna be further considerations and that, we just want to capture the main things the business want from us, and then you know, I think as a QA I'd get to write all the steps in details. 
+
+It's also, another thing to keep in mind is that we have a... scenarios are siting in a repository, we have now github, so they go, part of their lifecycle, part of the process to add scenarios is that we open a pull request to be reviewed by other QAs, and only if it gets two approvals kinda it gets merged into the rest. We also have automated a CI check to decide if the structure of the file is correct, and that there's no syntactic errors. 
+
+> So, when you pick up a story as a developer, as a tester, when you as a Team Member pick up a story, what is the first step to do, what to do with that?
+
+SO, if it's testing it means it have already being refined. If it's being refined, it means it already have the scenarios with it.
+
+> Ok, let me go back, so the story is written in a certain time and that's a refinement meeting to write the scenarios?
+
+So, the refinement is where we put exactly what we expected of the story, so, what we expected is done in these scenarios, in other words, what the business is getting out of here, in other words, what will we get out to our user. SO that is what the refinement aims to the way I understand it covers and then it just goes in the backlog. So imagine that the business will create a high level description of the story but won't feel the details - they're gonna say "add this new feature". And then we gonna have a requirement which will involve some of the business, QA, developers, designers if needed, and alltogether we will all understand if we all agree on what is expected and write acceptance criteria in the Given/When/Then format
+
+> And than it's ready to be worked upon
+
+Exactly
+
+> And you said, I'm taking notes so that's why I will sometimes repeat something you say in the middle, and you said you have something to automatically validate the scenarios.
+
+Yes
+
+> Ok, I'll come back to that later
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+* Steps too long/too short
+* Step few/many
+* Business language usage
+* Title description
+* Keywords (Given/When/Then) usage and order
+* Repetition of steps (Background/context usage)
+* Parameters are ok or not?
+* Tables are ok or not?
+
+> What do you pay attention to when you're reviewing other QAs scenarios or writing your own scenarios, or trying to refine BAs scenarios, what do you pay attention to, what are the pain points you try to avoid, what are the good things you try to do, what do you pay attention
+
+Ok, starting with the biggest issue we have, I try to see if it has a lot of details, let's say, in the scenarios, so things like trying to define every line of text, every color, every button, that doesn't belong at the scenario level - that's the biggest issue I had right now.
+
+Ahn, the second problem is some inconsistencies, specially in the language used, because as you can imagine, if I want to automate something it need to be written in the same way every time, so when there's inconsistencies and someone writes "Given the user" and another person writes "Given I", then we get inconsistencies in the language and it's important to make everyone agree on how we do it. It's not important if we use "I", "the user" or whatever, it's more important that everyone uses the same. So that's another issue, because otherwise you will have to rewrite many scenarios before automating them
+
+Another thing I do is also related to vocabulary I try a lot to get guidance from UX to make sure that every term we use is the same term used by business. So, for example, because it's mobile, just yesterday we were having a discussion, on mobile does the user Click, it Tap, do they Press, do they Select, you know, what do you call the act of pressing something in the screen, which might sound really trivial, but unless we all agree that we use one specific term for it, it's gonna be, you know, every one is gonna write it differently and every scenario is gonna be a bit different, so one of the issue on writing scenarios in general is with inconsistencies, specially when you have non-technical people, simply because they're not used to use a structured language, so they're not always naturally think, "ok, this is how I have to write every time". I'm, you know, I'm writing in english, and in english this is a valid sentence and this should be fine, but it's not quite that.
+
+> Good, so no unnecessary details, colors, button names, etc; language consistency and vocabulary, business vocabulary. So those are the three things you usually pay attention to?
+
+Ahn, yeah, I would say so, but the first one is very broad, so it includes not having these elements all the time, and not having those details all the time, but capturing the real intent of the test, so always keep in mind what are we trying to validate here, why am I doing this, am I trying to prove that something works or, you know, whatever, so...
+
+> So the forth thing is that test intent should be clear
+
+Yes, that's good
+
+> We will refine that list later so no worries in forgeting something, but that's all on the top of your head?
+
+I think so, yeah, those are the main issue we are having at this point, yeah
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file to evaluate (connects\_users.feature)
+
+Well I'm checking them right now, what should we get... 
+
+> Are those good scenarios?
+
+So... ok, they get a bit long after some way, one of them probably wouldn't work as it's missing a scenario header on line 23, where there should be a Scenario title
+
+There are some bits and bits missing. So, first of all, a few comments on these scenarios, first of all they do get a bit long, there's one here who has And/And/And to the point where it has to be split by new lines just to give it a bit of structure cause basically is like what 10 steps
+
+> So having 10 steps is bad
+
+Well, a large amount of steps always complicate things, specially when you put a lot of And it usually means that either you're not abstracting correctly at that level or you need to break this down into simpler scenarios, because, I can say that...
+
+Also another thing is that the background says "Given the following user exists", then we are sort of redefining its users... no, it's ok. And see there on line 33, And I press the first ".aspect-membership-dropdown .dropdown-toggle", it's like picking up selectors and stuff like that which should never be in the scenario level. For me, one thing in general is what the user do, and for me, I don't quite know what it is, it's something that ends up pressing an add aspect whatever that is, so I think these Ands could probably be concatenated into something like "I add an aspect" or whatever it's supposed to be call, and these details are hidden in some layer below. In fact, this wouldn't even be in the level of the test, it would go one level below in the Page Object, so, you know, having this amount of detail in a scenario makes it really hard to understand, imagine that someone from, someone who is a business administrator read this, can they make sense? I don't know what it means 
+
+> I see, and despite the number of steps there are some examples like the one on line 15 (I follow a malicious user) that continues on line 24 that executes a When/And/And/And/Then and another When comes and anothe Then and more Ands.
+
+Yeah, I was wondering if this, I think, it looks to me it was a scenario defined on line 23 or something, it looks like a scenario cause it's like
+
+> It does, but maybe is the continuation of the first
+
+Ahhhhn...
+
+> Maybe
+
+Maybe. But I don't know because the first one says "I sign in as bob", I do blabla, Then I should see my added profile and then, When I sign in as Alice, so actually I don't know but... ahn, yeah, I'm not quite sure what's going on
+
+> So, assuming they are the same, that variation between When/Then/When/Then is ok to happen?
+
+No, When is just a pre-condition, is the setup, when you start your test lets say from, or your test from...
+
+> You mean the Given
+
+Eeeeh sorry yeah yeah you're right, my bad
+
+> No problem
+
+I'm so used to it, it doesn't even have a Given, alright, so it starts with a When, ok, you're right, it has 2 users actions and 2 Thens. It's just very hard to follow. If it's meant to be one continuous scenario than, either it probably need to be splited up or be clarified a bit more, it's really hard to keep track, and obvious the syntax is wrong, I'm fairly sure it would fail our CI checks for example
+
+> Really, why is that?
+
+Well because typically Then is the last part, so you wouldn't put anything after it, you could have an And after a Then if you'd need to check multiple things, but what are you actually testing? When I sign Then I should be on profile pages, When I sign in as someone else... for me it's a case of have this separate into two different ones, two separate ones
+
+> And you referred to the Given that is lacking, I don't know if you saw but there's a Background on the top. Do you think the use of a Background is a good thing?
+
+Yeah definetely
+
+> So good to use a background...because it's pretty?
+
+So, it's actually does make things a bit understandable because it sets the context for the rest of the feature. And when you start reading it, ok, these users will always exist for all these scenarios. So that's useful, but, that's fine, it's also very helpful when you try to automate things, because the Given can be defined to run before each test, so it also helps on that purpose. Actually, one last thing about the Background, potentially it can show, it can be sort of a sanity check to confirm that the entire feature in fact is about one feature so it's tied to one background, so it might help there as well
+
+> Ahn as a sanity check you mean by being an execution sanity check because if it fails it means that all the feature will fail or you mean like a sanity check to verify that all the scenarios are really meant to be in this feature, they're all related
+
+Yes, exactly, in that context it could mean that. It doesn't necessarily says that without is necessarily bad, but it could be useful for that. 
+
+> What about those scenario titles, do you think they are ok?
+
+Ahn, so, I can say one good thing, and that it uses the same tense, so basically everything says "I". I prefer having everything like "the user" and I could say something like "the user can follow another user" or something
+
+The one, they sort of describe what's happening, but one thing missing is that I have to read until the end of the actual scenario to know it's expected result.
+
+> So the title should be a summary for the action and the outcome?
+
+It would be good to define a bit more clearly, cause everything that is, if you think of it like a business requirement, everything the user does has an objective right, so... I can't, here the scenario says "adding someone who follows you", ok, what happens, I don't know what happens, it says, it's like, not entirely clear to me without reading. Because, again, imagine that you've automated your test suites and you have 500 tests like this one running, you, if one these test fails, you'd have to look at the actual detail to see what was expected to sort of create actions and expected outcomes to report that. While it's very helpful to have a name that says "this is what should have happened" since it failed, I'm guessing it didn't happened.
+
+> I see, so it should have the action and the goal, the outcome
+
+Yeah, I would say that, because usually business requirements are given in the term of what the end goal is for the user, therefore I think our language on the scenarios should reflect that as much as possible
+
+> Jumping to the language as you have talked about it, so you have said that the selectors were a bad thing so I have put it down, I have taken notes about that, but you also referred to the use of the 1st person, in opposition to the use of 3rd person, the user. Do you think it's ok to have everything in 1st person?
+
+So, yeah, the most important thing for me is definitely having consistency. So it's definetely better to do that than have a different one everywhere. But that being said, I still prefer to have the 3rd person instead, because then we are thinking about the real user. Because "I", I reading it, I the QA or I the developer, what I do might be a bit different of what the actually would be doing. It helps to set a mindset, when you're thinking more about the user
+
+> Yes it is but what it matters is to be consistent... that are a lot of steps that have a certain granularity, like I sign in, I go to, I press... is that kind of step action good enough?
+
+So could you say for example like one of you say the first selector thing whatever
+
+> Yeah
+
+That's another good point actually, that vocabulary is rather inconsistency, I press, I click, yeah you're right. That should have been actually more consistency
+
+> So it's not a good thing to use that kind of vocabulary or it is ok...
+
+I think it's mainly, something I said early, the consistency of the line usage across all organization or within or what sort of what UX described it, doesn't matter as long you have a term for it, an agreement for it
+
+> I see... there have been reports about different ways to write good scenarios, one of them is to write them in a more imperative way and another idea would be to write it in a more declarative way. Do you think those scenarios here are more imperative or declarative?
+
+That's a good question I'm not quite sure what they used, what's, how it's defined for Gherkin based, so I think, I mean, these definetelly look imperative because they have a lot of low level stuff, direct references to UI elements, which we could see already all over the place, it doesn't say I click on that button it says I click on selector, for me its as imperative as it gets
+
+> Ok, and that's a good thing? Or a bad thing? Or no matter?
+
+No for me I think it's something I would definitely want to avoid
+
+> Why?
+
+Because of the way that I've seen BDD used withing a real team - if it was just addressed to developers to use internally, maybe it would be fine. But for, the real value of behavior driven development is that you can get the whole team together, which includes developers, QA, designers, UX, business administrators, product owners, scrum masters, everyone you have in the company. When those people talk with each other, they don't ever say "ow yeah then I will click on button primary". They won't even go to the detail of every step mentioned here. What they're gonna say is "can the user login" ? Can the user, you know, do this, change their settings, go to profile, whatever it is. I think that by having so much details it misses the really useful element, which is the natural language you can use in Gherkin that everyone understands. Because this is fine for developers, they would understand what they're seeing, probably, if they worked on it before, but for everyone else, they're like OK, what's happening here. What would happen in reality is that they will stop using these scenarios as a reference, because they can't understand it and it's not their fault.
+
+> And you think the use of tables like the one on line 19 and the one on the background would help more people to understand the scenarios?
+
+Tables are a good way to input data, and that's why most people use Cucumber is because of data tables in particular. It's a vry nice way to parametrize the tests
+
+> And the same opinion goes to scenario outlines with examples?
+
+Yes, the same
+
+> We have on line 1 a single tag probably describing that these scenarios are supposed to be executed on the UI and therefore needs a javascript tags - do you think tags are good?
+
+Tags in general? Definetely
+
+> Because?
+
+Because, ow there are several reasons I'd say, one is that they allow you to sort of logically group your tests, if you're trying to automate a suite. It can give a bit of context if you have stuff like for example features that are only specific to Android Eos or some variant of your app if you made a product that's gonna be released in many countries and it may have different features. It helps you to understand things a bit better and also for automation if you're gonna link them together and run them into suites that makes sense
+
+So they add logic, and the other things about tags is that they're very flexible, and these are the purposes I have used them but you can use it for whatever reason you need. It's a very intuitive way.
+
+> And since we jumped back to the start of the file, is that feature description a nice one?
+
+So, It would be, it's not ideal, it would be OK if, and I don't know this, all the functionality related with follow and being followed is described in this feature. Because if there's more behaviors, more functionality related to follow and being followed and you haven't included it here, then I guess we are missing out, because the point is reading this I'd expect everything is in here because it doesn't say otherwise.
+
+> So the feature description should tell you the scope of a feature file 
+
+Yes, exactly
+
+> You have told, you have said that many steps is a bad thing but what about that step on line 27, that has more than a 100 characters I think - is that ok to have steps that long?
+
+I don't think that's necessarily bad if there's a reason for it, in this case there is that long because it has again details that are not needed at this level. If you just say "Then I should see malicious warning" or whatever it called, you could have it shorter. This case is too long because it has stuff that is not needed, but I don't think that's necessarily bad. 
+
+> Ok, good... you said that tables are nice because they're a nice way inputing parameters, but you could also input parameters using regular expression, and sometimes people use double quotes to parametrize a step - that practice is a good thing, like in the line 25, 24...
+
+Over there is like... that's also a bit of inconsistency I think, ahn... in that case at least I understand what's happening so that's ok
+
+> So double-quotes as parameter delimitor it should be ok
+
+In this case it should be ok
+
+> Is there a case where you would say it's not ok?
+
+Well, obviously is more maybe immediately obvious that you passing, but if you pass in as a table or whatever, so if you say something like Given I sign in as and you have a separate line a table as an example, maybe it's more easy to understand that you're passing a parameter but that's...it's ok, I think it's ok
+
+> Ok, so, to summarize: many steps is a bad thing, use of many Ands is a bad thing; long steps are ok if needed; CSS selectors is not good; changing, mixing When/Then steps is also not good; 3rd person usage is better, but what is important is to be consistent; the title should have the action and the goal, the action and the outcome; imperative way should be avoided, declarative way of writing is better, as it allow people outside the technical team to understand; Background are nice; Tables are nice; Examples are nice; Tags are nice; and double-quotes parameters are nice as well
+
+6) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small - few steps
+* testable
+* understandable
+* unambiguous
+* valuable
+
+7) What could be their meaning for BDD?
+
+> Do you think they're useful for BDD scenarios, in such a way of reading like: ow, that scenario is concise because of that characteristic, of that thing; or that scenario is less understandable because you used here blah - would that be useful?
+
+Can I ask what do you mean negotiable in this case?
+
+> Well, I would like to have your opinion by what you understand of negotiable for BDD because for user stories it means you can negotiate the details. However, maybe the meaning on BDD scenarios is different, so I'll ask you back - what do you understand by negotiable?
+
+Manageable, maybe... So like, yeah, I don't actualy mean that, because other way is to somehow negotiate the solution with the developers or something but I didn't think it's that. So otherwise, manageable, it's a bit unclear for me that why I asked
+
+> We can cross some words of this list, and that's why we are here and that's why I put the entire list at once, so maybe some of them are not useful, and my next question is - what would be their meaning on BDD scenarios? I mean, what would be a concise in BDD scenarios?
+
+One that contain all information that is needed to perform that action basically
+
+> Contains all the information needed, so there's nothing missing
+
+Basically just by reading it I understand what the user will do. To give an example, if I say the user sign in in Facebook, you know exactly what I mean
+
+> And it takes me to understandable, if concise means you have all the information for a reader to understand the scenario, what would make the scenarios more understandable.
+
+For me if it's concise it's also understandable
+
+> Ow, they're the same ok
+
+Ow no, the reverse is not true, it could be understandable but it's very verbose, in which case it's not concise. So concise means it have all the information needed, but still compact
+
+At the test scenarios we were looking before, I think they're very understandable to a developer maybe, but they are not concise because there are so many steps
+
+> Ah, so the number of steps is also a problem with concise
+
+I think so, yeah, because it makes it harder to understand very quickly what's going on
+
+> And would small be something different than concise
+
+Small in pretty much all the agile teams I worked doesn't say so much about the requirement but about the develiverable, in other words, we pick up a piece of work that me can manage and not a big piece of work that is risky to do. And that's how I understand it. Small refers more to the small of the feature and not so much the scenario text, if it makes sense
+
+> So it doesn't make sense to use them into BDD scenarios
+
+I'd use them in a broader context, not for BDD scenarios themselves
+
+> You said that small was something we can handle, something we can deliver, therefore it comes to mind the definition of feasible. So feasible would also be interesting for BDD scenarios?
+
+Yes, feasible is, but feasible is slightly bigger, again it's a broader thing, it can be feasible but not small. Feasible might refer to implementing just the feature or the test as well, because it may not be possible to test
+
+> Well, I'm more interested in the Gherkin description and that's why I always come back to the textual description and start to wonder, what would make a scenario description more feasible, or less feasible?
+
+I think its less feasible if you start adding things that are not realistic to assert maybe. For example if you have something like "Given every single user is signed in", how can you ever test that, you can't get all your users and tell them "sign in now" so maybe that's not feasible because it's like, in reality how'd you do that
+
+> It would be an ambiguous step to have this "all your users are signed in"?
+
+I don't know if it's ambiguous because for me it's very clear, every single user has signed in, like, it's clear, not feasible, if you have a big user's database you know, Facebook can't have such a requirement, because how can they make it happen
+
+> Indeed, so feasible is applicable to BDD, small is not, what about estimable, can you write a BDD scenario that is more estimable than other?
+
+Ahn, so to me estimation is around, like, in Scrum in general is for estimating the complexity of delivering a feature. So, without knowing the system that has been developed, I can't really give an estimate. So I don't think estimable is related so much to BDD scenarios themselves
+
+> And prioritizable is?
+
+To me that's a good thing, because it means we know what is more important to the business and develop first
+
+> And what could we put in the scenario to make it more, higher priority than another one
+
+I think there's a tag - you could say high priority, low priority, for example
+
+> Testable is interesting for BDD scenarios?
+
+I think if it's not testable it shouldn't be there, most of the times
+
+> And what is a testable BDD scenario?
+
+Testable means every time I follow this steps and I'll verify the same behavior. That every time I follow, I setup this scenario and know I'll get the same results. It is a combination of everything else.
+
+> So it means that... ow, testable is a combination of everything else?
+
+Effectively yes I think it is, because for something be testable I understand what it is, it's realistic or feasible, it's a, ahn, I can understand exactly how it can be done every time
+
+> So it means you could pick up that scenario and work on that, that would be your testable definition
+
+Yeah, one I can verify
+
+> That you can verify... what would you write in a scenario to make it more testable? Or even, if you read something in a scenario, what would be that be that would make you feel it's less testable?
+
+That's a good question, first of all anything that is very hard to reproduce, that may sound easily as a problem. So something that is not, something where you can't get your, let's say your system in a deterministic state maybe, or something that the steps to follow are not very clear, that's one, where, and it could be a real issue with the system itself, where writing the same steps not always have the same result - so how am I going to test that?
+
+> But this is all three, at least two, the hard to reproduce and the non-determinism, are characteristics of the system and not exactly of the scenario that you're reading and also of your knowledge about the domain, about the system itself. So can testable means something in separation of your knowledge of the system or not
+
+I'm not sure I get that, do you mean do I need to know the system in order to test it?
+
+> Yeah, in order to read the scenario in order to decide if it's testable or not
+
+To decide that something is testable I would know, I would need to know what the system is actually capable of doing. And in that sense yeah I would need some knowledge on what I'd have to do.
+
+> Understandable we didn't quite covered - what is an understandable scenario? I mean, what in the scenario description would make it more understandable or what would hurt the understandability of a scenario?
+
+So, well one great example is the feature we saw before, there are a lot of implementation details that makes it very hard to understand what is happening unless you work on the development of the system. 
+
+So, for me understandable mean who someone, that has never seen it before, reads the scenario and knows "ok, this is what a user is able to do", so it is self contained, includes all the information needed
+
+> Nice, self contained, it means it's concise and understandable
+
+It includes all the information, it may not be concise but it may still include all the information you need
+
+> And what would be an ambiguous scenario?
+
+Ambiguous, ahn, so, that's the one risk of not having, I'm doing a little bit of reverse order, that's the one risk of not having implementation details, because the one good thing about the scenarios we saw before is that you know exactly what to click, assuming you figure out what selector you need you know exactly the selector you're looking for
+
+While there's a risk of saying "I click the button" and maybe there are five buttons, maybe you don't know exactly which one to click
+
+Another case is when testing the UI and have a step that says "the UI displays correctly", well, to different people it might mean different things, so that's another risk. We try to mitigate it but it my mean it's ambiguous you know, different people understand different thing maybe
+
+> So strange words would make it more ambiguous, like "correctly", and the use of implementation details would help on that, interesting
+
+Not doing abstraction correctly, as a good sign of it, you try to remove implementation details, which is fantastic, but in the process of doing so you don't keep enough information, then another very set of easy way to get ambiguity is simply by having inconsistent vocabulary
+
+> Ah I see, so vocabulary consistency falls into ambiguity
+
+I think so, yeah
+
+> Last but not least, what about valuable, what would make a scenario more valuable?
+
+More valuable...ideally all the previous points, it provides useful information you can verify, it's covering a feature, probably it's important to note it's less valuable, for example to be valuable it have to represent what the system does and not what it doesn't, it's an easy trap to fall in, sometimes people would say "the user cannot do this" and unless we explicitly moduled it into the system it maybe "ok, why we are doing that".
+
+Then another thing is, it shouldn't be repetitive, if you're having multiple scenarios and they're testing the same behavior, they're redundant. It's valuable if you have one, that cover it, and that's it
+
+> So every scenario should be unique?
+
+It should have a clear purpose let's say, I'm writing this scenario to whatever functionality you want to capture basically. It needs to be clear I think
+
+> And if the scenarios cover...the fact that the scenario cover the entire feature, the fact that the amount of scenarios, the set of scenarios, cover the entire feature, would that make that feature more valuable, or this checking of how complete a feature is is not entirely necessary?
+
+No it's definitely good to say it's complete, for me
+
+> And it would fall on valuable or would it be something separate?
+
+So, you mean if it's complete? Ahhhn, well complete maybe not so much for the scenario level what you're saying is probably to the feature level so I think that's, that you're right there, in the feature level it should be valuable and complete falls into valuable maybe
+
+> You said in the beginning that scenarios should not have a lot of details - if they had a lot of details what of those words would be impacted?
+
+Concise... depending how you use it, even valuable could be hurt. I'll give you an example, if you have a lot of documentation details in your feature files, it's likely that everyone is gonna do a lot of work to change, cause imagine that there's a change in the website and a few of the IDs get renamed. So then someone needs to go and rename all these IDs in the feature files. So that's a cost to the business which automatics reduce the value of the scenario, so that's an example because that stuff would be hurting valuable part
+
+> So, lot of implementation details is hurting Concise, Valuable and also Understandable, is that ok to cover those 3?
+
+Yes
+
+> The test intention should be clear is something you were referring in the begginning as an important thing - what word would it map to?
+
+Testable and potentially unambiguous
+
+> And the use of declarative language to show the intention of a test case would also help on testable and ambiguous?
+
+Yeah
+
+8) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ANOTHER feature file to evaluate in light of those attributes shown before (invitations.feature).
+
+> Do you think they're concise?
+
+You see they have, they also have, one goes from line 22 to line 40. It's what, 18, has one white space, it has two Thens, sorry 3 Thens, so this is a user journey not a user action basically
+
+> And that's a problem?
+
+Yeah, because again it's covering a lot of things that should have been captured in separate scenarios
+
+> And that's a problem for what of those words?
+
+Definitely concise, I mean, testable, you can test it manually, automating it would be a lot of work and it would be very inefficient, so it's sort of affecting the testability - in the real world it would affect the testability
+
+> Because the imperative way of writing it or because of the many steps or both?
+
+Because, mainly, actually both, mainly these steps that mean you have to follow all these sequences of events can fail at any point, like I'm thinking about a real world implementation, it's very risky you have unreliable tests for this. Well obvioulsy is also not small, so imagine, what's it doing, there's being an invitation, you do that, you signup, you create, you follow, you do, is all of this really one feature or...when a team of developers deliver this it's probably 4 or 5 tasks, therefore this could probably be broken up to make sure this is small and isolated
+
+> It makes me wonder if a feature file should be mapped to a single user story or not
+
+No, not necessarily
+
+> So if those 5 scenarios were put here along the time, so you create one user story, you write your first scenario, and then you create another user story and add another scenario to that same feature file, would that be ok?
+
+Yeah, of course
+
+> Are they valuable?
+
+These ones? Ahn, they're in the sense of they describe what the system does. However again, because you would have to go and change, if one of these selectors change, you would have to change the test, so this is a liability, so the cost of maintaining them would go up over time and therefore the value would go down
+
+> So maintenance cost goes on valuable...interesting... And it reinforces my notes about "no lot of details" should map to valuable...anything else to note here?
+
+Ahn only that it could be split into way more scenarios, basically, which would all be much more understandable 
+
+> Because of the amount of steps
+
+Yeah, that's a sign, also if you look at it from a logical point of view, these steps are doing a lot of things, its trying to traverse through the system or the application, they're not focused on clear functionalities let's say, it's like one scenario, if you look for example the one on line 22, there's this, from me from the first Given, all the way, I should be able to friend until the end of that person, that for me would be all the information needed for that scenario. And even that is actually, it has, it should have been kept down a bit. Once you've been able to friend of that person, good, you're done with it. Another scenario would be I sign in the account, I confirm the alert, there's a different set of activites the user can do through it, but my problem is it's not really, it's just a lot of steps in a row, so my point is, it's testing user journeys, not single actions or single features
+
+> The fact that they're not focused hurt what of those words?
+
+Concise, only.
+
+> Focused on concise, ok...
+
+9) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+For each one you mean how useful it is or for each one?
+
+> Whatever you prefer
+
+As a list is a 5, as it includes everything you would need to be able to do something that is useful, high quality, delivers what the business wants, so all together I think a 5
+
+10) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+I think small because it can, actually negotiable, because I'm not clear what the use of it here
+
+> I have already crossed negotiable and small from your list of acceptable words, so which ones of the others would be most difficult to use? Just to make it better let me come back to skype and remove the words that were taken out as negotiable, as small, and...
+
+And maybe estimable, it's hard to estimate something without knowing what's in the system
+
+> Those 3 words taken out, and prioritized, feasible, concise, testable, understandable, unambiguous and valuable stay... so from those 7 words which one was the most unclear or difficult to use on the evaluation?
+
+Uhn, so... I think that's, if we had everything else covered, then maybe feasible is redundant, because the others could cover for it
+
+> Ok, so I will cross, should I take out feasible or it's unclear to use
+
+No I think it can be out because it can be covered by the others
+
+> Still, is any other difficult to use or are all of them ok?
+
+The others I think all have their... understandable and unambiguous maybe, if it's understandable for me it means it's also unambiguous, so then feasible and unambiguous could maybe also go
+
+> Vocabulary consistency was mapped to unambiguous - if unambiguous is taken out of that list 
+
+Than it could go to understandable
+
+> That it could go to understandable maybe... what I had mapped to unambiguous was: the test intention, that was already mapped to testable as well; vocabulary consistency that you have mapped to understandable now; the implementation details helps, so as much more implementation details it can be less ambiguous
+
+Yes it's true, but can also be less understandable
+
+> Ok... well, I will leave it there for now but maybe it's unclear the difference between understandable and unambiguous
+
+Not exactly but for me understandable encapsulates unambiguous
+
+> OK, so I will cross it out and map everything to understandable
+
+11) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized - use of tags
+* small
+* testable
+* understandable
+* unambiguous
+* valuable - tags
+
+> Two things that I have not mapped is the use of... ow, several things actually... let me review what we have here: the use of 3rd person rather than 1st person would help which one of those words?
+
+It's a bit indirect, I don't beieve it's directly tied to one... I think in an indirect way it could be mapped to valuable, the reason being that it could get your whole team to think like the user and that would be very usefull. But is not tied to one specific, it's not concrete, directly related to one of these words
+
+> And the use of Background as a good practice would map to each one of those words?
+
+Concise
+
+> And the use of Tables, Examples and Scenario Outlines would map to each one of them?
+
+Concise and maybe understandable
+
+> And we have mapped Tags to prioritizable already, so nice... and titles having the action and the outcome would help to reinforce which one of those words
+
+I think again it's understandable
+
+> And bad order of the steps, the exchange between When/Then/When/Then, would be a problem to which ones of those words?
+
+Probably more than one, definetelly concise... valuable in the sense of, they're not independent, one change would affect a lot of scenarios, so again that's maintenance work that needs to be done. And again for stability, if you're looking to automate something like that it can be very unreliable
+
+> So concise and valuable, ok...
+
+And pottentially testable, depending on how you mean it
+
+12) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+Looks quite complete...ah, what about complete?
+
+> Is that important to have scenarios covering the entire feature?
+
+It depends on how you stage or, it depends on what's the goal, depends how you use it, if you're using cucumber as an specification tool as it should be used, then it should definitely be the goal, even if you never quite get there, ahn, I think it would be good to have a single source of truth and therefore I think that the scenarios are a very good place for that source of truth
+
+> Ok, so complete is missing on that list, nice
+
+13) General remarks about the quality criteria BDD scenario subject
+
+I'm just more interested on how you're gonna use this, you're trying to make sort of a guideline or sort of a very clear scoring system where you can say this scenario gets a 7 out of 10 because of this and this reason
+
+> Ahn no, I think I would not be able to create a rank right now, because those good practices are still emerging right now, so there's still work to do and consolidate them and to check if they're useful as a guideline instrument, before really putting it in a tool, but my goal would be more in the guideline direction, to have those practices guiding people to write better BDD scenarios, or to avoid writing bad scenarios
+
+Ahn, ok, that makes sense, that's fine. I'm just trying to think if there's anything we maybe missed... perharps maybe this, it's not something very hard but it's something very empirical, but, basically, I think that, in order to get good quality scenarios, it's really important to have the whole team understanding why they're using this approach, because BDD is counter-intuitive, most people are not used to work in this way, most people, there's a flow some general requirements, the developers do whatever they understand, the testers do whatever they think it's right, so rethinking that approach is really difficult to get BDD right, so this is one of the main challenges to get, it's a people problem, it's not so much a process or a technical problem, that's the thing, something that is often missing basically
+
+> Yeah, and unfortunatelly it's out of scope to me to cover those problem, because I'm very narrow to my focus to help people write down good scenarios and I do understand there is value also on having a good quality list for conversations or for the BDD process, but those sources of quality lists or quality criteria is outside my scope, entirelly, so that's something missing indeed. How to have good conversations with BDD, how people are doing that is nice and what are they doing that is not so nice and how to put the technique in practice, I mean, should we put testers inside the team or leave them outside the team because that's better, I don't know, it's part of assuming the technique will work with or without testers, something like that. But I do agree with you in the end
+
+I think everyone should be involved, and QA for sure but... it's easier said than done I guess
+
+
+

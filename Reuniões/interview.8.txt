@@ -1,0 +1,434 @@
+\section{Interview N}
+
+Transcribed from 00:00 to 21:51 on 19-10-2017.
+
+> Gabriel speaking
+
+Interviewee speaking...
+
+> My proposal is to acquire expert criteria to evaluate BDD scenario quality. That's why we are here today, to get your opinion so there's no right or wrong. It's your opinion so don't worry about that. Any questions?
+
+No, that's fine.
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+> What's your experience with BDD?
+
+I have a long history with BDD. I started looking at BDD in 2008-09 then I was a technical mentor for multiple teams at the company I was working for. Basically my responsability was to improve the efficiency and quality on the entire development process on those projects. We have been using Agile practices on these projects so we had Scrums, User Stories, Pair Programming and many other things from the agile space but testing was not really fit into that. To be able to write better tests and to improve our testing efficiency I was looking a technique that we can describe our tests better and that's when I found Cucumber but since we are in a .NET shop and Cucumber was in Ruby and it was hard to connect these aplications I created the .NET port of Cucumber which is called SpecFlow which is now an Open Source project and do the same thing as Cucumber does in Ruby world. 
+
+2) What's your main task on the project?
+
+After I did that, since it was pick up by the community, currently we have 20000 active users, I was invited to many conferences and I was also envolved in many other projects outside our company. We were practicing BDD and currently I am working on BDD training and coaching.
+
+> Since that time right?
+
+Yes.
+
+> Yes, BDD trainer. That would be my second question. Good.
+
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+> In the project that you were and SpecFlow was born, how were you using BDD scenarios and how do they help on development?
+
+It's hard to remember one particular project. After we were using in many projects and learning how BDD was working...
+
+> You can summarize and focus in one project
+
+I was also in some projects where we were not using it in a good way... so I am guessing you are more interested in the project where it was the most beneficial righy?
+
+> Yes.
+
+Basically in these projects BDD was happening in many different was. On one hand the BDD scenarios were basically providing us a kind of a documentation in a light weight form not in a way that you have to sit down and writing a 20 pages documentatin that nobody will be reading afterwards. Making a documentation that will seamlessly growing and basically this is working as an agreement within the team on how did we understood the requirements and what was our understanding of the requirements and that was very beneficial in many different ways
+
+At least on that company we were mainly working on projects where requirements were given to us in a specification document. We had to read and understand it and of course was not really easy to understand all the diferent cases and this was not detailed enough so we had make our own understanding of the requirements. Before that time we were not documentating this understanding it was very hard to remember later when we had to get back to the project or when we get a change request or something like that. Or what do we want to implement actually if the specification document was not clear.
+
+So in one hand, one benefit we have seen, finally this scenarios was an agreement on how we understood the requirements and whenever , later on, we had to get back to the project it was easier to pick up and it was easier to see what was the intended behaviour and now it's changed or it was a bug...so classification of issues was much easier by then. Definitely one benefit.
+
+There were other benefits as well, for example, this was providing a good way to structure automated tests. We also tried to do automate tests before that but typicaly our automated tests, specially not the unit tests, because the unit tests can kept somehow in a maintnable state, but specially the integration tests were typically provided in a quality that once the integration test was been written and it was passing, whenever later it started to fail it was very hard to understand what why it was failing. It was typically not in a right structure code and the intentions were not clearly defined. It was a big batch of code there and it was failing and no one understood what we wanted to do with that test so we had to start reverse engineer, understading that test and figure  what was our goal with that test and figure out if our goal was changed, if the testing infrastructure has changed or if the application has to be changed. 
+
+When we started using BDD, it somehow forces you to think about what is your goal when you are doing it if you see the scenarios. Forces you to think about the goal of your test so what are the different steps from the user's point of view, from the application point of view and has to be done with this tests and then implement or the automation logic was structure by that so you are not providing an entire method which is doing hundred diferent things but are making smaller automation blocks and since they are smaller is much easier to define their intention and also it's much easier to understand that later if they start to fail.
+
+And obviously if the scenario is falling and you can still read this scenario and if it's really business readable you can see that OK, you can decide if this should fail or if this should pass because by understand the scenario it should be much easier. 
+
+> Good. That was a lot of things I put note here.
+
+I hope you are recording this. Feel free to record this.
+
+> I am, I am. That was part of the ethical thing as well but I am. 
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+> So, when you are reading a BDD scenario or when you are writing one what do you pay attention to? What are the pain points you try to avoid?
+
+Writing or reading? I didn't get the question.
+
+> So when you are both writing or reading. When you are trying to interact with it what are the pain points that you try to avoid or the things that you care about?
+
+I see. Generaly I have many different things. I have kind a checklist I use all the time that I am used to teach to others but I think the most important thing about reading or writing a scenario it was to be easily readable and easily understandable which means it should not contain a lot of unecessary data or lots of data which is not relevant to understand the scenario. It should not contain pre-condition steps which are not really important to understand the requirements. You should try to be focused and really getting to the point very easily so whenever I am reading that I can really understand that. 
+
+Typically if you want to talk about sizes my typical scenarios are not longer than 7-8 steps so definetely should fit in a small screen even because otherwise first of all you have to do a lot for maintain the scenarios during the project because it's typicall, unecessary data is always changing and things like that. You cannot read 10 of these scenarios without being bored or without getting tired, If I want to give feedback or get feedback of someone on my scenarios I have to make then easily understandable otherwise they will look the at the first three, maybe give some input, but they will skip all the others because they are too complex and too hard to understand. So easily readability is really important aspect.
+
+The second topic which is very important for the scenarious is: they should focus on the problem, not the solution. I would like to describe the expected behaviour of my aplication in the scenarios. This means that I don't know how the implementation will look like yet I don't care about it in this level, I just wanna to concentrate on the requirements. Typically those scenarios which are, for example, describing the automation steps on UI that I have to click a button, enter a text into a textbox and I have to scroll down and click another button. This is the solution, this is describing how the application will be finally implemented in a web browser and this is how I should automate that for a web browser.
+
+When I am writing the scenarios I am not interested in this details, this is the solution, I am interested on what the you the user wanted to do with that and how they are going to be able to implement or fullfill that, it was not what I would like to do with scenarios. 
+
+> Good so what I have here on my notes is: It should be readable, it should be easily readable, it should be easily understandable, it should not have unnecessary data, it should be a size not longer that 7-8 steps, it should be focused on a problem, not on the solution. There should not be implementation details and no UI steps.
+
+Yes. Kind of, yes.
+
+> Anything else that I didn't put here?
+
+I think this are the most important ones. 
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file to evaluate (aspect\_navigation.feature)
+
+> Let me ask you to visit a page, a project on Github, that I will put on the chat window in a moment. Diaspora it's a social network which main feature is to be a distributive one and it has many feature files. Do you had the chance to open it already? 
+
+Yes
+
+
+* Keywords (Given/When/Then) usage and order
+
+> So the suggestion here and what I would ask you to do is to open one of them and review it for me according to your own experience and those criteria that you describe it or any others.
+
+I open the desktop-comments.feature. The feature is commencing... let me kickly read the scenarios...*reading scenarios*.
+Basically what I see here with this... definetely realize for the first moment is that if you look at the steps structure and its basically says, with the Background it says GIVEN WHEN THEN... so this is a basically GIVEN WHEN THEN structure, so basically this is describing more of a user journey than a focused example. There are several steps of this journey so the user is posting something on the page.... then we is going on another page....and it's focused on a comment field... doing something. 
+
+There lot of THENS which is checking something but I really don't know which of them is the essence of the scenario. What do you want to check with this scenario? It's more describing a Customer Journey or a Smoke Test so that you can mark different actions after each other and all together they should work, but if I would like to know how the particular feature  of this screen works it's hard to read out from that cause there are these multiple WHEN and THEN steps. What I expected is that there's a WHEN step that shows what I am going to test on this scenarios and there's a THEN step which just tell me what should happen after this scenario is finished. Does looks more like a script.
+
+> That's a bad thing right?
+
+Yes, if you consider this as BDD scenarios that's not a good thing cause this is chaining multiple features to each other and therefore if anything changes you have to change multiple scenarios and no one single scenario that focus on a particular aspect of that. For example, this is about commenting let say that the very how you can post a message to some else board is changing then you have to change this scenario even though this is not about posting, it is about commenting. In this scenario I don't want to care how someone is posting I wanted to say GIVEN Alice wants to post something for Bob, that's enough I don't want to see the details on how this can be done, I don't care about kind of page or what kind of actions they did, I just care this is my pre-condition and then if I do commenting this and this happens. 
+
+> When you said that when a WHEN is repeated... you think that should be only one WHEN step in a single scenario?
+
+Yes, indeed. Major of the cases this is what I expected. For me this is a very very rare case when If I have multiple WHEN steps, but even if I have multiple WHEN steps they are just WHEN AND and that's in different places of the scenario. Generaly what I would like to have is just a single WHEN step.
+
+> Ok but the same goes for GIVEN and THEN as well?
+
+Not necessary. For the GIVEN you might need to have multiple steps because if the precondition requires multiple things to be in place, than you might have multiple GIVEN steps so in this case maybe you have a GIVEN step that have a user called Bob and Alice so maybe this is two steps and Alice has posted something to Bob's page, this is maybe the third one, that's absolutely fine, you are stating three different facts that has to be matched... this is the precondition of the step so... it's not true for the GIVEN.
+
+For the THEN that a little bit in between so generally what I would like to have my scenario in a way that they are only focus, so if they are focused they should only have a single assertion but sometimes this single assertion cannot be expressed in english in a single step so maybe you have a few steps but generally maximum 3 THEN steps if you want to have a number but just a few THEN steps.
+
+
+* Step few/many
+
+> We were talking about the size of those scenarios and you said the magic number of 7-8 STEPS. Those seems to be on that range?
+
+Some of then yes. It depends if you count the background to that. Together with the background itself has 4 steps. The first scenario has another 8 steps so if both together, 12 steps. The second scenario has 9 steps. Together with the background, which is just as seen as a technical separation, they are already beyond my general likeness. 
+
+
+* Parameters are ok or not?
+
+> So taking the background into account. OK. What about those parameters passed into code just like on line 24. We have double quotes with a question: is that a poddle? And we have a second parameter there with a .comment.
+
+I guess this .comment is a CSS class. So this is definetely in the wrong place. As I said I don't want to have the implementation detail. I shouln't be able to need any CSS knowledge.
+
+> The use of the double quotes to delimiter a parameter, would that be OK?
+
+Yes, for me that's fine
+
+
+* Tables are ok or not?
+
+> What about the table that we have on line 20. Is that a good way to use a table? Or should it be only restricted to the background step/scenario?
+
+No. Generaly I have no problems with it. In this particular case I would question why do we need a table if it has only one cell which contains any value but if this has the readability for someone then... for example if the text would be longer and 
+you don't want to inject it into the text of the step, I am fine with it.
+
+
+* Title description
+* Business language usage
+
+> What about the scenario titles? Are they interesting enough or they should be longer, shorter or something different?
+
+I think they are in a interesting language and the size is good, however they are not highlighting the goal of this scenarios they are more highlighting they topic channel. For example the second would said: delete the comment. Delete the comment should... it's not really... the one in the line 46 is even worst. Comment to the status show page, what do you want to test here? Are you able to comment? To do a comment? So I would like to have something that describes kind of a business rule, something that says this was fullfilled or not fullfilled, not just a topic
+
+> Good. That feature description? Is that necessary? On lines 2, 3 and 4
+
+Sometimes having description can be helpfull. I wouldn't say they are necessary. In this case this is a user story description which I generally don't like that my feature files to be structured based on user stories because the user stories are somehow arbitrary split of the implementation so it depends on what fits into your Sprint, what is current priority. So what is belonging to user story and what is not that's quite much for structuring the requirements. For the requirements the important thing are features so what kind of features they are describing or wether this features has been implemented in a single user story or you have five different stories until you implement it. I don't care, I just want to se right now the behaviour of my application. I think that the feature files it is Commeting. Commeting can be also a feature that's fine. This feature file is about comments but I don't see any benefit on a user story description like this, so maybe there's lot of other actors that can do comments, so I generally don't put the user story text into the feature files.
+
+
+* Keywords (Given/When/Then) usage and order
+
+> Comming back a little, we have talked about the number of steps but here besides the multiple steps they also mix the order of the keywords even using a THEN in line 34 in the beggining of the scenario. Do you think that it's a bad thing to use a THEN in the beggining?
+
+Yes. I think this is simply sad. I think they are using it because of the background but I generally don't like to have THEN steps anywhere than the end of the scenario. The order should be GIVEN WHEN THEN.
+
+
+* Steps too long/too short
+
+> What about the size of those statements, are they OK? I mean a single statement size?
+
+You mean the length of the steps in the... Yes I think they are good size.
+
+> Because they fit on the screen maybe? Is that a thumb rule?
+
+Yes. That's what I am usually trying to make their fold relative bigger. If I don't have to scroll horizontaly that's fine.
+
+
+* Repetition of steps (Background/context usage)
+
+6) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+
+* estimable 
+
+> Good. After those details that you provided me I will put some words on the chat window and my question about then is: do you think they could help when reviewing  or writing BDD scenarios? And one way to read then is such as a given scenario is concise? Or could this scenario be more concise or less concise and these kind of reading. Could they help? No? Maybe?
+
+Yes, they look fine. The estimable is a interesting question so... I usually never think about these scenarios to be based on the estimation use but of course if someone wants to have an estimation this can be helpfull for then. They are generally something good.
+
+> Do you think estimable, for example, could be read how much a scenario is estimable just by reading it?
+
+No. I don't think so. This is generally true for estimation, it's hard to make any kind of meaningful estimation. Generaly I don't believe in estimation so it's very hard to see this from BDD point of view.
+
+
+* negotiable
+
+> What about negotiable? Would you be able to read in a scenario description how negotiable it is?
+ That's again hard to see. I mean generally using this should form and THEN that's good for negociation and this kind of discussion but it depends on project context. It's hard to answer that.
+ 
+ 
+* concise 
+ 
+ > What about concise. Could a scenario description be concise?
+ 
+ Yes probably. I don't know.
+ 
+ > What could that mean, it means that have few steps?
+ 
+ Yes. Maybe. Easy to understand and short yes. 
+
+ 
+* understandable
+ 
+> Easy to understand is a little vague so that leads me to question the understandable word. What would be an understandable scenario?
+
+An understandable scenario for me is the one that's using the domain terms. Some kind of terminology and words that are understandable for those who are the target group of this scenario. It doesn't have to be understandable for everyone on the street but it has to be understandable by the stakeholders, by the team members and therefore should use the terminology and the words of this domain.
+
+
+* valuable
+
+> Would that be the same for valuable? It has to take into account the domain? Is that something the scenario description that tell us how valuable it is?
+
+I think the title of the scenario or the scenario description is the one which is probably giving some input further because it generally target some concrete usage point of the application. That could be a help for evaluating that. Of course, if you are in the project and if you are in the team, then probably you have other sources to evaluate that and together that would probably yes. That's good but for example the data being used on that scenario could serve as an indicator for that so if you are....let's say you have a scenario where your are trying to put 1000 books into your shopping card, that's probably so not interesting because that could be the people trying to put 1000 books in the shopping card but that couldn't provide any interest. From the security end, from the usability point of view this is important but from the business value point of view this is not really interesting. I rather focus on that users that are trying to buy a book or two. 
+
+
+
+* unambiguous
+
+> What about ambiguity? Could a scenario be ambiguous?
+
+Since this is english text that's always that but we try to make it less and less ambiguous. As I said they should use the language of the domain and normally this language is using some words that are somehow defined. Either we have a glossary on that or we had an agreement on meaning. Yes, it is. Something like that.
+
+
+* testable
+
+> What about testability? Could we reading a scenario description have a sense on how testable the scenario is? Would that make sense?
+
+I think it makes sense. Generaly you should phrase a scenario where it should be possible to make automation for that so it should be concrete and it shouldn't say some conditions which are definetely not reachable and it's impossible to get to that. That's no concrete example that comes to my mind now but sometimes you just do the scenario and say "It's impossible to make an automation for that". For example, if they are not following the real time. Let's say given that I ordered a pizza and given that this pizza was deleted yesterday then of course it's very hard to automate because when you are automate a given for pizza you dont what will happen afterwards so it's just changes the time of the execution, things like that makes the testing harder.
+
+> But it is something that would require a domain knowledge on how to automate things in my software...
+
+Wether is a domain knowledge or common sense yes but generally we work on this scenario with the entire team and this means that testers are part of this team and they can give the feedback for that. I am not so much focused on the technical automation but wether if we can click on a browser or not that's a detail but you can image how to write some recipe or algorithm that is for using what you wanted and that's the interesting point and for that you don't have to be a testing expert.
+
+
+* feasible
+
+> Would it require you to be an expert in your domain to define if a scenario is feasible or can we read a scenario and have that sense of feasibility?
+
+I think feasibility checking is definetely required in some kind expertise so you have to be expert in not necessarily in the problem domain but in the implementation domain so probably a developer can tell if this can be implemented or not by reading the scenario. Probabily a product owner will not be able to tell wether this can be implemented or not by reading the scenario.
+
+
+* prioritized
+
+> And the same problem of requiring an expert would be applicable to prioritizable?
+
+Yes, priorization is again depending on multiple aspects. One aspect is the implementation dependencies and business priorities. The product owner or business is providing the business priorities, the development team is providing the development dependencies and they should work together to define what the priority should be. Just looking at the scenario is probably not enough but they are good to guide this discussions.
+
+
+* small - few steps
+
+> Last of all, we have talked about how concise needs to have few steps or a sharp description, but what's the difference between that and a small scenario? Or would both words mean the same thing?
+
+Yes, for me is the same thing.
+
+> I will ask you again if you think they would be helpful or not? Do you think it is helpfull to have those kind of words.
+
+Yes. Yes.
+
+7) What could be their meaning for BDD?
+
+* estimable - ?
+* feasible - ?
+* negotiable - ?
+* prioritized - ?
+
+8) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ANOTHER feature file to evaluate in light of those attributes shown before (change\_settings.feature).
+
+> Ok. If you answer is yes I would ask you to come back to that github page and choose another feature file, a different one. Then we will try to use the words to evaluate it.
+
+OK. Donations. This is small. OK yes, how you want to do this?
+
+
+* concise - ?
+
+> Are those scenarios or is the first scenario concise?
+
+Yes it's on the bounderies. Probabily...
+
+> So concise is still has to do with the number of steps?
+
+Actually I mean it's not about the numbers but about the information that it contains. This scenario is also saying that I have a user that exists, which is not really interering, and signing as that user, not interesting. Actually what you need is that you should be able to sign in and that you should have a bitcoin address and that's hopefully important, I don't know. That you are going to the homepage, maybe the donation is only available in the home page. I don't know. Maybe then it would be important but I think for the how to you can get the info bar from the donate button, wether you click on that, or your click on the bar title, or you hover you mouse or you tap on that... it's not important for the scenario so I would just say that... I think this scenario has multiple problems, but I could just say..
+
+> It could be more concise?
+
+It could be more concise. Definitely, yes.
+
+
+* small - ?
+
+> Small is the same thing so I just skip it and not ask right?
+
+Yes.
+
+
+* testable - ?
+
+> Is it testable?
+
+Yes, probably. Looks like.
+
+> Looks like? Maybe because you have automated something like this in the past? 
+
+It's very logical order , even a monkey could probabibly click it through so yes.
+
+
+* understandable - ?
+
+> OK. Is it understandable enough?
+
+It is understandable but not easily yes.
+
+> Even with that .infobar?
+
+Yes, specially with the .infobar it is making less understandable. I mean I am a developer expert and I know about CSS so I can understand it but I can imagine that someone else would have more trouble. Even for it was hard to say that OK, hard to understable how this so that you are actually not clicking on the donate button but are going to bar title which I really don't know what it is so I am just taking guesses based on experience from other applications.
+
+
+* unambiguous - ?
+
+> OK. Would those be ambiguous in some way?
+
+No. I don't think so. This is not what comes to my mind.
+
+
+* valuable - ?
+
+> Would you tell if they are valuable or not just by reading them? Could you tell if they are valuable or not?
+
+I don't think I can tell. Based on description and about diplaying the bitcoin address I think this is an important information if someone wants to make a donation. I don't know how. That would be a discussion we would had to have with the team.
+
+> Maybe the scenario titles could be better and more expressive to help on that?
+
+Yes. Absolutely. The first one it looks like it's showing the bitcoin address but it is actually bitcoin dontaion which is not really good.
+
+9) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+> In a scale from 1 to 5 how helpfull was that list in evaluating BDD scenarios? 1 being not at all and 5 being great.
+
+I'd say 4.
+
+10) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+> Despite the one that you have told me that are not applicable for BDD what was the most difficult one to use?
+
+From what?
+
+> From the list on the chat window?
+
+For me I think the estimable and the prioritizable are the least interesting for BDD. And those valuable is tipically.. it something that was already decided at this point. At this point we are not talking about valuability anymore. We only makes scenarios for things that are valuable. 
+
+
+11) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized - use of tags
+* small
+* testable
+* understandable
+* unambiguous
+* valuable - tags
+
+> I am reviewing your criteria now because the next question is: how would you map your own criteria, in that I would read in the notes I took here, into those words? I mean the feature description that's fine as well as in the other scenario, in the other feature file. If it was lacking what would be the word that would be hurt, what would be the word that is missing if there's not feature description in that file?
+
+if there's not feature description? I have no problem with feature files having no feature description. Feature description is just some additional story or background information which is not formalized which is not formulated into scenario. I don't need that.
+
+> Good. We talked about the keywords and you also said about then. We came up with the focused or focusness word. The lack of technical detail or the use of business language should make the things more understable. Parameters between codes and tables are OK, so their use should not hurt anything.
+
+Yes.
+
+> The order of the steps, if missing, would hurt understable as well
+
+Yes.
+
+
+12) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+> The lack of WHEN keywords and they are just using GIVEN and THEN. Would that hurt any of those words? That lack of WHENS or bad use of the keywords. The question is more: knowing that we don't have the right order of the keywords or there are some keywords missings, what would be the words in that list of the attributes that we get, what would be hurt, what would be lacking?
+
+
+* focusness
+
+From this list is probabibly the understability which is hurt the more but not from this list but otherwise I would say that it just hurts the focusness on this scenario.
+
+> This focusness... would that be the same of concise? Or if not, what would be the difference between them?
+
+Yes, it's hard to say. For me concise means it doesn't contain unnecessary things and focus means it directs my attention to a particular topic. It's not the same.
+
+> If it is short enough and to the point but it is not appealing it shouldn't be focused?
+
+Yes, as I said if there's no good separation of the GIVEN WHEN THEN or the pre-condition, and the action and the post-condition I don't what you want to talk about it on this scenario or what is just a pre-condition of that.
+
+> That's a nice keywords. Focusness, I will probabibly add it to the list. 
+
+>Despite focusness, is there any criteria you miss in this list?
+
+Let me check my own list, give me a second.
+
+> Is this list public? Your own list?
+
+This is what I am using in my courses. I had something like concrete, essential, focused, interesting, declarative and ubicuous. That's my list. Some of them are somehow mapping to this so... concrete I am using as unambiguous. Essential is concise. Focused we discussed. Interesting is easily understable topic.
+
+
+* Declarative
+
+Declarative is focusing on the problem, not the solution. It is declaring what you have and not solving it. This doesn't have a direct match in your list. Ubicious, this is the unambiguous and understable basically.
+
+> So declarative would it be more understable if we use the declaritive way of writing or even understable and concise? Or is that something really really separate?
+
+Understandability and concise together... In my description I am saying that examples are that declares what the user is trying to achieve are easier to understable and mantain then those that describes imperative what the user does. It's understability topic for sure, I just have it in my list because this is a typically a problem that people have when writing scripts.
+
+> Like a task list.
+
+Yes
+
+
+13) General remarks about the quality criteria BDD scenario subject
+
+> Good. I am out of questions. Do you have any other general remark about this whole topic of BDD scenarios quality?
+
+Generaly what I learned and I also teach is that there's no perfect scenario. The goal should be good enough and it should be definetely be a team exercise and not a single person writing the scenarios, or at least they have to do it in pairs or in smaller groups so you can have better concensus about the scenarios. Generaly BDD projects they should be under concensus so if they are using this wayu then it should be used always that way whitin the same project.
+
+> Something like: have a standard way of writing things?
+
+Yes.
+
+> And wouldn't that be another criteria?
+
+It's not for a single scenario. It would be for all the scenarios.
+
+> Thank you 

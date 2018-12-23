@@ -1,0 +1,910 @@
+
+Github pink #d73a49 (size 8) black #24292e/rgb(36, 41, 46) (size 9) or blue #032f62 -- all Consolas font in mspaint
+
+### Missing: P13 (TBD Fe), P16
+
+### Done: P1, P2, P3, P4, P12, P14, P5, P6, P7, P8, P9, P10, P11, P15, P17, P18
+
+### Patterns:
+
+Actor consistency (all 3rd person, all 1st person) => P17 (GOOD, understandable), P18 (GOOD, valuable)
+
+Background => P2 (GOOD, concise, understandable), P4 (GOOD, concise, understandable), P17 (GOOD, concise, understandable), P18 (GOOD, concise)
+
+Ubiquitous (business language, language consistency) => P1 (GOOD, understandable), P2 (GOOD, understandable, unambiguous), P3 (GOOD, unambiguous, understandable), P3 (BAD, estimable), P4 (GOOD, concise), P5 (GOOD, understandable), P6 (GOOD, understandable), P7 (GOOD, understandable), P8 (GOOD, understandable, unambiguous), P9 (GOOD, understandable), P11 (GOOD, concise, understandable, unambiguous), P13 (GOOD, unambiguous), P15 (GOOD, understandable), P18 (GOOD, testable)
+
+Ubiquituous => P7 (understandable?), P8 (understandable, unambiguous)
+
+Data Tables => P1 (BAD, concise), P3 (GOOD, concise, understandable), P14 (GOOD, testable, unambiguous), P7 (BAD, understandable), P11 (GOOD, concise), P13 (GOOD, ??), P15 (BAD, valuable), P17 (GOOD, concise, understandable), P18 (GOOD, concise, understandable)
+
+Declarative writing (test intention?) => P1 (GOOD, testable), P2 (GOOD, testable), P14 (GOOD, understandable, unambiguous), P5 (GOOD, testable), P7 (GOOD, understandable), P8 (GOOD, concise, understandable), P9 (GOOD, understandable), P15 (GOOD, understandable, unambiguous), P16 (BAD, testable, understandable, valuable) P17 (GOOD, concise), P18 (GOOD, testable, unambiguous)
+
+Double quotes parameters => P2 (BAD, understandable), P3 (BAD, ??), P17 (GOOD, concise, testable, understandable), 
+
+First person descriptions => P12 (GOOD, ??)
+
+Imperative writing => P1 (BAD, testable), P7 (BAD, understandable), P8 (GOOD, testable), P12 (GOOD, estimable), P13 (BAD, testable), P14 (GOOD, testable), P15 (BAD, understandable, unambiguous), P16 (GOOD, valuable, testable, understandable), P17 (BAD, concise), P18 (BAD, testable, unambiguous)
+
+Lengthy statements => P1 (BAD, small), P3 (BAD, concise, small), P4 (BAD, small), P5 (BAD, concise), P7 (BAD, concise), P9 (BAD, concise), P10 (BAD, small), P17 (GOOD, concise, 120 chars)
+
+Many steps => P1 (BAD, small, 4 or 5), P2 (BAD, concise), P3 (BAD, small, unambiguous, concise, valuable), P4 (BAD, small), P14 (BAD, understandable), P5 (BAD, small), P6 (BAD, concise), P7 (BAD, concise), P8 (BAD, concise), P9 (BAD, concise), P10 (BAD, small), P11 (BAD, small), P13 (BAD, small), P15 (BAD, concise), P17 (BAD, concise), P18 (BAD, concise, testable), 
+
+Missing keyword => P17 (GOOD, testable)
+
+Repeated steps => P12 (BAD, unambiguous), P4 (BAD, concise, unambiguous, testable, understandable), P14 (BAD, concise), P5 (BAD, testable), P6 (BAD, testable), P7 (BAD, concise, understandable, unambiguous), P8 (BAD, concise), P9 (BAD, testable), P11 (BAD, unambiguous)
+
+Scenario Outline - Examples => P1 (GOOD, unambiguous), P17 (GOOD, concise, testable - unique only, understandable - unique only), P18 (GOOD, concise, understandable)
+
+Scenario order on file  => P1 (GOOD, valuable)
+
+Scenario title reflect When => P9 (GOOD, understandable), P17 (GOOD, ??)
+
+Scenario title reflect Then => P2 (GOOD, testable), P12 (GOOD, concise), P11 (GOOD, ?), P15 (GOOD, testable)
+
+Scenario title reflect When and Then => P18 (GOOD, testable)
+
+Scenarios that test the same (?) => P1 (BAD, unambiguous)
+
+Steps integrity (Given are pre-conditions, When are actions, Then are outcomes) => P17 (GOOD, testable)
+
+Steps variation (When/Then/When/Then) => P2 (BAD, concise, understandable, testable), P3 (BAD, concise, valuable, unambiguous), P4 (BAD, understandable), P14 (BAD, concise, unambiguous), P5 (BAD, testable), P6 (BAD, small), P7 (BAD, testable), P8 (BAD, concise, understandable), P9 (BAD, understandable), P10 (BAD, understandable), P17 (BAD, understandable, unambiguous), P18 (BAD, concise, testable, understandable, valuable)
+
+Tags => P1 (GOOD, valuable), P2 (BAD, understandable), P3 (GOOD, prioritized, understandable, unambiguous, valuable), P4 (GOOD, valuable), P12 (GOOD, ??), P13 (GOOD, ??), P14 (GOOD, valuable), P11 (GOOD, ?), P17 (GOOD, prioritized, valuable), P18 (GOOD, prioritized)
+
+Techninical jargon => P1 (BAD, understandable), P2 (BAD, understandable, unambiguous, concise), P3 (BAD, ?), P12 (GOOD, ??), P14 (BAD, understandable), P5 (BAD, understandable), P6 (BAD, understandable), P7 (BAD, valuable), P8 (BAD, understandable), P9 (BAD, understandable), P10 (BAD, testable, small, concise, understandable), P11 (BAD, understandable), P15 (BAD, understandable), P17 (BAD, understandable), P18 (BAD, testable), P18 (GOOD, unambiguous)
+
+Tenses (Given in the past, When on the present, Then on the future) => P1 (GOOD, ?), P9 (GOOD, ?), P17 (GOOD, understandable)
+
+Third person descriptions (Personas/Role) => P2 (GOOD, understandable), P14 (GOOD, valubale), P6 (GOOD, unambiguous), P7 (GOOD, understandable), P9 (GOOD, ??), P17 (GOOD, understandable), P18 (GOOD, valuable)
+
+US on Feature Description => P4 (GOOD, understandable), P7 (GOOD, valuable), P11 (GOOD, ?), P13 (GOOD, ??), P14 (GOOD, understandable), P17 (GOOD, ?)
+
+Weak Words => P2 (BAD, unambiguous), P3 (BAD, unambiguous)
+
+### Attributes
+    Concise
+        P1 - Clear - it means that you need to write clear steps and you need to be sure that everybody has the same understanding so it's really clear and there's hard to read it differently. About change settings feature - I can see there are some class in the middle of the 2nd and the 4th scenarios, which is not good as well, because it's not concise - it's not clear. It's using technical jargon in this scenario that should be just a business part. 
+        P2 - Number of steps - I don't like overly long scenarios as the longer they are the most likely they contain implementation details. Mainly a result of exposing to many implementation details that, for me, is a very bad practice. For example, on line 32 (And I click on selector "#poll\_creator") that's a big "no-no" for me
+        P3 - Clearly explained,  short and brief, should not be  elaborated and it should not  have too much detail
+        P4 - Concise is more "to the point", I think a scenario could be small and not "to the point" while concise would definitely be. 
+        P5 - it should be specific without giving way too much detail. No steps longer than they should.
+        P6 - brief and comprehensive, that's what the internet tells me on concise. Yeah, just be brief, sound good. if I remove this line, will it actually change the implementation and the outcome? what can I remove without changing the meaning that would make it understandable? Still, be correct and comprehensive. 
+        P7 - it should be small but what really is small? It all depend. As a rule of thumb you could say don't use more than 6 or 7 lines in one scenario. That can help. It shouldn't be something that is wrong but usually what I see is that you don't want to use more than 2 GIVENS, only 1 WHEN, that's a rule, and then 2 THENS, maybe even 1 because you want to check one thing.
+        P8 - it doesn't contain unnecessary things - essential
+        P9 - Something clear, tight and unambiguous, so maybe includes more than small. long step definitions, long steps, things that take a long time to read and understand. You might have 3 steps but they're long and complicated. So they could probably be split up. So concise means very short steps that are easier to read. 
+        P10 - Scenario without irrelevant details. Some details are important, some should be there, some are important, and if you remove them some things will be scarce anyway. So, if you give me something with lots of details but there's only one or two that is actually important, then you just confuse me. Concise, must mean that anything irrelevant has been removed. Focused and concise isn't that focused and concise are pretty much the same.
+        P11 - Concise I think means it's crispy, it's very clear, and ahn, the way the language is written is very concise you know, you only have the necessary details on your steps, you don't have incidental words, which are not really relevant to that scenario, I think, so that is what concise means.        
+        P12 - Specific Focus, not involve other features. I know it's concise because it won't lose focus.
+        P14 - Straight to the point, no unnecessary details. That doesn't stall, like those who are very long and want to explain many things, it doesn't need to be very long, trying to explain point-by-point, it can be more direct.
+        P13
+        
+        coherence with feature file, 
+        clarity, clean, objective, focused
+        
+        P15 - change\_settings.feature, "Change my email preferences" I got "When I uncheck something, And I press something else, Then I should see something, When I have something else" that's testing a whole bunch of things. So, for me, if I come back, is that concise? No, cause it's testing a whole bunch of different things, it's long, it's boring, I don't care.
+        P16 - each step has value, each step is necessary
+        P17 - when you say concise the implication of the word concise is that it's upon the text itself and the lenght of the scenario. When you say you have concise steps that means that the steps themselves are short in length and descriptive, and precisely descriptive, right, that are no wasted words. And when you talk about a concise scenario that means to me that the number of lines are not to long and again there are no wasted lines, every line has a significant meaning and it says what it needs to say and it's short, sweet to the point fashion.
+        P18 - Contain all information that is needed to perform that action, compact, focused - so the behavior itself could be very complex, but the scenario that covers the behavior should nevertheless be concise. when you say concise the implication of the word concise is that it's upon the text itself and the lenght of the scenario. When you say you have concise steps that means that the steps themselves are short in length and descriptive, and precisely descriptive, right, that are no wasted words. And when you talk about a concise scenario that means to me that the number of lines are not to long and again there are no wasted lines, every line has a significant meaning and it says what it needs to say and it's short, sweet to the point fashion.
+    Small
+        P1 - Number of steps - a small scenario is one with few steps - No, they're really big scenarios (change_settings.feature), only the last one is small because there are only 3 steps. The others have more than 5 steps.
+
+        P2 - roughly the same as concise
+
+        P3 - Modular - it's both. The statements and the steps is both. if two scenarios depends on each other they're not modular
+        
+        No, concise and small should not be the same. I mean, my understanding of concise is, it should not be elaborated and it should not have too much detail. It should be brief, self explanatory and something. Those statements are very short but not really clear, they're missing a lot of information I'd say. Maybe I'd say it's not even concise, if you think clear is concise.
+        
+        > When we say small what we are saying is that the number of steps is a good number? Or should we say the statements size are short enough?
+        
+        Actually it's both. The statements and the steps is both. Here I can see the statements are small but some scenarios are a bit lenghty.
+        
+        P4 - Number of steps
+        
+        Concise is more "to the point", I think a scenario could be small and not "to the point" while concise would definitely be. 
+        
+        P5 - each test should test one thing. I usually use the word atomic
+        
+        Small, like we said, each test should test one thing. I usually use the word atomic, but I'm not sure if this is the correct word but, you know, it should do one thing.
+        
+        > Do you think those scenarios are small?
+
+        Some them are small but some of them are quite lenghty.
+
+        > Because of the number of steps or because of the words on the statements?
+
+        Because of the number of steps. So it's like I said before, it's like a manual tester wrote down I do this, I do this, I do this, than it happens.
+        
+        P6 - Atomic, describe one thing
+        
+        I'd change small into atomic. Atomic I'd mean describes only one thing. 
+        
+        P7 - same as concise
+        
+        P8 - same as concise
+        
+        P9 - included in concise
+        
+        P10 - if it's longer than 4 lines it's possible not small, if it's wider than the example I looked, some were very very wide, some I would break in some point. If I need a lot of words to express this specific example, it's certainly not small. And if you need lots of lines to do the same thing, it's probably not small.
+        
+        P11 - Number of lines
+        
+        So a small scenario would have typically the ideal number of steps which is 5 or 6, which is not testing a bunch of things, which is testing one scenario really, has a small number of steps, that's what I think it means.
+        
+        P12 - NOT NEEDED
+        
+        small depends... it has to follow the concept of ready, definition of done, of that case. If it's small, nice, but if not it has to be big.
+        
+        P13 - Number of Steps
+        
+        P14 - Number of Steps
+        
+        > E um cenario pequeno seria avaliado pelo numero de steps?
+
+        Mais ou menos. Deixa eu pensar... se eu tiver um cenario de 3 ou 2 linhas ate, as vezes ele pode nao me dizer nada, entao um cenario pequeno nao imprime qualidade. E cara, nao consigo organizar a ideia
+
+        > Mas ja e algo a se pensar, o quao pequeno ele ta, como reduzir o numero de steps, e se equilibra com conciso pra nao deixar nada em aberto, talvez
+        
+        P15 - NO
+        
+        > So concise should be the same as small?
+
+        Absolutely, as I'm saying is, there are good rules of thumb for a good scenario but there are always exceptions to the rule.
+        
+        P16 - Code step small
+        
+        A scenario can't be neither small or big, It has to have enough steps, and well described and it's good already
+        
+        I see small a little differently, I see small as in the implementation part of that step, 
+        
+        P17 - NO
+        
+        small could refer more broadly to the behavior itself, and that's why I was hesitant to use the word small, because behaviors themselves may not be small behaviors, they may be very big behaviors they may be very complex behaviors. When you use the word small about the text of the scenarios, I'm ok with that, if we're going to say behaviors themselves must be small, in scope or size or complexity, that I might disagree with, because even large complex behaviors can still have concise scenarios in the text
+        
+        P18 - NOT NEEDED
+        
+        Small in pretty much all the agile teams I worked doesn't say so much about the requirement but about the develiverable, in other words, we pick up a piece of work that me can manage and not a big piece of work that is risky to do. And that's how I understand it. Small refers more to the small of the feature and not so much the scenario text, if it makes sense
+
+        > So it doesn't make sense to use them into BDD scenarios
+
+        I'd use them in a broader context, not for BDD scenarios themselves
+        
+    Testable
+        P1 - it should be clear, something easy to understand so you can follow the steps.
+        
+        For a scenario to be testable it should be clear, something easy to understand so you can follow the steps. Most of the times, the steps on the scenarios we create are quite generic, non-technical ones -- there's no "click here" or "click there", it's more like to understand what is about the scenario and what are the expectations around the scenario. When you get the knowledge of the implementation as well you don't need to have the guide, actually, because you'd already know what this step mean so there's no need to have those imperative commands. So in order to decide if it's testable you would have to know the description and the implementation of it - the step code. 
+        
+        P2 - scenario's intended behavior, or what you're trying to verify, should be clearly expressed in the scenario. 
+        
+        P3 - NO can't see it on scenarios
+        
+        P4 - If it has a clear output, if it has only one Then statement. The one that we looked up [profile\_photos.feature] that had multiple Then statements that would concern me regarding the testability.
+        
+        P5 - to give you focus, to test one thing.
+        
+        where the Given/When/Then helps, to give you focus, to test one thing. And also, not go Given/When/Then/When/Then/When/Then. Because then you're writing a novel, not a scenario. Given this and this, And this, And this, And this...then maybe you're doing something that is not easily testable because it have too many pre-conditions. So we would say Given this and this, And And And And And, When, And And And And, Then, And And And. What are we testing now? Or maybe we are trying to do too much at once?
+        
+        P6 - Given too complex or vague (many dependencies)
+        
+         If your Given conditions are overly complex or very vague then stuff becomes hard to test, that's mostly because the setup for a test is overly complex. And if the setup is overly complex than it means your software architecture is overly complex.
+        
+        P7 - NO - Testable is more about how the system is built.
+        
+        P8 - NO - Possible to automate, domain knowledge
+        
+        P9 - Clear what you need to test, what are the assertions (Then)
+        
+        If it's clear what you need to test, what are the assertions you need to make. So you need, says that you need to assert that such and such account has such and such balance. So it has to be a clear indication of what it is you're asserting, and people I suppose would have to know how they would assert this in practice.
+        
+        P10 - NO - depends how a system is implemented actually, fragile tests hurts testability (thus the use of technical details). Clear Thens and Givens
+        
+        P11 - NO - product characteristic
+        
+        P12 - Able to manually execute scenario.  Tests cover all feature.
+        
+        Testavel, eu vou de cima abaixo eu consigo testar cada passo que ele ta me dizendo aqui, eu consigo verificar se o sistema atende a cada passo, passo por passo
+
+        P13 - product characteristic
+        P14 - can be manually executable, has to be a test case
+        P15 - Then step gotta be an outcome you can verify. So the Then step has to be something that can fail.
+        
+        P16 - as auto-sufficient as it can, idependence of scenarios, 
+        
+        P17 - Focused, independent behaviors 
+        
+        (likes.feature, last one)
+        
+        It's testable because when I look at these steps, as a manual tester who would have to run them myself or as a test automator engineer who would have to automate that, it's, ahn, it's pretty clear what I have to do.
+        
+        > Is any of them not testable?
+
+        Ahn, let me take a look here... none are these are not testable, but because as we can see the two steps above on line 16 and line 28, we can tell very quickly that each of these scenarios should be split into 2, and so we can still run then as tests, but when it comes as test report it would not be as nice, so it probably weaken the score for testability
+        
+        > if one scenario depend on another, what word would be impacted?
+
+        Testable. Because if you have interdependent scenarios, that means the problem on one scenario might affect the other. So run one scenario and that should be ok, run it right after the other and it may ruin everything. So, absolutely testable.
+        
+        P18 - test intention should be clear, Need to know the system
+        
+        Testable means every time I follow this steps and I'll verify the same behavior. That every time I follow, I setup this scenario and know I'll get the same results. For something to be testable I understand what it is, it's realistic or feasible, it's a, ahn, I can understand exactly how it can be done every time
+        
+        To decide that something is testable I would know, I would need to know what the system is actually capable of doing. And in that sense yeah I would need some knowledge on what I'd have to do.
+        
+    Understandable
+        P1 - NO, - "as I believe that a scenario to be understandable it need to be small, so I put small"
+        
+        P2 - "they should be as close as human language as possible, without any implementation details that make it less readable."
+        
+        post\_with\_a\_pool.feature, line 32
+        
+        P3 - Same as understandable "if you're valuing understanding".
+        
+        P4 - ??
+        
+        > Is there something that makes the scenario less or more understandable
+
+            Yeah, I would probably rate the number of Ands in the understandable line. If there are many Ands than it makes it probably harder to understand. Many When/Thens, comparing like the first two we look at (on profile\_photos.feature), only had scenario when this and this than this. So this is very, a few lines, with when and then and a few Ands they're more understandable than the long ones with alternating When/Thens
+        
+        P5 - Ubiquitous
+        
+        To make sure to use the right words in your business domain, so people in your domain understand it. Make sure to, on the other hand, not use a particular jargon with HTTP code, that someone may not be familiar with, so that's a bit of balance I guess.
+        
+        Clarity, as if you're being too vague, if there's too much room for error, than it would mean something different than I do.
+        
+        P6 - Ubiquitous
+        
+        It would mostly be a problem with understandable - let's say by understandable you imply that it must be understood by everyone involved. And ahn, when I look at the likes.feature, with the CSS elements, that's not understandable by everybody involved. That's not how a feature file should be build on my not so humble opinion.
+        
+        P7 - Intention, "to the point"
+        
+        Keep it small. It depends on the domain language of course but yes, try to really get your intention out in the scenario and any details should be followed up in the code if you need it. It shouldn't be to vague of course, it should really make a point.
+        
+        P8 - Ubiquitous
+        
+        An understandable scenario for me is the one that's using the domain terms. Some kind of terminology and words that are understandable for those who are the target group of this scenario. It doesn't have to be understandable for everyone on the street but it has to be understandable by the stakeholders, by the team members and therefore should use the terminology and the words of this domain.
+        
+        P9 - Ubiquitous
+        
+        If the chosen language is English, but scenarios can be written in any language, it should be English that is grammatically correct. That it makes sense in terms of the system that is being built. 
+
+        > And it's supposed to be written into the business language?
+
+        Yeah, uses the business terminology.
+        
+        P10 - Ubiquitous - Using concrete details - use the same words as business use and turns out you get something that we all understand what you mean and we talk about the same thing, focused
+        
+        Correct details. Concrete details.
+
+        > And the fact that is written in the business language would also be something to add here?
+
+        Probably. Ahn, uhn, it kind of depends a little bit, but if you have concrete details you are able to use the same words as business use and turns out you get something that we all understand what you mean and we talk about the same thing. And therefore it's not ambiguous anymore, as we used a common language, but the things...
+
+        P11 - Ubiquitous
+
+        I think understandable is quite related to a term we use which is called ubiquitous, I think I've used this term in my message to you. What that means is that you basically come up with a terminology which is ubiquitous. What that mean is that all your project team members they are aware of that terminology, and you don't use that terminology where is too technical or business focused alone. It's a terminology that both your technical and business people understand and it is specific to your domain, So, if you do that, all of the scenarios they will be understandable, they will be easy to understand, for everyone, irrespective of their background. And I think that is what it would mean.
+        
+        P12 - technical team knows what to do
+        
+        I read and have no questions on what am I suppose to do. It should have a specific focus, it should take into consideration environment details and business details
+        
+        P13 - == testable
+        
+        P14 - Easy words, straight speech
+        
+        P15 - Understandable is, ahn, everyone who needs to read it is familiar with the terminology within it, so it should use an ubiquitous language. So I think, one of the things I think it's important is you should have a glossary, and the terms in your glossary should be on your scenario
+        
+        P16 - technical team knows what to do
+        
+        it becomes understandable if it's technical, if it has a low granularity on an imperative format with specific steps
+        
+        P17 - Good english, steps pertinent to the behavior
+        
+        Good english of course, this is the bare bone to it be understandable
+
+        > Good english as in the use of right tenses?
+
+        Yes, proper grammar, proper tenses, proper point of view
+
+        > Ahn so tenses and third person
+
+        Yeah, all those kind of practices would make it understandable. Also, apart from the language itself, for it to be one behavior per scenario, because as we saw in that scenario before, there were unnecessary steps in there. That makes it confusing for somebody who is not familiar with that behavior, because, it could be misleading which would be the desired focus in any scenario. So make sure that your steps are pertinent for the behavior.
+        
+        P18 - mean who someone, that has never seen it before, reads the scenario and knows "ok, this is what a user is able to do", so it is self contained, includes all the information needed.
+        
+        
+    Unambiguous
+        P1 - when you have two scenarios that are testing the same thing in the end. 
+        
+        I think it's when you have two scenarios that are testing the same thing in the end. So for example if you need to test if the connection of the USB on your tablet is working you'd need to be sure the tablet is working, even if the connection is not. So the USB could be broken or the port of the USB could be broken - in the end, you're testing the same thing, because from the testing standpoint of view you are just checking if the tablet will behavior the same if you don't have this USB connection.
+        
+        P2 - A scenario containing vague statements like "then the outcome is ok" or " then the result is good"
+        
+        P3 - scenarios doing same thing and  written in different ways
+        
+        I can take two scenarios in the same feature that are doing the same thing and are written in completely different sentences. So, to make my job easy, to develop the code, I try to generalize those statements who perform the same activity but doesn't have ambiguity.
+        
+        P4 - weak words usage - definitely, weak words will add to the ambitiousness, what we are aiming if for something that is not ambiguous. So "When we see the change in the GUI" makes it ambiguous.
+        
+        P5 - Clarity - because it should be clear what you're doing
+        
+        > And understandable means clarity?
+
+        Also, yes. If you're being too vague, if there's too much room for error, than it would mean something different than I do.
+
+        > But if you're being too vague, aren't you being ambiguous? And then clarity would mean unambiguous?
+        
+        As concise, understandable, unambiguous, all speak to being specific about what you're doing and not leaving too much room for interpretation.
+        
+        P6, completeness as part of ambiguous, clear entities usage (3rd person)
+        
+        Atomic?
+        
+        P7 - Single intention (1 When step)
+        
+        P8 - ubiquitous
+        
+        P9 - in balance with concise, "needs to be a balance, because the less ambiguous they're, the more complicated they might need to look"
+        
+        P10 - == ubiquitous
+        
+        P11 - Single intention (1 When step), no "or" (weak words)
+        
+        "Then I should see my first name or my last name". This is a bit ambiguous, because you need to be validating for one thing only, it's not clear whether, what exactly you're going to see, even your action, it can, if in your action yourself you say "or" like "When I submit the form or I do this Then this should happen" then again it's confusing, because you're not performing an specific action, it's not clear which action you're performing actually.
+        
+        P12 - One step contradicts the other, one step repeat itself
+        
+        P13 - ubiquitous
+        
+        eu acredito muito em linguagem ubiqua né? Um cenário que não tenha essa linguagem, que é totalmente fora do contexto do cliente, do contexto do projeto, do contexto do que o time ta falando é algo que na minha opinião não tem ubiquidade.
+        
+        P14 - Weak Words, a scenario that is not clear enough, can generate two results, give room for interpretation
+        
+        P15 - Intent should be clear
+        
+        so the actions itself are unambiguous but the intent is completely totally missing.
+
+        > So intent should be there, and that's the ambiguity we are talking about
+
+        Absolutely
+        
+        P16 - high granularity, generic steps hide complex behaviors
+        
+        P17 - one behavior one action, focused
+        
+        when you say ambiguous, the number 1 things is the one behavior one scenario. If you have more than one behavior covered by the same scenario, than that scenarios is ambiguous. If you laser focus one behavior one scenario you know exactly what this scenario is covering, and that makes it less ambiguous, and that's what we are doing
+        
+        P18 - ubiquitous (vocabulary consistency), weak words (correctly)
+        
+    Valuable
+        P1 - Happy Path, MVP - When we create scenarios when we do the regression tests, we create the scenarios that has more value for the implementation part - like the happy path of a feature, as we need to be sure it's there as this is what is expected to work because this is our main deliverable.
+
+        P2 - NO - Business value - the BDD scenarios themselves, having those, not sure what add, those scenarios are a communication tool, so the communication and acting up on the misunderstandings that's what's valuable and I don't know whether this makes the scenarios automatically valuable themselves.
+
+        P3 - NO - Documentation - I explained to you that why BDD is important, what value it brings to me is the documentation.
+        
+        P4 - Same as Unambiguous, "the value part would be unambiguous to me without additional elaboration on what's a valuable scenario description".
+        
+        P5 - NO, covered on conversations - what is worthy testing and what's not worthy testing. Those are the things that I discuss with both business analists and with the developers because I might think that hey, this could go wrong, is that something that should be tested and either yeah, it could go wrong and the probability is low so never mind or that could never happen for technical reasons, so never mind.
+        
+        P6 - Unique - Valuable makes sense because you have to think of a scenario - is this scenario going to add value to whatever we are doing? Valuable goes over one scenario, and if someone is adding something where they think actually it has little value, and they think about it because the keyword is here and that's fine.
+        
+        P7 - Same as understandable, business value by showing the intention and being understandable
+
+        P8 - NO, covered on conversations. Valuable comes from discussions with the team. "We only makes scenarios for things that are valuable".
+        
+        you have a scenario where your are trying to put 1000 books into your shopping card, that's probably so not interesting because that could be the people trying to put 1000 books in the shopping card but that couldn't provide any interest. From the security end, from the usability point of view this is important but from the business value point of view this is not really interesting. I rather focus on that users that are trying to buy a book or two. 
+
+        P9 - NO, they [all not in Concise, small, understandable, unambiguous] are more to do with Scrum and Agile rather then BDD scenarios.
+        
+        P10 - Unique
+        
+        Valuable if we are talking about something that is not covered previously. It's not valuable if we verify that we can do the same thing multiple times. We can search for different books, different titles, we can buy them if we are talking about an e-commerce site, but it's not so valuable to verify that we can buy multiple different titles, it's enough to verify if we can buy one or maybe two, but do the same thing again doesn't bring us value, it's just more of the same.
+
+        > So if we are reading a lot of scenarios together, the value of each one of them is affected by how this, how unique this one is?
+
+        Yes, I think uniqueness is a point here. A scenario that isn't unique because we have done it already it's not really valuable. It doesn't bring us anything new to the system. We don't get this new thing to work, we don't find a new behavior that we are interested in.
+                
+        P11 - Business Value, Uniqueness
+        
+        So valuable is, it is more for the business users really. So when you're discussing things and business rules on your example mapping section, your business owner may or may not be interested into a particular example. So I think it's valuable if the business user thinks it would bring value, it's important to test that scenario, it's important to make sure that particular rule is met. So, valuable, value it means business value, whether the business see it as a value or not.
+
+        So I think you'd get some context about this on your example mapping yourself when anyone comes up with an example and business person says "I don't care" or "yeah that's good, let's think about that" and you get an idea from there. Another example could be if you're basically testing the same scenario with different values, all having the same outcome, those scenarios are not really valuable from a business perspective because it has already being met with one value, why the hell do you want to cover it with so many values. If you still want to do as a developers just for your piece of mind, you know, move that at the unit testing level. So, that also could be interpreted by the by the word valuable.
+        
+        > Yeah, you have mentioned something about it doesn't make sense to test in a feature file that particular rule, because some variations and bad flows should be covered on the lower levels
+
+        That falls under valuable. If it's not valuable enough for the business then it should not be included in the feature file. It can go to a lower level, which is your unit test.
+
+        > Do you think uniqueness is a better word then valuable? Each scenario should be unique?
+
+        Mmm no, valuable is like an umbrella which would cover a few things, uniqueness being one of them.
+
+        P12 - NO, based on business knowledge about a feature
+
+        P13 - NO, based on business knowledge about a feature
+        
+        Acredito que eu estaria dentro de um contexto então eu deveria estar entendendo o negócio do cliente. 
+        
+        > Então vamos voltar o valioso. Como é que você identifica o quão valioso um cenário é lendo a descrição dele?
+
+        Eu precisaria do contexto do negócio do projeto
+
+        > Então você precisaria de um conhecimento de domínio que não ta ali no cenário.
+
+        Cara poderia estar, mas eu precisaria...um conhecimento de domínio é X, Y, Z e eu conseguia verificar se aqueles steps estão coerentes com isso.
+        
+        P14 - important scenarios for the feature, using important actor or "buying" customers. Requires domain knowledge
+        
+        P15 - Unique
+        
+        So value to me is interesting - is it testing something fundamentally different to the other scenarios. So we haven't talked about example tables, personally I think they are generally misused and often a code smell. Because they lead people time to test combinatorial testing, the test of all permutations of a particular situation. That's not what BDD is for - BDD is to tell you "What" you're gonna do and you have all other tests to show you that you build it right.
+        
+        P16 - Value for technical team
+
+        P17 - Defined on conversations?
+        
+        The value of the scenario is really on the value of the behavior, how important is this behavior for my team, how important is this behavior for the feature.
+
+        So, if you have very core critical that you're covering, those scenarios that you write are going to be more valuable than fringe behaviors, right, value could also be expressed by tags, like priority
+                
+        P18 - Unique, Complete
+        
+        More valuable...ideally all the previous points, it provides useful information you can verify, it's covering a feature, probably it's important to note it's less valuable, for example to be valuable it have to represent what the system does and not what it doesn't, it's an easy trap to fall in, sometimes people would say "the user cannot do this" and unless we explicitly moduled it into the system it maybe "ok, why we are doing that".
+
+        Then another thing is, it shouldn't be repetitive, if you're having multiple scenarios and they're testing the same behavior,
+        they're redundant. It's valuable if you have one, that cover it, and that's it
+        
+        So, you mean if it's complete? Ahhhn, well complete maybe not so much for the scenario level what you're saying is probably to the feature level so I think that's, that you're right there, in the feature level it should be valuable and complete falls into valuable maybe
+    
+    Missing Ones -  Estimable/Negotiable/Feasible/Feasible
+
+    P1 - Estimable (depends on technical implementation), Negotiable (NO), Feasible (related with estimable), Prioritized (PO defines it), 
+
+    P2 - Estimable (NO), Negotiable (maybe on the feature level), Feasible (maybe on the feature level), Prioritized (feature level)
+
+    P3 - Estimable (depends on domain knowledge), Negotiable (conversations), Feasible (conversations, depends on domain knowledge), Prioritized (feature level)
+
+    P4 - Estimable(NO), Negotiable(NO), Feasible (if we can articulate a scenario, it's feasible), Prioritized (NO)
+
+    P5 - Estimable(need technical knowledge about system), Negotiable(conversations), Feasible (everything is feasible), Prioritized (if it's not worthy doing then don't do it)
+
+    P6 - Estimable(depends on technical implementation), Negotiable(everything is negotiable), Feasible(depends on technical implementation), Prioritized (always with multiple scenarios)
+
+    P7 - Estimable(NO), Negotiable(definition of ready, conversations), Feasible(conversations), Prioritized (conversations)
+
+    P8 - Estimable(NO), Negotiable(NO), Feasible(depends on technical implementation), Prioritized (depends on technical implementation, business priority)
+
+    P9 - Estimable(NO), Negotiable(NO), Feasible(NO), Prioritized (NO)
+
+    P10 - Estimable(depends on technical implementation), Negotiable(NO), Feasible(depends on technical implementation), Prioritized (NO)
+
+    P11 - Estimable(conversations), Negotiable(conversations), Feasible(conversations), Prioritized (conversations)
+    
+    So I think the other would already have been considered by the time you reach that stage, because, so if you're remember I was talking about example mapping, which is a step which comes before feature files. 
+
+    So, the way you write your examples, so when you write your examples you need to make sure they're estimable for example. And obviously your scenarios would be derived from examples and therefore will automatically be estimable. So it's more relevant at the time of example mapping rather than feature file.
+
+    P12 - Estimable(business knowledge), Negotiable(business knowledge), Feasible(can I test/implement this, domain knowledge), Prioritized (business knowledge)
+
+    P13 - Estimable(number of steps, domain knowledge), Negotiable(NO), Feasible(domain knowledge, "context"), Prioritized (happy path)
+
+    P14 - Estimable(feature level), Negotiable(feature level), Feasible(if it's written, it's feasible, because it was already discussed), Prioritized (by value)
+
+    P15 - Estimable(conversations), Negotiable(conversations), Feasible(conversations, domain knowledge), Prioritized (NO, conversations)
+
+    P16 - Estimable(small granularity, imperative), Negotiable(PO and client), Feasible(steps reuse, domain knowledge), Prioritized (PO and client)
+    
+    P17 - Estimable(NO), Negotiable(conversations), Feasible(feasible to automate, NO), Prioritized (Tags)
+
+    P18 - Estimable(depends on technical implementation), Negotiable(NO), Feasible(NO), Prioritized (Tags)
+    
+    \begin{table}[!b]
+    \caption{Summary of removed attributes}
+    \label{tbl:attributes_removed}
+    \centering
+    \begin{tabular}{|m{3cm}|m{3cm}|m{4cm}|m{4cm}|}
+    \hline
+    Estimable & Negotiable & Feasible & Prioritized\\
+    \hline
+    Depends on technical implementation & P1, P5, P6, P10, P18 &  & P1, P6, P8, P10, P17 & P8\\
+    \hline
+    Depends on domain (business) knowledge & P3, P12, P13 & P12 & P3, P12, P13, P16 & P8, P12, P14\\
+    \hline
+    Suited for conversations & P11, P15 & P5, P7, P11, P15, P17 & P3, P7, P11, P14, P15 & P3, P7, P11, P15\\
+    \hline
+    Only for Features (set of scenarios) & P14 & P2, P14 & P2, P15 & P2, P3, P6\\
+    \hline
+    Not applied at all & P2, P4, P7, P8, P17 & P1, P4, P6, P8, P10, P13, P18 & P4, P5, P18 & P4, P5, P10\\
+    \hline
+    Other & P16 (granular, imperative) & P16 (PO and client) & P16 (steps reuse), P17 (feasible to automate) & P1, P16 (PO defines it), P13 (happy path), P17, P18 (Tags)\\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    Prioritized???
+        P3 - From features? yes. Not the scenarios, but from the features point of view you need to be prioritized.
+        P14 - Happy path, simpler scenario
+    Negotiable???
+        P12 - Focused - not involve other features
+    Estimable
+        P6 - NO - I don't know. I can't say, because I don't know the code base nor the surroundings functionalities.
+    NEW!
+        P1 - Complete (Scope)
+        P2 - ?
+        P3 - Modular (Small + Testable)
+        P3 - Unique (Und, Unamb, Test, Val)
+        P3 - Generalization (keep a pattern when writing steps)
+        P4 - Complete (scenarios requirements are not entirelly cover)
+        P4 - Add variations (edge cases and variations)
+        P5 - ?
+        P6 - Comprehensive
+        P6 - Independent
+        P6 - Atomic
+        P8 - standard way of writing
+        P9 - Ubiquitous (word consistency between scenarios and business rules)
+        P10 - Declarative rather than imperative
+        P10 - Common language (ubiquitous)
+        P11 - Declarative vs Imperative (not UI focused)
+        P11 - Completeness (scenarios should cover all the feature)
+        P12 - Cohesion (order of the scenarios should make sense, coherent scenarios for that feature)
+        P14 - Atomic (test only one thing)
+        P16 - Cohesion - 
+scenario should have a reason to belong to feature file 
+AND should be important on its own
+        P16 - Steps reusability
+        P17 - No missing keyword (Always use Given/When/Then)
+        P17 - Steps integrity - types are honored (Given are pre-conditions, When are actions, Then are outcomes)
+        P17 - Unique
+        P17 - Steps reusability
+        P18 - Atomic, scenarios that test the same thing (redundancy)
+        P18 - many details (increase maintenance cost, reduce value)
+        P18 - Complete (scenarios as single source of truth)
+        
+        
+        
+    Scenario title
+    
+    [short and objective] P1 - I think I don't have any tips to be honest but I try to keep the title short and objective, so I don't try to put too many information in the title.
+    
+    [outcome] P2 - No - or there's room for improvement. I personally like to see a desired outcome scenario name. So regarding the "Hovercards on the main stream" scenario, if I split it up for a single scenario for activation and a single scenario for deactivation I'd call the first one "Hovercards on the main stream can be activated" and the second one "Hovercards on the main stream can be deactivated". And that's because if you just see scenario names into a reporting tool I'd like to know just with the scenario name and the execution result of that scenario I want to be able to determine what feature in my application works or doesn't work anymore. 
+    
+    [action] P3 - No, they're very short and crisp. I think they should be a bit more information about what this scenario does and also they just don't give a context, it's just "post a photo without text" but it should be a bit more detailed, yeah, I agree with that part
+
+    > You think they should follow, I mean, they should help to understand what the scenario purpose is by providing the context, is that what you meant?
+
+    Yeah
+    
+    P4 - ?
+    
+    [action] P5 - the scenarios titles could be more descriptive on what they're actually doing. And why would you have called a scenario "blocking a user means I don't see the post" or "blocking a user I still see the post on" na na na you could just read the scenario.
+    
+    P6 - ?
+    
+    [outcome] P8 (aspect_navigation.feature) - they are not highlighting the goal of this scenarios they are more highlighting they topic channel. For example the second would said: delete the comment. Delete the comment should... it's not really... the one in the line 46 is even worst. Comment to the status show page, what do you want to test here? Are you able to comment? To do a comment? So I would like to have something that describes kind of a business rule, something that says this was fullfilled or not fullfilled, not just a topic
+    
+    [action] P9 (mentions.feature) - Ok, so, first thing here is scenario title says it's about a user mentioning another user. So that leads me to assume that this is the main action, in this example, a user mentioning another user, but the action which would normally be found on the When step, is the "I sign in as "alice"
+
+    > And they should match?
+
+    Well, I'd expect the action to be about one user mentioning another user. 
+
+    > Because you want to see the When step matching the scenario title
+
+    I want the When step...the scenario indicates that this is about an activity, where one user mentions another user, so the activity would be the main action that we're testing here and When step is where you specify the action, such as... you got two users, Bob and Alice, so "When Alice mentions Bob" right? And then you have this correlation between the When steps and the scenario title that describes that activity.
+    
+    [action] P10 - It shouldn't match any step, necessarily, and it should, however, be nice if it tells me what it is doing.
+    
+    [action and outcome] P11 - Scenario titles, so... search for user and go to its profile. Now this scenario title doesn't actually tells me...it tells me what is the action you're performing but it doesn't tell me what the outcome is. If I look at the scenario title I don't really know what exactly its testing. So the way we actually try to structure or try to phrase the scenario title is, it should be like a Friends episode, so you know, they say in one When, "I search for a user and go to its profile" so, it should show me, whatever. So that basically tell me what you're doing and the expected outcome.
+    
+    [outcome and action] P11 - > What about the scenario titles, are they ok?
+
+    Scenario titles, so... search for user and go to its profile. Now this scenario title doesn't actually tells me...it tells me what is the action you're performing but it doesn't tell me what the outcome is. If I look at the scenario title I don't really know what exactly its testing. So the way we actually try to structure or try to phrase the scenario title is, it should be like a Friends episode, so you know, they say in one When, "I search for a user and go to its profile" so, it should show me, whatever. So that basically tell me what you're doing and the expected outcome.
+
+    > So it should have both things, it should represent the action and the outcomes?
+
+    It should briefly tell me what I'm testing and what I'm expecting as the outcome. So just, obviously if it takes too much space, you wouldn't want to over-complicate things, you would want to keep it brief, otherwise it basically defeats the purpose. So what you could do this, if you would write more text, just add a comment below the scenario keyword. So it would basically appear as informative test, just under scenario keyword, you can do that in a feature file.
+
+    So, taking as an example the line 29, "searching for a user in background", so there one, obviously you wouldn't have to write it nowhere, it's just a matter of speaking, "I search for a user in the background and see the result" or it should show the me result, whatever is appropriate. As long as it tells me something about the outcome and the action. So what am I testing and the outcome.
+
+    If you're able to do that, when this test report is shown to someone, your project manager, your business owner or your tester, they would instantly know, without looking at the steps, what exactly is being validated here, or what would you expected. 
+
+    P12 - ?
+    
+    [action] P13 (search.feature) - 
+    
+    > Eu tava focando no título do cenário da linha 22 e queria saber sua opinião. Você acha que ta legal, que não ta?
+
+    É que ele é bem objetivo né? Procura por um usuário inexistente e vá pra uma página de busca. Então se eu leio só esse título eu já sei o que será descrito, então pra mim ele ta OK, só que ele não... Como tu já deve ter percebido eu gosto muito mais de BDD pra business né? Não sei se isso aqui seria mais a nível de business assim... mas ta OK. Acredito que para um desenvolvedor de automação ajudaria bastante.
+
+    > Como você escreveria o título da linha 22 pra ser mais perto de business? Porque hoje ele está "Procura por um usuário inexistente e vá para a página de busca", como você refrasearia ele pra ser mais proximo de business.
+
+    O negócio da rede social é isso né? É basicamente páginas e acessos e...
+
+    > Acho que sim
+
+    Então faz sentido ta esse nome mesmo, boa reflexão que tu fizeste.
+
+    > Legal. Você acha que o título tinha que te passsar o que? Quando tu lê um título o que você espera conseguir adquirir daquela frase?
+
+    Basicamente o que será descrito de uma forma bem objetiva.
+
+    > Então o que vai ser testado, algo assim?
+
+    Exato. Pode se dizer que sim. 
+
+    [outcome] P14 - > E voce acha que aquele titulo do cenario na linha 23 ta legal?
+
+    Ah, da pra entender o que ele faz. Por ter muita assercao com certeza ele nao faz so isso, vamo ver. Olha ele submitou uma password, pq ele esqueceu uma password, entao ele faz uma assercao, entao ele so nao ta, ah nao, pera, li errado.... Eh nao nao, isso mesmo, tem razao, as assercoes nao estao descaracterizando o que ele ta fazendo no cenario, mas mesmo assim, da pra voce destrinchar tudo isso
+    
+    [outcome] P15 - (photo_gallery.feature)
+    
+    > Do you think that scenario title, viewing a photo, is ok, because it maps on what is being checked, or it should have something else?
+
+    So, I write, I personally prefer to document what is I'm sort of testing. There are gonna be some rules associated with it, and the feature, and what other rules I'm gonna test. In this instant, "viewing a photo", I should probably call it only "view a photo", but I don't think that's bad necessarily, however there's probably a... [silence]
+
+    > What are you testing there
+
+    That's the problem, I'm not testing anything, I'm describing some behavior, so ...
+
+    > So you think the checking or at least expressing the check point should be there on the tile?
+
+    [action] P16 
+    
+    > E os titulos dos cenarios tambem tem que compor essas tres informacoes, o que, quem e por que?
+
+    Ahn, pois e, o titulo dos cenarios, o que a gente acaba, e uma coisa que eu nunca parei pra pensar sabe sobre os titulos dos cenarios. Mas uma coisa que a gente acaba usando bastante e traduzir ou tentar colar o nome da estoria no titulo do cenario ta.
+
+    > O nome da estoria com aquela descricao de user story ou nao, so a acao que ta sendo feita?
+
+    Seria algo mais ou menos assim - o S001 adicionar usuarios no sistema, algo mais ou menos assim. Mas e algo, cara, nunca parei para pensar no titulo, se eu usar o titulo assim ou assado vai ser melhor
+
+    > Ele nao traz valor para a equipe tecnica?
+
+    Eu acho que o titulo e importante para a gente entender o que aquilo reflete mas eu vejo que quando tem essa informacao da US acaba conseguindo rastrear melhor ne. Ah a US001 ta rastreada ali ow, vamo ver se esta todos os passos, vamos ver o que a equipe fez, o que tem o que nao tem.
+
+    > Entao tem que ter a acao e a referencia da task
+    
+    [action] P17 (comments.feature)
+    
+    > The scenario titles seems to be ok?
+
+    Let's take a careful look at those...It seems, they're consistent at least, as far as the capitalization goes, so let me review these...  comment on a post from within a user's stream...delete a comment... expand the comment form in the main stream and an individual aspect stream...these titles are ok, they're descriptive, they're telling me what's going on... the previos one, the expand one, right there that conjuntion word "and" says it needs to be two different scenarios, and you could even see that they put a blank line halfway down the scenario. 
+
+    Because what happens when a variation for the main stream fails, it will abort this failed assertion and the individual aspect stream won't be tested.
+
+    And If you're looking at the Cucumber report or whatever report, and you see a failure for the scenario you would say ow, which one have failed? That kinda a problem - again, one behavior
+
+    > And you think the scenario titles, you said that you know what's going on, so, you made me wonder if they should tell you the action that's being performed, or if that's not the case, so: what is a good title?
+
+    For, what makes up a good title, I'd say the titles should be a concise description of the behavior, and so the action is central to that, so saying something like "comment on a status show page", right that will tell me "ow obviously it's going to be commenting on this given page". And titles can include some description of the outcome, but many times when you read the action, the outcome is sort of implied, so for exemple, line 46, comment on a status show page, without reading the steps, I'll read them in a minute, but presume what this scenario is based on a title, the user's gonna probably add a comment on this page and, as soon as they add it, it should be visible and shareable.
+
+    P18 - ?
+    
+Tags
+
+    P1- filter tests
+
+        It depends - when I do more scenarios I have some scenarios that I use just to run on mobile and then I need to run the tags to specify what scenarios we should run on mobile browser or desktop browser - so I use tags for this, to separate those scenarios. Also, there are tags for smoke tests. I have a regression pack which is quite huge and when we need to do a smoke test with just basic scenarios we tag those as smoke.
+
+        Gabriel> But this is a technical decision, so it's not coming from the PO those tags?
+
+        The PO could decide if some scenario need to be used in mobile or if we should not worry for the desktopm so I think it could come from the PO as well. But it depends. In my case, the only thing the PO could say about the tags is to point what are the smoke scenarios that we would test and the basic one that we need to be sure that is working is called an "mvp". So I think those are tags our PO could suggests.
+        
+    P2 - filter tests
+    
+        It depends on the scope of the tests and what you're trying to achieve, what kind of tests they are, the number of tests if you want. If you just have a small set of tests... because tags for me are a way to apply filters for tests, I see them as a filter for tests, so it depends on the size of your test suite and your development process and the type of tests that you have and if the application of tags is necessary.
+        
+        > And do you think they would improve the scenarios readability if, for instance, we have tags here that says that the first scenario has a sanity tag - would that be better? Or we will express implementation details that we don't want?
+        
+        Yes, exactly, that's what I was thinking. It tells something about the implementation, not about the intention or the behavior of your application and specify something of the intent or the implementation of your test scenarios may not... if you want to group features or scenarios together I think you'd be better of just regrouping the features or placing features into folders, what is more understood by humans than tags that can appear whatever. I don't use those for technical purposes.
+        
+    P3 - categorizing tests
+    
+        Tags are really good - it really helps in categorizing your scenario, from an execution point of view. So, yeah, I love use of tags
+        
+        > And you think it helps the reader to understand the scenario somehow.
+        
+        No, it depends on the tag being used, but it can give the context of the importance of the scenario or the feature.
+        
+        > Oh, so it highlights the importance of the scenario.
+        
+        Yeah, it does, because for example if you categorize your feature and scenarios into mainly different areas, something like UI, or maybe say it depends on integration to start, you know... just a basic story, a back end test, it gives a sense of the importance of this scenario or feature. Where this feature stands from an application stand point of view.
+        
+    P4 - NO
+    
+        > Last thing to ask here is about tag - we have one tag on the beginning of the file who probably tells the tester that this is a scenario that should use Javascript and should use an UI, but do you think tags are a good thing to use in general or not that much?
+
+        We, I have no experience in using tags so...they might be a good idea, I don't know. They probably are, because people are using it - they're using it across all other feature files as well. Most of them at least. Perharps this is a good idea, if it's the same tag across all features, probably not, I don't know.
+
+        > Ok, so keep it a standard on using tags, make it more organized. 
+
+    P5 - NO
+    
+        I don't personally use them. 
+
+        > Ok...because you don't like them?
+
+        Because I have no need for them... As I said, if I would have the suite like we had at my previous job that we had 800 tests scenarios, that were divided into test suites and into functional areas, those you might tag that you run just a subset, and also I, the one use that I can see for them is that I can use the same test and mark them as a smoke test, to be run on the test environment on a nightly basis or whatever, whenever there's a new deploy or whenever.
+
+        But I'm just thinking out loud right now, I haven't really give it much thought, I guess if you're using the tags than you want to be able to run a certain test of sets, given a certain tag, and why would you want to run only a certain set and not all the tests? Because maybe something changed in this area, but if your test suite is fast enough you could run all of them. There would be no need to say in this case I will only need to run there and not those. So this could also be a code smell, excessive use of tags. But I guess, again, the answer would be depends. So for instance this is a front test and you also have back-end tests and you're doing changes in the front end tests, if you're doing changes on the back end you run only back end tests, that would be fine, I guess. Or, like I said, run all of the tests in this case but run only a smoke test in another case. 
+
+        > But as you said, it could hide the fact that there are more tests in the UI then needed
+
+        Or at least that the total test suite takes too long. 
+
+    P6 - ?
+    
+    P7 - 
+    
+        Depends on what you wantt to do with the tags, monstly that can be an implementation detail if you need. That's viable to use. So for instance we would use something with REST we need to work with XML and JSON and then you can say "well this feature needs to be..."  In my way tags are either something for you test framework to pick up or something business language, can be both. It needs to comunicate something.
+
+        > uhum. If it communicate something.
+
+        Here's it says communicating in JAVASCRIPT.I am not into whitin this domain. I am not really into what they are doing. Probably testing with a JAVASCRIPT version.
+        
+    P8 - NO
+    
+    P9 - NO
+    
+    P10 - 
+    
+        It's most likely not interesting for your average user - ah, now I see we have a Background there, "Given a user with username "kent"", I didn't see it at first. Ahn, I use tags like this because it's a way for me to separate stuff, ahn, I'm not really happy to pollute the Gherkin files with tags. If I could I'd like to avoid them. I have at least one case where I currently haven't found a way to ignore them, so I have to verify some stuff in two different ways, and for that I have to use tags for some scenarios and only one tag for another.
+
+        So they're useful, but if I'm searching for, if I wanted to have a communication tool, and that's what I want, this @javascript is confusing for your average non-technical user
+        
+    P11 - 
+    
+        Definitely tags are very good, they can help you do  targeted execution, you could have some feature files tagged as end-to-end UI based scenario, some could be tagged as integration, some could be tagged as a component or you could also have feature based tags or module based tags. That would show that these feature files are related to a login functionality for example, or this is related with change password, or this is related to search, so you could have those kind of, so you can have different types effectively, and you could use whichever are relevant any part of time.
+    
+    P12 - 
+    
+        E bom ter tags. A gente usa tags, uma tag identifica o nome do sistema, a funcionalidade, o modulo, o nome da feature, por que eu posso querer executar la na automacao um caso de teste so daquela feature, o que mais, o nome do testador responsavel, o que criou, o testador que botou a mao ali, que e responsavel por executar aquele cenario, no minimo isso que a gente bota.
+        
+    P13 - 
+    
+        Dependendo, que nem eu comentei, dependendo... é que isso aqui pra mim atende muito mais o frameworko né? Então se o framework conseguir resolver uma maneira mais rápida por mim ta beleza. Geralmente no cenário que nós usavamos na DB a gente usava 2: uma pra descrever a linguagem que era Java e outra pra descrever o encoding que aquele cenário deveria rodar.
+
+        > Ainda assim... é que vocês recebiam esse cenário já... é que eu ia pergunta: pô ai vocês mandavam pro cliente e ele gostava de ver essas tags? Mas né... não é o caso.
+
+        Mas eu já, por exemplo, eu te comentei, que eu uso em projetos pessoas também né? E quando eu uso nesses projetos pessoais eu escrevo o feature junto com o cliente. E já me perguntaram: o que significa isso? E ai eu expliquei.. isso aí é algo que tu não precisa te preocupar. Isso aí é da ferramenta que eu uso pra depois a gente poder implementar esse teu feature file. E uma coisa que eu acho legal, quando tu tem essa aproximação com o cliente, é que tu consegue demonstrar numa apresentação de sprint, por exemplo, olha só, o cenário que a gente escreveu há 2 semanas atrás a gente fez uma automação com ele, de negócio, aí o cara pergunta "O que isso quer dizer?" quer dizer que se nós mudarmos uma regra, olha o que vai acontecer com teste que gente fez pro teu negócio aí o cara fala: "Bah ficou vermelho" sim significa que quebrou daí o cara ve valor na qualidade que isso traz entende? Mas obviamente que como é algo que o cliente não ta acostumado, a essa marcação de framework e tal, algumas coisas tu vai ter que colocar naquela linguagem ubiqua né? Vamos ter que capturar a linguagem do cliente mas alguma coisa a gente vai ter que fazer ele se acostumar também né?
+        
+    P14 - 
+    
+        Eu gosto muito de usar tag, eu acho que isso ajuda bastante, entao ali ele poderia por uma tag em quantas features ele quiser com "important" por exemplo.
+    
+    P15 - 
+    
+        I'd use things like very transitive things, that would not expect to check in, like work-in-progress. If it's a failing test, that is known about and is currently under investigation, I have something like "known issue" tag, mainly to help with problem investigation, I wouldn't expect those tags to last for very long, but you never know. If those are hanging around a long time than that's a code smell. But then I would have tags for different types of testing. We often use the same feature file to run the same behavior in different ways. So we might have a feature file, so let's take this as an example, I might have the same feature with UI only tests, where the whole backend has been completely mocked out, I might do it as an API test and say "Alice posted a message, When I view the message" so I'm authenticated and want to retrieve the image from the backend and I might do it as a full end-to-end, so I may have 3 different types of tags to say rather than in the UI and integration tests I might not tag but might say these are a specific subset of tests that I might run as smoke test or end-to-end tests. 
+
+        > So they should add some meaning, not necessarily to the scenario but what you're doing with them, how you will use that scenario
+
+        Yeah, tag is all about metadata, so tags are all about adding information from a usage or metadata point of view which is not associated with the behavior. Tags may help with traceability, so if you have an issue tracker or the plans or regulatory requirement to say you have to have traceability from the initial user requirement to the testing verification and all of, you can even have tags around that. You may have tags on how to run the test or how to report them.
+        
+    P16 - 
+    
+        Sim, e inclusive eu acho muito legal tags quando a gente consegue, o que eu tenho aqui no cenarios que eu costumo fazer, eu coloco as tags por cenarios assim, por que isso consegue dar uma dinamica muito legal na hora de testar, eu consigo ir la no meu teste, no meu teste.java ou qualquer coisa, e puxar bem certinho la, eu quero que tu teste o cenario de autorização só né, ou teste só o cenário de revoque autorização, e isso é muito bom, o ganho disso é muito bom, por que daqui a pouco eu to desenvolvendo por exemplo essa parte de autorização ta bem montado e tal, e eu so quero executar ele agora, os outros eu sou vou desenvolver daqui a 3 ou 4 tasks ou na proxima sprint ou algo assim, entao eu consigo quebrar isso neh, fica bacana.
+
+    P17 - communication tool
+    
+        Yes, I strongly recommend that a team adopts an official tagging strategy, before they just go off and start to add tags like crazy. Because tags are only as useful as anybody knows what they are meant to be. So in our team we have a strategy like, for every scenario, you need this and this and this type of tag, and then here are available extra categories if appropriate. People are not allowed to add random tags when they feel it, if they want to have, they need to have them approved.
+        
+        
+Analysis
+
+1) Not much details / Technical Jargon (Concise) - Could any details be removed from that step description without affecting the scenario understanding? Could those necessary details be summarized in a data table?
+
+2) Follow the Steps /  Focused (Concise, Testable) - Can you identify "What" the step is doing ? Does that step is written using a declarative way, rather than an imperative way, describing "what" and not "how"?
+
+3) Focused / Different Scenarios Testing the Same / Single Intention (Concise, Small, Testable, Unambiguous) - Can you identify what single action the scenario is trying to perform by reading its title? Does that match what the scenario is actually doing?
+
+4) Granularity / Not Vague Statements / Clear (Concise, Unambiguous) - Can that step be interpreted in different ways ? Is is vague or misleading?
+
+5) Not many steps (Concise, Small), Not Unnecessary Lines (Concise), Background - Could any steps be removed without affecting the scenario understanding? Are there similar pre-conditions that could be moved to a Background section?
+
+6) Follow the Steps / Self Contained - Clear/Simple Givens, Outcomes and Verifications (Testable) - Can you identify what the scenario is trying to verify by reading its title? Does that match what the scenario is actually verifying?
+
+7) Independent / Completeness (Testable, Unambiguous) - Do you fell any scenario is missing without a reason? Could any scenario affect others' executions?
+
+8) Ubiquitous (Testable, Unambiguous) - What business terms the step uses, defined in a central glossary? What role or persona is performing that action?
+
+9) Good english / Integrity (Testable, additionals) - Keywords meaning (Givens are pre-conditions, Whens are actions and Thens are verifications) and its natural order (Given/When/Then) are respected?
+
+10) Unique / Business Value / Feature Description (Valuable) - Can you the identify the scenario's business value by reading the Feature description and the scenario's titles? What makes each scenario different from the others?
+
+
+\begin{table}[!b]
+    \caption{Characteristics mapping to groups}
+    \label{tbl:characteristics_mapping}
+    \centering
+    \begin{tabular}{|m{10cm}|m{4cm}|}
+        \hline
+        \textbf{Characteristc} & \textbf{Group}\\
+        \hline
+        Concise ( A ) Not much details & Essential\\
+        \hline
+        Concise ( B ) Not many steps & Essential\\
+        \hline
+        Concise ( C ) Focused & Focused\\
+        \hline
+        Concise ( D ) Clear & Clear\\
+        \hline
+        Concise ( E ) Not Unnecessary Lines & Essential\\
+        \hline
+        Small ( A ) Not Many Steps & Essential\\
+        \hline
+        Small ( B ) Test One Thing & Singular\\
+        \hline
+        Small ( C ) Code Step Small & N/A\\
+        \hline
+        Testable ( A ) Clear Outcomes and Verifications & Singular\\
+        \hline
+        Testable ( B ) Follow the Steps & Complete\\
+        \hline
+        Testable ( C ) Clear and Simple Givens & Singular\\
+        \hline
+        Testable ( D ) Focused & Focused\\
+        \hline
+        Testable ( E ) Independent & N/A\\
+        \hline
+        Testable ( F ) Completeness & Complete\\
+        \hline
+        Understandable ( A ) Ubiquitous & Ubiquitous\\
+        \hline
+        Understandable ( B ) Self Contained & Complete\\
+        \hline
+        Understandable ( D ) Good english & Integrity\\
+        \hline
+        Understandable ( E ) Technical People Understand What to Do & N/A\\
+        \hline
+        Unambiguous ( A ) Vague Statements & Clear\\
+        \hline
+        Unambiguous ( B ) Single Clear Intention & Singular\\
+        \hline
+        Unambiguous ( C ) Different Scenarios Testing the Same & Singular\\
+        \hline
+        Unambiguous ( D ) Completeness & Complete\\
+        \hline
+        Unambiguous ( E ) Ubiquitous & Ubiquitous\\
+        \hline
+        Unambiguous ( F ) High Granularity & Clear\\
+        \hline
+        Valuable ( A ) Unique & Unique\\
+        \hline
+        Valuable ( B ) Business Value & Unique\\
+        \hline
+        Additional Attributes ( A ) Complete & Complete\\
+        \hline
+        Additional Attributes ( B ) Coherence & Integrity/Ubiquitous?\\
+        \hline
+        Additional Attributes ( C ) Cohesion & Unique\\
+        \hline
+        Additional Attributes ( D ) Integrity & Integrity\\
+        \hline
+        Additional Attributes ( E ) Declarative rather than Imperative & Focused\\
+        \hline
+        Language ( A ) Ubiquitous & Ubiquitous\\
+        \hline
+        Language ( B ) Technical Jargon & Essential\\
+        \hline
+        Language ( C ) Actor Consistency & Ubiquitous\\
+        \hline
+        Language ( D ) Declarative rather than Imperative\\
+        \hline
+        Steps ( A ) Few and Short Steps & Essential\\
+        \hline
+        Steps ( B ) Steps Order & Integrity\\
+        \hline
+        Steps ( C ) Steps Repetition & Essential\\
+        \hline
+        Titles ( A ) Feature Description & Unique\\
+        \hline
+        Titles ( B ) Scenario Titles & Unique\\
+        \hline
+        Additional Constructions ( A ) Background & Essential\\
+        \hline
+        Additional Constructions ( B ) Tags & Complete\\
+        \hline
+        Additional Constructions ( C ) Data Tables & Essential\\
+        \hline
+        Additional Constructions ( D ) Scenario Outline - Examples & Essential\\
+        \hline
+    \end{tabular}
+\end{table}

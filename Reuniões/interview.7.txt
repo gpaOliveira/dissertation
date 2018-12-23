@@ -1,0 +1,558 @@
+\section{Interview 7}
+
+Transcribed from 00:00 to end on 29-10-2017.
+
+> What I am trying to acquire with that conversation is your personal criteria that you use to evaluate bdd scenarios in a written form, so feel free to express your opinion in any way. There's not right or wrong and thats exactly what we are looking here. Your view and your opinion about what makes a good bdd scenario with textual description.
+
+Yes, so you are really into the textual construction of a bdd scenario right?
+
+> Yes
+
+Yeah, so the first and foremost it's not actually about the text itself. What you get the most is from the specification by example you do to create it, so is that part of your research?
+
+> Not really because our understanding is that when people talk and they understand each other, it seems nice in theory but the problem is when someone sits down to put those things on paper and when that moment happens, bad things can happen and bad scenarios can appear.
+
+So, it's two sided right? I always says there's two pillars to  the whole bdd procces. The first one is create conversation and implementation and you are more talking about and then how do I write good scenarios 
+
+> Exactly. So let me...
+
+Yes, that's really hard part, mosty but there's one thing in my opinion that always, not always, but I see mostly go wrong and that's the implementation vs intention of the scenarios. You heard about this?
+
+> Maybe in another terms but what you mean is that sometimes the language where the scenarios is written is not the business one or what you mean by implementation vs intention? 
+
+Yes, if you look in gherkin samples what you mostly see are implementation details whitin the gherkin script like when a customer wants to login then he should see a login, something like that, really soon.
+
+> Like imperative style?
+
+Yes, that's the most common it fall and thats you are describing and that you use that domain language is actually having technical details in it. That's what I see happening the most and to write, to get the full effort out of bdd and gherkin you want to write in an implementation like when you are want to autenticate that's a real easy example. That's basically the most common pitfall in my opinion.
+
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+
+> Let me ask you. How many years or how much time have you been working with BDD?
+
+Sometime around 2 or 3.
+
+> Years?
+
+Yeah
+
+> And your main role in your team, is that your team that uses it?
+
+I am software engineer consultant specialized in quality. 
+
+2) What's your main task on the project?
+
+One part of quality in my opinion is try to understand each other and I trying to do that with DDD and BDD. So I mostly always find myself as a software engineer in the technical part so that within the teams trying to create better requirements whithin that language. 
+That's hard coupling with testing cause testing is just having good requirements, specially in CD.
+
+> Are you writing BDD scenarios or you receive them from someone else?
+
+No, so here's the thing with BDD scenarios in my opinion: whithin your refinement you have exploration and then you decide at that point who writes the BDD scenarios so it's not one person. It can be me, but in my case now I am consultant but before I was an engineer and then I would write it but it could also be the analist or the aplication manager or the tester, it doesn't really matter who writes it. Everyone should be able to write it in the team.
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+> Do BDD help on your task? For task or requirement discovery? How does BDD helps on that?
+
+There's a lot of debate and speculation on what BDD is and where it came from but you can also call it by specification by example or ATDD. It's really trying to achieve the same and thats is my opinion: create a robust and ubicuous languagen in your the team, so share mindset, while you are deliberate discovery so trying to avoid either the narrative falacy like the street type effect. In my opinion that's the really added value of the BDD.  The side effect is that, from this discovery and learn mindset you create the gherkin scripts to create a living documentation and are capable of creating a definition of ready.
+
+That's not really needed because what you are describing in gherkin is actually only needed if you want to comunicate with it so it doesn't need to be the base of  an acceptance test phase. You can also write an acceptance testing code if that is sufficient for your team so right now I am using it as automated acceptance test with serenity BDD. Do you heard about it?
+
+> I did. Good.
+
+I am using this combination. There's actually this guys from common thrusday and I sonely now use it because gherkin and serenity BDD are actually overhead. They are really nice way of communicating with non-technical people so closing the feedback loop. Whitin a big organization I am in, they require audit logs and they require other people to look at it. Serenity BDD gives me the power, without giving me the power to do that without actually..
+
+> Spend effort in it?
+
+Spending effort or let the enginners do that. If you use plain cucumber, there's not enough information in it for people to communicate back specially the screen play pattern that enginners think about their domain language. So it's all about trying to create that ubicuous domain language. Everything and do a discovery and working and reporting and everything are actually what comes out of this
+
+> Good thing to have
+
+Yes, it's good to have, yeah. 
+
+> It's a side effect.
+
+Software delivery, Alberto Bertolini, explains it well. Software developing is about learning, working code is a side effect. 
+
+> So in your current role or current team, how are you guys using BDD?
+
+My current team have a lot of functionality already in. They didn't do any acceptance testing so they brought me for that but I am working more in discovery and intentional discovery or... how do I call... so the exploration in requirements: delivery discover. I mean specification by example or with event storming as Alberto Brandolini describe it. I am using this tecniques to better deliver discover whitin this. Afterwards I go one on one with product owner and write the test or gherkin myself or my colleagues enginner writes. The end state it should be anyone capable to write it but there's still some way to go...
+
+
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+
+* Keywords (Given/When/Then) usage and order
+* Parameters are ok or not?
+
+> When you are reviewing or writing BDD scenarios, what do you pain attention to? What are the pain points you try to avoid. What you just said before is about the implementation vs intention so it made me believe that you prefer to talk with intentions and talk in a declarative way of expressing scenarios?
+
+I try to avoid data in my gherkin script. I am not saying I never do it, I am just trying as a rule of thumb, don't try to put any data because it's about behaviour and data is get messy. You can try to fill data underling because cucumber is to communicate not to test. I try to avoid the incident of details. That's the intention vs implementation.
+
+> Good. No technical detail and focus on intention.
+
+There's this nice blog about all inter patterns. They try to call about incidental details like if you want to test and you want to do one thing in this scenarios and only one if you write in the scenario: Given I am signed in and my password is password and I check my balance and it is 100 dolars so you actually want to check if your bank account is OK so in a given state you say "I need my password" and that's actually clouding the intention. This shows 2 things: cucumber, gherkin scripts needs to test one thing in isolation.
+
+> So isolation means they should not be dependent on each other?
+
+No
+
+> OK. So no technical detail, focus on intention, do one thing in a scenario and isolation.
+
+Don't test several rules at the same time
+
+> OK. Good. Those are the four pain points you are trying to avoid.
+
+Yes and try not to test. This more about setting up the gherkin than you still have how to technically implement it then it's like I don't want to test a lof through the UI. For instance I want to test with an actor not with "If I do this, if I do that". You want to refactor your gherkin script too. That's basically a scenario you want to implement it you want to test this against a production-like environment who's configured and set up is the same as production. That's nothing more about scripts but how you implement the test
+
+> There is some true in that specially the part where you mention that you should use and actor and not a I or user.
+
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file to evaluate (aspect\_navigation.feature)
+
+> I ask you to visit a github page I put on the chat. This github page is from a project called diapora. It's a social network with distributive nodes so there's no central place of control and here we have all the feature files of the desktop version. I will ask you to choose one of then and evaluate it according to your own rules.
+
+Let's take download photo for instance. First what I see that you did a lot of steps. Straight way I see a GIVEN WHEN THEN then a WHEN so that's violate the rules of checking one thing and one thing only.
+
+* Repetition of steps (Background/context usage)
+> The steps repetion hurts that rule.
+
+Sorry?
+
+> The steps repetion hurts that rule of not testing one thing.
+
+Yes. It's testing several rules in a flow where I am want to be assyncronous isolated tests.
+
+
+* Step few/many
+> That flow you got and that impression of testing the flow you got from the number of steps in it?
+
+Yes, it flows steps and you don't want that. You want an isolated part. You want GIVEN WHEN THEN period nothing more. In that GIVEN WHEN THEN you only want to assert one thing and here I see 3 WHENS and what it means to me is that they are just explaining the way they are clicking through the UI. That's technical implementation and not intention. 
+
+
+* Title description
+> What about the scenario description. Are they OK?
+
+Request my photos is up for discussion. Depends if the team think it's OK.
+
+
+* Steps too long/too short
+> So they should not be larger or anything else? It's really up to the team?
+
+Yes. It's living documentation. The request my photos for me is, the feature is download photos, it says request my photos it's says everything it needs to say to be honest. It need to say more than OK right?
+
+
+* Business language usage
+> What about the language it is written. It has zipped files details were that the download should be zipped files..
+
+It's wrong. I am still in the first scenario. First of all they use "I" and that's no an actor, secondly they use "I click in my neame in the header". That's technical implementation "I follow settings" technical implementation. Secondly because there's so many GIVEN WHEN THEN it's not really communicating to me what's actually needs to do. So the intention of this scenario is totally lost so I need to put lot of effort to read what's actually doing so I cannot really read the intention of the scenario out of it. I only see how the implementation is done.
+
+
+* Tables are ok or not?
+> Nice. What if it has tables? Would that be a good thing?
+
+As I said. I dislike data in scenarios. Sometimes to get the point you heard about intention it should be fine but for this. This is really simple feature like I want to download my photos: first of all is about download the photos and then you have a scenario to request and refresh my photos... can be OK, maybe not. I wouldn't choose data tables at all for this intention because the only intention is probably " My user requires to have their photos" so that's probably the intention and the feature itself only says download photos but I don't see any value to the user or to the company on why I should have this feature.
+
+Download photos OK but what does it bring you? Why should we have this? What's the value for the business? It's not clear stated. This is just a test. I can do this in unit test. I shouldn't use cucumber for this.
+
+> Do you think if they have used tags, for example, would that help to make it more valuable? Business valuable I mean?
+
+What do you mean?
+
+> I mean they  have one tag on the top of the file and I was wondering if it could help to have more tags because it would help to show the value of that scenario.
+
+No, the value of that scenario should be described in the feature.
+
+> And tags are not readable to?
+
+Depends on what you wantt to do with the tags, monstly that can be an implementation detail if you need. That's viable to use. So for instance we would use something with REST we need to work with XML and JSON and then you can say "well this feature needs to be..."  In my way tags are either something for you test framework to pick up or something business language, can be both. It needs to comunicate something.
+
+> uhum. If it communicate something.
+
+Here's it says communicating in JAVASCRIPT.I am not into whitin this domain. I am not really into what they are doing. Probably testing with a JAVASCRIPT version.
+
+
+6) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+-----------------------
+* concise - Yes. See next question
+-----------------------
+
+-----------------------
+* estimable - Don't help
+-----------------------
+
+ > What about estimable? Would that also goes for feature along?
+ 
+ In the way of how long it takes to implement it?
+ 
+ > Yes and in the way off: can you tell? Can you tell if a scenario is estimable or not? Would that make sense?
+ 
+ No. Not really in my opinion.
+
+-----------------------
+* feasible - Don't help
+------------------------
+ > And feasible? It would also not make sense?
+ 
+ Let me try to... not really in the gherkin no... you should have done this in your refinement if it's feasible
+
+-----------------------
+* negotiable
+* prioritized
+???????
+-----------------------
+
+ > What about negotiable and prioritized?
+ 
+ Negoatiable as in? What do you want to negotiate of?
+ 
+ > In user stories it makes sense to say they are negotiable because they don't have implementation details or something like that but I don't know what BDD scenarios...
+ 
+ But what you want to negotiate? 
+ 
+ > I don't know really...
+ 
+ The only negotiability I can think about is: if the story is ready or not. I think that's what you mean but you should this on refinement and not based on gherkin. Same goes for prioritized. You do that in refinement. You don't need gherkin for that, gherkin is only there to formalize your acceptance criteria. In the way you still want to communicate your.. if you need the formalization to your business stakeholder else you don't need gherkin script you can just do it in code. If the only people who are seeing the gherkin script is the developers than you don't need it. 
+ 
+ If your developers are unable to right acceptance criteria in code then you have the problem of not having living documentation. That's also a reason where you might want to use this or serenity BDD because you don't understand the domain language enough to write perfect scenarios. It can be a trade off, let's use this because we don't understand and yet they need to learn about the domain language so we enforce a bit of the use of the domain language like the screen play pattern where you have a really nice flow or use the Upsy model which is nice model in my opinion to discover the scenario. In this Upsy scenario you have tasks and that can map really well to serenity again so you have that really nice feedback loop to product owners. It all depedends on which level you are going do it but the trade off with gherkin scripts, gherkin does not equal BDD, but gherkin trade of is are inducing an abastraction on top of your test which needs maintnance and the way to use that is that if you need a form of communicating that cannot get from code.
+
+-----------------------
+* small - Few steps, see bellow
+* testable - Yes, see bellow
+* valuable
+-----------------------
+
+> One thing you have told me is that scenario need to assert one thing only. How would that reflect on those words? Which of those words would describe that a scenario asserts only one thing?
+
+It's either concise.... there are multiple: concise, small and testable.
+
+* understandable - Yes, see bellow
+* unambiguous - Yes, see bellow
+
+7) What could be their meaning for BDD?
+
+* concise
+
+> I will put more data on the chat window. Those words that I just put there. Could they be helpful when reviewing or writing BDD scenarios? One way to read then is as the following: BDD scenarios is concise or not concise because of steps repetion for example. Would that be interesting? To have that kind of statement? Would that be helpful.
+
+Yes, I think so. If you have some sort of...something that checks the scenarios and it sees if you are using multiple times GIVEN WHEN THEN in one scenario, this has this and this implication.
+
+> Like a static analyser?
+
+Yes, something like that. Same as for an engineer you have SONAR that checks the code and then it gives you a warning: Look what you doing here, it gives you blablabla. Don't use it because this and this and this. Yes, that could really help.
+
+> What could be there meaning? I mean concise.. what concise means for BDD scenarios?
+
+Yes that's good question. What is really meant with concise in this context? I am not sure what really the dutch... yeah ok... it should be small but what really is small? It all depend. As a rule of thumb you could say don't use more than 6 or 7 lines in one scenario. That can help. It shouldn't be something that is wrong but usually what I see is that you don't want to use more than 2 GIVENS, only 1 WHEN, that's a rule, and then 2 THENS, maybe even 1 because you want to check one thing.
+
+
+
+* estimable - don't make sense. Check question 6
+* feasible - don't make sense. Check question 6
+* negotiable - Check question 6
+* prioritized - Check question 6
+
+-----------------------
+* small - few steps
+* understandable
+-----------------------
+
+> So 5 would be acceptable and maybe one or two WHENS and that's it.
+
+5 would be the maximum in my opinion. It always depend of course. What I usually see is that when you want to assert one thing you don't need more than 5 because you want to communicate something and 5 lines would be the maximum readability if you want to communicate something through the lines.
+
+> What about size of a single statement? Would that matter or could I just put a big phrase on that?
+
+Yes, that's the same. The longer the line, the less readable will be. It has everything to do with language. That's the problem mostly. It has everything to do with the language.
+
+> What would make it more understable?
+
+Keep it small. It depends on the domain language of course but yes, try to really get your intention out in the scenario and any details should be followed up in the code if you need it. It shouldn't be to vague of course, it should really make a point.
+
+> So it should be to the point and it should be written in the business language?
+
+Yes it shoud be in the business language with intention. That's a rule of thumb it should be an intention in a domain specific language. So if you don't talk to a domain expert, don't write it because it's useless. It doesn't do anything because all engineers can understand code so you rather write it in code cause otherwise you would just have an overhead.
+
+-----------------------
+* testable
+-----------------------
+
+> Good. We haven't talk about testable. Good that you remember it. So besides the fact that asserts only one thing, testable could mean anything else? What would make a scenario more testable or less testable?
+
+Testable is really about how you design the software so you always need to keep in mind that software needs to be able to be testable in isolation. If you need for instance lot of steps to test a certain scenario so your code is not really testable.
+
+> Lot of steps meaning lot of GIVEN?
+
+Like I need to login first, cause if I always needs to login than your acceptance test is not testable. It is testable but it takes to long and you want fast feedback. It's all about feedback. So if in every scenario you need to login it slows down the test but then again... you always do that underlying the test. You don't need to place it down cause you know it, it always need to do that anyway right? So you know that Rick is a login user so you could use Rick for every logging scenario... 
+
+
+
+-----------------------
+* unambiguous
+-----------------------
+
+> What would be an ambiguous scenario? The opposite of unambiguous?
+
+Sorry, let me... Yeah if there's two intentions on it, it would be ambiguous right?
+
+> How do you define intentions? By the number of the WHEN steps? 
+
+Yes, you should only have one WHEN but then again in one WHEN you can put everything in it.
+
+> Yes you could just put and AND in the middle
+
+As a rule of thumb you only wants one action in a WHEN. So it's the one thing and one thing only
+
+-----------------------
+* valuable
+-----------------------
+
+> What would make the scenario more or less valuable?
+
+It's only valuable if there are people on your team unable to read the code on which you can communicate and have a healthy conversation with your gherkin scenario.
+
+> I see there's nothing on the scenario description that could help it be more valuable?
+
+Yes, just write anything down, what you know, witin after the future dot dot so where it says now download photos you can put everything there what you want so it would always be more valuable if you put in some form of value for your scenario. Ask a marketing manager for instance.
+
+> As a marketing manager?
+
+As I role I want to blablabla because of that... It should show why we are doing this feature, so what's the value of the feature and it should write anything down in it like sometimes we don't want to check a scenario we though of or came up with during our discovery because if they are saying " this would probably never happen, and if it happens we are just doing this" you can write that down on the feature to.
+
+> Is more connected to the domain knowledge and then with the scenario description?
+
+It's more the feature.
+
+> It's more the feature and not a single scenario?
+
+ No, the whole feature you can write down anything you like in that first description cause there you want to put all the information you have. Should be small cause if you have too much information than probably you have an implementation in your architecture...
+ 
+
+  
+8) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ANOTHER feature file to evaluate in light of those attributes shown before (change\_settings.feature).
+
+> Let me ask you to come back on that github page and choose another feature file.
+ 
+Let's take a nice business one. Conversation is being though feature.
+https://github.com/diaspora/diaspora/blob/develop/features/desktop/conversations.feature
+
+
+9) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+> No problem. In a scale of 1 to 5. What would be one meaning Not At All and 5 meaning a Lot. How helpful where those words when evaluating that scenario.
+
+It helps.
+
+> Helps 4 or helps 3?
+
+Until 5 right?
+
+> Until 5 yes.
+
+I think it would be 4. Some words do, some words don't.
+
+
+10) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+> What is the worst one? What is the most difficult one to use?
+
+I think is Negoatiable, feasible, estimable, prioritized. Those 4 are actually really not used in my opinion and testable. I can't use that either.
+
+11) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized - use of tags
+* small
+* testable
+* understandable
+* unambiguous
+* valuable - tags
+
+> Let us try to use those words to analyse this scenarios. I mean are this scenarios concise?
+
+No. The third scenario is really long so it's not concise. I think I need one minute to read it and a few more minutes to understand what actually those. It says "send a message" so what message? What does it mean? It's not really concise, there lot of info on it. 
+ 
+ > Because of the amount of steps right? Is that understable?
+ 
+ Because of the amount of steps: the first and the second are less steps but still there's a background in it so that's already horrible. So I need to have multiple flows, everytime it does some background it doesn't even say what the background does so it's not really concise I need lot of time to actually know what is going on here within the feature it says: In order for me to talkative As a user I want converse with people. That fake language. What's the business value of this feature?
+ 
+ > Sorry I lost you...what line are you reffering?
+ 
+ At the top it says private conversation.
+	In order to be talkative
+    As a User
+    I want to converse with people
+That's really vague use of feature. I don't see any business value etc.
+
+> If this feature description is bad what word will be heard on that list? valuable? 
+
+Understandable. I don't understand what's going on here. I don't understand the business value. I do understand in a way I can decipher what it does on a technical level. I know what the system can do now, but I don't know the intention so I don't understand it. I don't know if it's valuable. If the top feature I don't know if this feature is valuable. 
+
+> Are those testable?
+
+I don't know.
+
+> Because it would require your domain knowledge about on how to automate it?\
+
+No, I need to see the technical part and I need to see the system under test cause everything is testable in a way but this will be testable but probably not really good. Probably if you have lot of this scenarios, your acceptance tests will take probably 40 minutes.
+
+> Because they are in an imperative way of describing things?
+
+It's just a UI test. They say "I've got this tests...". I need to read a lot what it does.
+
+> If you I gave you 10 minutes to read it would you be able to identitify in a scenario description only, how testable that scenario is?
+
+No. Testable is more about how the system is built.
+
+> Are they unambiguous? 
+
+Yes, that's a hard one for me to understand because it's not understandable so I don't know. Should read more. That takes time. That's the main problem with this you know.
+
+> Because they are long and it takes time to do anything with them?
+
+Yes.
+
+> Uhum and those things like the one on line 21: that hashtag #conversation-inbox and we have #conversation-show in the line bellow. Those seem like CSS selectors.
+
+That seem technical implementation
+
+> And that would seem what word? Technical implementation details?
+
+There's not really a word for it. Probably first of all valuable is a word that will hurt. I am not sure this CSS selectors will be valuable to what it does. And secondly is understable because the business don't know what this selector is or it needs to understand the technical part of it. They are not actually working on valuable.
+
+> That repetion of steps of keywords like we have WHEN THEN and a lot of ANDS and WHEN and THEN that is hurting what of those words?
+
+Concise, small...
+
+> Cause they mean the same right? Concise and small
+ 
+Sort of. Understandable. Unambiguous maybe. It's no clear what it tests cause there are so many WHEN THEN AND... so it's unambiguous cause it's not clear on what it does.
+
+> So clear means unambiguous.
+
+I think so, but I am not sure. It's not clear to me.
+
+> Like unique maybe?
+
+No. Just clear. It doesn't go against.. I can't really explain in english...
+
+> Ok. Just to summarize. I got here some interpretation of these words according to your opinion. I will read then out loud so feel free to change something.
+
+>You said that concise means small scenarios, small in the sense of few lines, and that keyword repetion hurts there.
+
+Yes 
+
+> You have said that valuable is something related with the feature description and that technical detail on scenario is a bad thing on that world.
+
+> A unambiguous is something that is clear and something that keyword repetion also hurts, there's also a problem there.
+
+> And understandable and understandability is a matter of technical details, so I am not using technical details so writing the business language is the same as valuable and keywords repetion is also a problem here.
+
+> You said that you like to use actors and not tell "I do, the user...etc". If you use actors you are making your scenarios more what? What would be the word to describe it?
+
+Concise. Clear.
+
+> Using actor is... 
+
+More understandable
+
+> More understandable and not concise or both?
+
+Concise is clear so thus understable and clear. 
+
+> Clear would be unambiguous? 
+
+Yes, it's unambiguous and concise is like... not it would not be concise. It would be understable and unambiguous. Sorry.
+
+> Good good. The intention we have described as well as a understable and valuable thing.
+
+Can you repeat that?
+
+> The intention we have described as well as a understable and valuable.
+
+Yes.
+
+
+12) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+> Do you miss any other words in that list?
+
+Maybe intention. I think intention is a nice one to describe it.
+
+> When you reading a BDD scenario, what is the part of this scenario or what are the parts of the scenario that tells you more about the intention?
+
+The description of the feature. That should be really concise and have value in it.
+
+> Of the feature or scenario?
+
+The feature. The feature has scenario so in the feature I need to know this.
+
+> So intention is more feature thingy than a scenario caracteristic?
+
+No, it is both but the feature is a core thing. On this feature you have this value so I know your intention but in the scenario the intention get more important to use. In the feature you don't use any steps so people won't tell any technical detail in it and you can use some technical details on it, it doesn't matter, but in the scenario is really important that is about intention and not technical implementation.
+
+> So intention is also means that is written in a domain language?
+
+Yes. 
+
+> That same domain language that we talked before, that would make the scenario more understable?
+
+Yes.
+
+> If a scenario is understandable would that means that it has intention? The intention is clear?
+
+No and yes.
+
+> What is missing on that comparison?
+
+You are saying if it shows intention is understable right?
+
+> The other way around, if it's understable would you say it has the intention word that you are liking?
+
+Understable and business valuable?
+
+> Understable and Valuable?
+
+Yes
+
+> Interesting
+
+I can understand a scenario that says "If I login and I press this button..." then I can understand and I can mostly find this understable at some point. Takes a long time but I still don't know the bussiness value. It's missing, so the business value is really important so that's why you need to put on the intention.
+
+13) General remarks about the quality criteria BDD scenario subject
+
+
+
+> I am done with the questions so you have any general remarks about that whole topic of BDD scenarios quality?
+
+I would the most important part of BDD is about discovery and not about the scenarios. You don't always need to write scenarios in gherkin style. The most value in BDD is the deliberate discovery and refinement. That's specification by example and everything. That's where you need to start always
+
+> Do you agree with our though of: When the conversation goes down to the scenario written description it can be problematic to write good things because you don't know how to write, you write long scenarios... would that be problematic? To write bad scenarious?
+
+It will lock you in and it will get your flexibility out of your system. Just changing stuff will be harder and harder.
+
+> So your tests will not be flexible?
+
+No, your system won't be flexible. So your acceptance test are actually what the system does so if those are not flexible enough to change your system will become unflexible. It's important that you cover this correctly so the whole BDD lifecycle of creating (discovering), formalizing and TDD. Those are the 3 steps in BDD, so you need to have these three... there's the three special things to know it...
+
+> Those 3 things: discovering, formalizing and TDD. You just made up or  is that from some book or some reference?
+
+Yes, if you go to cucumber.io and Paul Righner. He actually made a really nice picture ilustration. There you see discovery, formalization and automation and automation would be the TDD acceptance testing.
+
+> Can you send this link if you have it? It's a nice way: to put all in one picture.
+
+It's just in cucumber.io site. Cucumber is for behaviour driven development.
+
+> Thank you for that image. I got it. I pass through it sometime and I never really payed attention to it.
+
+That's really important because it's about exploring the problem domain what you will do probabily with TDD or BDD. Discovery is an important part.
+
+> Thanks for all the help. I hope this had some meaning to you as well.
+
+Yes, always. I hope this will be used by people so people can take some assumptions out of the way so people can way what's BDD is really about and that can be really helpful and don't use cucumber for test automation and think BDD doesn't work. Then they don't use correctly. It would be asshamed that why they are not using it correctly they don't use BDD at all. I hope with your report we get more awareness about that.

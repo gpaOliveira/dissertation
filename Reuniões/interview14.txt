@@ -1,0 +1,478 @@
+\section{Interview N}
+
+% Transcribed from ??:?? to ??:?? on ??-??-2017 (stopped at ??)
+% Transcribed from ??:?? to ??:?? on ??-??-2017 (stopped at ??)
+% ...
+
+
+%%%%%%%%%% README
+
+> Deixa eu comecar falando o objetivo da conversa... eu estou fazendo uma pesquisa de mestrado para identificar quais caracteristicas compoem a definicao de qualidade de um cenario BDD, tudo para poder responder o que e um "bom" cenario. Entao por isso estou fazendo varias entrevistas, com pessoas que nem voce que usam BDD, para pegar essas caracteristicas que voces usam, as vezes sem saber, as vezes com uma certa metodologia, para saber o que voces consideram um bom BDD scenario. Em termos da descricao, da escrita dele
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+Eu sou analista de qualidade, mas voltado a engenheiro de automacao. Eu lidero uma equipe de 3 pessoas na area de automacao mesmo. E eu que sou responsavel por ter dado a ideia e ter implementado BDD na empresa. A gente esta usando, foi quase, no final do ano passado, entao uns 11 meses mais ou menos
+
+> E esse e o tempo total que vc conhece BDD?
+
+Nao, e o tempo total em que a gente comecou a trabalhar, a mexer com ferramentas, a conversar, a alinhar a equipe, foi ae que a gente comecou, mas eu ja conhecia de antes
+
+> Mas nunca tinha usado profissionalmente
+
+Nao
+
+2) What's your main task on the project?
+
+> Qual sua principal tarefa como lider de automacao, e escrever esses cenarios ou revisar os cenarios?
+
+E treinar a equipe, tanto no processo do BDD, quando para escrever e alinhar os pontos, entre o desenvolvimento e a parte nao tecnica.
+
+Mas ae pra equipe de automacao tem duvidas tecnicas da linguagem mesmo, e tem outros QAs que nao fazem automacao perguntar se estao escrevendo do jeito certo, a gente alinha sempre com o Product Owner quando ele nao faz o cenario, a gente faz e manda pra ele validar.
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+> E como e o processo de uso de um cenario BDD, como vcs recebem, quem escreve, do que se alimenta?
+
+O ideal seria se o product owner fizesse isso. Mas principalmente agora, que a gente tem varios projetos, entao num deles o product owner saiu, entao tem um deles que ta muito atarefado ele nao ta conseguindo fazer, mas o ideal seria que ele fizesse todo e que a gente no maximo revisasse pra ver se tinha mais algum, ou entao alterar um step ou outro que ja existe mas o ideal seria ele. 
+
+Mas hoje quem faz e a gente mesmo e manda pra ele validar, pra ver se e isso mesmo, como cenario que ele previu. 
+
+> Entao, deixa eu ver se eu entendi, vcs recebem user stories, ou requisitos em algum formato, e a equipe se reune para fazer cenarios em conjunto ou isso eh feito pelo testador, o cara de automacao ou o desenvolvedor daquela estoria?
+
+A gente vem, a gente faz a reuniao de grooming um dia antes do planning, e nessa reuniao a gente ja chega com uma ideia das features, nao com os cenarios prontos. Com uma ideia de como vai ser e se e isso mesmo. Dae antes do dia acabar a gente manda pro Product Owner, que esta nos US e quando a gente sai ele tem bastante tempo para revisar, e ae ele fala nao e bem isso, essas estao OK, essas nao, mas e a gente que faz, e como uma equipe mesmo. A gente tenta alinhar nessa reuniao de grooming com todos, manda pro product owner e ele valida.
+
+> Entendi, entao quando vcs entram na planning, esses cenarios ja estao validados e quando vcs pegam a estoria para desenvolver, o desenvolvedor desenvolve e o testador da estoria automatiza ja aqueles cenarios, e isso?
+
+E, nao e o testador, infelizmente, a gente tem uma equipe bem grande, com um monte de testador mas pouca gente que automatiza. Entao a equipe que automatiza so faz isso e a equipe que testa so faz isso. De longe nao e o mundo perfeito mas e o que ta tendo, entao.
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+* Steps too long/too short
+* Step few/many
+* Business language usage
+* Title description
+* Keywords (Given/When/Then) usage and order
+* Repetition of steps (Background/context usage)
+* Parameters are ok or not?
+* Tables are ok or not?
+
+> Quando vc ta revisando ou escrevendo esses cenarios, o que voce presta atencao, o que voce tenta seguir como uma boa pratica ou o q vc tenta evitar
+
+Assim, e dito que tem dois grandes jeitos de escrever cenarios neh, tem, ja tem outros nomes mas o que eu mais gostei foi implementacao e intencao. Dependendo pra quem for ler esses cenarios, vale mais a pena um ou outro. Eu prefiro intencao, que ae fica mais claro, sao menos passos, e mais alto nivel. Implementacao seria interessante se for mais pra equipe tecnica so, mas no nosso caso a gente, o Product Owner ve, pessoas que alguns testadores que nao sabem nada de CSS ou de codigo leem, pra gente e legal ser intencao, entao eu sempre do uma olhadada para saber se ta bem alto nivel a descricao dos cenarios. Tambem ver se, neh, bate com o que a estoria ta propondo, as vezes o cara nao entendeu bem, pode acontecer comigo tambem, tanto que eu nao sou o ultimo passo, o product owner ainda vai validar. Mas e bem isso assim, o ponto principal e estar escrito como intencao
+
+> Eu conheco uma outra analogia que e um modo imperativo e um modo declarativo, a intencao e o modo declarativo
+
+Nao, e o modo imperativo, onde nao aparece ID de campo...ou estou enganado?
+
+> Bom, vamo la, um step tipo assim "clique num botao tal" e intencao ou implementacao?
+
+Bom, depende. Se tiver la uma classe CSS, o botao tal for uma classe CSS, dae e implementacao. Por que tem codigo ali. Se for olhar click no botao de book, e dali no botao esta escrito book entao e intencao.
+
+> Ta a gente vai voltar isso depois pra ver se entendi bem...quando voce falou se tem a ver com a estoria, se faz sentido com a estoria, ou seja, se aquele cenario e coerente com a estoria, isso faz sentido, o cenario ser coerente com a estoria?
+
+Sim
+
+> Por que eu to anotando enquanto falo, entao volta e meia eu repito a mesma coisa para ver se anotei certo
+
+Sim, tranquilo
+
+> Ok...algo a mais que voce presta atencao?
+
+Na escrita dos cenarios nao...ver se esta escrito por intencao e ver se faz sentido com a estoria
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file to evaluate (change\_password.feature)
+
+Entao, eu to olhando essa, ali na linha 23, "Reset my password", pra mim isso ta completamente inaceitavel, isso nao e um cenario para usar como behavior driven development, isso e um teste end to end neh. Voce tem varias assercoes ali no meio, que tudo bem voce usar a ferramenta assim, nao e problema, mas voce nao vai usar dentro, com o que o BDD propoe. Voce teria que dividir esse cenario em varios cenarios pequenos e varios cenarios pequenos faz uma assercao cada.
+
+> Ok, vamos voltar que foram muitas coisas interessantes que eu vou tentar perguntar uma a uma. Voce falou que esse parece um test case, o que te deu a primeira impressao que parece um test case foi o que? O numero de steps, o jeito...
+
+O numero de steps. Foi a primeira coisa que me chocou, e muito step, tem o que, tem 12 linhas, e bastante coisa
+
+> E isso e muito e isso e ruim?
+
+E ruim. Quanto maior, menos legivel e.
+
+> Ok, numero de steps, e vc tambem falou que tem varias assercoes espalhadas, ou seja, tem uma combinacao de ordem das keywords When/Then/When/Then neh?
+
+Isso, e tambem no cenario de cima tem varios Then, no 19/20/21 tem tres Then seguidos. Ta como And mas ainda e Then.
+
+> E isso e ruim? Um cenario teria que ter so um Then?
+
+E ruim, e o melhor. Seria, nao sei, teria que entender um pouco melhor o que e a feature, so dei um tapa no olho aqui, mas talvez condensar isso so em 1 step, esses 3 then, mas mesmo assim quando voce vai fazer um caso de teste voce faz uma assercao so neh, voce ter muitiplas assercoes nao e uma boa pratica
+
+> Entendi... e a ordem dos steps, a gente falou que nao pode ter multiplas assercoes, mas aqui alem do fato de ter multiplas assercoes, existe uma variacao de When/Then steps e volta a ter mais When/Then steps, isso e legal?
+
+Assim, pra BDD nao e legal. Mas, voce tem alguns add-ons, eu uso Behat, deixa eu ver se eu acho aqui, ele tem um add-on que ele permite, por que o Behat, Cucumber, a ferramenta de BDD eles falham sempre que encontram uma excecao. Existem alguns add-ons pra nao falharem, eles se falham se tiver uma execao no Then. Entao nao e que tu nao pode fazer isso, mas e que no BDD nao e legal.
+
+> Ta entao o que voce
+
+Voce ta usando a ferramenta pra outra coisa, esse e o ponto
+
+> Ta, concordo, entao quer dizer que essa variacao de When/Then/When/Then nao e legal por que, alem da questao pratica da ferramenta, acha que isso afeta alguma coisa na descricao do cenario?
+
+Ele fica menos legivel ne. A ideia do BDD e ser legivel, e ae voce ficar misturando ali fica dificil de ler e fica pouco compreensivo
+
+> E voce acha que aquele titulo do cenario na linha 23 ta legal?
+
+Ah, da pra entender o que ele faz. Por ter muita assercao com certeza ele nao faz so isso, vamo ver. Olha ele submitou uma password, pq ele esqueceu uma password, entao ele faz uma assercao, entao ele so nao ta, ah nao, pera, li errado.... Eh nao nao, isso mesmo, tem razao, as assercoes nao estao descaracterizando o que ele ta fazendo no cenario, mas mesmo assim, da pra voce destrinchar tudo isso
+
+> Justo, mas focando no titulo, o titulo tem que te dizer a acao que esta sendo feita e o que esta sendo verificado?
+
+Sim. Uma coisa assim que eu acho legal ter uma feature e uma descricao, usando aquele, como que chama, o modelo de In Order to... As a... eu acho que ajuda bastante por que as vezes o cenario fica muito focado em alguma coisa e isso da uma ideia mais geral do que a feature inteira faz. 
+
+> Alem de dizer o que a feature faz, teria alguma outra coisa que a gente ia ganhar por botar uma descricao mais expressiva?
+
+Nao, acho que so comunicacao que fica melhorada
+
+> Ta, nao, deixa eu tentar de novo, o que voce quer, vc quer pela descricao da feature voce quer saber "O que" aquela feature faz ou voce quer saber outras coisas
+
+Nao, "o que" ela faz, so
+
+> E voce acha que a linguage que eles estao usando e uma linguagem interessante?
+
+Deixa eu dar uma lida, so um minuto...E, nao, e interessante sim, os passos estao bem descritos, voce sabe o que esta acontecendo, mas e, sim, os passos tao bons
+
+> Aham... se tivesse um descritor CSS ali no meio, seria legal pra deixar mais especifico?
+
+Ae depende do contexto, da empresa, quem for consumir essa informacao. Se for uma pessoa mais tecnica, perfeito, o cara vai saber mais facil ainda o que deu de errado. Mas pra uma pessoa nao tecnica vai atrapalhar, que dae vai entrar na pagina, procurar o que e, se souber procurar ainda, e possivel que a pessoa desista antes, entao depende do contexto.
+
+> Voce acha legal usar aqueles parametros, por que tudo que esta em double quotes parece um parametro, voce acha legal usar parametros daquela forma?
+
+Sim
+
+> Por que deixa eles bem evidentes?
+
+Nao, e mais pra programacao mesmo, por que ae pode re-utilizar os steps para coisas diferentes. Por que, por exemplo, nessa primeira linha, que fala que um usuario chamado double-quotes com um email outra coisa, ele pode usar varios usuarios diferente. Se nao usasse double-quotes teria que ter varios steps para cada um. Mas para leitura eu nao vejo problema, mas para a programacao fica muito mais facil.
+
+> Aham... voltando num ponto que eu acho que me passei e nao perguntei, voce acha que essa escrita dessa forma "eu pressiono aqui" ou "eu faco tal coisa", eu eu eu, alem do "eu" pessoa, se eu usar essas espressoes de "pressiona", "submit", "sign-in" e "sign-out", voce acha que essas coisas sao legais?
+
+E, entao, ele ta muito descritivo, poderia ser um pouco mais enchugado, diminuir neh, ao inves de usar tanto "I", eu pressiono, eu clico eu faco isso, condensar isso em um step so fica mais facil de ler
+
+> E o fato de usar "I" e algo razoavel, por que seria sempre eu usando o sistema?
+
+O que complica no uso do "I" e a duvida de quem e o "I", quem sou eu, se tivesse a descricao que falei ha pouco no arquivo de feature, voce consegue entender quem e essa pessoa, esse autor, mas eu por exemplo nao sei, eu vou imaginar que e um usuario qualquer, um usuario que nao conhece o sistema. Se tivesse uma descricao falando "as a", sei la, "logged person" ou "customer" ou qualquer outro ator do sistema. E a questao do contexto neh, se tiver o contexto fica mais facil de entender o que essa pessoa vai fazer
+
+6) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small - few steps
+* testable
+* understandable
+* unambiguous
+* valuable
+
+> Voce acha que elas sao interessantes, voce acha que elas ajudariam voce a revisar cenarios BDD?
+
+Tem algumas que sao bem interessantes, tipo unambiguous, algo importante de ter... eu nao entendi a parte de prioritized, como assim um cenario ter prioridade.
+
+7) What could be their meaning for BDD?
+
+* concise - ?
+* estimable - ?
+* feasible - ?
+* negotiable - ?
+* prioritized - ?
+* small - ?
+* testable - ?
+* understandable - ?
+* unambiguous - ?
+* valuable - ?
+
+> Pela descricao de um cenario voce nao conseguiria saber a prioridade dele?
+
+Da pra saber, com certeza eu iria onde esta o dinheiro neh, da pra ter uma nocao da prioridade do cenario pelo, se estiver bem descrito
+
+> Nao entendi, como assim, tem de ir onde esta o dinheiro? Como voce leria um cenario e o que te levaria a dizer que ele e mais ou menos prioritario?
+
+Ahn, por que, alguem ta construindo esse software pra gerar um valor, eu falei dinheiro mas a palavra e valor. Entao tem que saber onde esta o valor, por isso que e importante saber como esta descrito, se tiver importante o contexto, se tiver bem descrito os passos do cenario, fica mais facil saber qual valor que a empresa vai dar.
+
+Entao voce consegue priorizar pelo valor. E todo lance do BDD e isso, voce enxergar o valor e contribuir para esse valor.
+
+> Mas...ae eu mudo de palavra para perguntar o que e um cenario valioso, como voce identifica quao valioso um cenario e?
+
+Dae o valor ta na qualidade do cenario ou na valor que esse cenario testa, na feature que gera um valor.
+
+> E uma boa pergunta, o que voce acharia mais natural?
+
+Falando desse jeito acho que e a qualidade do cenario, mas ae um leva ao outro, se o cenario tem a qualidade boa voce consegue enxergar os pontos prioritarios para o software.
+
+> Ta, tem como me dar um exemplo de o que seria uma descricao de cenario que ia te passar um valor grande?
+
+Se fosse um usuario que seria um buying-customer ou uma pessoa que fecharia alguma coisa e o cenario descreve exatamente isso e eu compreensivel e facil de entender
+
+> Pelo ator entao, voce pegaria o valor pelo ator que esta sendo usado no cenario?
+
+Essa seria a primeira evidencia neh...
+
+> E teria mais ?
+
+Eu veria se ele vai pagar alguma coisa, se ele vai assinar alguma coisa, por que so fazendo o login o cara ja fez, o login e importante
+
+> Mas esse senso de importancia voce teria lendo qualquer cenario? Se voce entregasse o cenario para outra pessoa ler, essa pessoa teria o mesmo senso de importancia que voce ta dando, ou na verdade o que esta falando mais alto e seu conhecimento do dominio da aplicacao?
+
+E, a ideia seria esse contexto, esse conhecimento, estar passado no cenario. O quanto menos tem que ser falado melhor. Uma historia bem descrita e melhor que uma pessoa que esta la faz tempo, ler alguma coisa e pegar nas entrelinhas, entao tudo que ta escrito ta la, entao quanto menos precisar do conhecimento da pessoa melhor, para o entendimento.
+
+> Entao vamos olhar as outras palavras por que vou perguntar o significado delas em cenarios BDD, como voce identifica uma ou outra, ou a ausencia de uma ou a presenca de outra em cenarios BDD, na descricao dos cenarios BDD. O que seria um cenario conciso?
+
+Que nao ficasse patinando neh, que nem esses que sao muito longos e quer explicar muita coisa, nao precisa ser muito longo explicando ponto a ponto, ele pode ser mais direto
+
+> Mais direto, ta, direto...mais direto... e um cenario conciso e necessariamente pequeno?
+
+Nao...pode ser que tenha um cenario um pouco mais que por ser uma feature mais complicada que tem varios passos nao e legal voce tirar tantos passos. As vezes tem varios menus para clicar e chegar no lugar entao tem que explicar um pouco mais. Nao eh so um Given/When/Then, as vezes voce precisa de um Given/Given/When/When pra ae entao ter um Then. Conciso ta mais ligado ao custo beneficio, escrever o suficiente pra ser bem entendido. 
+
+> Aham, sem detalhes desnecessarios
+
+Isso
+
+> E um cenario pequeno seria avaliado pelo numero de steps?
+
+Mais ou menos. Deixa eu pensar... se eu tiver um cenario de 3 ou 2 linhas ate, as vezes ele pode nao me dizer nada, entao um cenario pequeno nao imprime qualidade. E cara, nao consigo organizar a ideia
+
+> Mas ja e algo a se pensar, o quao pequeno ele ta, como reduzir o numero de steps, e se equilibra com conciso pra nao deixar nada em aberto, talvez
+
+E, eu fiz ali... tava trabalhando agora ha pouco em 1 cenario, e deixa eu ver... eh, ele nesse caso ele tem 5 passos, mas ele passa por varios, entao no caso ali do exemplo que voce mandou, teria muito mais passos por que fala todos os passos que ele clicou, o que ele preencheu, e aqui eu so falei "ow, preenchi os campos" neh, mas ainda assim, como tem outras telas eu tive que falar eu entrei aqui, eu entrei aqui.... e o minimo pra ser compreensivel, para que a pessoa que pega teu cenario consiga executar manualmente, tem que ser um test case neh
+
+> Isso tornaria um cenario testavel, a propriedade dele pode ser executado manualmente?
+
+Sim
+
+> Se esse cenario precisa ser executado manualmente, quer dizer que tem que deixar explicito todas as interacoes com a tela, certo?
+
+Nao, voce pode falar, por exemplo, tem um formulario de pagamento, que vc tem que colocar o seu nome, telefone, endereco, cartao, voce pode falar "eu preencho o formulario de pagamento" neh. Nao ta claro o que voce tem que preencher em tudo, mas voce sabe que tem que preencher
+
+> E o que seria um cenario estimavel, quao estimavel um cenario seria ou quais detalhes na escrita deixaria ele mais ou menos estimavel?
+
+Esse eu nao entendi muito bem tambem. O que deu pra pensar quando voce mandou e que ele ja e um cenario, entao essa feature ja foi implementada e ja foi testada, entao talvez tenha uma alteracao ou uma feature parecida e dae vai consultar ela, mas mesmo assim, nao...
+
+> Entao o estimavel e mais para feature?
+
+Na verdade eu nao consegui colocar estimavel dentro de um cenario, o que poderia ser um cenario estimavel.
+
+> Bom, botar essas palavras aqui era pra exatamente eliminar umas ou adicionar outras. Feasible, fazivel, voce consegue ver na descricao do cenario se ele e possivel de ser feito ou nao?
+
+Nao, se ele ja ta descrito ele e fazivel neh, entao acho desnecessario por que ele ja ta la.
+
+> Entendivel...vc falou legivel um pouco antes, seria um sinonimo de entendivel?
+
+Sim
+
+> E o que seria um cenario legivel, o que ajuda um cenario a ser mais legivel?
+
+Dae que entra o problema da cultura, da linguage, do ruido, aquela historia de portugues ne, mensagem, o receptor, e dificil... e o problema que o BDD tenta arrumar mas claro que depende de pessoas para escrever, mas e, tem varios pontos que voce pode abordar, entao se voce ta com uma equipe que so fala uma lingua e mais facil, por que vc ja sabe o que a pessoa faz. Se voce esta numa equipe distribuida, que e o meu caso, ja tem todo um outro cuidado que tem que tomar, usar palavras faceis, evitar um rebuscamento nas palavras, quanto mais direto e simples for, melhor
+
+> Entao o uso de palavras mais diretas... e o que seria um cenario ambiguo?
+
+Que nao ta claro o suficiente, ele pode gerar dois resultados, e talvez ate os dois estejam certos, mas o cenario testa mais de uma coisa, nao minto, o cenario testa uma coisa mas a leitura dele gera mais de uma interpretacao
+
+> Por que tem palavras que sao misleading... e aquele cenario que vimos anteriormente que era bem grande, e a gente falou "ah, ele parece que esta testando muitas coisas". Essa sua percepcao afetaria quais palavras aqui, ou seja, desses criterios que botei aqui qual seria impactado?
+
+Conciso... understandable... ambiguous... acho que esses sao os mais, e o small neh.
+
+> Ta mas se fosse um cenario com poucas linhas, direto e que testasse mais de uma coisa ele seria o que?
+
+Nao, nao e legal testar mais de uma coisa, com certeza nao, talvez ele tenha feito isso pra falhar o teste se nao encontrou algo logo de cara.
+
+> E negociavel, um cenario pode ser negociavel?
+
+Pode... pode, nao sei se e bem isso mas vamos la. Por que o ideal e chegarmos no sprint planning com esses cenarios ja, nao codados, mas ja prontos neh pra apresentar e discutirmos no planning. E as vezes uma feature ta muito grande, tem muitos cenarios, e dae a gente pode diminuir e tirar uns por importancia, por prioridade, diminuir a feature, diminuir a story, entregar a tempo e depois ir adicionando outros cenarios que podem ser implementados depois. Acho que so assim, nao consigo pensar em outro ponto.
+
+> Mas a gente nao conseguiria ver...como a gente vai decidir qual cenario e negociavel e qual nao e? Ao ler um cenario? Por que uma coisa e quebrar uma feature, mas faz sentido pensar em escopo e quebrar o escopo de um cenario? Ou faz sentido quebrar o escopo de um feature file?
+
+Exato, voce nao vai quebrar o escopo de um cenario, voce vai quebrar o escopo de uma feature. 
+
+> E o que, que tipo de palavreado, que descricao tornaria ele mais ou menos negociavel?
+
+E so... a ideia do cenario e ele ser atomico, e ele testar so uma coisa, entao nao tem como quebrar uma coisa atomica. Qual foi sua pergunta desculpa?
+
+> Nao, ja me respondeu que na verdade e pela feature, nao pelo cenario, certo?
+
+Certo
+
+8) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ANOTHER feature file to evaluate in light of those attributes shown before (post\_preview.feature).
+
+> Entao deixa eu filtrar as palavras que voce achou mais interessantes, a gente retirou feasible, negotiable, estimable e acho que a lista em que acabamos ficando foi: concise, prioritized, small, testable, understandable, unambiguous, valuable 
+
+Isso, eu peguei essa post\_preview. Dei sorte, essa tem explicacao. Esse "as a user" e terrivel.
+
+> Por que?
+
+Por que user todo mundo e user.  Entao ele nao ta explicando nada, tu colocou pq falaram pra ele "tu tem que colocar essa explicacao sempre". Entao agrega pouco valor falar que e um usuario
+
+> E o que agregaria mais valor?
+
+Ser um usuario administrador, falar quem e esse usuario, por que um usuario e literalmente todo mundo, e um usuario administrador, e um usuario padrao que entra pra consumir alguma coisa, e uma pessoa que usa muito, que usa pouco, um senhor de idade e uma crianca. Todos eles sao. Voce pode colocar profile ali... entao, ele nao trouxe valor nenhum, o "as a" ainda ta jogado.
+
+Mas ele usou Background que e legal
+
+> Por que e legal?
+
+Por que voce da, e bem pela palavra, voce da um contexto a estoria, aos cenarios que voce ta passando. Nossa que cenario estranho, e, dae ele vem com um cenario com 3 Givens...
+
+> E so pra gente nao deixar o Background de lado, e legal no Background ter Given/When/Then?
+
+Ah eu... agora que vc falou o Then parecia estranho, mas eu nunca...eu usei uma vez Bakground so e nunca parei, nunca vi ninguem falando sobre isso, entao nao sei te dizer
+
+> Voce gostou de ver o Then ali, voce acha que ficou legal, foi uma boa ideia?
+
+Deixa eu dar uma lida, perae... ah, tranquilo, ta falando ali que e um usuario conectado com outro usuario...bom, ele ja ta conectado, nao tem porque botar esse When ae mas.. ahn, e nao vai ver nada na screen dele, pq ele nao trocou nenhuma mensagem com esse usuario, esta entendivel
+
+> Entao ok no Then tambem...seguindo entao, esses cenarios sao concisos?
+
+Nao, nao sao... tem ali um cenario, o primeiro cenario, "preview and post a text-only message", tem ali 3 Givens neh, com certeza da pra fazer 3 cenarios separados. Ou entao so um cenario.
+
+> Entao multiplos Given da uma ideia de que nao e conciso
+
+De novo tem uma salada ali no outro cenario, "preview a very long message", tem Given/When/And/Then/And/Then, talvez de pra colocar mais de um cenario ali, talvez so deixar um Then
+
+> E isso tambem afetaria conciso?
+
+Sim, acho que o que isso nao afeta e o testable e o prioritazed. Por que o testable tem muitas informacoes la, entao se for passo a passo bem devagar voce consegue seguir passo a passo ali. Mas para leitura de bater o olho e le tudo, uma pessoa nova entrar, vai ter que ler muita coisa para entender, entao se for menor fica mais facil.
+
+> E como voce consegue me dizer o quao prioritario esse cenario e em relacao aos outros?
+
+Deixa eu ver aqui todos os cenarios, so um minuto.... e eu diria que o prioritario seria o "preview and post a text-only message", por que e o mais simples. Os outros e um plus, que seria a historia que falamos de quebrar ne... ah, quer mandar uma mensagem grande, se o cara consegue mandar varias pequenas ele consegue conversar ainda. Vai ser chato ele quebrar o texto, vai mas ainda da pra usar. Preview com foto, tambem, da pra usar sem isso. 
+
+Entao nesse caso a prioridade seria preview o texto so, depois o texto longo, depois seria a mencao, dae e claro, depende da visao da equipe de business.
+
+> E tu chegou a essa conclusao talvez peelo fato de que o cenario e o primeiro a ser descrito?
+
+Nao, mais por ser o servico mais simples, de mensagens curtas
+
+> Seria o happy path?
+
+Seria o happy path
+
+> Ah tah, teria alguma caracteristica no cenario que ajudasse essa prioridade a ser mais realcada ser mais explicita
+
+Eu gosto muito de usar tag, eu acho que isso ajuda bastante, entao ali ele poderia por uma tag em quantas features ele quiser com "important" por exemplo.
+
+> Legal... e ja falamos que eles sao testaveis neh...eles sao valiosos?
+
+Sao, sao... sao feios mas sao valiosos
+
+> Por que ?
+
+Por que seria algo que provavelmente para esse sistema e importante. Deixa eu ver se aqui tem um exemplo do que e valioso... eh, tem muita coisa, nao vou ler tudo, mas, por exemplo, testar FAQ, testar About Us, isso ae nao e importante, voce pode testar claro mas isso ae nao e importante. 
+
+> Isso nao e importance por que?
+
+E, por que, nao e que nao e importante, depende do contexto da empresa e tal, as vezes para a empresa e importante ter um about us, entao vao dar um destaque no About Us e vai ter uma automacao nisso para garantir que esta funcionando
+
+Mas nao consigo citar uma empresa em que o About Us e o que toque, ou o que de algum dinheiro para a empresa
+
+> Mas voce consegue identificar isso so lendo os cenarios ou voce precisaria do contexto daquela empresa?
+
+Entao, se ele tivesse uma vai precisar de uns cenarios assim...
+
+> Ta, eu vou tentar repetir por que eu nao entendi a resposta... voce so lendo o cenario voce conseguiria saber o quao valioso ele seria ou precisaria do contexto da empresa e de um conhecimento extra ao cenario?
+
+Seria importante que tivesse uma tag talvez ou uma coisa que falasse "ow, isso aqui e importante", mas de ter cenarios neh voce ja comeca a colocar, talvez isso aqui seja um ponto importante. Nao vale gastar tempo fazendo automacao numa coisa que nao seja importante. Varia de empresa para empresa, mas no geral...
+
+> E algum desses cenario e ambiguo ?
+
+Dae precisaria ler um pouco mais
+
+> Nao estressa nao, era so para ter o teu feeling do que seria mas ja botei aqui que seria o uso de palavras confusas, sao abertas a interpretacao... eu nao, deixa eu voltar a esse cenario por que ele tem umas coisas interessantes, tipo ali na linha 49, onde tem uma class de image, um class selector, voce acha que isso e legal de botar no cenario?
+
+Nao, acho que nao. Depende do contexto da empresa, de quem vai ler, do publico que vai consumir isso. Eu acho que, para a ideia do BDD nao eh tao interessante, ja que a ideia e ser comunicativo por que dae estaria falando em linguagem de computador e nao linguagem humana. 
+
+> E qual daquelas palavras seria mais prejudicada por causa desse uso de seletores CSS, tags HTML e tal?
+
+Conciso... nao, conciso nao, understandable
+
+> Ah, entao detalhes tecnicos deixaria o cenario menos understandable
+
+Pensando num publico mais geral
+
+> Alguma outra coisa deixaria o cenario menos understandable? Ou, alguma outra coisa deixaria ele mais understandable?
+
+Arghn, bastante coisa neh, por que entra detalhes que ja conversamos - se ele e muito longo ele vai ser menos understandable, se, eh, se tiver muita Given/When/Then misturado ele vai ser menos. Quando mais direto for mais entendivel.
+
+> Entao concise e small tem uma ligacao com understandable?
+
+Sim
+
+> Aquela tabela ali da linha 47 e legal, de usar tabelas?
+
+Nao do jeito que ele usou, mas seria legal
+
+> Como seria um jeito legal de usar tabelas?
+
+O da linha 9 e perfeito, voce tem ow os usernames vao ser esses, o email esses
+
+> E por que e diferente...por que tem titulo na coluna?
+
+Por que tem titulo. Nesse jeito da linha 47 eu nao consigo nem entender pra que fazer isso.
+
+> E as tabelas tem que ter titulo... e usar tabelas deixa o cenario mais, usar tabelas adiciona pontos em qual daquelas palavras?
+
+Unambiguous e testable
+
+> E em qualquer step e legal usar tabelas?
+
+Nao, so quando for necessario, quando tiver muitos dados dae e legal.
+
+> E valeria usar num When e no Given e no Then?
+
+E, isso, no 9 eh Given neh, pq ele diz Dado que esses usuarios existem, entao ele ta criando usuarios no Given talvez.
+
+> Certo
+
+
+9) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+Cada uma delas? Conciso 5, Prioritized 2, small 4, testable 4, understandable 5, unambiguous 5, valuable 4 ou 5, acho que 5... 
+
+> Mesmo valuable sendo dificil de identificar?
+
+Eh
+
+10) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+Valuable, prioritazed, essas duas
+
+> Voce tinha falado antes que o uso de tags ajudaria nelas, faz sentido?
+
+Sim
+
+11) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized - use of tags
+* small
+* testable
+* understandable
+* unambiguous
+* valuable - tags
+
+> O fato da linguage ser mais declarativa, ser mais sobre a intencao, isso afetaria qual daquelas palavras?
+
+Understandable e unambiguous.
+
+> Linguagem declarativa...legal... e outra coisa que voce tinha falado e que os cenarios tem que bater, eles tem que fazer sentido para aquela feature. Como voce usaria essas palavras pra identificar isso ?
+
+Ae eu acho que o valuable vai bem. Por que se o cenario nao bate com a feature ele nao tem valor, ele ta ali a toa. 
+
+12) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+Acho que nao, se eu lembrar de alguma coisa eu mando mas...
+
+> O fato de so testar uma coisa, seria mapeado em qual dessas palavras?
+
+E, eu acho que faltou uma sim, atomico ne, acho que seria essa palavra para descrever.
+
+> Mas atomico significa que ele so testa uma coisa ou que ele nao pode ser quebrado
+
+Que ela so testa uma coisa, mas e, os dois estao ligados neh? 
+
+13) General remarks about the quality criteria BDD scenario subject
+
+
+

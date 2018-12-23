@@ -1,0 +1,48 @@
+        \hline
+        \cite{Cohn_2004} valuable & 14 & \cite{4415} \cite{4518} \cite{4650} \cite{4911} \cite{4968} \cite{Heck_and_Zaidman_2015} \cite{4415.13} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{Cohn_2004} \cite{4875.6} \cite{Heck_2014} \cite{4930.1} \\
+        \hline
+        \cite{Cohn_2004} small & 14 & \cite{4415} \cite{4650} \cite{4816} \cite{Lucassen_et_dot_al_2015} \cite{4968} \cite{Heck_and_Zaidman_2015} \cite{4415.14} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{Cohn_2004} \cite{4875.6} \cite{Heck_2014} \cite{4930.1}\\
+        \hline
+        \cite{Cohn_2004} testable & 14 & \cite{4415} \cite{4631} \cite{4816} \cite{4968} \cite{Heck_and_Zaidman_2015} \cite{4415.13} \cite{4415.14} \cite{4415.16} \cite{4415.15} \cite{Cohn_2004} \cite{4875.6} \cite{Heck_2014} \cite{4930.5} \cite{4930.1} \\
+        \hline
+        \cite{Cohn_2004} independent & 11 & \cite{4415} \cite{Lucassen_et_dot_al_2015} \cite{4968} \cite{Heck_and_Zaidman_2015} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{Cohn_2004} \cite{4875.6} \cite{Heck_2014} \cite{4930.1}\\
+        \hline
+        \cite{Cohn_2004} estimable & 11 & \cite{4415} \cite{Lucassen_et_dot_al_2015} \cite{4968} \cite{Heck_and_Zaidman_2015} \cite{4415.16} \cite{4415.15} \cite{4518.3} \cite{Cohn_2004} \cite{4875.6} \cite{Heck_2014} \cite{4930.1} \\
+        \hline
+        \cite{Babok_2015} unambiguous & 11 & \cite{4415} \cite{4631} \cite{4650} \cite{4816} \cite{4875} \cite{Lucassen_et_dot_al_2015} \cite{4968} \cite{Heck_and_Zaidman_2015} \cite{4518.3} \cite{Heck_2014} \cite{4930.5} \\
+        \hline
+        \cite{Babok_2015} complete & 10 & \cite{4415} \cite{4631} \cite{4852} \cite{4875} \cite{Lucassen_et_dot_al_2015} \cite{4945} \cite{4415.13} \cite{4518.3} \cite{Heck_2014} \cite{4930.5} \\
+        \hline
+        \cite{Babok_2009} completeness & 10 & \cite{4415} \cite{4631} \cite{4852} \cite{4875} \cite{Lucassen_et_dot_al_2015} \cite{4945} \cite{4415.13} \cite{4518.3} \cite{Heck_2014} \cite{4930.5} \\
+        \hline
+        \cite{Cohn_2004} negotiable & 9 & \cite{4415} \cite{4968} \cite{Heck_and_Zaidman_2015} \cite{4415.16} \cite{4415.15} \cite{Cohn_2004} \cite{4875.6} \cite{Heck_2014} \cite{4930.1} \\
+        \hline
+        \cite{Babok_2015} understandable & 8 & \cite{4484} \cite{4816} \cite{4911} \cite{4924} \cite{4945} \cite{4415.14} \cite{4875.6} \cite{4930.5} \\
+        \hline
+        \cite{Babok_2009} unambiguity & 7 & \cite{4415} \cite{4816} \cite{4875} \cite{Lucassen_et_dot_al_2015} \cite{Heck_and_Zaidman_2015} \cite{4518.3} \cite{Heck_2014} \\
+        \hline
+        \cite{Babok_2015} testable & 7 & \cite{4415} \cite{4631} \cite{4816} \cite{4875} \cite{4415.13} \cite{4415.14} \cite{4930.5} \\
+        \hline
+        \cite{Babok_2009} consistency & 6 & \cite{4650} \cite{4924} \cite{4945} \cite{4518.3} \cite{4875.6} \cite{Heck_2014} \\
+        \hline
+        \cite{Babok_2015} consistent & 6 & \cite{4924} \cite{4945} \cite{4968} \cite{4518.3} \cite{4875.6} \cite{Heck_2014}\\
+        \hline
+        \cite{Babok_2009} testability & 6 & \cite{4631} \cite{4816} \cite{4875} \cite{4945} \cite{4415.13} \cite{4415.14} \\
+        \hline
+        \cite{Babok_2009} correction & 5 & \cite{4415} \cite{4415.13} \cite{4518.3} \cite{4875.6} \cite{Heck_2014} \\
+        \hline
+        \cite{Babok_2015} atomic & 4 & \cite{Lucassen_et_dot_al_2015} \cite{Heck_and_Zaidman_2015} \cite{4518.3} \cite{Heck_2014} \\
+        \hline
+        \cite{Babok_2015} concise & 3 & \cite{4816} \cite{4875} \cite{4518.3} \\
+        \hline
+        \cite{Babok_2015} feasible & 3 & \cite{Lucassen_et_dot_al_2015} \cite{4945} \cite{4415.14} \\
+        \hline
+        \cite{Babok_2015} prioritized & 3 & \cite{4415} \cite{4945} \cite{4518.3}\\
+        \hline
+        \cite{Babok_2009} adaptability & 2 & \cite{4911} \cite{Heck_and_Zaidman_2015} \\
+        \hline
+        \cite{Babok_2009} cohesion & 1 & \cite{4518.3}\\
+        \hline
+        \cite{Babok_2009} viability & 1 & \cite{4945} \\
+        \hline
+

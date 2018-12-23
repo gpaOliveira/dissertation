@@ -1,0 +1,405 @@
+\section{Interview 12}
+
+% Transcribed from 22:30 to 00:05 on 4-11-2017 (stopped at 1:03)
+% Transcribed from ??:?? to ??:?? on ??-??-2017 (stopped at ??)
+% ...
+
+> Comecando falando um pouquinho do que eu pretendo ta, a minha pesquisa e voltada para a qualidade de cenarios BDD. Entao estou interessado em saber quais os criterios que voce considera, bem focado na sua opiniao, de o que sao bons cenarios e quais os criterios para decidir isso, como voce sabe que e um bom cenario. Entao fica bem tranquilo para dizer isso eu gosto, isso eu nao gosto, sendo certo ou errado ate pq nao tem certo e errado, entao fica tranquilo
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+O meu papel nos projetos que estou agora e de especialista de teste. Eu sou lider tecnico da equipe, onde existem varias equipes, mais de 30 produtos desenvolvidos, e cada equipe tem um conjunto de um ou mais testadores, divididos em verticais de produtos e cada vertical cuida de varios produtos. Entao sao atualmente 9 verticais, e cada vertical tem varios testadores, entao eu faco a lideranca tecnica de todos os testadores, entao eu tenho que dizer como serao feitos os testes, qual ferramenta a gente vai usar, como sera o processo, como vamos especificar, como vamos fazer as automacoes, se tem alguma estrategia de teste em especial para fazer, por exemplo, para teste de seguranca - qual tecnica aplicar, qual ferramenta usar, quem vai testar. Eu tambem sou responsavel por treinar e qualificar toda a equipe, entao temos 45 testadores e eu sou responsavel por ser o lider tecnico dessa galera.
+
+Eu trabalho com BDD fazem aproximadamente 4 anos.
+
+2) What's your main task on the project?
+
+> Voce como lider tecnico chega a revisar os cenarios BDD que uma ou outra equipe cria
+
+Nao da pra revisar de todo mundo mas na medida do possivel tento revisar, revisar cobertura, revisar segmento de padrao, se aquilo ali entrega valor ou nao, no caso dos testes se esta aderente as automacoes ou nao, se o pessoal esta tendo retrabalho ou nao, por que o mesmo cenario que pessoal faz a especificacao para user story e o mesmo que se usa para o teste manual que pode ser adaptado, pode ser colocado no cucumber e usar para o robo rodar em cima. 
+
+Entao, a gente pode, dependendo, temos metodos la, usamos automacao baseada em Cucumber, e a gente tem metodos que ajudam em certo passo, por exemplo, alguem vai fazer um teste la onde tera que acessar um determinado ambiente, bom, aquilo la ja tem metodo Java que executa la automatico, so poe o ambiente por parametro que ja ta rodando, o sistema ja vai la e acessa. Entao temos alguns conjuntos de padroes que eu defini que seria bom todo mundo seguir para que nao tenha muito trabalho, para ser mais eficiente.
+
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+> E como os projetos, ou alguns projetos, usam BDD, vc tem acesso a essa informacao? Como e o processo ate chegar a escrita de cenarios ou ate depois?
+
+Tenho, entao, quem trouxe BDD para a empresa fui eu. Eu trouxe como, eu vim para ajeitar o Teste, entao eu nao pude me meter nos requisitos por que imagina ne, eu cheguei la para arrumar os testes e dae o que esse cara ta fazendo la que ta mexendo nos requisitos ja. Entao, eu fiz a parte do teste primeiro, eu botei BDD e disse esses cenarios BDD, cada conjunto de Dado que, Quando e Entao representa um caso de teste, entao eu chamei isso de caso de teste, por que na verdade um caso de teste e tambem um conjunto de pre-condicoes, passos esperado e pos-condicoes e o cenario BDD atende isso, entao hoje a especificacao BDD e um caso de teste.
+
+Pois bem, e o caso de teste que tem a table driven embaixo, que vai me dizer varios cenarios que ela ta atendendo, ou os dados, e uma table driven por que e uma data driven com regras tambem, entao ela tem dados e tambem tem regra. Posso ter determinadas regras ali tambem.
+
+Ae, comecou no teste, botamos isso, hoje ja sao mais de 14 mil especificacoes em BDD la, 14 mil de casos de teste nesse formato, em 3 anos e meio. E todo dia tem mais.
+
+> E isso foi no passado, isso ainda e assim?
+
+Ainda e assim, pessoal especifica casos de teste no BDD, em formato BDD, especificacao em BDD, beleza. Dae comecou que eu botei as automacoes ne, automacao junto, dae eu entre e ja botei as automacoes tambem, e as automacoes ja foi no mesmo formato, BDD tambem no Cucumber e tal.
+
+Dae agora faz alguns meses, dae eu sempre vendi a ideia que tinhamos que fazer user story, que tinhamos que trazer especificacao de requisito em BDD tambem, que o marketing poderia estar olhando o mesmo artefato, e que dae o pessoal do suporte teria acesso ao mesmo artefato e tal. E ae comecei nessa vibe de mudar os requisitos, o pessoal la reclama bastante dos requisitos, que eles sao morosos de trabalhar, dificil de entender, e tal.
+
+Entao, comecei agora num projeto piloto em uma das equipes que esta se trabalhando especificacao so com user stories e cenarios em BDD, dae o teste ja ta, os testadores ja estao ajudando o analista de requisito a especificar naquele formato, entao ja avaliando a qualidade dos cenarios, ae estamos com esse piloto ae e a ideia e que se migre todas as especificacoes para user stories ao longo de 2018. E dae estou acompanhando o pessoal dessa equipe e dando treinamento sobre BDD, ja que eles tao tambem fazendo Agile, algo novo para a empresa. Tudo comecou ao mesmo tempo, botaram Scrum e tudo.
+
+> E como voce acha que o BDD ajuda na tarefa de fazer casos de teste, que e a maior tarefa que voces usam
+
+E, ele ajuda bastante, o pessoal costuma vender a ideia que um dos objetivos e auxiliar na automacao, por que especifico em BDD e coloco o robo para rodar e quando o robo falha, eu sei exatamente onde o robo falhou, eu sei o cenario de negocio onde o robo falhou. Ele nao falha num trecho de script - claro que debaixo dos panos ele falha num trecho de script, mas quando ele me apresenta um relatorio de teste mostrando um defeito, esse defeito mostra o ponto exato de negocio que falhou, ele tava realizando uma operacao, cenario de negocio. Esse e o beneficio.
+
+Outro beneficio, quando esta elaborando esses cenarios, quando esta definindo os cenarios, quando esta olhando os cenarios, tambem se esta pensando em negocio. Tu ta pensando varias situacoes de negocio que podem falhar ou que podem dar certo, entao a propria criacao do cenario ela te ajuda a entender melhor o negocio.
+
+Facilita a identificar os bugs, muito mais rapido, nao preciso ficar debugando script para saber onde falhou na situacao de negocio. Por que o relatorio ja me da isso pronto. Mesmo executando manualmente, nao so na automacao, mas manualmente tambem, tem esse beneficio no manual tambem.
+
+Outro aspecto e que quando eu identifico o cenario, quando eu crio o cenario, a partir daquele momento em que criei, alguem, eu escrevo um cenario muito interessante, eu pego qualquer cenario que a gente escreveu na empresa, entrego para qualquer pessoa e ela sabe executar e entende o que esta sendo pedido. Por que o teste e muito simples, o padrao te induz a isso ne. Dado que tem um perfil tal e eu acessei tal menu, quando eu executar tal coisa e fazer tal coisa e selecionar la, Entao o sistema tem que apresentar tal informacao e apresentar tal registro E tem que exibir tal coisa na tela. E todo mundo entende isso. E diferente pegar um trecho de cima a baixo com um monte de vinculos e links um para o outro la e nao se acha direito, entao esse e outro, mais um beneficio de especificar, de todo mundo falar a mesma lingua, que e o que pregam ne, a linguagem ubiqua. Todo mundo fala a mesma lingua, todo mundo entende. Qualquer pessoa entende o que e proposto, o que tem de fazer. 
+
+A gente pode tambem, por meio desta, como todo mundo entende, vem um outro beneficio decorrente desse que e poder pegar esse cenario e entregar para qualquer testador testar. Por que e simples de entender, e rapido e facil de entender, entao a gente pode implementar na equipe o conceito de testadores volantes, que e um testador de uma equipe ta sobrando mao de obra la na equipe dele, a release ja foi entregue, a gente aquele tempo daquele cara e ele pode estar auxiliando outra pessoa que esta apagando incendio la. Entao a gente pode aplicar esse conceito ae tambem. Ele vai pegar o caso de teste da pessoa la, ta em BDD, ta simples o que fazer, tem tudo, e ele vai conseguir trabalhar, e de fato se mostrou verdade, eles conseguiram mesmo. 
+
+O que mais de beneficio, para o analista de negocio que escreve o requisito neste formato o pessoal ta me reportando que ta muito mais facil de escrever tambem, que e mais facil de escrever, mais dae nao e so com o BDD, e um conjunto de outras coisas, a gente tinha que fazer um documento no Word que era bem moroso tinha que botar links, tinha que botar historico, tinha uma tabela de historico, tinha um controle de versao numa tabela, era bem complicado. Mas por si so o BDD eles sentiram que e mais facil de interagir e fazer mais rapido de fazer e mais simples. Mas no comeco os primeiros que o rapaz fez, era um analista de negocio, um programador, teve um analista de processo ajudando e uma testadora. E o comeco foi um pouco mais dificil, para entender a dinamica de como fazer, mas depois foi mais facil de trabalhar, bem mais rapido. 
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+* Steps too long/too short
+* Step few/many
+* Business language usage
+* Title description
+* Keywords (Given/When/Then) usage and order
+* Repetition of steps (Background/context usage)
+* Parameters are ok or not?
+* Tables are ok or not?
+
+> E deixa eu perguntar tambem, quando voce le um cenario BDD, quais sao as coisas que voce mais presta atencao, quais sao as coisas que voce tenta evitar fazer ou as coisas que tenta seguir como boa pratica
+
+Boa pergunta, as vezes o pessoal acha que e so seguir aquele padrao de escrita e ta tudo certo neh. Mas na verdade nao, na verdade o cenario tem que ter qualidade, aquele padrao por si so nao garante qualidade. O cara pode pegar dentro daquele padrao e contar um texto gigante escrito naquele padrao, ou pode simplesmente escrever um monte de coisa e mesmo assim nao dizer nada.
+
+O que eu costumo observar... um indicio que o cenario tem qualidade, se quer ter uma visao rapida, pra ver de cara se nao tem qualidade, e pegar e olhar o cenario, vamos suport, a user story tem que te entregar valor. Entao nao adianta uma user story ela nao vai poder te dizer assim te guiar, so pelo cadastro de pessoa, te guiar pela inclusao da pessoa. Nao, a user story tem que te guiar para te entregar um controle e gestao de pessoa. Vai implementar la um cadastro, a insercao, a listagem, a exclusao, um relatorio e tal. Entao os cenarios tem que te guiar para isso.
+
+Entao um cenario, o primeiro cenario nao vai poder comecar la com o relatorio das pessoas, por que a pessoa tem um endereco entao daqui a pouco vai ter que comecar, vai ser mais coerente, melhor, tu tem ... comecar la pelos atributos que a pessoa contem
+
+> Cortou aqui... os atributos que a pessoa contem no 1o cenario, isso ?
+
+Isso, isso, exato, entao, nao que esse seja sempre o caso, daqui a pouco tem outro la que precisa descrever uma integracao primeiro, mas essa ordem dos fatores ela e determinante para eu ter uma ... [corte]... melhor neh, nao aquela coisa de primeiro pegar um cenario que eu nao entendo, depois eu vou pegar um outro que vai grudar naquele la de cima mas tem conceitos do la de cima, mas tem uma ordem ne pra fazer as coisas para implementar melhor, implementar mais rapido. Isso ja diz algo sobre a qualidade do cenario, se olhar e ver todo baguncado ja ve de cara que nao, que ta faltando planejar uma organizacao basica em como as coisas vao se integrar entre si, entao isso e algo que eu observo Isso eu observo primeiro isso por que isso, se ja tiver isso, dae ja, se nao tiver isso ja dae ta faltando coisa, por que isso e muito perceptivo, ja num bater de olho voce ja nota.
+
+O segundo ponto e se ele nao vai, se o cenario ele realmente ele ta organizado em cenario, se ele realmente e um cenario ne, por que tem cenarios que e quase uma user story ne, tem aquele cenario la grandao que vai tentar abracar o mundo, um unico cenario que vai botar um monte de regras de calculos dentro de um unico cenario, entao isso tambem nao e legal, o cenario tem que ser realmente um, um cenario, nao um monte de cenarios.
+
+> Entao quer dizer que ele, quando voce fala que ele tem que ser um cenario, e sinal que ele tem que nao ser muito longo? O que exatamente te leva a crer que um cenario nao e um cenario?
+
+Por exemplo, eu vou, deixa eu puxar um exemplo aqui, puxar um exemplo do cadastro de pessoa, cadastro simples de pessoa, por exemplo, estou especificando que eu quero incluir pessoa e que a pessoa tem um endereco, ela mora em algum lugar. Dae a pessoa, voce nao vai especificar la dentro desse cenario algo relacionado ao cadastro de endereco dela, ela tem que ter um foco aquele foco e no cadastro da pessoa, aquele cenario e pra aquilo ali nao para o outro registro la.
+
+> Entao o cenario tem que ter um foco especifico, ele nao pode ser desconexo uma frase com a outra, ele tem que ser focado em uma coisa so, e isso?
+
+Exatamente. Claro que eu vou pegar um exemplo de um cenario la, quem pode editar o cadastro de pessoa, Dado que eu tenho perfil de Admnistrador, ou Dado que eu tenho o perfil de Gerente, vamos supor, isso ae vai pra table driven, referencia na table driven la na tabela vai ter os perfis que podem ou nao editar o registro. Mas claro, eu deixei aberto e as regras tao no, as regras tao ali, mas eu ainda estou falando de edicao de pessoa, eu nao fugi daquilo ali, estou focado naquele cenario
+
+> Entao coisas que eu anotei aqui: ordenar os cenarios por complexidade, ter uma ordem de cenarios na verdade
+
+Nao e por complexidade, e por comportamento, e basicamente por comportamento da aplicacao, a ordem em que elas vao se integrando. O que elas vao, quer ver, por exemplo, tem a estrategia quando vai fazer um teste de criar uns stubs e tal, entao voce escolhe a estrategia, entao nao da pra comecar em qualquer ordem, numa estrategia de big bang, nao da pra escolher isso ae, por que vc vai atirar para tudo que e lado, nao, vai seguir uma ordem de como vai implementar as coisas. Elas se encaixam. Essa tela de cadastro de pessoas vai ser usada num relatorio X la num demonstrativo de recebimentos da pessoa, vamos supor e tal, o que vai implementar primeiro neh
+
+> Entao a ordem de cenarios por implementacao
+
+Ela tem que acompanhar a estrategia do desenvolvimento, a arquitetura do codigo.
+
+> Entendi, entao alem dessa ordem tem que ter um foco especifico e duas coisas que notei enquanto voce falava eu queria confirmar se sao coisas que voce presta atencao. Uma das coisas e que os cenarios tem que cobrir toda a feature, isso faz sentido?
+
+Sim, os cenarios tem que cobrir toda feature. Na verdade se isso nao significa falar "tudo", por que isso significa o que e cobrir "tudo" tambem. La na empresa eles debatem se vao colocar la o, pegar por exemplo estou descrevendo um cenario que contem dados que o usuario vai colocar. Dae vem a pergunta, ele precisa colocar todos os atributos, todas as propriedades desses atributos, por exemplo, se esse campo e obrigatorio ou nao, um numero maximo de caracteres desse campo ou numero minimo, se e campo de data a mascara, esse tipo de coisa, muitas vezes ele nao precisa botar tudo isso numa especificao e mesmo assim entregar valor, por que aqui voce pode se comunicar e pode eles podem se falar e tem coisas e tem padroes que sao definicoes da propria stack de desenvolvimento podem ser seguidos. Entao a empresa tem uma equipe de pesquisa e desenvolvimento, eles definem, definiram algumas stacks de desenvolvimento, ah por exemplo, angular com Java8, e la na configuracao dessas stacks tem alguns padroes que tem que ser seguidos, tem varias coisas. Entao dependendo do que for, a equipe ja tem aquele padrao ali a ser seguido - olha, os campos de data sao sempre assim os campos de hover sao sempre assim, olha os placeholdersa sao sempre assim, entao tem certas coisas que eu nao preciso, nao preciso estar especificando ali para ter um nivel que a equipe entenda
+
+> E outra coisa que notei e que nao pode ter um texto gigante, o que voce quis dizer com isso, voce falou meio rapido entao eu anotei aqui para perguntar depois
+
+Essa e a mesma coisa, quis dizer a mesma questao do foco
+
+> Ok, entendi, vou linkar aqui...algo mais que voce presta atencao alem dessas tres coisas, da ordem, do foco e de cobertura
+
+E de entregar valor, tem que estar coerente com aquela user story, com aquela entrega. Ele nao pode ser desvinculado de alguma forma. E se ele for um cenario que ele por si so entrega valor, sozinha, ele ja eh uma outra entrega, ele nao faz parte daquela user story
+
+> E como voce sabe se um cenario entrega valor ou nao?
+
+Por que o usuario vai conseguir utilizar aquilo na totalidade. Ele vai conseguir por exemplo, a user story e um controle de pessoas, ele vai conseguir controlar pessoas depois de receber aquela funcionalidade? A estoria vai dizer assim, como um administrador, eu quero controlar pessoas para que consiga fazer tal coisa, para que eu tenha tal coisa la. A pergunta que se faz e se ele vai conseguir aquilo. Se ele nao vai conseguir, entao nao esta entregando valor
+
+> Ta mas isso e uma user story, ainda nao consegui entender como um cenario entrega valor, mas vou voltar nisso depois por que...
+
+O cenario ele faz parte, ele ta ali junto com outros e esse conjunto entrega valor. Ele por si so isoladamente nem sempre consegue. 
+
+> Ta, eu vou anotar aqui pra depois
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file to evaluate (aspect\_navigation.feature)
+
+Acho que esse de photo\_gallery aqui... ok, tem um cenario positivo e um cenario negativo... e pra opinar ?
+
+> Isso...esses cenarios sao legais, o que vc acha desses cenarios, eles foram uma boa ideia?
+
+Ahn... Boa ideia aqui, me confundi...eu nao sei por que os dados de acesso dela estao dentro da feature, ja que o objetivo nao e testar login mas testar a visualizacao da foto...isso confunde um pouco por que pode ter dado uma perda de foco ae, mas ok que eh na pre-condicao. 
+
+Eu botaria o perfil dela, nao o usuario em si, pra ficar mais facil de entender, quem e essa Alice, pq aqui eu nao sei quem e Alice, simplesmente...eu nao sei se ela e um usuario ou se e uma editora dessa comunidade ou uma aprovadora, o perfil que tem ja poderia por aqui
+
+Deixa eu ver, quando ela pressiona...beleza, ficou bem claro a visualizacao da foto... ficou claro o fechamento ali tambem. Ficou, mas deu pra entender o proposito disso aqui, como vou visualizar uma foto, como vou anexar, o botao que vai ter que eu pressiono para anexar uma foto, dae depois eu vejo essa foto, se eu clico no link ali para fechar eu nao vejo mais a foto. A proposta ficou bem clara o que e pra fazer.
+
+> E voce acha que essa forma de escrita de dizer as acoes do usuario, "Quando eu pressiono" ou "Quando eu faco sign in" isso e uma boa ideia?
+
+Eu acho que e uma boa ideia, dessa forma ae ta a se colocar, ta se colocando o usuario falando o que ele precisa ne, e tu como o usuario o que tu vai querer, tu como usuario, dae pode vestir o chapeu de um outro usuario e falar da pespectiva dele, "Eu como um Admin vou aprovar a foto da Alice", como eu vou fazer, tem as duas perspectivas
+
+> Aham... e se tivessem varios passos de UI para fazer valeria explica ali cada passo em 1 step? Por exemplo, eu tenho que pressionar a imagem que ta anexada, eu tenho que girar o mouse, eu tenho que nao sei o que, tudo isso vale botar como steps ali?
+
+Em termos de negocio, se e um analista de requisitos fazendo, eu acho que ele nao precisa se preocupar a chegar nesse nivel, agora quando a gente falar de levar isso aqui para teste, tem varias coisas que o programador vai ter que fazer para implementar isso aqui e umas coisas sao adequadas e outras nao, entao para o teste e interessante ele descrever os cenarios que vai usar, ae vai para um nivel maior de detalhe.
+
+E na automacao ae sim, ae vai a nivel ainda um pouco maior, por que o robo vai ter que clicar, vai ter que selecionar tal coisa, vai ter que usar um arquivo de jpg um arquivo que e png, um arquivo que e gif, um arquivo que nem imagem nao e.
+
+> E tudo isso tem que ficar evidente no cenario?
+
+E a gente tem colocado no cenario, eu nao sei se e a melhor pratica ou nao mas a gente tem colocado no cenario
+
+> Nao, ok, legal, eu pergunto para motivar mesmo e pegar sua opiniao, entao nao tem certo ou errado, pelo menos nao hoje nao tem certo ou errado. E aquela descricao de feature voce acha que ficou legal?
+
+Ele podia ter uma letra mais... a tag que identifica @javascript, a gente usa um monte de tag, um monte de tag para identificar. O nome da feature bacana, eu so talvez botaria um identificador para poder, a gente usa identificadores, e uma pratica que a gente usa, por exemplo, essa feature e uma FT numero tal vamos supor, a gente usa RFC e RNG para requisito. Por que e um codigo unico, identificador, depois o programador pega esse codigo e coloca la o codigo fonte para identificar a origem de cada trecho de codigo que eles tem, isso e uma boa pratica na codificao la tambem, pra depois conseguir identificar, teste unitario la tambem. E as tags tambem.
+
+> E do jeito que a descricao da feature ta e legal por que esta sempre curta? Acha que ela tem que ser sempre curta, e legal, e uma boa regra?
+
+Nao ela nao tem que ser sempre curta, ela tem que ir ate o nivel que te entrega aquilo, se pra te entregar eu precisasse descrever mais coisa eu teria que descrever. Nesse caso aqui eu entendi, da pra entregar o que esta aqui, da pra entregar essa visualizacao de foto aqui tranquilo. Talvez, claro, tenha ficado em duvida aqui que tipo de imagem, qual e o tamanho da imagem a se identificar, esse tipo de coisa. Pensando bem, essa visualizacao de foto ta faltando alguma coisa, ta faltando uma tabelinha dizendo qual e a resolucao, ou alguma coisa. Mas, vai da equipe, por que, por que se a equipe ja desenvolveu algo parecido eu nao preciso por que isso aqui me entrega. Eu tenho uma visao que eu ja sei o que e uma imagem e eu ja sei o que e uma resolucao boa de uma imagem o que e um tamanho, eu ja tenho experiencia com comunidades, eu sei que essa imagem aqui pode ser visualizada num quadrado ou num circulo e que ela tem que ter uma resolucao tal
+
+> Entao depende de cada equipe, de cada contexto
+
+Exatamente, agora se essa comunidade e uma comunidade novissima ningueum nunca viu uma imagem na vida dae voce vai ter que detalhar bem mais. Dae vai ficar faltando aqui, vai botar a imagem num circulo ou num quadrado ou vai maximizar vai deixar minimizado ali, aquele link e um botao vermelho ou, enfim. Ae se nao tem padrao vai ter que se ...
+
+> E quando a tags que vc comentou que vcs usam bastante, voce acha que e bom ter muitas tags o, e bom ter tags em cenarios?
+
+E bom ter tags. A gente usa tags, uma tag identifica o nome do sistema, a funcionalidade, o modulo, o nome da feature, por que eu posso querer executar la na automacao um caso de teste so daquela feature, o que mais, o nome do testador responsavel, o que criou, o testador que botou a mao ali, que e responsavel por executar aquele cenario, no minimo isso que a gente bota.
+
+> E isso ajuda na hora de ler esse cenario pra entender ele?
+
+Pra entender nao ajuda por que ele ta dentro de uma pasta, ele ta dentro de um conjunto que eu consigo navegar e vou encontrar ele dentro da navegacao, entao a tag por si so nao ajuda no entendimento daonde eu to, qual o modulo, qual o sistema, por que isso tem coisas por fora que ja me dao, mas ele me ajuda a achar melhor na hora que eu quiser fazer uma pesquisa, um search, to la na minha IDE vamos supor o Intelij ou Eclipse faco um search e ele ja me da todas as features que tem aquela tag, e nisso ajuda
+
+> Se tivesse mais passos When aqui, por que precisa fazer varias acoes, precisa selecionar a imagem, precisa selecionar outras coisas, seria legal ter varios When assim?
+
+Se precisa sim
+
+> Ok...tem mais algo a adicionar a esse cenario? Comentar sobre esse cenario?
+
+Nao so mais When quanto Then tambem neh. Acho que foi exatamente isso, consegui passar tudo
+
+6) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small - few steps
+* testable
+* understandable
+* unambiguous
+* valuable
+
+Esse aqui e o principio INVEST neh?
+
+> E parecido, parte delas e do INVEST sim. Voces chegam a usar o INVEST, inclusive para cenarios BDD?
+
+Sim
+
+> E tem sido util para cenarios BDD?
+
+So uma coisa, nao o cenario so o cenario, mas o conjunto de cenarios que forma a user story. O conjunto de cenarios segue o INVEST, nao somente um so. 
+
+> Entao o feature file segue o INVEST?
+
+E que pra gente a gente tem uma feature, esse feature file ele e um dos cenarios que compoe uma user story.
+
+> Entao uma user story pode ter varios feature files
+
+Isso exatamente, isso e o que fazemos. Cada cenario da user story seria seu feature file. Por isso que digo que e um conjunto. Tu tem estruturado seu feature file como uma entrega de valor nesse seu caso ae ne, a gente aqui tava usando diferente, nao sei se ta certo ou errado tambem, eu segui os padroes la do Good Requirements que o cara la escreveu
+
+> Ok, mas voltando a essas palavras, voce acha que elas seriam uteis, todas elas?
+
+Deixa eu ver... ele e conciso, ele e estimavel,... eu acho que sim acho que todas elas mas o small depende. Conceito de pequeno nem sempre e pequeno. Ele tem que seguir o conceito de pronto, definition of done, ele tem q seguir a definition of done daquele caso. Se for small, beleza, se nao tem que ser bem big.
+
+
+7) What could be their meaning for BDD?
+
+* concise - ?
+* estimable - ?
+* feasible - ?
+* negotiable - ?
+* prioritized - ?
+* small - ?
+* testable - ?
+* understandable - ?
+* unambiguous - ?
+* valuable - ?
+
+> Ok, entao small nao exatamente... como seria um exemplo, como voce veria, pela descricao do cenario, quao conciso ele e ?
+
+Quao conciso ele e, pela descricao do cenario, tu diz pelo titulo do feature neh, visualizacao da foto
+
+> Nao nao, pelo cenario em si, pelo conjunto de steps, pelo cenario description, isso e um cenario, como vc sabe que ele e conciso
+
+Eu sei que ele e conciso por que ele nao vai fugir do foco. Vai entregar o que precisa, nao vai fugir daqui, nao vai atender outras coisas, e vai entregar ao que se propoe entregar. 
+
+> Entendi, e como seria um cenario, o que vc veria na descricao do cenario para saber que ele e estimavel
+
+Pra ele, saber que ele e estimavel, por exemplo, aqui na empresa estamos estimando em ponto de funcao agora, por exemplo, ate criei uma ferramenta que faz a contagem de pontos de funcao automaticamente em cima das user stories, no caso do seu que vc tem de feature aqui. O que essa ferramenta faz, ela vai la, abre o arquivo feature, e conta quantas entradas de dados tem, quantas saidas de dados, e quantas consultas, quantos registros logicos e quantas integracoes. Dae a gente tem um padrao de escrita que ela consegue fazer a contagem, por que por exemplo aqui eu consigo ver que tem uma mensagem de status, isso e uma saida, eu tenho sign in aqui que e uma entrada, esse campo de sign in, entretanto esse campo nao e referente a essa tela, nao e complexidade da visualizacao de foto, por isso aquela minha opiniao que isso aqui nao faz parte desse contexto e por isso nao estaria aqui, exatamente pela questao do estimavel pra que a gente consiga estimar bem somente isso aqui.
+
+A visualizacao de foto eu tenho aqui, eu tenho ali um commando de entrada, eu tenho uma consulta aqui da foto, eu consigo estimar cada um, seguindo o padrao da UFPG de contagem em ponto de funcao, ou seguir o padrao da MESMA ou seguir o padrao de use case points
+
+> E como vc saberia que o cenario e feasible, se ele e possivel de ser realizado, so olhando a descricao do cenario, o que lhe chamaria a atencao para saber se e possivel de ser realizado ou nao
+
+Se ele e possivel ser realizado, para eu ter essa percepcao se ele e realizavel mesmo eu nao posso ter nada nebuloso ali, entao, por exemplo ali ele ta me dizendo que eu tenho que pressionar um link e fechar para nao ver mais imagem. Se eu dizer aqui que ele tem que pressionar a imagem e nao tem mais a visualizacao dae ja ficou nebuloso o Como.
+
+> Entao essa caracteristica de ser nebuloso torna o cenario ambiguo?
+
+Questao de ser ambigo e que ele pode se contradizer, pode se repetir, ele pode por exemplo dizer que eu tenho que visualizar pressionando o botao de anexo ou o botao de "+" ali em cima, daqui a pouco eles sao a mesma coisa e ele esta sendo ambiguo.
+
+> Mas se ele sao conceitos distintos vc saberia dizer se e um ou outro?
+
+Estamos falando de feasible e ambiguo neh? E o feasible e o factivel de ser feito, se eu posso fazer, entao, eu olho pra ele e vejo se eu consigo fazer, se nao me resta duvidas, se eu nao tenho duvidas em cima dele de como vou fazer. Agora a questao do ambiguidade e se ele nao ta se repetindo coisas ali, claro eles, o ambiguo afeta essa questao de eu conseguir fazer ou nao, por que ele ta ambiguo ele provavelmente nao ta feasible tambem
+
+> Entao eles sao relacionados, entendi. E como seria um cenario negociavel? Como vc identifica isso na descricao do cenario?
+
+Eu consigo negociar ele para te entregar em outra data por exemplo, e ae tu ja ve se ele te entrega valor ou nao. Eu olhando aqui consigo negociar de ver ele e te dizer assim "posso te entregar isso aqui dia 13, ta bom pra ti?" e tu " nao nao, eu preciso dessa visualizacao de foto para amanha", ah tah, entao vamos ter que ver aqui por que eu tenho outras features aqui, vamos ter que priorizar outras features aqui, sabe aquele registro la, aquela feature de comentarios, vc quer essas fotos ou aqueles comentarios? Se eu tiver as fotos e o comentarios na mesma feature, ja perdi o termo negociavel ae por que nao consigo negociar essa questao das fotos. Vai casa junto com outro conceito, de comentarios, dae nao tenho uma feature negotiable
+
+> Mas esses conceitos casados nao ta mais ligado ao seu conhecimento do negocio e nao necessariamente a descricao do cenario?
+
+E eu acho que ta ligado sim, ta sim, ta mais ligado ao conhecimento de negocio mesmo. Agora se a feature ela e negociavel, e a questao se ela tem um foco, se ela tem aquele foco que ela vai te entregar o que tu precisa somente o que tu precisa ela e negociavel. Se ela nao vai te entregar se ela vai te entregar outras coisas a mais ela vai perdento essa caracteristica de ela ser negociavel.
+
+> Entendi, e essa questao do foco vale para ele ser prioritizavel?
+
+Eu acho que sim, aham, mesma questao, prioritizar, e ta junto da questao do estimavel tambem neh, de ser measurable, de poder estimar, por que eu vou priorizar depois de ter uma ideia da importancia para o negocio
+
+> Mas de novo, essas caracteristica sao conceitos que nao estao no cenario neh? O foco que eu queria dar e, acha que essas palavras ajudariam, tendo so o cenario, vc so tem a descricao do cenario, vc conseguiria usar essas palavras para te ajudar a avaliar quao bom ou nao aquele cenario ta?
+
+Eu acho que, entao, essa questao de prioritizacao vai levar em conta mais o negocio, pensando por esse lado, eu vou avaliar em termos de negocio, o negotiable faz total sentido, o testavel faz total sentido
+
+> Testavel, como seria um cenario testavel?
+
+Testavel, eu vou de cima abaixo eu consigo testar cada passo que ele ta me dizendo aqui, eu consigo verificar se o sistema atende a cad apasso, passo por passo
+
+> Voce consegue executar manualmente cada passo?
+
+E, consigo pelo menos executar manualmente, dele verificar se a aplicacao atende a cada passo. Se eu nao conseguir verificar que a aplicacao atende a cada passo dae nao e testavel
+
+> E o que seria um cenario entendivel?
+
+Que eu leia e nao fique com duvidas do que e pra fazer
+
+> De novo aquela mesma questao do foco talvez
+
+O foco ser especifico, questao ambientais, eu ja ter conhecimento do negocio ou nao, entra a questao do negocio junto claro minha visa, por eu ter experiencia ou nao, pode nao ser uma propriedade da feature, alguem pode ler a feature e ficar com um monte de duvida e eu nao ficar com muita duvida. Nao podemos, eu nao diria que, por que a feature esta entendivel que todo mundo vai entender, nao vai dizer ne, no desenvolvimento da feature tem que consider as questoes ambientas, ja que elas guiam como vai fazer o detalhamento e a prioritizacao
+
+> Por ultimo, como voce identificaria no texto do cenario quao valioso ele e?
+
+Dae tambem em relacao a negocio, o quanto ele agrega ao negocio
+
+> Entendi, entao nao seria bem sobre o texto do cenario
+
+Nao, nao vendo como sendo pelo texto do cenario, mas faz sentido eu identificar pela feature, obtendo a feature eu observo quanto que ele agrega. Mas por que que ajuda, por que tem modelos de escrita que tu olha e nao consegue identificar se ele entrega valor ou nao. Tem casos reais da empresa que a gente olha la um cadastro e um vinculo com um monte de coisa, tem relacionamento com um monte de outra coisa, dae o registro da cheio de links no meio, dae tem que abrir um monte de outras especificacoes para formular um conceito, para entender o que e para entregar, dae consegue identificar se vai entregar valor por cliente ou nao. Aqui nao, aqui vc ja olha pro cenario simples, e por ir direto ao ponto tambem, voce falou do foco, mas claro eu so vou saber por que eu tenho a visao de negocio
+
+> Entendi, entao e ligado ao seu conhecimento do dominio do negocio. Entao, no fim, a gente filtrou a lista para essas 6 palavras (concise, estimable, feasible, negotiable, testable, unambiguous) e vou te pedir para voltar ao Github e escolher outro arquivo de feature para avaliar de acordo com essas palavras, se ele possui essas palavras, se nao possui, por que sim, por que nao, etc.
+
+8) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ANOTHER feature file to evaluate in light of those attributes shown before (search.feature).
+
+Tem uma tabela, uma tabelinha, table-driven... entao vamos pro primeiro aqui, o primeiro conciso...
+
+Aqui eu ja tenho cenarios bem como a gente usa na empresa, o que tu chama de feature nos chamamos de user story. 
+
+> Essa cenario da linha 36 e um bom cenario?
+
+Eu acho que nao por que eu nao entendi direito o que acontece, o que a aplicacao tem que fazer direito aqui. Na verdade aqui o Entao deveria conter algo do tipo, olha, por que o cenario diz uma coisa mas a acao feita na verificacao e outra. O cenario e busca por um usuario que nao e pesquisavel, mas o teste do cenario mesmo o roteiro diz para marcar como alguem que nao esta na pesquisa, entao ele pede outra coisa, nao pede o que acontece quando o cara nao esta na pesquisa
+
+> E ele continua nas outras linhas neh?
+
+Ah tah, essa primeira aqui, nao li o resto... ah agora sim, ta beleza, ae sim.
+
+> Entao voltando, esse e um bom cenario?
+
+E um bom cenario sim
+
+> Ele e concico?
+
+E conciso, entrega o que, vai entregar o que bem certinho, vai entregar o resultado esperado. E estimavel tambem, consigo estimar cada entrada de dados, cada saida, cada consulta, cada integracao no caso tem uma integracao aqui
+
+> E o fato dele usar aqueles seletores CSS tipo da linha 55, ".profile_header #name" isso fica interessante de usar assim?
+
+Essa aqui e uma propriedade HTML que vai ter la na tela, dentro do profile_header da pagina, no name, e onde vai estar isso aqui. E interessante, eles ja especificaram a nivel de detalhe. Nao precisaria, mas eles quiseram seguir um padrao de boas praticas de codificao e acabaram especificando, mas a gente nao vai nesse nivel, mas achei bem interessante.
+
+> E voce acha que e uma boa idea?
+
+Eu acho que quem programa tem que, olha, nao sei dizer. Na minha empresa nao seria uma boa pratica, isso seria, e que a gente tem fabrica de software tem estrategia de produto, quem e da estrategia de produto que sao os analistas de requisitos eles pensam no negocio dae tem especialista de produto, e isso seria uma pratica que a fabrica ia questionar, nao ia entrar, isso nao ia entrar la para dentro, por que a fabrica de software que decide se vai botar um profile_header ou se vai botar um label ou alguma outra coisa, se isso aqui vai ser um label dentro de um checkbox desabilitado ou dentro de uma pop-up ou alguma coisa, eles que definem, entao isso seria encarado aqui como uma especificacao de negocio que o cara entrou na parte tecnica aqui que nao e da competencia dele. Isso aqui na empresa.
+
+Eu achei bem interessante a abordagem, mas na empresa que eu estou nao entraria. Por outro lado, eu achei interessante, por que acho que eu nao usaria, por que a gente quer daqui a pouco usar certos padroes que estao num arquivo de padroes e se eu alterar o padrao eu alterei uma vez so la, e aqui se eu to com determinado padrao dentro da minha especificacao de feature, eu vou ter que sair feature por feature alterando, so por causa de uma alteracao de padrao, isso nao seria uma boa. Outra que aqui eu estou determinando ja como eu quero exatamente la na tela, pode ser que o codificador ou o designer teve uma outra idea, de uma outra forma, e o negocio nao poderia estar engessando isso. Eu nao faria dessa forma. Achei interessante que quiseram chegar nesse nivel mas eu nao faria.
+
+> Entendi, entao o negocio nao poderia fazer isso, legal. E eles sao testaveis?
+
+Ah esse aqui e totalmente testavel, cada passo eu consigo verificar. 
+
+> E ele e ambiguo de alguma forma
+
+Eu tenho que ler o resto aqui pra ver... Ele ta sendo um pouquinho ambiguo so la em cima quando eu digo que clico no primeiro resultado da pesquisa e eu clico no nome do cara, e la embaixo ele repete de novo, que no primeiro resultado da pesquisa ele tem que ver o nome do cara, ali, foi um pouquinho ambiguo ali sim
+
+> Por causa da escolha de palavras
+
+Por ter repetido coisa ne. Isso ja tava dito neh. Ele sabe, ja ta especificando numa tela de pesquisa que ele ja fez la em cima.
+
+9) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+E, eu acho que 4, como eu te disse uso outros criterios tambem ne
+
+10) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+A mais dificil de usar eu acho que e o negotiable eu acho, nao sei se e negociavel, acho que e isso.
+
+> Mas no fim das contas vc consegue saber o quao negociavel o cenario e so olhando pra ele?
+
+Consigo. Nesse caso aqui, ele e so da pesquisa, ele nao e outra coisa, entao eu consigo negociar so pesquisa 
+
+11) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized - use of tags
+* small
+* testable
+* understandable
+* unambiguous
+* valuable - tags
+
+> Por exemplo a questao do foco especifico mapeamos em conciso, negociavel e em estimable, em feasible e conciso
+
+Talvez nao sei se tem uma palavra para isso, mas olha so, ele botou aqui a procura por um usuario, depois vem a busca por um usuario em background, depois um usuario que nao e pesquisavel, depois a busca por uma tag. Ta legal, nao sei se tem uma palavra para isso, mas se ele botasse busca por uma tag por ultimo, eu nao ia me achar, por ultimo nao por primeiro, se tivesse que mover, se eu tivesse que ler isso aqui em primeiro eu nao ia entender o conceito dessa feature
+
+> Entao a ordem ta coesa, algo assim
+
+De repente entra na coesao ne, nao sei. Se a gente considerar isso como coesao dae e nota 5 neh, por que sao alguns criterios que uso, o testable ta ae...
+
+> Entendi, entao, a gente pegou o fato da ordem dos cenarios em coesao, o foco especifico sendo conciso e de ser feasible, e coerente com a entrega foi posto em coesao tambem, e cobertura de teste botou em testavel. 
+
+Se nao for testavel nem consigo medir cobertura neh
+
+
+12) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+> E o fato de ser coerente com a entrega, como poderiamos mapear essa coerencia numa palavra? A gente sera que conseguiria mapear numa das palavras
+
+Acho que esta dentro da negociacao, do conceito de negociavel, minha opiniao, posso estar errado
+
+> Mas hoje e pra pegar tua opiniao mesmo... e questao de cobertura dos cenario, para saber o quanto eles cobrem a feature, isso e importante?
+
+Sim, com certeza, a gente ate avalia isso na empresa, percentagem de cobertura
+
+> E qual palavra avaliaria isso?
+
+Isso e no conceito de testavel. Eu avalio bastante a cobertura, entao isso estaria... se for pensar bem todos os criterios que eu falei la no comeco estao ae dentro neh. Entao 5, por que todas as palavras estao relacionadas de alguma forma para o que eu preciso, ao que eu avalio neh
+
+> Mas faltou a ordem dos cenarios neh, isso e uma palavra nova. 
+
+E, mas talvez entre na questao de ser coeso, mas teria que pesquisar um pouco mais o termo, no dicionario por coesao.
+
+> Mas nao se preocupa, a ordem ja e uma boa palavra. Entao revisando...
+
+Coesao, forca de atracao, coerencia...
+
+> Coerencia com a entrega ta mapeado em negociavel, vale mudar?
+
+Pode mudar, para ter o significado da palavra. 
+
+> Entao essa questao da ordem e da coerencia com a entrega iria em coerencia, a nova palavra?
+
+E que conciso pelo dicionario aqui e que ta coerente, e que coerente tem ligacao com aderencia, tem nexo, logico. Acho que essa questao da ordem entra em coerencia, que por sua vez entra na questao de coesao por que coesao e clareza de pensamento ou de um todo, entao essa questao da ordem entra em coerencia, que e coesao, coesao e coerencia, entra em coesao
+
+13) General remarks about the quality criteria BDD scenario subject
+
+
+

@@ -1,0 +1,1 @@
+("validation" OR "guideline" OR "quality" OR "heuristics" OR "rule" OR "pitfall" OR "assessment" OR "checklist" OR "anti-patterns" OR "rule") AND ("requirements engineering" OR "use case" OR "user story" OR "framework for integrated tests" OR "acceptance test" OR "behavior*development") AND "agile"

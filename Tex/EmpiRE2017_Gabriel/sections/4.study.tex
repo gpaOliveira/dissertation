@@ -1,0 +1,46 @@
+\section{Evaluating BDD Scenarios Quality}
+
+%motivation
+As we have no knowledge about a quality questionnaire to evaluate BDD scenarios, we must understand what criteria are important to evaluate the quality of BDD scenarios and from there build our own questionnaire. Therefore, our purpose is to find a list of quality attributes that would work with BDD scenarios, in a similar way that traditional attributes \cite{Babok_2009} \cite{Babok_2015} work with requirements documents and INVEST heuristic \cite{Cohn_2004} works with user-stories. We find inspiration on what similar studies did with Use Cases \cite{Cockburn_2000} \cite{Karl_et_dot_all_2014} \cite{Tiwari_and_Gupta_2015} and User Stories \cite{Heck_2014}, \cite{Lucassen_et_dot_al_2015}. 
+
+In preparation to creating that listing, we first seek to gain insight on whether the existing quality attributes would work with BDD scenarios, and if they do not, which ones would be a good fit for such purposes. To that end, we organized a study with 15 graduate students to understand how they evaluate BDD scenarios. 
+
+However, we had two concerns before starting: (a) we were not certain about how a person's evaluation of a textual document using quality attributes would differ based on the representation format and (b) we wanted to have evaluators who understood the product enough to judge its requirements - therefore, we could not ask students to evaluate requirements for a product domain they have no understanding of.
+
+To address our first concern, we judged it necessary to compare how the same quality attributes would be used to evaluate BDD scenarios and Use Cases, in order to clarify a person's motives and analysis rationale. The choice of formats to compare was based on the fact that both, scenarios and use cases, seems to prefer a more declarative way to describe a behavior, rather than imperative, to stay detached from the implementation details \cite{Cockburn_2000} \cite{Smart_2014}. Also a use case execution path seems to be a BDD scenario on a different format - on Cockburn's book \cite{Cockburn_2000}, the main scenario is always described. To compare how the same list of attributes would be used on both formats, we mixed traditional attributes from both BABOK editions \cite{Babok_2009} \cite{Babok_2015} and the INVEST framework \cite{Cohn_2004} in a single alphabetically ordered list. We let the scope of the analysis - if one should evaluate each scenario or use case separately or together with the others from the same feature - open to interpretation to measure this aspect. 
+
+To address our second concern, we judged it necessary to first ask them to write requirements to two fictional products (PA and PB) in different domains, using the two requirements formats we have chosen, so they could feel more familiar with the product domain and the requirements formats before evaluating other students' work. 
+
+\subsection{Fictional Products}
+
+The products were presented to the students in a product vision board format \cite{VisionBoard}. On that occasion, they had the chance to ask questions, straighten their understanding on how to solve the business problem presented, and collaboratively draft a list of high-level requirements expressed on a use case scope format \cite{Cockburn_2000} and on a user story format \cite{Cockburn_2000}. After this initial discussion, we would take their suggestions and create the final high-level requirements. Finally, a new discussion round was performed to allow students to read the final high-level requirements, validate them, negotiate their details, decide whether each one should be part of the scope or not. Those discussion sessions were planned to give them all the same understanding of what the product should be and how it should behave, as a means to guarantee a common ground of understanding to produce use cases (based on the high-level requirements represented by scope statements) and BDD scenarios (based on high-level requirements represented by user stories). After the last round of discussions, the students then proceeded to perform their tasks in individual manners.
+
+Product A aim was to develop a mobile app to help people with food allergy find places to eat free of ingredients that cause them allergy and distress. The user should be able to have an easy way to indicate which kind of food allergy or restrictions one has. There were two target groups: Users with any kind of food allergy that are quickly (e.g., while driving, walking, chatting with another person, etc) looking for a place to eat; and Customers, owners of restaurants, whose company business reputation would be improved if they used this new client search channel. Product B was a social-network website that aims to bring low cost book readers and resellers (who sell second-hand books) together. Readers would fill their profiles with genre interests and literature thoughts in exchange of badges, a higher fame status, and occasional promotions directly to them. Those social network interactions would provide resellers with enough information to direct their marketing efforts and promotions to the right subset of users in an special website area where one could gather and visualize user data.
+
+\subsection{Design Description}
+Therefore, we asked the students to perform the following sequential tasks: write requirements for PA with requirement format assigned; write requirements for PB with another requirement format assigned; evaluate other student requirements for PA; evaluate other student requirements for PB. As expalined before, each student was assigned a requirements format among user stories and BDD scenarios (US + BDD) or use cases (UC) to perform the writing tasks (tasks 1 and 2). Therefore, we had virtually two group os students - Group 1 (G1) contained those who develop BDD scenarios for product A and use cases for product B and Group 2 (G2) those who develop use cases for product A and BDD scenarios for product B. For the evaluation tasks, students on one group should receive functional requirements from the other group. Thus, students from G1 who developed BDD scenarios for product A should now evaluate the use cases for product A as part of task 3. Consequently, students from G2 who developed use cases for product A should now evaluate BDD scenarios for product A as part of task 3. Task 4 should be executed in the same way, but considering product B. Table \ref{table:study_organization} exemplifies how four students would perform the tasks provided. 
+
+\begin{table}[!t]
+	\renewcommand{\arraystretch}{1}
+	\caption{Sample of study organization for 4 students\newline (S1 to S4)}
+	\label{table:study_organization}
+	\centering
+	\begin{tabular}{|m{0.2cm}|m{1cm}|m{1cm}|m{1.5cm}|m{1.5cm}|}
+		\hline
+		\textbf{ID} & \textbf{Task 1} & \textbf{Task 2} & \textbf{Task 3} & \textbf{Task 4}\\
+		\hline
+		S1 & Write\newline UC\newline for PA & Write\newline US+BDD\newline for PB & Evaluate\newline US+BDD\newline for PA\newline\textit{(S2 task 1)} & Evaluate\newline UC\newline for PB\newline\textit{(S4 task 2)}\\
+		\hline
+		S2 & Write\newline US+BDD\newline for PA & Write\newline UC\newline for PB & Evaluate\newline UC\newline for PA\newline\textit{(S1 task 1)} & Evaluate\newline US+BDD\newline for PB\newline\textit{(S3 task 2)}\\
+		\hline
+		S3 & Write\newline UC\newline for PA & Write\newline US+BDD\newline for PB & Evaluate\newline US+BDD\newline for PA\newline\textit{(S4 task 1)} & Evaluate\newline US+BDD\newline for PB\newline\textit{(S2 task 2)}\\
+		\hline
+		S4 & Write\newline US+BDD\newline for PA & Write\newline UC\newline for PB & Evaluate\newline UC\newline for PA\newline\textit{(S3 task 1)} & Evaluate\newline US+BDD\newline for PB\newline\textit{(S1 task 2)}\\
+		\hline
+	\end{tabular}
+\end{table}
+
+more design rationale
+As can be seen on Table \ref{table:study_organization}, we made sure that the same student would not read two requirements formats from the same colleague when performing tasks 3 and 4 in order to avoid a person's writing style to affect the evaluation of a scenario or use case. Also, it was desirable that the student gets the opposite requirement format to evaluate a given product. 
+%(e.g: if student 1 got UC on Product A, she should evaluate US + BDD requirements for Product A)
+

@@ -1,0 +1,81 @@
+=========================== Interview
+
+1) Qual seu nome e role no projeto ?
+
+2) Qual sua principal tarefa ?
+
+3) Usar scenarios BDD ajudam nessa tarefa ? Como ?
+
+4) Eh importante que scenarios BDD tenham um certo grau de qualidade antes de poderem serem usados por voce? 
+
+5) Quais criterios voce usa para decidir se um scenario BDD pode ser utilizado por voce ? Como voce usa esses criterios e em que momento ?
+
+6) Como um exercicio, voce pode aplicar seus criterios pessoais no feature file (https://github.com/diaspora/diaspora/blob/develop/features/desktop/comments.feature) ?
+
+7) Voce acha que alguns desses criterios abaixo podem ser aplicados para BDD scenarios ? Escolhe 3 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small
+* testable
+* understandable
+* unambiguous
+* valuable
+
+8) Como um exercicio, voce pode aplicar esses criterios no feature file (https://github.com/diaspora/diaspora/blob/develop/features/desktop/invitations.feature) ?
+
+12) Foi util avaliar a qualidade de scenarios BDD com esses criterios ? (Not at all / 
+Neutral / A little / Fair / Much)
+
+
+9) Quais atributos voce achou mais dificeis de usar ao avaliar os scenarios BDD ?
+
+
+
+10) Quao similar a lista que mandei e seus criterios pessoais sao ?
+
+
+
+11) Voce sente falta de algum outro criterios na lista ? Quais?
+
+
+
+13) General remarks about the quality criteria 
+
+
+=========================== Debriefing Ana
+
+== Key points:
+
+Understandable, Unambigous and Valuable are the most important ones. Small == less steps, concise == few words. Testable depends on the implementation.
+
+== Most Surprising:
+
+The question from here "Where the list came from". Quality attributes that depends on the implementation.
+
+== Pretty much what I expected:
+
+Feasible -> important to automate it or not. Negotiable/Prioritazable/Estimable == whole feature, not scenarios alone
+
+== Problems and fixes I didnt expected:
+
+Silences and no video to check if the person was there - made me take note to limit it on 30secs or lower. I interrupted her sometimes - made me set the 10secs-before-talking rule.Answering "Depends" too much - made me reinforce a lot that opinions are nice and there's no right/wrong. 
+
+== What worked well:
+
+Intro research and intro feature files
+
+== What didn't worked so well and could be changed:
+
+Wrap up moment - how to finalize ? I said thank you and that hopefully the interview was helpfull for her as well and that the data will be sent later. Something else ?
+
+API Feature files - need to find some. 
+
+Some missing attributes that were not talked about - needed to force to map the personal criteria on the attributes.
+
+== Other comments
+
+When to evaluate those scenarios ? Writing pairing ? Both to future work.

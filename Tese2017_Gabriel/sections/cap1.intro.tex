@@ -1,0 +1,59 @@
+\chapter{\label{chap:chap1}{Introduction}}
+
+% RE link - acceptance tests as requirements
+Traditional requirements engineering (RE) approaches, sometimes known as up-front RE approaches, are based on a sequential execution of elicitation, analysis, specification, verification and validation activities \cite{Heikkila_et_dot_al_2015}. On the other hand, requirements engineering in agile development is informal and based on the skills and tacit knowledge of individuals \cite{Heikkila_et_dot_al_2015}. Based on observations of 3 companies, agile development projects often manage well without extensive requirements due to the fact that test cases are commonly viewed as requirements and detailed requirements are documented as test cases \cite{Bjarnason_et_dot_al_2016}. One format of test cases as requirements identified on Bjarnason et. al \cite{Bjarnason_et_dot_al_2016} study is Behavior-Driven Development scenarios.
+
+%BDD help solve communication problems - build the right thing
+Behavior-Driven Development (BDD) is an umbrella term to describe a set of practices that uses scenarios as an ubiquitous language to describe and model a system \cite{Smart_2014}. BDD scenarios, a known format of acceptance tests \cite{Gartner_2012}, are expressed in a format known as Gherkin, which is designed to be both easily understandable for business stakeholders and easy to automate using dedicated tools \cite{Smart_2014}. Smart \cite{Smart_2014} states that bringing business and technical parties together to talk about the same document helps to build the right software (the one that meets customer needs), a thought reinforced by Wynne and Hellesoy \cite{Wynne_and_Hellesoy_2012} when saying that acceptance tests ensure a team to \textit{build the right thing}. 
+
+Wynne and Hellesoy \cite{Wynne_and_Hellesoy_2012} understand that many software projects suffer from low-quality communication between the domain experts and programmers on the team, a known RE problem \cite{Fernandez_et_dot_al_2017}. BDD scenarios help to avoid this problem by building scenarios in a common language that allows for an easy, less ambiguous path from end-user business requirements to scenarios that specify how the software should behave and guide the developers in building a working software with features that really matter to the business \cite{Smart_2014}.  
+
+%We know how to write, not how to read - in particular, BDD scenarios lack proper guidance
+%As stated by Zhu \cite{Zhu_2016}, software development professionals are trained to write software artifacts such as requirements specifications, design diagrams and descriptions, code modules, test cases, or user interface mockups. However, they are often not trained to read and analyze the documents written by peers. To increase an individual's capacity during software review or inspection, reading strategies and proven practices are packaged as reading techniques. 
+
+To the best of our knowledge, writers of BDD scenarios, those who formalize BDD scenarios on software development teams, do not have a standard set of rules to educate themselves on what a "good" BDD scenario is. They can only compare their work with a few guidelines and examples of "good" and "bad" scenarios found on Smart's book \cite{Smart_2014}, Wynne and Hellesoy's book \cite{Wynne_and_Hellesoy_2012}, and other informal internet references. This comparison can be misguided, as the writer's application context may not be comparable to the books' examples context, and incomplete, as the few guidelines are neither a set of enforcement rules \cite{Phalp_et_dot_al_2011} nor a questionnaire, as the one existent for use cases \cite{Cockburn_2000}. 
+
+Due to that fact, we fear that BDD scenarios mitigation of RE communication problems, during the discovery and definition of features \cite{Ferguson_2017}, may be lost due to unguided formalization of those features in the form of BDD scenarios, which may lead to other known problems in requirement engineering such as incomplete, underspecified and inconsistent requirements \cite{Fernandez_et_dot_al_2017}.
+
+We believe that structuring the tacit knowledge of BDD practitioners could enhance the already existing guidelines from other sources (e.g., \cite{Smart_2014}\cite{Wynne_and_Hellesoy_2012}) and the practitioners' ability to evaluate their own BDD scenarios' quality.
+
+\section{Research Goal}
+
+To avoid BDD scenarios' unguided formalization to suffer from problems such as incomplete, underspecified and inconsistent requirements \cite{Fernandez_et_dot_al_2017}, the main goal of this research is to provide a set of criteria suited to evaluate BDD scenarios and the proper guidance to use those criteria effectively to generate the input of scenarios' refinement sessions. To achieve that, we first identified the quality attributes that describe a good BDD scenario and later arranged them into a guideline accessible to be used by members of a software development team. Our proposed question-based checklist is similar to the one used by Cockburn on use cases \cite{Cockburn_2000}.
+
+%We believe these attributes need to come from BDD practitioner's tacit knowledge about what they consider a good BDD scenario. Additionally, we believe a question-based checklist, similar to the one used by Cockburn on use cases \cite{Cockburn_2000}, would be suited to guide evaluations of BDD scenarios. Therefore, our goal is to propose a question-based checklist composed of those attributes suited to evaluate BDD scenarios and based on the knowledge of BDD practitioners.
+
+\section{Research Method Overview}
+
+To accomplish our goal, an empirical qualitative-based research was conducted, using thematic analysis to derive insights from a field study using semi-structured interviews.
+
+To avoid our findings to suffer from the effect of practitioners' plurality of terms when describing similar good or bad practices, we guided our interviews with a sub-set of literature-informed quality attributes with the goal to to motivate participants to think about those unified terms, criticize them, suggest better alternatives, and map their own criteria to those terms in the hope that those literature quality attributes are judged appropriated to evaluate BDD scenarios. 
+
+Our initial list of quality attributes came from a literature review, which stated that traditional requirements' quality attributes \cite{Babok_2009}\cite{Babok_2015} and the INVEST\cite{Cohn_2004} acronym were used with agile requirements. In order to acquire some knowledge about how evaluators judge the quality of BDD scenarios using those attributes, we organized a pilot study with 15 graduate students. The output of this study \cite{Empire_2017} was the sub-set of literature-informed quality attributes that we used to guide the interviews and acquire 18 practitioners' opinions.
+
+Additionally, to aid practitioners realize their own quality criteria, we asked them to evaluate real-life examples of BDD scenarios, taken from the Diaspora\footnote{\url{https://diasporafoundation.org/}} open source project. If they were short on answers, we provoked their thoughts with a list of criteria taken from Smart's experiences \cite{Smart_2014} and Wynne and Hellesoy's experiences \cite{Wynne_and_Hellesoy_2012}, the only informal references available we know of.
+
+Those literature-informed quality attributes and criteria from Smart \cite{Smart_2014} and Wynne and Hellesoy \cite{Wynne_and_Hellesoy_2012} experiences were used as as the initial set of codes for our thematic analysis. We refined these codes with the practitioners' interpretations of the literature-informed quality attributes and their own personal criteria during our cyclical analysis, resulting in themes represented by the newly-labeled quality attributes that compose our proposed question-based checklist as presented in this thesis work. 
+
+\section{Main Contributions}
+
+This thesis proposes a question-based checklist (main contribution), organized into three scope levels (feature, scenario and steps level), presented along with a proof of concept to demonstrate its feasibility in Chapter \ref{chap:chap5}. The questions from that question-based checklist are based on newly-defined quality attributes (second main contribution) identified in the practitioner's interviews, presented in Chapter \ref{chap:chap4}.
+
+In addition, this thesis also contributes to the literature as follows: 
+
+\begin{itemize}
+    \item \textit{On the Empirical Evaluation of BDD Scenarios Quality: Preliminary Findings of an Empirical Study} paper reported in the Workshop on Empirical Requirements Engineering in conjunction with the 2017 International Requirements Engineering Conference \cite{Empire_2017};
+    \item \textit{On the Understanding of BDD Scenarios' Quality: Preliminary Practitioners' Opinions} paper reported in the 2018 International Working Conference on Requirements Engineering \cite{Refsq_2018}. 
+\end{itemize}
+
+\section{Document Outline}
+
+The remainder of this document is organized as follows:
+
+\begin{itemize}
+    \item \textbf{Chapter \ref{chap:chap2} - Background:} presents the theoretical background on traditional and agile requirements and how their quality can be evaluated;
+    \item \textbf{Chapter \ref{chap:chap3} - Research Methodology:} presents the research methodology, describing the adopted research, data collection, and analysis methods;
+    \item \textbf{Chapter \ref{chap:chap4} - Interview Results:} describes the key findings from the interviews with practitioners in the form of newly-redefined quality attributes;
+    \item \textbf{Chapter \ref{chap:chap5} - Proposed Question-Based Checklist}: presents the question-based checklist organized by distinct levels of abstraction (feature, scenario and steps) and by the newly redefined quality attributes. A proof of concept is used to exemplify the feasibility of use of the proposed checklist;
+    \item \textbf{Chapter \ref{chap:chap6} - Final Considerations}: explores the major contributions, inherent limitations, and outlines possible future research in the area.
+\end{itemize}

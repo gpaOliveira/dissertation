@@ -1,0 +1,10 @@
+4412 - Expressing, Managing, and Validating User Stories: Experiences from the Market - https://link.springer.com/chapter/10.1007%2F978-3-319-27896-4_9
+4428 - Decreasing rework in video games development from a software engineering perspective - https://link.springer.com/chapter/10.1007%2F978-3-319-26285-7_25
+4431 - Using formal methods for verification and validation in railway - https://link.springer.com/chapter/10.1007%2F978-3-319-41135-4_1
+4467 - Extreme requirements engineering (XRE) - https://link.springer.com/chapter/10.1007%2F978-3-662-48634-4_7
+4486 - Why the development outcome does not meet the product owners' expectations? - https://link.springer.com/chapter/10.1007%2F978-3-319-18612-2_8
+4519 - Unifying and extending user story models - https://link.springer.com/chapter/10.1007%2F978-3-319-07881-6_15
+4727 - Combining Open Space Technology (OST) with XP through Scenarios for enhanced requirements elicitation - https://link.springer.com/chapter/10.1007%2F978-3-642-13054-0_46
+4728 - The role of the user story agile practice in innovation - https://link.springer.com/chapter/10.1007%2F978-3-642-16416-3_3
+4802 - Relating Requirements to a User Interface Architecture for a Rich Enterprise Web Application - https://link.springer.com/chapter/10.1007%2F978-3-540-75912-6_23
+4842 - Architecture and design in extreme programming; introducing "developer stories" - https://link.springer.com/chapter/10.1007/11774129_14

@@ -1,0 +1,47 @@
+\chapter{\label{chap:chap6}{Final considerations}}
+
+This chapter elaborates a summary of the results found, revisiting the research question. Later, it presents the publications we performed to acquire early feedback on our work, limitations of the current document and suggested future research ideas.
+
+\section{Summary of Results}
+
+With the 18 interviews performed, we have gathered enough data to define 8 newly-labeled quality attributes in Chapter \ref{chap:chap4_analysis}, suited to evaluate BDD scenarios and summarized in Table \ref{tbl:summary_new_attributes}. This list of attributes answers our RQ1 about \textit{What are the quality attributes suited to describe a "good" BDD scenario by the view of different members of software development team?}
+
+Due to the deep understanding about how those newly-defined attributes were assembled, we could also represent them into a question-based checklist format, similar to the one used by Cockburn \cite{Cockburn_2000} and represented in Figure \ref{fig:cockburn_usecase_questionnaire} to evaluate use cases. Our question-based checklist is summarized in Table \ref{tbl:questionnaire} and presented in Chapter \ref{chap:chap5}, along with a reading strategy to use it -- to start evaluating the feature file as a whole (answering Questions 1 and 2), then proceeding to focus on each scenario (answering questions 3 to 8) and on each step (questions 9 to 12).
+
+\section{Lessons Learned}
+
+Since the beginning, we were guided by a certain theory on how requirements are evaluated, in the form of our literature-informed attributes. These attributes would ground our findings into a known and accepted terminology and would be mapped to practitioner's criteria -- each attribute to a single personal evaluation criteria specific to BDD scenarios, a thought that motivated the question 13 in our interview questionnaire in Table \ref{tbl:questions}.
+
+In the end, these attributes aided practitioners to phrase their evaluation criteria, often abstract and subjective, into proper words. The contemplation about the meaning of those words into BDD scenarios alone was often informally praised by practitioners as a nice experience. However, as explained in the beginning of Chapter \ref{chap:chap4}, we could not map each attribute uniquely to a certain personal criteria due to the many interpretations of each attribute. That impossibility reduced the need of the answers to question 13 in our interview questionnaire in Table \ref{tbl:questions}, which were used only to aid in the grouping of interpretations and criteria that lead to our 8 newly-labeled quality attributes. 
+
+Without these literature-informed attributes, maybe some evaluation criteria would have been forgotten by the practitioner's which would make it harder to join their spoken criteria into a proper model. However, the suggestion that BDD scenarios could be evaluated with a set of criteria had lead to some debate into the Cucumber community\footnote{\url{https://groups.google.com/forum/#!msg/cukes/wfjhwURkt4E/95f9ZOmEAQAJ;context-place=forum/cukes}}, as some see more value in evaluating the whole BDD process (and conversations) or not to evaluate them at all. We fear our use literature-informed attributes to guide our interviews may have motivated some practitioner's to dismiss our invite to be interviewed, so we suggest future researchers to be more attentive on how practitioner's could react to certain research design decisions.
+
+Additionally, the idea of using Diaspora's scenarios has been proposed only to comply with the ideas underlying the questions used by Heck and Zaidman \cite{Heck_and_Zaidman_2017}. In the end, those convenient scenarios were an excellent media to channel practitioner's critics and allow the emergence of suggestions to improvements, which in turn lead the interviewer to better understand practictioner's evaluation criteria and what they valued in BDD scenarios. We strongly suggest similar efforts to use requirements from open source real projects in future studies.
+
+\section{Publications}
+
+In order to collect early feedback about our research design decisions, explained in Chapter \ref{chap:chap3}, we reported the pilot study with 15 novice students in the 2017 Workshop on Empirical Requirements Engineering (EmpiRE'17) in conjunction with the International Requirements Engineering Conference under the title \textit{On the Empirical Evaluation of BDD Scenarios Quality: Preliminary Findings of an Empirical Study} \cite{Empire_2017}. 
+
+Additionally, in order to gather early feedback on how to present our findings from the interviews, explained in Chapter \ref{chap:chap4}, we reported the insights taken from 8 interviews in the 2018 International Working Conference on Requirements Engineering (REFSQ'18) under the title \textit{On the Understanding of BDD Scenarios' Quality: Preliminary Practitioners' Opinions} \cite{Refsq_2018}. 
+
+\section{Limitations}
+
+Due to our focus on requirements engineering, we explicitly focused on the business facing part of BDD scenarios, as shown in Figure \ref{fig:bdd_stack}. Therefore, the most explicit limitation of our newly-defined attributes and question-based checklist is the fact that they may not be suited to review the automation code required to allow BDD scenario's steps to validate the product and work as a executable specification as envisioned by Adzic \cite{Adzic_2011}.
+
+Additionally, we only focused on the formalization part of a typical BDD process, as seen in Figure \ref{fig:bdd_process}. How to evaluate conversations and examples taken from those, or even how to better construct those examples to generate good BDD scenarios, was out of our scope.
+
+Furthermore, a study threat to validity is the fact that only the main researcher was involved into the coding process may have impacted the themes creation in an unforeseen way, even with the careful review of the advisor. Also, we have not taken into consideration the gender, role, location nor the type of industry a participant works into to reflect upon the data taken from the interviews. Therefore, we acknowledge that different contexts may need to use different quality criteria and thus a different question-based checklist. We tried to mitigate this effect interviewing people from many different areas and companies, but acquiring people from very different backgrounds was not out main goal when selecting participants for the interviews.
+
+Finally, we could have phrased the items in our question-based checklist in many different ways, so we have to acknowledge that our own language bias may have driven us to write them in that way presented in Chapter \ref{chap:chap5}. 
+
+\section{Future Work}
+
+The findings of this dissertation, its contributions, and limitations, indicate several possibilities for further research, as follows:
+
+\begin{enumerate}
+    \item Further research considering good and bad automation coding practices used with BDD scenarios. As this side of BDD scenarios is not covered by our research, the question on \textit{how to create "good" BDD scenarios automation code} may yield additional quality criteria that could enhance ours;
+    \item Further research considering good and bad conversations practices impact BDD scenarios. As these serve as inputs for BDD scenarios, the question on \textit{how to have conversations to generate "good" examples} may yield additional quality criteria that could enhance ours;
+    \item Further empirical research to validate our question-based checklist and newly-defined attributes, validating how useful it can be to practitioners is envisioned by us. We suggest an additional care to select practitioners based on different experience level and contexts in order to also mitigate our threat to validity. 
+\end{enumerate}
+
+There are certainly other roads to future research that we have not foreseen. Due to the fact this is the first work on the topic of requirements quality in BDD scenarios, our focus was strictly on the requirements' side of BDD scenarios. However, BDD scenarios are the formalization of examples taken from conversations among the development and client teams and are most often written alongside their automation code -- so there is still much to explore in order to qualify how good BDD writing practices are.

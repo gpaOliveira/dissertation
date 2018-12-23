@@ -1,0 +1,55 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{blindtext, graphicx, array, color}
+\usepackage{subfiles}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{csquotes}
+\graphicspath{ {images/} }
+
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Uma revisão sistemática sobre a pesquisa em qualidade de requisitos em metodologias ágeis }
+
+
+\author{\IEEEauthorblockN{Gabriel Oliveira}
+\IEEEauthorblockA{Programa de Pós-Graduação em Ciência da Computação\\
+Pontifícia Universidade Catolica do Rio Grande do Sul\\
+Porto Alegre, RS, Brasil\\
+gabriel.pimentel@acad.pucrs.br}
+}
+
+% make the title area
+\maketitle
+
+\subfile{sections/1.abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Revisão Sistemática, Ágil, agilidade, Qualidade de Requisitos, Engenharia de Requisitos, ER.
+\end{IEEEkeywords}
+
+\subfile{sections/2.Introducao}
+
+\subfile{sections/3.Referencial.Teorico}
+
+\subfile{sections/4.Metodologia}
+
+\subfile{sections/5.Results}
+
+\subfile{sections/Conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{sections/bib}
+
+\newpage
+\subfile{sections/appendix}
+
+% that's all folks
+\end{document}
+
+

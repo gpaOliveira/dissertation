@@ -1,0 +1,25 @@
+ID Paper	Title	Year	(I) Describe requirements quality	(I) Evaluate requirements quality	(I) List aspects of requirements quality	INVEST : Independent	INVEST : Negotiable	INVEST : Valuable	INVEST : Estimable	INVEST : Small	INVEST : Testable	BABOK 3 : atomic	BABOK 3 : complete	BABOK 3 : consistent	BABOK 3 : concise	BABOK 3 : feasible	BABOK 3 : unambiguous	BABOK 3 : testable	BABOK 3 : prioritized	BABOK 3 : understandable	BABOK 2 : cohesion	BABOK 2 : completeness	BABOK 2 : consistency	BABOK 2 : correction	BABOK 2 : viability	BABOK 2 : adaptability	BABOK 2 : unambiguity	BABOK 2 : testability	Test As Requirement
+4415	An empirical study of writing effective user stories	2016	Y	Y		Y	Y	Y	Y	Y	Y		Y				Y	Y	Y			Y		Y			Y		Y
+4484	A process to increase the model quality in the context of model-based testing	2015			Y															Y									Y
+4518	Using goal net to model user stories in agile software development	2014		Y				Y																					
+4631	NORMATIC: A visual tool for modeling non-functional requirements in agile processes	2012			Y						Y		Y				Y	Y				Y						Y	
+4650	Ontology based application model for feature driven development	2011		Y				Y		Y							Y						Y						
+4816	Rule-based assessment of test quality	2007			Y					Y	Y				Y		Y	Y		Y							Y	Y	Y
+4852	Testing with guarantees and the failure of regression testing in eXtreme programming	2005			Y								Y									Y							Y
+4875	Generating complete, unambiguous, and verifiable requirements from stories, scenarios, and use cases	2004		Y	Y								Y		Y		Y	Y				Y					Y	Y	Y
+4911	Using business rules in extreme requirements	2002		Y				Y												Y						Y			
+4924	A Framework to Diminish the Gap between the Business Specialist and the Software Designer	2012	Y											Y						Y			Y						
+4930	Forging high-quality User Stories: Towards a discipline for Agile Requirements	2015	Y	Y		Y			Y	Y		Y	Y			Y	Y					Y					Y		
+4945	Use of Method for Elicitation, Documentation, and Validation of Software User Requirements (MEDoV) in Agile Software Development Projects	2014		Y									Y	Y		Y			Y	Y		Y	Y		Y			Y	
+4968	Requirements Engineering Quality Revealed through Functional Size Measurement: An Empirical Study in an Agile Context	2014	Y	Y	Y	Y	Y	Y	Y	Y	Y			Y			Y												
+4975	Quality criteria for just-in-time requirements: just enough, just-in-time?	2015			Y	Y	Y	Y	Y	Y	Y	Y					Y									Y	Y		
+4415.13	5 Common mistakes we make writing User Stories	2011	Y					Y			Y		Y					Y				Y		Y				Y	Y
+4415.14	5 Common User Story Mistakes	2013	Y							Y	Y					Y		Y		Y								Y	
+4415.16	Improving the User Story Agile Technique Using the INVEST Criteria	2013			Y	Y	Y	Y	Y	Y	Y																		
+4415.15	INVEST in Good Stories and SMART Tasks	2003	Y			Y	Y	Y	Y	Y	Y																		
+4518.3	Improving agile requirements: the quality user story framework and tool	2016	Y	Y	Y	Y		Y	Y	Y		Y	Y	Y	Y		Y		Y		Y	Y	Y	Y			Y		
+4518.23	User Stories Applied: For Agile Software Development: Addison-Wesley Professional	2004			Y	Y	Y	Y	Y	Y	Y																		
+4875.6	A systematic literature review on quality criteria for agile requirements specifications	2016	Y			Y	Y	Y	Y	Y	Y			Y						Y			Y	Y					
+4975.10	A Quality Framework for Agile Requirements: A Practitioner’s Perspective	2014	Y			Y	Y	Y	Y	Y	Y	Y	Y	Y			Y					Y	Y	Y			Y		
+4930.5	Rapid quality assurance with requirements smells.	2017		Y							Y		Y				Y	Y		Y		Y							
+4930.1	The use and effectiveness of user stories in practice.	2016			Y	Y	Y	Y	Y	Y	Y																		

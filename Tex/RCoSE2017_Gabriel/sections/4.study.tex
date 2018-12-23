@@ -1,0 +1,89 @@
+\section{Evaluating BDD Scenarios Quality}
+
+%motivation
+Before creating a quality questionnaire similar to the one used on Cockburn's use cases \cite{Cockburn_2000} or the refined quality rules proposed by \cite{Phalp_et_dot_al_2011}, we must understand what criteria are important to evaluate the quality of BDD scenarios. Therefore, we must list the quality attributes that would work with BDD scenarios, in a similar way that traditional attributes \cite{Babok_2009} \cite{Babok_2015} work with requirements documents and INVEST heuristic \cite{Cohn_2004} works with user-stories. In preparation to creating that listing, we first seek to gain insight on whether the existing quality attributes would work with BDD scenarios, and if they do not, which ones would be a good fit for such purposes.
+
+%sabrina - separa as citacoes, precisa ser uma e outra [x][y]. - done
+%design
+For that reason, we put together the traditional attributes from both BABOK editions \cite{Babok_2009} \cite{Babok_2015} and the INVEST framework \cite{Cohn_2004} on an alphabetical ordered list and organized a study to evaluate how those attributes would be used to evaluate BDD scenarios. With that goal in mind, we created two fictional products (A and B) and asked graduate students to perform the following sequential tasks using the provided alphabetical ordered list of quality attributes:
+
+\begin{enumerate}
+    \item Develop functional requirements for product A with requirement format assigned;
+    \item Develop functional requirements for product B with another requirement format assigned;
+    \item Evaluate other student functional requirements for product A;
+    \item Evaluate other student (different from the item above) functional requirements for product B;
+\end{enumerate}
+
+%design rationale
+Each student was assigned a requirements format to perform tasks 1 and 2. They had to use either user stories and BDD scenarios (US + BDD) or use cases (UC). Expressing behaviors using BDD scenarios seems a comparable activity to perform the same task using use cases, for the following intuitive reasons: both seems to prefer a more declarative way to describe a behavior, rather than imperative, to stay detached from the implementation details \cite{Cockburn_2000} \cite{Smart_2014}; and a use case execution path seems to be a BDD scenario on a different format - on Cockburn's book \cite{Cockburn_2000}, the main scenario is always described. With those reasons in mind, we judged it necessary to understand how the same person uses the same attributes on both formats in order to clarify their motives and rationale. We let the scope of the analysis - if one should evaluate each scenario or use case separately or together with the others from the same feature - open to interpretation to measure this aspect. Additionally, in order to avoid a person's writing style to affect the evaluation of a scenario or use case, we made sure that the same student would not read two requirements formats from the same colleague when performing tasks 3 and 4. Also, it was desirable that the student gets the opposite requirement format to evaluate a given product. Table \ref{table:study_organization} exemplifies how four students would perform the tasks given. 
+%(e.g: if student 1 got UC on Product A, she should evaluate US + BDD requirements for Product A)
+
+\begin{table}[!t]
+\renewcommand{\arraystretch}{1}
+\caption{Sample of study organization}
+\label{table:study_organization}
+\centering
+\begin{tabular}{|m{0.5cm}|m{1.2cm}|m{1.2cm}|m{1.2cm}|m{1.2cm}|}
+\hline
+ID & Product A format & Product B format & Product A evaluation & Product B evaluation\\
+\hline
+1 & UC & US + BDD & Student 2 & Student 4\\
+\hline
+2 & US + BDD & UC & Student 1 & Student 3\\
+\hline
+3 & UC & US + BDD & Student 4 & Student 2\\
+\hline
+4 & US + BDD & UC & Student 3 & Student 1\\
+\hline
+\end{tabular}
+\end{table}
+
+%students - needed ? space concerns here
+%Those students judged themselves as knowledgeable enough about reading and writing use cases but not as much on user stories and BDD scenarios, on a scale from 1 to 3. The majority of them had previous development experience, on different degrees of seniority. Students profile is summarizred on Table \ref{table:students profile}. 
+%
+%\begin{table}[!b]
+%\renewcommand{\arraystretch}{1}
+%\caption{Students profile}
+%\label{table:students profile}
+%\centering
+%\begin{tabular}{|m{0.5cm}|m{1cm}|m{2cm}|m{0.6cm}|m{0.6cm}|}
+%\hline
+%ID & Experience (Years) & Major Role & UC\# (1-3) & US\# (1-3)\\
+%\hline
+%1 & 4 & Developer & 2 & 1\\
+%\hline
+%2 & 6 & Developer/Tester & 3 & 3\\
+%\hline
+%3 & 8 & Technical Lead & 3 & 3\\
+%\hline
+%4 & 10 & Business Analyst & 3 & 2\\
+%\hline
+%5 & 1 & Developer & 2 & 2\\
+%\hline
+%6 & 3 & Developer & 3 & 2\\
+%\hline
+%7 & 2 & Developer & 2 & 1\\
+%\hline
+%8 & 3 & Developer & 2 & 1\\
+%\hline
+%9 & 10 & Developer & 3 & 3\\
+%\hline
+%10 & 10 & Technical Lead & 3 & 3\\
+%\hline
+%11 & 8 & Developer & 2 & 1\\
+%\hline
+%12 & 10 & Technical Lead & 2 & 3\\
+%\hline
+%13 & 2 & Developer & 1 & 2\\
+%\hline
+%14 & 2 & Developer & 2 & 1\\
+%\hline
+%15 & 3 & Tester & 3 & 3\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+%products
+The products were presented to the students in a product vision board format \cite{VisionBoard}. On that occasion, they had the chance to ask questions, straighten their understanding on how to solve the business problem presented, and collaboratively draft some high-level features. After this initial discussion, we would take their suggestions and create the final high-level features. Finally, a new discussion round was performed so the students could read the features and had the chance to validate them, negotiate their details, decide whether each feature should be part of the first release of the product or not. Those discussion sessions were planned to give them all the same understanding of what the product should be and how it should behave, as a means to guarantee a common ground for the students to produced use cases, stories, and BDD scenarios. After the last round of discussions, the students then proceeded to perform tasks 1 to 4 in an individual manners.   
+
+Product A aim was to develop a mobile app to help people with food allergy find places to eat free of ingredients that cause them allergy and distress. The user should be able to have an easy way to indicate which kind of food allergy or restrictions one has. There were two target groups: Users with any kind of food allergy that are quickly (e.g., while driving, walking, chatting with another person, etc) looking for a place to eat; and Customers, owners of restaurants, whose company business reputation would be improved if they used this new client search channel. Product B was a social-network website that aims to bring low cost book readers and resellers (who sell second-hand books) together. Readers would fill their profiles with genre interests and literature thoughts in exchange of badges, a higher fame status, and occasional promotions directly to them. Those social network interactions would provide resellers with enough information to direct their marketing efforts and promotions to the right subset of users.% in an special website area where one could gather and visualize user data.

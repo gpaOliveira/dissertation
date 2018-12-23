@@ -1,0 +1,639 @@
+\section{Interview 16}
+
+Transcribed from 20:01 to 22:50 on 15-11-2017 (stopped at 52:37)
+Transcribed from 21:00 to 23:24 on 16-11-2017 (stopped at 1:29:11)
+% ...
+
+
+> O objetivo aqui dessa conversa é falar um pouco sobre a qualidade de cenários BDD e como voce enxerga o que é um bom cenário BDD, então obter a suja opinião hoje é o mais importante e fique tranquilo até pra falar coisas como "ah eu nunca trabalhei dessa forma mas eu acho que o certo é assim e assado".
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+> Vou começar perguntando qual a sua experiência com BDD e qual seu papel no projeto
+
+Ta, no projeto que eu to atualmente a gente não ta utilizando BDD ta. EU ja usei em pelo menos tres projetos, que eu me lembre, e na verdade e o seguinte: o que acaba acontecendo com BDD é que ele se torna uma ferramenta muito potente se o time encara isso como um beneficio ta.
+
+Entao, o que eu quero dizer com isso, se o time compra a ideia do BDD, se o time entende aquele valor, é uma ferramenta maravilhosa, traz resultados consideraveis neh, so que tem essa premissa que o time tem que encarar o BDD como um beneficio e isso nem sempre é fácil e nem sempre é válido
+
+> E nesse projeto que você atuou, qual o seu papel nesse projeto?
+
+Ta, seguinte, eu ja tive vários papéis em diferentes projetos. Eu ja atuei como líder técnico de um projeto menor, onde a gente nao utilizou BDD por que na verdade não ia trazer nenhum impacto positivo ou nao ia ajudar em nada. Ja atuei em um outro projeto em que eu levei o conceito do BDD pra equipe, que as pessoas não conheciam e foi um projeto bem bacana, a gente utilizou BDD de uma maneira um pouco diferente do tradicional mas foi muito legal. Na verdade a gente utilizou mais o Cucumber que o BDD propriamente dito.
+
+Também participei de u outro projeto que ele seguiu toda a linha do BDD realmente, a gente realmente partia da base dos cenários e tal, e eram projetos diferentes com um viés diferente e com clientes diferentes também
+
+> E em todos esses projetos voce era lider tecnico?
+
+Nao, todos nao. E na verdade o ultimo projeto em que participei e no qual usamos BDD, foi uma experiencia muito ruim na verdade com BDD por que o time não comprou a ideia do BDD. O time achou que aquilo ia dar um trabalho a mais, o projeto realmente era muito estruturado entao era muito moroso cada atividade do projeto, entendeu, entao no final das contas a gente optou por tirar o uso o BDD, que na minha opiniao foi um erro mas ok, acontece. 
+
+> Entao nesses projetos o que estou vendo de similaridade voce era da parte tecnica, como lider da parte tecnica, do desenvolvimento. 
+
+Isso
+
+> E por quanto tempo você, nesses tres projetos, usou BDD? Qual a sua experiencia numa contagem de anos?
+
+Ta, primeiro projeto que participei foram uns 4 meses, tinha BDD mas eu nao tinha nenhum papel de lideranca nesse projeto, mas foi um projeto bem bacana, foi o primeiro contato que tive com BDD. E nesse projeto o BDD foi levado de uma maneira que trouxesse beneficio, tanto para o projeto quanto para a equipe.
+
+Depois, no projeto seguinte que eu utilizei BDD, foi mais ou menos uns 10 meses de projeto que a gente utilizou, mas porem o BDD foi utilizado de uma maneia um pouquinho diferente assim, do tradicional. O que eu quero dizer com essa maneira ser um pouquinho diferente: ele foi usado como uma ferramenta de automacao do que um paradigma de desenvolvimento de software, que e o vies principal do BDD.
+
+E nesse ultimo projeto que infelizmente nao deu muito certo o uso do BDD foi uns 6 meses eu acho
+
+> Entao trocando em miudos, 1 ano e poco de uso de BDD
+
+É acho que sim, acho que por ae
+
+2) What's your main task on the project?
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+
+> E teu papel como desenvolvedor/lider-tecnico era desenvolver features baseadas em cenarios BDD ou era algo diferente?
+
+Ahn, assim, ja tive esse papel que era na verdade, escrever os cenario e isso? Por que nao era... seguinte, o que acontece, teve um dos projetos que participei que a questao do uso do BDD era um pre-requisito do cliente. Entao o cliente estipulou isso, eu quero BDD no projeto e talz por que parece ser legal. E como é que funcionava isso, esse projeto tinha um analista de sistema, esse analista era encarregado de escrever essses cenarios. E em cima desses cenarios ia pra equipe de desenvolvimento e a equipe de desenvolvimento seguia neh o desenvolvimento propriamente dito com base nesses cenarios. Ahn, o que acontece cara, isso se a gente for parar pra pensar é interessante neh por que acaba tendo toda a ideia mesmo do BDD que é disutir a implementação com a tua equipe técnica, discutir com teu cliente, mostrar cenarios e tal, entao isso traz realmente um valor bem bacana. Só que também tem alguns porens nisso, que é o seguinte, quando a gente pensa num viés assim muito analista, cliente, equipe técnica, que vai comentar algumas coisas e vai ter esse alinhamento todo, a gente acaba muitas vezes tendo uma visão de que tecnicamente aqueles cenários não tem um valor agregado muito alto. Entao, assim, sendo bem sincero, acaba virando cenários pra ingles ver.
+
+> Por que na pratica é feito outras coisas?
+
+É cara, por que o que acontece, se a gente pegar um cenário Dado que estou na tela de login ta, Quando realizar o login papa com o usuario nao sei, entao o usuario vai se autenticar no sistema. Entao um cenario assim bem caminho feliz, digamos escrito de uma maneira de bem alto nivel, que eu va chegar pro cliente e mostro e o cliente vai entender aquilo perfeitamente e tal, todo mundo ta de acordo, todo mundo ta feliz, o que acontece, chega isso no desenvolvimento e muitas vezes aquele nivel de abstracao acaba sendo muito, como eu posso dizer, sendo muito moroso para o desenvolvimento, ou seja, to puxando um exemplo de login que é uma feature bem comum em todos os sistemas neh, o que acontece, a gente acaba, por exemplo, esse "Dado que estou na tela de login", o quanto do sistema ja tem que ter sido implementado, quantas outras possibilidade existem neh so nessa primeira etapa ae. 
+
+Entao o que acontece é o seguinte cara, eu pelo menos trabalhei ja das duas formas assim, puxando mais pro lado da conversa com o cliente onde o cliente poderia entender o cenario e tal, e puxando mais para um lado mais tecnico, um lado mais talvez mais quase algoritmo em cima do BDD. O que acontece, são visões um pouco diferentes assim do ponto de vista de análise e tal, só que puxando pra equipe técnica, no momento em que a gente tenta esmiuçar esses cenários, no momento que a gente tenta puxar mais pro viés técnico, explodir então mais os cenários, a gente acaba tendo um ganho muito grande tecnicamente. Por que eu posso passar isso, esses cenários, quando ele é bem construido, de uma maneira bem baixo nivel, eu posso passar isso pra um desenvolvedor independente da qualificação dele ele vai entender aquele cenário e ele vai conseguir implementar, e aqueles passos são realmente viáveis e plausíveis pro sistema.
+
+Entao o que eu quero dizer com isso ao grosso modo, eu não sei o quanto que você ta conduzindo a tua pesquisa, quais resultados tu quer alcançar e tal, mas o que eu posso te dizer é o seguinte, até foi um jargão que eu usei no último projeto em que BDD não deu certo infelizmente, estou sendo real contigo aqui, o que eu falei assim pro pessoal: "pessoal, a gente tem que fazer BDD se isso traz valor para equipe". Eu como eu gosto muito do assunto acho muito bacana, eu tava defendendo com unhas e dentes assim né. Então lá pelas tantas a gente chegou a conclusão que bom, não tá trazendo valor, tá sendo moroso isso e isso e isso, né, e como acontece no velho mundo dos gerentes de software desesperados, a primeira coisa que eles cortam são testes né, ou algum método que possa interferir ou honorar horas e tal e eles acabaram entendendo que o BDD fosse ruim. Então, tudo bem, eu acho que escolhas e resultados né. 
+
+O que acontece cara, uma coisa que pelo menos esse último projeto era bem pesado tá, então a gente tinha toda uma stack de microserviços, ahn, com Front rodando em Angular2, então a gente tinha uma stack muito pesada realmente, tanto pra desenvolver quanto pra manter quanto pra funcionar era uma stack, uma solução basuca para matar uma mosca. Então o que aconteceu nesse projeto específico, como a equipe era muito pequena para tocar o projeto, o BDD acabou sendo assim como "ah vamo tirar isso aqui por que isso vai resolver", aquelas tentativa assim, soluções mirabolantes de agile coach. Mas, enfim, é isso, mas, foi uma experiência negativa tá mas foi uma experiência.
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+* Steps too long/too short
+* Step few/many
+* Business language usage
+* Title description
+* Keywords (Given/When/Then) usage and order
+* Repetition of steps (Background/context usage)
+* Parameters are ok or not?
+* Tables are ok or not?
+
+> E nessas suas experiencia voce chegou construir uma noção do que pra você seria um bom cenário BDD? Então que tipo de características voce considera que forma um bom cenário BDD, o que são as coisas bacanas de fazer e o que não é muito legal.
+
+Ta, ahn, so vou fazer um comentário paralelo a isso, como eu já tinha comentado essa questão dos cenários né, na verdade assim, o que eu acredito que é um bom cenário, de uma maneira bem clara, é um cenário que traga valor para a equipe técnica. Então isso que eu acredito que é um bom cenário. Como a gente chega nesse cenário ou por que a equipe técnica, por que não aquela questão cliente, analista, mais esse jogo né. 
+
+O que acontece cara, eu tive experimentações diferentes com BDD, tanto a experimentação que o BDD foi imposto pelo cliente, era um desejo do cliente, e nessa experimentação o BDD trouxe bastante valor porém ele acaba, que nem eu tinha te comentado antes, ele acabava refletindo muito cenários do cliente, então não era, a gente tinha muito happy path, a gente tinha muita abstração e tu acabava vendo que aquilo não trazia um valor para a equipe.
+
+> Por que era numa linguagem de business?
+
+Do cliente, a gente tinha muito, isso, exatamente, perfeito, tu traduziu bem, era uma linguagem de negócio, não era uma linguagem técnica neh. Mas além disso não é questão só da linguagem, acho que vai um pouco além, vai na questão do quanto aquilo a equipe faz com uma gana, faz com vontade, faz com "ah realmente isso aqui é muito legal, isso aqui ta trazendo valor, olha quando das nossas funcionalidades tão melhores, o quanto do nosso código tá melhor por causa do BDD", entendeu?! Eu tenho de certa maneira o que eu vi, que quando o BDD vai mais pro lado do negócio e não tanto pro lado técnico, não tanto pra equipe, acaba virando um peso entendeu no desenvolvimento, acaba virando um peso pra equipe técnica. Por que as pessoas acabam olhando aquilo e pensam "tah, tem que fazer esse BDD aqui", mas não é algo que "vamos fazer isso aqui por que isso aqui realmente vai trazer muito benefício".
+
+Fica essa dúvida assim, eu vou fazer isso só pra agradar o cliente e o analista ou por que vai trazer valor?
+
+> Ahn, deixa eu fugir um pouco do planejamento e perguntar: vocês recebiam os cenários BDD prontos na maioria das vezes, certo?
+
+Sim, nesse primeiro projeto sim
+
+> E esses cenários BDD, eles eram a unica forma de testes que voces tinham ou eles eram complementados por outros tipos de teste?
+
+Não, na verdade ele era... ate nesse projeto acho que ele era a única forma de teste que a gente tinha neh, mas a gente tinha...enfim a gente tinha critérios de aceite e tal que acabavam, dae claro teste funcional e tal, mas teste de integração eram em cima desses cenários ta.
+
+> E teste unitário era separado ou náo tinha ou era do BDD?
+
+Nesse primeiro projeto o teste unitário ele acabava sendo digamos assim absorvido pelo teste de integração. Entao a gente quase sempre tinha o happy path e o caminho contrario e dae batia aquilo. Entao era integração com um pouco de unitário.
+
+É mas, seguindo a viés BDD né, não seguindo a viés TDD, a gente tinha esse mundo separado de desenvolvimento.
+
+> Entao voce ja me falou que tem que trazer valor pra equipe tecnica e uma das coisas que eu notei é que dae teria que ter a linguagem tecnica. O que mais...
+
+Ahn, é, assim, teria que ter linguagem tecnica mas ao mesmo tempo eu não to querendo dizer linguagem técnica ou jargão técnico ou palavras comandos de linguagens ou coisa assim
+
+> Se tiver um seletor CSS ali no meio, isso é bom ou isso é ruim
+
+Ahn, cara, isso é indiferente na verdade. A questão é o seguinte, não é nem tanto a questão da linguagem, é mais a questão de como, da granularidade do cenário entendeu?
+
+> Então seria bom ser de uma forma mais imperativa, tipo um pressione aqui, faça aquilo
+
+Exato, isso ae mesmo. Por que isso cara, o que eu vejo assim ta, quando a gente tem o cenário Dado, Quando, Então com somente, cada um com uma frase ta, cada um com uma instrução, isso acaba sendo pro desenvolvimento, isso acaba sendo, como eu posso te dizer, a mensuração disso é um pouco ilusória tá. Por que lá pro cenário a gente tem um cenário bem curto, Dado, Quando e Então, bem específico, só que aquilo no desenvolvimento aquele Dado é um monte de coisa, aquele Quando é meu deus, é todo o sistema lá em baixo, e o Então é um assert que não traz nenhum resultado efetivo, é só um assert true.
+
+O que acontece, é o seguinte, quando a gente consegue transformar esses três passos em algo mais granular, no sentido, por exemplo, Dado usuário fulaninho, ta, fazendo bem simples aqui, E senha tal, E que o usuário está na tela de cadastro, algo bem simples assim, Quando o usuário preencher todos os dados, e ae vou continuar quebrando, E pressionar o botão submeter, Então acontece tal coisa ta. 
+
+Não sei se tu acompanhou toda a montagem do cenário, eu montei ele de forma que eu tenho 3 Dado, 2 Quando e 1 Então. O que acontece com isso, isso acaba sendo um pouquinho mais granular o cenário e acaba que eu consigo aproveitar melhor esse cenário.
+
+> E essa flexibilidade de transformar cenários de 3 passos e uma granularidade genérica, em um cenário mais útil para desenvolvimento, esse papo nunca aconteceu na equipe?
+
+Assim, nesse, o que acontece, nesse primeiro projeto, como era um, como era algo bem imposto pelo cliente, o cliente realmente usava os cenários para validar, o cliente, enfim, documentava aqueles cenários, a equipe técnica não tinha essa possibilidade, de chegar junto e "ah, quem sabe a gente muda aqui ow, esses 3 passos não tão legais pra nós, vamo fazer alguma coisa que faça um pouquinho mais de sentido", não tinha muito essa possibilidade tá. 
+
+Mas eu já tive um outro projeto, por exemplo, em que o BDD não existia no projeto, o cliente não tinha um conhecimento do BDD, o cliente não tinha o desejo do BDD também ta, e na verdade eu fui chamado pro projeto e ele já tava em execução, já tava no 3o ou 4o mes ou algo assim, e os clientes colocaram a seguinte situação: "olha, a gente tem tais e tais cenários de teste", era realmente teste digamos assim, teste de carga que precisava no sistema, "e a gente precisa fazer um script pra automatizar isso". 
+
+Eu lembro que a primeira coisa que eu pensei, até comentei com meu gestor na época, fazer um script pra automatizar isso eu não acho interessante, por que vai ficar algo muito moroso, muito pesado, ruim manutenção e tal. E uma ideia que tive foi usar o BDD, como uma ferramenta de automatização ta.
+
+> Ok...
+
+Então é um pouquinho diferente tá, esse projeto teve Cucumber, teve cenários, mas ele não foi construído com BDD tá, ele não foi, o desenvolvedor não pegou o cenário e a partir disso construiu o seu sistema, foi um passo ao contrário disso. 
+
+O que foi feito, eu construi os cenários, nesse projeto eu construi os cenários, então fui lá e fui construindo cenários conforme havia necessidade...
+
+> Você validava com analistas ou com cliente ou com PO esses cenários?
+
+Não, a validação que a gente precisava, é tipo assim, esses cenários eram a ferramenta para a gente automatizar tá. 
+
+> Ah entáo ninguem fora da equipe sabiam que eles existiam?
+
+De certa maneira sim, todo mundo, o pessoal da equipe sabia. O cliente lançou uma API lá pra uma ferramenta deles onde tu tinha muito, digamos assim, dando um exemplo bem do que era, tu tinha la "Dado que quero construir uma rede tal, Quando inserir a rede no sistema pah pah pah, Então acontece tal coisa, a rede é listada e tal" bem nesse estilo de BDD ta. Então na verdade assim foi uma proposta da seguinte forma: olha pessoal, vamos ver assim se dá pra utilizar o BDD como uma ferramenta de teste de integração pra gente ter todos esses cenários validados com integração e automatizados. 
+
+Então o resultado final foi bem legal cara, foi bem bacana, mas assim, era diferente neh, por que de certa maneira eu tinha liberdade para escrever os cenários do jeito que eu quisesse neh, eu tinha liberdade pra mostrar o resultado daquilo, então eu mostrava pra minha equipe "olha a gente conseguiu automatizar isso e isso isso, dessa forma". Por que o que acontece, como era digamos assim, a gente tinha o nivel de construção muito similar entre os diferentes recursos, então, só pra exemplificar um pouco, eu tinha um cenário que criava uma network, outro cenário que eu criava uma rede de fibra otica, eu tinha outro cenários que eu criava toda uma estrutura de servidor, por exemplo. O que acontece, no final das contas tu ta criando coisas e esperando resultado, não faz nada de diferente. Então os cenários eram feitos de tal forma que eles eram completamente genéricos e a única linha específica que eu tinha no cenário, em cada cenário, era o seguinte: Dado que estou utilizando uma network. E embaixo ele fazia tudo igual - então cria um recurso, então valida um recurso, então verifica se o recurso foi criado, nao sei o que. 
+
+> E isso acontecia para todo tipo de recursos, esse mesmo padrao de cenario.
+
+Isso exatamente, isso acontecia para todos os tipos de recursos e isso acontecia tambem o seguinte, debaixo desses cenarios foi utilizado dois padrões de projeto, um singleton e uma strategy. Então a gente conseguia navegar muito bem entre esses recursos, trocar de recurso rapidamente e tal, e realmente o valor desse cenario, desse BDD, foi fantastico, o cliente adorou, a equipe adorou, ficou muito bom realmente, mas o que ao meu ver foi o diferencial: foi usar o BDD para trazer valor para a equipe ta, nao utilizar somente por utilizar ou so para agradar o cliente ou so para fazer cenarios para o cliente. 
+
+> Ok entendi... e coisas que trazem valor para equipe, alem dele ser muito granular e a forma imperativa de escrever, o que mais traria valor para equipe?
+
+O seguinte, o que traz bastante valor quando ve esse efeito da quebra dos cenários é o reuso dos cenários
+
+> Reuso dos steps você quer dizer, então o step genérico, quanto mais genérico, quanto mais parametros, melhor?
+
+De certa maneira sim, mas claro né, tudo tem seu, digamos assim, tem que ter um pré-entendimento. Digamos assim, o meu teste quer identificar uma chamada REST de autenticação tá. Que isso lá no final das contas vai se traduzir num login para o usuário. Digamos que esse é o meu cenário, o que acontece, se eu tiver um cenário bem detalhado onde eu possa passar nome de usuário, senha, bem esmiunciado, onde tenho parametro tal recebe tal coisa, onde eu tenha o Quando, quando submeter, e o Então bem generico, o que acontece, eu consigo ter um ganho muito alto para variar os diferentes comportamentos do sistema. Por que eu consigo fazer algo do tipo - Dado que o usuário é fulaninho, E a senha é 123, Quando logo no sistema, Então recebo mensagem de autenticado com sucesso.
+
+Isso é algo bem especifico para login mas também é bem amplo por que eu posso variar isso da seguinte forma: Dado usuário náo cadastrado, sei la, ciclano, e a senha tal coisa, quando eu tento submeter então recebo um erro de usuário não cadastrado.
+
+Então eu consigo ter o lado granular da coisa e eu consigo ter o lado teste da coisa, que eu consigo ter o teste negativo, o teste positivo, o teste a rede caiu, o teste interno do servidor deu erro, enfim eu consigo ter várias respostas dependendo da maneira que eu escrevo e de como quebro os cenários entendeu
+
+> Então essa variação toda de cenários, se ela for feita em BDD, se for possivel fazer isso em BDD, então melhor ainda... uma premissa aqui é que BDD é a única forma de teste do projeto
+
+Isso... é, ae que tá... o que acontece, eu não acredito tanto nessa premissa ta. Eu não vou bater o martelo assim BDD é o unico teste do projeto... Acho que BDD é bem legal para teste de integração, só que tem um outro lado que a gente ganha com TDD que dependendo o tipo de projeto eu acabo tendo um ganho maior com TDD ou um ganho maior com BDD, ou um ganho maior com ambos, mas ae é dependendo o tipo de projeto
+
+> Isso pensando o lado técnico, nada envolvendo cliente
+
+Exato, pensando lado tecnico
+
+> Por que cliente não estaria interessado nesses testes de integração
+
+É, o que acontece assim né, tentando especificar um pouco melhor a coisa. Se eu tenho um sistema que é muito, se ele usa muito uma API, se ele tem uma comunicação muito grande que eu tenho que ficar testando bastante comunicação de dados e coisa assim, tu acaba tendenciando mais pro TDD. Por que isso, por que eu acabo tendo que implementar funções onde eu vou esperar resultado X e Y Z e resultado assim e assado, que acaba facilitando pro TDD, facilitando a implementação de usar o TDD. Coisas que se eu utilizasse um BDD ficaria talvez muito moroso, ficaria alguma coisa assim, a gente tá utilizando BDD mas talvez tenha cenários que não faça sentido ter o BDD, talvez tenha cenários que a gente não consiga granular tanto para ter um bom uso ao BDD
+
+> Então eu vou voltar a pergunta la do inicio, qual a vantagem de usar BDD?
+
+Ta, o seguinte, a vantagem de usar BDD - tu ganha com teste de integração, ta, tu ganha com digamos com maior entendimento da equipe e do cliente e de todos desenvolvidos do que está sendo construido, então tu ganha em entendimento, em retrabalho, casos de implementaram assim mas eu esperava assado. Então tu tem vários ganhos tá. A questão em jogo é como o BDD é utilizado. Não é nem tanto utilizar ou não utilizar. Eu acho que se a gente tem uma equipe em que a equipe inteira acredita no BDD ou que é a maior parte das pessoas acreditam no BDD, a gente acaba tendo um ganho muito grande entendeu, a gente acaba conseguindo aproveitar muito isso. Mas do contrário, se a equipe não acredita, se a equipe não ve valor, se a equipe não, não é nem uma questão de trenamento, as vezes simplesmente as pessoas não aceitam, as vezes a pessoa diz não sei, eu não trabalho, não quero aprender. 
+
+Então a gente acaba não tendo um ganho, vira mais um processo do que um benefício. Dae a coisa fica perigosa.
+
+> Então assumindo que você tem um cenário na sua frente da sua equipe para avaliar, as coisas que você prestaria atenção nesses cenários seriam tais como - isso foi o que eu anotei tá, por isso to repassando pra ver se anotei algo errado: a forma imperativa de escrever, o modo granular de escrever; os passos tem bastante possibilidade de reuso, ou seja, eles são bastante genéricos e são bastante parametrizáveis; e tem bastante variações de cenários naquele arquivo de feature - seria isso?
+
+Seria isso
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ONE feature file to evaluate (user\_applications.feature)
+
+> E você acha que ela ta granular o suficiente?
+
+Sim, ela ta, é exatamente isso que eu falo cara, exatamente isso
+
+> Então o uso de ações de UI por exemplo "I revoque", "I sign", tem até um "I press" em algum lugar, isso é bom de ter?
+
+Depende né? Se eu to implementando Front, se eu to implementando Back, depende, mas ao mesmo tempo eu acho bom, é real, é o que o usuário tá fazendo, é o que a gente espera, acho que é isso ae mesmo
+
+> E a quantidade de steps ta aceitável?
+
+Ahn sim, tá aceitável...
+
+> Se tivesse mais steps, se tivesse 10 steps, seria aceitável?
+
+Seria, com certeza
+
+> Quando precisar?
+
+É, quanto precisasse né, claro tem que entender o que está sendo reaproveitado, o que não está, isso que eu...mas me parece que tem coisas reaproveitáveis até, "And I go to the user applications page" é isso aqui ta repetido
+
+> Aquele Then da 13/14/15 ta bem reusavel aqueles steps
+
+Isso, ta bem legal, ta bem legal mesmo
+
+> E aquela tabela do background você achou interessante?
+
+Eu achei interessante... a unica coisa que talvez, eu to vendo bem auto nivel entao nao to tentando entender o sistema, mas me parece que vc ja tem usuario, ah isso aqui prepara la pro cara estar logado...nao beleza, é isso ae, talvez poderia puxar esse, não, é, ta bacana, ta bem bom
+
+É o nivel, o que eu posso dizer, esse cenário é o que eu acho ideal. Tu passa isso pra qualquer pessoa tecnica ela vai saber usar, ela vai conseguir entender, ela vai conseguir quebrar e implementar entendeu. Isso é fantástico, isso é muito bom.
+
+> E a tabela, so voltando pra tabela, qualquer tabela é legal ou tem algo de ruim em algumas tabelas?
+
+Eu acho que qualquer tablea é legal, vai muito digamos assim de como tu ta usando, mas tabela é bom, tabela traz beneficio, por exemplo, pensando em vários cenarios onde traga erro e talz, se a gente tem daqui a pouco uma tabela com diferentes usuarios mas tem um que nao esta logado dentro da tabela e tem um iterador la que vai usando cada dado, e no Then tem uma tabela de usuario tal, erro tal, nao atualizado, 401, usuario tal mensagem 200, certo, sabe, que eu consiga bater bem as coisas, eu acho que isso traz muito beneficio e bem bacana. 
+
+> Entendi... e uso de tags, aqui tem uma tag de javascript la em cima, voce compartilha a mesma opiniao de tabelas, quanto mais tags melhor?
+
+Sim, e inclusive eu acho muito legal tags quando a gente consegue, o que eu tenho aqui no cenarios que eu costumo fazer, eu coloco as tags por cenarios assim, por que isso consegue dar uma dinamica muito legal na hora de testar, eu consigo ir la no meu teste, no meu teste.java ou qualquer coisa, e puxar bem certinho la, eu quero que tu teste o cenario de autorização só né, ou teste só o cenário de revoque autorização, e isso é muito bom, o ganho disso é muito bom, por que daqui a pouco eu to desenvolvendo por exemplo essa parte de autorização ta bem montado e tal, e eu so quero executar ele agora, os outros eu sou vou desenvolver daqui a 3 ou 4 tasks ou na proxima sprint ou algo assim, entao eu consigo quebrar isso neh, fica bacana.
+
+> E aquela descrição de feature ta interessante?
+
+Sim, acho que poderia ser um pouco mais completa, mas ta...
+
+> O que faria ela mais completa?
+
+Ela ta interessante, ta bem objetiva, mas acho que ta interessante... talvez poderia ter algo mais digamos assim que trouxesse mais informação tipo "como o usuário básico do sistema" ou "como o usuário cliente do sistema", o "como o usuário administrador do sistema" sabe, algo um pouquinho mais detalhado é interessante também, mas também ta legal, eu acho que tá bom, tá bacana
+
+> Então ela tem que dizer, além do que está sendo testado, tem que falar Quem está fazendo aquela ação?
+
+Isso, o que e como ta fazendo neh. Ou pra que ele ta fazendo aquilo, qual o objetivo
+
+> Ah o "why" tbm ?
+
+Isso isso
+
+> E os titulos dos cenarios tambem tem que compor essas tres informacoes, o que, quem e por que?
+
+Ahn, pois e, o titulo dos cenarios, o que a gente acaba, e uma coisa que eu nunca parei pra pensar sabe sobre os titulos dos cenarios. Mas uma coisa que a gente acaba usando bastante e traduzir ou tentar colar o nome da estoria no titulo do cenario ta.
+
+> O nome da estoria com aquela descricao de user story ou nao, so a acao que ta sendo feita?
+
+Seria algo mais ou menos assim - o S001 adicionar usuarios no sistema, algo mais ou menos assim. Mas e algo, cara, nunca parei para pensar no titulo, se eu usar o titulo assim ou assado vai ser melhor
+
+> Ele nao traz valor para a equipe tecnica?
+
+Eu acho que o titulo e importante para a gente entender o que aquilo reflete mas eu vejo que quando tem essa informacao da US acaba conseguindo rastrear melhor ne. Ah a US001 ta rastreada ali ow, vamo ver se esta todos os passos, vamos ver o que a equipe fez, o que tem o que nao tem.
+
+> Entao tem que ter a acao e a referencia da task
+
+Isso, isso ae
+
+6) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small - few steps
+* testable
+* understandable
+* unambiguous
+* valuable
+
+> Entao eu vou seguir aqui e te pedir para dar uma olhada de volta no Skype onde eu colei algumas palavras cujo eu tenho curiosidade de saber se ela sao uteis, seriam uteis para voce ao avaliar cenarios BDD. Por exemplo, um cenario BDD teria que ser conciso, ele teria que ser estimavel, a leitura seria basicamente assim
+
+Ahn, sim, eh, tem uma outra questao que agora lembrei que e a questao da coesao do cenario tambem ta. Ou seja cenario ele tem que ser, ao mesmo tempo que e interessante a gente ter um cenario generico, um cenario ele tem que, tem que existir por si so, a gente nao pode falar "ah nao para esse cenario eu preciso sei la, configurar tal coisa diferente, configurar a rede assim e assado ou apontar para tal coisa". O cenario em si ele tem que ser auto, ele tem que ser conciso e auto-suficiente, isso nao e muito bom para o cenario, tal coisa diferente, tem que configurar a rede assim e assado
+
+> Tem que ser auto-suficiente o que faz ele ser independente dos outros?
+
+E, a palavra independente ela e um pouco forte ta, mas digamos que sim, ele tenha que, ela possa fazer sentido sem outros cenarios
+
+> E quando tu fala de coesao, e sinal que o cenario tem que fazer sentido para estar naquele feature file?
+
+Sim, isso sim
+
+> Entendi, entao sao duas palavras ao menos novas para botar na minha lista, que legal. As outras, vc acha que elas nao seriam uteis?
+
+Um exemplo que veio aqui na minha cabeca e o seguinte, eu tenho por exemplo um cenario de login neh, o que eu vou esperar dentro do login, eu vou esperar tudo referente a login, usuario cadastrado, usuario nao cadastrado
+
+> Na feature file de login neh?
+
+Isso...ae eu tenho uma feature por exemplo CRUD de usuarios ta, onde eu tenho, adiciono usuario, remove, update, normal... o que eu vou esperar nesse cenario, que ele tenha todas as variacoes mas que ao mesmo tempo eu consiga executar toda essa feature ou todos esses caras ali independente de "ah nao para executar isso aqui tem que, o login tem que ter funcionado assim ou assado". 
+
+Quando eu consigo ter essa independencia entre os .feature entendeu?
+
+
+7) What could be their meaning for BDD?
+
+* concise - ?
+* estimable - ?
+* feasible - ?
+* negotiable - ?
+* prioritized - ?
+* small - ?
+* testable - ?
+* understandable - ?
+* unambiguous - ?
+* valuable - ?
+
+> Entendi...legal, bom saber que isso e interesante.... Estimavel (estimable) nao e interessante?
+
+O que voce quer dizer com estimavel so pra entender?
+
+> Quer dizer que um cenario possa ser estimavel, ou que dependendo da escrita de um cenario ele se torna mais ou menos estimavel, sera que essa frase faz sentido?
+
+Estimavel no sentido de...
+
+> Estimativa
+
+Horas, pontos?
+
+> Esforco...faz sentido pensar assim para cenarios ou nao?
+
+Acho que estimativa ela depende ta, o que eu quero dizer com isso. Se eu tiver estimando um sistema de CRUD com login e com nao sei o que, um sistema basico que todo mundo faz, e uma coisa ta, entao eu tenho uma base eu sei como e ou como nao e.
+
+Agora se eu estou estimando algo mais complexo, algo que nao e muito mensuravel, algo que a minha equipe nao tenha conhecimento suficiente ou e algo que por algum azar eu nao consegui fazer uma POC para ver aquilo funcionando, ae eu acho um pouco mais complicado
+
+> Entao e algo que nao esta na descricao do cenario mas ta no teu conhecimento daquele problema, daquele dominio?
+
+Isso, conhecimento daquele dominio, eu acho que tambem a qualificacao da equipe, isso e bem interessante, mas por um outro lado, se a gente conseguir criar um cenario que ah por exemplo eu tenho ahn sei la, fazer uma integracao com reconhecimento de voz, por exemplo, sistema com reconhecimento de voz. Se aquilo e algo que eu sei mais ou menos como uma API de conhecimento de voz funciona, eu consigo quebrar cenarios para isso ta, eu consigo colocar "ah tem que conectar com a API de tal forma", ou "tem que mandar os arquivos de tal forma", a resposta esperada e X ou e Y. Acho que isso acaba facilitando a estimativa ta. So que isso e perigoso ao mesmo tempo, eu tenho que ter esse tempo, tenho que ter essa possibilidade de ter esse pre-conhecimento de estudar antes ou entender antes para poder fazer algo, digamos assim, com propriedade, nao fazer um cenario qualquer. 
+
+> Entao como o foco que eu gostaria de ter na minha pesquisa e na descricao textual dos cenarios, tem algum que, tem alguma outra dessas palavras em que a descricao dos cenarios nao vai conseguir me ajudar? E que a gente vai precisar desse conhecimento a mais da aplicacao ou do dominio? Por exemplo, fazivel (feasible), voce conseguiria indentifcar se aquele cenario e fazivel ou nao so pela descricao dele
+
+Eh isso eh, isso eh interessante, isso eu acho que e viavel tambem isso e interessante.
+
+> Entao me da um exemplo de uma frase que te diga que o cenario e fazivel (feasible)
+
+Olha um exemplo facil e um CRUD, ao menos que eu leia um cenario de CRUD eu consiga entender aquilo dentro de um sistema
+
+> Uhum, por que voce ja fez outros CRUDs da vida?
+
+E exato, por que e algo, acho que nem e a questao de ter feito, acho que e algo que ja ta bem explorado, ja que todo mundo conhece a literatura conhece, nao tem dificuldade assim, nao e algo desafiador
+
+> Voce consegue me dar um exemplo do que num cenario faria ele mais ou menos fazivel (feasible)?
+
+Eu acho que e justamente isso que a gente vem conversando, conseguir granular o cenario. Conseguir especificar bem os passos, acho que isso acaba, como eu posso te dizer, acaba traduzindo melhor pro Dev sabe.
+
+> Ah entendi, e negociavel, que tipo de caracteristicas, que tipo de recursos um cenario deveria ter para ele ser mais ou menos negociavel? Ao talvez isso realmente nao faca sentido. 
+
+Eu nao entendi muito bem essa parte do negociavel cara, negociavel no sentido negociar com... nao sei cara, nao sei, nao entendi isso
+
+> Ok, vou colocar um nao aqui e se nao a gente volta e reflite mais um pouco. Prioritizavel entraria nessa mesma ideia do negocivel, que e estranho? Ou voces priorizam cenarios?
+
+Cara, e que, acho que eh, como eu posso te dizer, essa questao do priorizar ela e bem relativa sabe, e o que eu acho assim. Acho que e um entendimento que tem que acontecer com o PO e com o cliente antes sabe, e um passo um pouquinho na frente, e um passo um pouquinho antes.
+
+> Entendi, e mais no nivel de feature. 
+
+Eh, quando vem pra dentro do projeto digamos assim as coisas ja tao, ja tem que ta batidas, olha, por exemplo, sei la, questao visual pro cliente e algo essencial. Entao mesmo que um sistema tenha falhas de seguranca o que importa e que ele e bonito. Entao assim eu vou elencar os cenarios, aqui tem autenticacao, tem o Auth2, e tal e taranran, isso aqui a gente deixa pra depois, faz uma autenticacao ae meia boca e pronto, o que importa e a telinha ser bonita, pode ser, prioridade entendeu
+
+> Entendi... e faz sentido, e bom pra um cenario ser pequeno (small) ?
+
+Eu acho que nao, eu nao tambem dizer que um cenario tem que ser muito grande ta, ele nao pode ser nem pequeno nem grande, ele tem que ser suficiente e bem descrito e ta bom ta. Nao adianta eu ter um cenario de 3 linhas, um Dado, Quando e Entao bem amplo assim que nao faz muito sentido, so por ele ser pequeno sabe
+
+> Entao faz sentido ele ser conciso (concise)?
+
+Faz, com certeza
+
+> O que seria um cenario conciso (concise) de 10 passos?
+
+Um cenario conciso de 10 passos ele e digamos assim, cada passo e fundamental, eu nao tenho...
+
+> Entao cada passo traz valor, cada passo e necessario
+
+Exato e, e que tem uma linha tenue entre o pequeno, conciso e o desnecessario digamos assim. E o que eu acho que acontece, e tu conseguir separar o seguinte, tal passo, por exemplo la na historia do login, e muito importante que eu separe usuario da senha por que eu consigo aproveitar isso melhor depois. Isso e legal. Agora eu nao vou quebrar em, eu tenho 5 parametros para passar pra dentro do meu sistema, eu nao vou quebrar em 5 passos diferentes sendo que esses 5 passos diferentes nao fazem sentido, ou fazem sentido junto ou eles nao, ou eu nao vou aproveitar aquilo pra nada, ou vou fazer isso por que eu tenho um estilo de escrita assim, acho que o cenario, o step tem que fazer sentido, e esse sentido tem que ser o valor agregado do cenario entendeu
+
+> Entendi, legal, legal, e faria sentido para um cenario ser Testavel  (testable)?
+
+Sim, com certeza
+
+> O que quer dizer que um cenario e testavel (testable)?
+
+Olha na minha cabeca um cenario testavel e eu coloco uma tag no cenario, independente daonde que eu estou ou de quanto o meu sistema ta implementado ou nao assim, eu consigo executar aquilo e aquilo ter resultados. 
+
+> Mmmm nao entendi... quer dizer entao que um cenario que nao tenha pre-condicoes?
+
+Ahn, como eu posso te dizer, de certa maneira, e que a questao das pre-condicoes ela e bem, depende como e tratado isso no sistema ta. Daqui a pouco aqui se eu pensar que as minhas pre-condicoes, de repente pra ter um usuario que eu tenha que editar, a o usuario tem que estar logado e tal, isso, depende muito como tu ta testando, como tu ta vendo aquilo, como as coisas estao sendo implementadas e talz, mas eu acho que um cenario tem que ser auto-contido ao ponto de eu queria testar so o cenario de editar usuario entendeu, eu nao quer testar o adicionar usuario e o remover, eu quero so editar
+
+> Entao ele tem que ser independente? Ele tem que ser auto-suficiente
+
+Ele tem que ser auto-suficiente mas eu nao quero vir com falacia aqui tambem, por que eu acho que ele tem que ser auto-suficiente o quanto que ele conseguir ser entendeu
+
+> Claro, quanto mais melhor, justo
+
+Quais mais melhor, exato, eu nao posso ter um cenario, digamos assim, auto-suficiente ao ponto de ele fazer login, editar e fazer logoff do sistema, ae perae, tem alguma coisa errada. Ele tem que ser auto-suficiente mas ao mesmo tempo ele tem que ser auto-contido, ele tem que fazer sentido dentro dele mesmo, ele nao pode daqui a pouco ser independente porem eu tenho passos do login dentro dele; independente porem eu tenho passos do logoff dentro dele. Dae eu acho que ja comeca a embaralhar as coisas
+
+> Mas se ele nao faz login quer dizer que ele nao precisa de login ou quer dizer que quando ele e executado depois de outro cenario, o outro cenario vai fazer login?
+
+Ae que ta, ae que ta, a questao do login, eu acho que assim, a gente tem um beneficio bem legal com BDD que e o teste da integracao neh. Ou seja, onde eu vou encadeando varios cenarios, o login, add, taranran, e esses cenarios eles vao executando e isso vai populando o sistema, isso vai populando o banco de dados, isso vai gerando massa de dados, e em cima disso eu vou trabalhando. Entao em cima disso eu tenho um teste de integracao completo neh
+
+> Entao um teste, um cenario que cria usuario para outro cenario deletar usuario e legal essa dinamica?
+
+Eu acho legal ta, eu acho legal. Mas eu tambem acho legal eu poder executar so o deletar
+
+> Ue, mas como voce consegue as duas coisas?
+
+Ahn, mas ae que ta, vai da estrategia de implementacao, daqui a pouco por exemplo eu posso ter populado meu banco suficientemente com alguns usuarios e eu quero usar so o deletar por que, enfim, eu acho que e bacana ter essa independencia tambem sabe. Claro, existe um pre-requisito funcional as vezes, mas eu acho que e bacana fazer isso sendo que o pre-requisito funcional foi elaborado e executado
+
+> E o que seria um cenario entendivel (understandable), o que faria dele um cenario mais entendivel?
+
+Ae que ta, tem que fazer isso de forma que o pre-requisito funcional foi... a resposta vem daquele debate inicial la, eu acho que para a equipe tecnica essa questao do nivel de granularidade do cenario
+
+> Entao se ele e tecnico, se tem a granularidade correta e a forma imperativa com os passos especificos isso torna ele entendivel (understandable)?
+
+Exato
+
+> E qual a diferenca entao de entendivel  (understandable) para fazivel (feasible)? Sera que existe essa diferenca?
+
+Eu acho que existe cara, acho que existe essa diferenca, por que, dando um exemplo bem tosco ta, mas eu posso escrever um cenario bem granular que eu estou descrevendo os passos para fazer cafe. 
+
+> Mas como voce sabe que fazer cafe nao faz parte do sistema?
+
+So pra sair do modo sistema...
+
+> Nao, justo, mas o que eu queria forcar aqui e o que diferencia, e eu to na hipotese de que e o teu conhecimento de dominio que ta separando os dois
+
+Exato, pode ser o conhecimento do dominio, pode ser por exemplo, daqui a pouco nessa descricao dos passos assim eu tenho recursos que nao sao disponiveis pra mim ou recursos que eu nao consigo alcancar por algum motivo, entao... daqui a pouco eu consigo muito bem ler um cenario de fazer cafe, entender ele, ver que aquilo e factivel, tudo bem, porem eu nao posso executar aquilo, por que eu nao tenho a maquina de fazer cafe e tal neh. Eh cara e um exemplo bem generico mas eu acho que assim
+
+> Nao mas e interessante, ilustrou bem.. O que seria um cenario ambiguo? Voce acha que ele ser pequeno e ter so os 3 steps torna ele ambiguo (unambiguous)?
+
+Ahn, olha, a resposta e um pouquinho dificil, mas dependendo da forma em que e escrito esses 3 passos, acho que ele pode ser ambiguo ou ele pode ser, nao e nem questao de ser ambiguo ele pode ser muito, como que eu posso te dizer, e aquele exemplo assim eu tenho um Quando que se traduz pra 70\% da implementacao do sistema, sabe, entao isso eu acabo, eu acabo, ao meu ver...
+
+> Os steps sao muito genericos
+
+Eh, mas nao eh a questao, eh generico nao no sentido do reuso mas no sentido muito amplo, passos amplos ou passos gigantes assim. Que daqui a pouco eu olho aquilo e pra estimar aquilo e impossivel. Por exemplo, Dado que existe o Facebook, Quando criar um sistema que tambem seja uma rede social, Entao ficarei milionario, tipo isso seria impossivel, nao tem como eu parar aqui e fazer, esse teu Quando ae eu faco em 3 anos e meio, nao faz sentido
+
+> E o que seria um cenario valioso (valuable)?
+
+Olha, ele, batendo na tecla e o que traz valor pra equipe tecnica. 
+
+> Ou seja, que e granular, que tenha os passos especificos e que tem reuso dos steps?
+
+Isso, isso ae
+
+> Ta... e esse reuso dos steps a gente botou so no valioso (valuable), a gente nao botou nem no entendivel (understandable) e nem no fazivel (feasible). Faz sentido o reuso de steps somente tornar o cenario mais valioso?
+
+Nao, faz sentido nos outros tambem, faz sentido em todos.
+
+Ahn, so pra bater um pouquinho mais nessa tecla, por que eu puxo isso de "trazer valor para a equipe tecnica" ta. Por que, cara, no final das contas quem faz o sistema e a equipe tecnica, quem bota mao na massa e a equipe tecnica, entao o que acontece, quando a gente tem um cenario que e so pro cliente olhar e dizer legal ou so pro cliente entender um pouquinho melhor o sistema, ou so pro analista mostrar aquilo pro cliente, sem um valor real, isso acaba nao trazendo valor, acaba virando um processo, entendeu. Entao o que acontece, ao meu ponto de vista, quando a gente tem um cenario bem rico, bom pra equipe tecnica, a gente acaba trazendo valor para todo mundo, tanto para a equipe tecnica, que consegue trabalhar melhor, consegue fazer um sistema de maior qualidade, tambem o analista ta e tambem pro cliente, que o cliente por mais leigo que seja, lendo aqueles passos ele e capaz de entender alguma coisa sabe, ele e capaz de entender o quanto aquilo se traduz no sistema e tambem ele e capaz de entender o quanto que a feature dele pra, sei la, reconhecimento de voz ela e trabalhosa. Entao isso e interessante.
+
+> E se a equipe tecnica recebe esses cenarios e talvez o cliente nao tenha esse conhecimento necessario para escrever esses cenarios dessa forma mais granular, quem escreveria, quem faria essa transcricao do que o cliente precisa para o que a equipe tecnica precisa de input?
+
+Bom, isso e uma boa pergunta, na verdade assim, nesse ultimo projeto que eu participei que nao deu certo BDD, o BDD ficou... ae nao sei eu nao consigo entender ta, por algum motivo ficou de encargo do Testador ta. Entao, o que acontecia assim num primeiro momento, a gente acabava recebendo uns cenarios ruins, no sentido de nao refletindo muito o que era necessario para o sistema, nao refletindo muito o que era necessario para o teste, e eu acho que nao tinha um valor naquilo sabe. Entao, o que acontecia, nesse projeto a gente usava code review ta, e os cenarios eles eram validados no code review tambem. Entao o cenario ele so era pronto para desenvolvimento quando a equipe tecnica aceitasse no code review. Entao claro, a gente fazia sugestoes, tipo "tal passo quem sabe voce fazia assim", "vejo que tal passo e igual tal passo, vamos reusar isso", "tal cenario nao esta sendo testado" enfim, coisas do tipo.
+
+> E isso deveria ser responsabilidade da equipe tecnica, ajudar a escrever os cenarios?
+
+Eu acho que essa dinamica do code-review pra isso ela e bem interessante por que a gente acaba conseguindo exercitar bem o cenario e o cenario consegue amadurecer o suficiente pra trazer valor
+
+> Pra trazer valor pras duas partes
+
+Exato
+
+> Entendi... legal, continuando aqui que eu meio que sai do script
+
+8) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/) and chose ANOTHER feature file to evaluate in light of those attributes shown before (help.feature, likes.feature).
+
+> Puxa, boa pra revisar hein...ela e testavel?
+
+Deixa eu entender ela, so um pouquinho... se ela e testavel? ela e...pois e...acho que ela e testavel sim, acho que e testavel, eu tenho um porem que ela poderia ser um pouquinho mais, como eu posso te dizer, ahn, ela e, ela e bem especifica ne, entao acho que ela e testavel sim
+
+> Quer mudar de feature para talvez ter outra visao?
+
+Ok, peguei a likes aqui, Liking posts...I want to like their posts... isso que eu tinha comentado antes sobre a descricao, bem essa ideia
+
+> Essa descricao ajuda em qual daquelas palavras?
+
+Isso ajuda no entendimento. 
+
+> Entao ajuda ela a ser mais entendivel (understandable)?
+
+De certa maneira sim, eu nao sei o que ta escrito aqui embaixo, mas lendo so isso eu ja tenho essa ideia, ah isso e pra fazer tal coisa no sistema, por que dae daqui a pouco isso ajuda numa estimativa, ajuda no entendimento tambem neh, tu mostra pra pessoa e ela "ah, tah, e pra fazer tal coisa, legal"
+
+> E cada passo e necessario ali, ela e concisa? Cada cenario desse e conciso?
+
+O ultimo cenario, o primeiro cenario eu achei bom, bem especificado e tal. O ultimo cenario eu nao achei tao...
+
+> Como a gente ta exercitando aquelas palavras, voce falou que o primeiro cenario e bom por que... ele e concise por que ele e testavel, entendeu, vamos tentar, ele e independente, to chutando aqui
+
+Ta, deixa eu pensar aqui... 
+
+> Podemos ver um por um e vamos conversando sobre isso
+
+Vamos pro ultimo entao que fica mais facil encaixar essas palavras. Eu acho que esse ultimo cenario a questao de ser testavel eu acho que nao, acho que ele nao e um cenario testavel
+
+> Por que nao?
+
+Por que ele me parece ser muito amplo, ta. Me parece ser muito na visao somente funcional, ponto de vista do usuario
+
+> Ah, por que ele e muito pouco granular?
+
+Isso, exatamente. Porem ele e entendivel ta, ele e pequeno, eu acho que ele e ambiguo tambem. 
+
+> A ele e ambiguo por que ele e muito amplo, por que o escopo ta muito amplo
+
+Isso, isso ae
+
+> Uhum, e... a variacao, voltando no cenario da linha 28, ele faz uma variacao de passos assim: Quando, Entao, Quando, Entao... essa variacao achas legal?
+
+Eu prefiro mais a variacao Quando, Entao, direto sabe, nao tanto Quando, Entao, Quando, Entao. Mas ae vai questao de, e um pouquinho de preferencia
+
+> Ah e so preferencia, acha que nao afeta nenhuma daquelas palavras nao
+
+Nao, nao afeta, e so digamos assim, quando eu tenho um Quando e digamos que esse Quando tenha outros subpassos assim digamos ne, eu prefiro que tenha Quando tal coisa, E tal coisa E tal coisa, Entao tal coisa E tal coisa E tal coisa. Eu prefiro mais nesse sentido, mas e bem preferencia, isso nao invalida nada.
+
+> Entendi.... esses steps sao reusaveis?
+
+Ahn, deixa eu ver aqui... eu acho que poderiam ser reusaveis, poderiam ser reusaveis. 
+
+> Ter steps reusaveis faz quais daquelas palavras ganhar forca?
+
+Deixa eu ver a lista das palavras... mmm, olha a que mais me chama atencao para isso e valor ta, mas acho que valor e bem generico tambem mas e o que mais me chama atencao. Em segundo lugar estimativa tambem, que isso vai ajudar bastante, e tambem a questao do teste, que se a gente tem um cenario bem reusavel facilita bastante a questao da testabilidade digamos assim, no sentido de eu conseguir mudar um parametro e eu consigo ver a diferenca no sistema. Daqui a pouco eu tenho que mudar esse parametro e tem que implementar tal coisa de outra maneira la pra poder fazer sentido
+
+> E voce acha que o segundo cenario, da linha 28, ali ta granular o suficiente?
+
+Segundo cenario... eu acho que sim, acho que ele ta bom?
+
+> E o fato de ele estar bom, de estar granular o suficiente, ajuda em qual daquelas palavras?
+
+O valor (valuable), primeiro, de novo. O teste (testable). O entendimento (understandable). E eu acho que, o teste eu ja falei ne? Por mais contraditorio que possa ser, o small ali de certa maneira
+
+> Mas ele tem...
+
+E que eu vejo esse small um pouco diferente, eu vejo small na hora de implementar esse step
+
+> Ah, voce diz o small e que o codigo necessario para aquele step e pequeno?
+
+Exato
+
+> Code step small...ah entendi, legal
+
+
+9) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+> Numa escala de 1 a 5, voce acha que essas palavras foram muito uteis e portanto 5 ou pouco uteis e portanto 1?
+
+Essas palavras tu diz as que tu listastes ali. Acho que elas, pode ser 4, tem algumas que eu fiquei pensando, sera que fariam sentido ou nao
+
+> O que eu coloquei ali que voce eliminou foi: negociavel (negotiable), o prioritizavel (priotized) e o estimavel (estimable). Sao essas tres que anotei que voce tinha eliminado
+
+O estimavel (estimable) eu volto atras, acho que tem que ficar nessa lista ae por que acho que estimavel e interessante para essa lista ae. 
+
+> Mas como voce deixa um cenario mais estimavel?
+
+Acho que justamente fazendo essa questao da granularidade ne. Mas claro que tem um porem, granularidade versus conhecimento versus realidade. Nao e so, nao adianta eu ter algo super granular quando eu nao tenho conhecimento ou quando nao tenho recurso pra aquilo ou claro aquilo nao e factivel.
+
+> Uhn, ok, eu nao sei se eu acompanhei muito bem por que se o passo e granular ele e facil de implementar, certo? 
+
+Eh, mas, e que a questao e digamos assim...
+
+> Talvez eu tenha ele tao granular que eu tenha uma quantidade de passos muito grande para manter depois, foi esse teu sentido?
+
+Nao, nao foi bem esse sentido, foi mais no sentido quando eu to, por exemplo, ah vou fazer um sistema que tem integracao com uma API que nao e pouca explorada, ou algo meio nao conhecido assim ou algo mais dificil e tal
+
+Isso acaba sendo um pouco complicado por que, o que eu vejo muito ta, quando a gente fala em estimativas e interessante a gente sempre pensar e estimar contando tudo que e necessario pra implementar realmente neh
+
+> Ta mas eu vou te interromper por que a gente ta saindo de foco, por que voce ta focando em como estimar aquela feature, enquanto eu to mais interessado aqui em saber se o cenario e estimavel e o que torna o cenario mais ou menos estimavel. Se realmente nao fizer sentido, ae beleza, a gente ve que nao faz sentido e parte pra outra
+
+Ta entao vamos deixar no granular, um sistema factivel que eu acho que faz sentido, se eu tenho algo especificado passo a passo e mais facil o cara bater o olho e lembrar o step tal vai levar quatro horas pra fazer, pro step tal oito
+
+10) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+> Daquelas palavras, qual e daquelas mais dificil de usar nos cenarios, tirando as que a gente eliminou claro
+
+Mais dificil de usar nos cenarios?
+
+> De usar pra te ajudar na revisao dos cenarios, qual a mais "unclear", qual que nao ficou clara como usar... Se todas ficaram claras entao ta bom
+
+Eu acho que a questao, claro vai da pessoa isso tambem e bem generico, acho que essa questao do valor ela e um pouquinho ambigua tambem sabe. E, por que daqui a pouco, assim, como eu tenho um vies mais tecnico e objetivo talvez isso pra um cara de negocio nao traz valor, ou ah isso aqui o cliente vai ler o negocio e nao vai entender nada e vai achar que tudo ta ruim, entendeu
+
+Entao eu acho que o valor e muito dependente, valor pra quem e tal, nao e um axioma, valor e isso e acabou. Por que, assim, toda nossa conversa vem sendo pautada por valor tecnico e e algo que pra mim e muito forte. Entao eu nao posso bater o martelo e falar que e a palavra final se daqui a pouco um cara de negocio ve completamente diferente isso e ele nao deixa de estar certo ou errado, e uma visao diferente so isso.
+
+11) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized - use of tags
+* small
+* testable
+* understandable
+* unambiguous
+* valuable - tags
+
+> Entao, o que tu tinha me falado la no inicio, e que um bom cenario e aquele que traz valor para a equipe tecnica, e isso e quebrado em: forma imperativa de escrever; ele tem que ser granular, tem que ter detalhes suficientes; ele tem que reusar steps e quanto mais parametros melhor e quanto mais generico os steps melhor; 
+
+> Foram essas tres coisas..
+
+Eh, a questao de quanto mais parametro melhor e relativo ta. Eh quanto mais parametros uteis
+
+> justo... e isso eu mapiei nas palavras da seguinte forma: o granular que a gente ja tinha conversado ficou mapiado em valioso (valuable), testavel (testable), entendivel (understandable) e pequeno (small); os step reusaveis ficou em valioso (valuable), estimavel (estimable) e testavel (testable); e o modo imperativo ta sem mapeamento...
+
+> Se voce escrevesse o cenario bem passo a passo, qual daquelas palavras seria beneficiada?
+
+Pro imperativo? Ehh... eu acho que o entendimento cara (understandable), mas tambem vem o link da questao do teste (testable) ae, e a gente pode pensar tambem no valor (valuable). 
+
+> Por que o teste por que ele fica mais facil de testar manualmente?
+
+Manualmente de teste funcional?
+
+> Nao de pegar passo a passo e executar manualmente
+
+Sim, sim, de certa maneira sim
+
+> Ok, nao vou botar isso aqui, so pra entender se era a mesma coisa... e o conciso (concise), voce comentou que era onde cada passo e necessario mas acabou que nao ficou mapeado em nenhuma das suas preferencias, mas mesmo assim voce ainda acha conciso importante?
+
+Sim
+
+12) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+> Tem algum outro criterio que vc sentiu falta?
+
+Nao sei te dizer, daqui a pouco quando parar de conversar possa aparecer outro
+
+> Voce ja falou de 2 aqui, coesao e independencia
+
+Entao, bom, coloca eles ae
+
+13) General remarks about the quality criteria BDD scenario subject
+
+> Eu tenho uma ultima pergunta meio fora de script, mas eh, ate onde eu estudei, o BDD tenta resolver um dos dois tipos de problemas, que e fazer o software correto e fazer o software da maneira certa. Voce acha que ta certa essa declaracao ou voce acha que BDD serve somente para um lado e nao para o outro?
+
+Eu acho que ta correta essa declaracao, acho que ela e bem interessante. Eu acho que a questao e, a questao assim que eu venho batendo na tecla do BDD e bem essa ta - valor para quem vai usar.
+
+> Mas se e valor para quem vai usar, voce acaba naturalmente tirando dessa frase a equipe tecnica, que e o que voce vem defendendo e eu acho que e uma boa posicao
+
+Dae eu discordo cara, por que eu acho que o valor para quem vai usar e pra equipe tecnica entendeu. Quando eu falo isso eu penso na equipe tecnica.
+
+> Ah, nao no cliente, e nem no...
+
+Nao, por que, o que acontece cara, sendo bem realista, o cliente e o analista eles vao acabar interagindo, claro vao ser os primeiros a interagir com os cenarios, ou com a especificacao ne, e eles vao bater em cima daquilo ne. Mas so quem de fato quem vai esmiucar isso, quem de certa maneira vao conviver mais com isso vai ser a equipe tecnica.
+
+> E cabe a equipe tecnica aceitar a especificacao e fazer o produto somente?
+
+Nao, de maneira nenhuma, cabe a equipe tecnica dialogar com todas as partes, com analista e cliente e todo mundo para entender o que e viavel e entender o que e melhor, o que e melhor a solucao, o que e plausivel para ser implementado, acho que a equipe tecnica tem de estar muito, digamos assim, em entendimento com todas as partes sabe
+
+> Entendo, mas eu fico pensando como cenarios de uma maneira granular iam ser vistos pelo cliente
+
+E ae eu tambem fico pensando assim sabe. Por que eu acho que depende muito do cliente - se a gente for pensar um cliente nao tecnico, um cliente que nao tem conhecimento tecnico ou que nao entende aquilo, so ta contratando e nao quer saber de muita coisa, e um caso. Agora se for pensar um cliente que eu havia te falado, que entende realmente daquilo, e diferente sabe, por que o cliente ve mais valor naquilo.
+
+> Entendi...

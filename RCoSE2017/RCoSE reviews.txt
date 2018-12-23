@@ -1,0 +1,72 @@
+Dear Gabriel Oliveira,
+
+
+Thank you for submitting a paper for the RCoSE 2017.
+
+We are sorry to inform you that your paper has not been accepted for the workshop.
+
+Please find attached the reviews of your paper, we hope it may serve as input for future improvement of your work.
+
+You are welcome to attend the workshop as a participant and to take part in the discussion.
+
+We look forward to your participation at the workshop.
+
+Regards,
+
+   Workshop Chairs
+
+
+----------------------- REVIEW 1 ---------------------
+PAPER: 5
+TITLE: Disclosing the impact of BDD scenarios quality on Continuous Software Engineering
+AUTHORS: Gabriel Oliveira and Sabrina Marczak
+
+Overall evaluation: 2
+
+----------- Overall evaluation -----------
+Quality assurance of requirements is an important topic in software engineering to which this paper contributes. In particular, it explores quality assurance in the field of Behaviour Driven Development which emerged around 2003 based on the works of Dan North. The paper is well structured and shows the authors' work.
+
+Benefits of BDD include:
+- Business and technical parties can be brought together more easily,
+- Requirements and the executable specification are the same thing (or at least very close) which can save time when requirements change (e.g. because automated tests do not need to be updated by hand).
+Albeit that BDD is not the only way of achieving this goal, it certainly is worth exploring, and in doing so it is crucial to talk about quality of the used textual scenarios, which the paper addresses.
+
+The authors set up an experiment with graduate students to do this. The complete results of the study are not available yet, and so only some preliminary findings are discussed. This is ok for a position paper, but I am curious to see the full results.
+
+My suggestions are:
+- Give a few more details on the study. I found the description of the study a bit difficult to understand.
+- Where was the study conducted? I am assuming at the Computer Science School PUCRS, but please make it explicit.
+- 15 students is not a very large sample. I am aware that it is difficult and probably time-consuming to include more students, but I suggest to try to do that because it would increas the validity of the results.
+- There is a number of typos, misplaced commas, and grammar errors; please correct them in the final version of the paper. Also, there is an unfinished sentence in the conclusion paragraph.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 5
+TITLE: Disclosing the impact of BDD scenarios quality on Continuous Software Engineering
+AUTHORS: Gabriel Oliveira and Sabrina Marczak
+
+Overall evaluation: -2
+
+----------- Overall evaluation -----------
+====== SUMMARY ======
+
+The paper discusses the relationship between behavior driven development (BDD) and continuous software engineering (CSE) and evaluates quality criteria for different requirements formats, in particular BDD scenarios.
+
+====== EVALUATION ======
+
+The paper aims to disclose the impact of BDD scenario quality on CSE. However, it is hard to acknowledge this impact while reading the paper. The authors try to extensively describe the background about BDD and quality criteria, but do not present a clear connection between BDD and CSE. The background could be summarized in a more understandable way with half the size and the authors could use the space to define the used terms (e.g. scenario, use case, user story) and to relate them to each other. The authors intermix the terms use case, scenario, user story and feature quite often and there is no clear distinction recognizable. The language of the paper is insufficient and makes the paper hard to read and understand. In addition, the paper misses examples to e.g. point out why certain quality criteria are more important than other ones.
+
+====== SUGGESTIONS ======
+
+- It doesn’t come out of the paper what the actual difference between user stories, use cases and scenarios are. However, I think this is important to understand the quality attributes of each and to compare them —> Define exactly what use cases, scenarios, user stories and features are and show their similarities and differences.
+- The paper lacks examples which makes it hard to understand the content —> I suggest to add examples for use cases, scenarios and user stories to point out their differences.
+- There are many spelling and grammar errors, which makes the paper hard to read and understand —> I would recommend to find an English native for proofreading.
+- Introduction and background are too long for such a short paper. You spend almost 2.5 of 4 pages until you start with your own contribution —> I recommend to shorten them because they also overlap in content. Focus on your contribution.
+- You claim in the background that BDD scenarios are easily automated by tools like JBehave and Cucumber, but you don’t justify this claim. From my experience, it is not always easy and parts of the quality of a BDD scenario lies in the mapping between the natural description (understandable by all stakeholders) and the actual implementation of the test case —> Point out why the automation is easy and provide an example of a bad and a good scenario and its mapping to a test case.
+- The following sentence is very weak: “As the use of acceptance tests can tighten the integration between planning and execution, it could help to fulfill the vision of Continuous Planning described by Fitzgerald and Stol” —> I suggest to reformulate it.
+- What do you mean by highly qualitative metrics such as the heuristics of INVEST for user story quality? From your formulation, it seems that INVEST is not enough. Why is this the case? Have you experienced user stories that fulfill INVEST, but that have a poor quality, because they did not fulfill other quality criteria? Then you should explain that and provide an example to point out what is missing in the INVEST criteria.
+- In Section 3, you use the term feature, but you did not use it in the background. You also use the term high level feature. Whats the difference of a feature and a user story?
+- The study design of the evaluation is hard to understand. There seem to be many different steps for the setup of the experiment, but it is not clear how these steps were performed —> I suggest to show the steps of the study in a Figure, e.g. in a UML activity diagram.
+- The goal of the evaluation is not clear. Do you want to evaluate quality attributes of requirements? Or do you want to find the correct quality attributes for BDD scenarios? —> Provide research questions, research goals or hypotheses to clearly state the research goal.
+- From Section 4, I would summarize that the study led to (1) confusion, (2) limited value of attributes (the example that you mention is somehow obvious), (3) the need for input / output data and (4) rigor. Please explain the research value / contribution of your findings except that they led to discussions and debate. What is the outcome of your study?
+- The conclusion includes a sentences that is not finished: “Therefore, the concerns that”

@@ -1,0 +1,105 @@
+=========================== Interview
+
+1) Qual seu nome e role no projeto ?
+
+2) Qual sua principal tarefa ?
+
+3) Usar scenarios BDD ajudam nessa tarefa ? Como ?
+
+4) Eh importante que scenarios BDD tenham um certo grau de qualidade antes de poderem serem usados por voce? 
+
+5) Quais criterios voce usa para decidir se um scenario BDD pode ser utilizado por voce ? Como voce usa esses criterios e em que momento ?
+
+6) Como um exercicio, voce pode aplicar seus criterios pessoais no feature file (https://github.com/diaspora/diaspora/blob/develop/features/desktop/comments.feature) ?
+
+7) Voce acha que alguns desses criterios abaixo podem ser aplicados para BDD scenarios ? Escolhe 3 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small
+* testable
+* understandable
+* unambiguous
+* valuable
+
+8) Como um exercicio, voce pode aplicar esses criterios no feature file (https://github.com/diaspora/diaspora/blob/develop/features/desktop/invitations.feature) ?
+
+12) Foi util avaliar a qualidade de scenarios BDD com esses criterios ? (Not at all / 
+Neutral / A little / Fair / Much)
+
+
+9) Quais atributos voce achou mais dificeis de usar ao avaliar os scenarios BDD ?
+
+
+
+10) Quao similar a lista que mandei e seus criterios pessoais sao ?
+
+
+
+11) Voce sente falta de algum outro criterios na lista ? Quais?
+
+
+
+13) General remarks about the quality criteria 
+
+=========================== Post Interview (45 min):
+
+- gostou do script ? mudaria algo ?
+
+- gostaria de ter recebido um conjunto maior de features para falar sobre eles ? eles estao muito longos ?
+
+- lista dos entrevistados e quem pode ser uma boa 1a pessoa para falar de BDD (sugestao da sabrina: Ana da DBServer)
+
+- analise tematica 101
+
+=========================== Debriefing
+
+== Key points:
+
+Criterios pessoais:
+
+* Nao usar definicao por campo (declarativo) deixar alto nivel
+* Nao ter cenarios longos (enxuto e limpo)
+* BA so se preocupa com 1 cenario de Sucesso e 1 negativo
+* BA nao se preocupa com Testability
+* QA faz cenarios mais detalhados - focando a testability
+* BA se preocupa com ambiguidade e em nao ter repeticao de informacao
+* BA se preocupa em ficar estimavel/small
+* Cliente ve cenarios do QA na retro
+
+Known Criteria:
+
+Bons, quase todos ok de usar (negotiable e prioritized nao; estimable, understandable, unambiguous, feasible, valuable, concise, small, testable sim, nesta ordem)
+
+== Most Surprising:
+
+* Cenarios de QA e cenarios de BA - cada role se preocupa com alguns criterios
+
+== Pretty much what I expected:
+
+* Necessidade de exemplos de cenarios que ferem cada criterio - porem, criar esses exemplos pode abrir margem ao bias do pesquisador
+
+== Problems and fixes I didnt expected:
+
+* Cenarios de QA e cenarios de BA
+
+== What worked well:
+
+* Lista de Exemplos do Diaspora
+* na pergunta "vc acha que os criterios sao importantes" adicionar um "se vc pudesse escolher somente 3, quais escolheria" 
+
+== What didn't worked so well and could be changed:
+
+* focar a analise em 1 cenario
+* forcar a analise por known quality criteria de cada vez
+* propor cenarios de API alem dos de UI
+
+== Other comments
+
+* Lauri vai me sharear os entrevistados 
+* Focar em ingles somente
+* Bons entrevistados: Neil (TW), Laura Nunes (TW, QA/PO), Andrew (Appear, Full Stack Dev), Rafaela (Londres), Cesar B. (Berlin, Dev)
+* Sera que vale pedir exemplos de cenarios para os entrevistados ?

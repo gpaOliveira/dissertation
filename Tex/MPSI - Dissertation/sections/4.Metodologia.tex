@@ -1,0 +1,84 @@
+\section{Metodologia de pesquisa}
+
+Uma revisão sistemática da literatura é um meio para avaliar e interpretar toda produção científica disponível relevante a uma determinada questão de pesquisa, tópico ou fenômeno de interesse. \cite{Kitchenham_2007}. As razões mais comuns para sua confecção são: resumir evidências existentes relacionadas a um determinado tratamento ou tecnologia; identificar lacunas em uma presente pesquisa de forma a ser capaz de sugerir novas áreas de estudo ou investigação; e proporcionar uma base de conhecimento para justificar novas atividades de pesquisa.
+
+Este trabalho é motivado pelo primeiro item já que busca resumir o conhecimento existente sobre a qualidade de requisitos em contextos de projetos que utilizam metodologias ágeis.
+
+\subsection{Questões de Pesquisa}
+
+Segundo \cite{Kitchenham_2007}, o desafio crítico em qualquer revisão sistemática é realizar as perguntas corretas. Este trabalho se foca em questões cujo interesse primário é o do autor, de forma a refinar o conhecimento numa determinada área de pesquisa e esclarecer as oportunidades de pesquisa nessa área. 
+
+Esta revisão sistemática tem como objetivo responder às seguintes questões de pesquisa (QP):
+
+\begin{enumerate}[label={}]
+\item \textbf{QP1} O que é qualidade de requisitos em metodologias ágeis;
+\item \textbf{QP2} Sob quais aspectos é avaliada a qualidade de requisitos em metodologias ágeis;
+\end{enumerate}
+
+\subsection{Definição dos artigos de controle}
+
+Através de pesquisas não sistematizadas a base da Scopus foram definidos 2 artigos de controle como segue abaixo. 
+
+\begin{table}[!h]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+\caption{Artigos de controle}
+\label{table_controle}
+\centering
+\begin{tabular}{|m{1cm}||m{0.5cm}||m{5.5cm}|}
+\hline
+Referência & Ano & Título  \\ 
+\hline\hline
+ \cite{Lucassen_2015} & 2015 & Forging high-quality User Stories: Towards a discipline for Agile Requirements \\
+ \hline
+ \cite{Medeiros_2015} & 2015 & Requirements Engineering in Agile Projects: A Systematic Mapping based in Evidences of Industry \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Definição dos termos de busca}
+
+Nossas questões de pesquisa evidenciaram os termos "requisito", "qualidade" e "ágil". Portanto, nos baseamos na quebra do termo "requisito" e "ágil" vista em \cite{Medeiros_2015} e \cite{Inayat_2015} e na quebra do termo "qualidade" encontrado em \cite{Tiwari_2015} e \cite{Attar_2012} afim de expandir os termos que tinham durante nossa busca pelos campos de título e \textit{abstract} de cada artigo. A string de busca usada neste trabalho contém três partes, como segue abaixo. Note que dentro de cada parte os termos eram combinados por cláusulas \textit{or} e todos as partes eram combinados entre si usando cláusulas \textit{and}:
+
+\begin{enumerate}
+\item \textbf{Parte de requisitos:} "requirements", "use case", "use cases", "story", "user stories", "feature", "specifications", "formalism", "textual descriptions", "templates", "models", "documentation";
+\item \textbf{Parte de ágil:} "agile", "agility", "scrum", "XP", "extreme programming", "fdd", "feature-driven development", "featuredriven", "lean", "kanban", "behaviour-driven development", "tdd", "test-driven development", "test-driven";
+\item \textbf{Parte de qualidade:} "quality", "validation", "criterias", "heuristics", "guidelines", "anti-patterns", "patterns", "mistake", "problem", "drawback", "recommendation", "suggestion", "warning", "rule", "syntax", "pitfalls", "classification", "assessment", "checklist";
+\end{enumerate}
+
+Por fim, como queríamos focar exclusivamente em requisitos e eliminar trabalhos de discussão de qualidade de produto, adicionamos o termo "requirements engineering" antes de todas as partes declaradas acima.
+
+\subsection{Seleção da base de dados}
+
+Como sugerido por \cite{Kitchenham_2015_Evidence_Based_Software_Engineering_and_Systematic_Reviews}, este trabalho utiliza busca automatizada em repositórios digitais usando strings de busca derivadas das questões de pesquisa. A fonte de dados escolhida para essa pesquisa é a base de dados da Scopus, que concentra publicações de várias fontes de pesquisa (como ACM, IEEE e Springer) ao alcance de uma única string de busca.
+
+\subsection{Critérios de inclusão de estudos}
+
+Afim de proporcionar um filtro inicial sob os resultados obtidos pela string de busca, os seguintes critérios de inclusão foram adotados:
+
+\begin{itemize}[noitemsep,nolistsep]
+    \item Artigos de natureza qualitativa e/ou quantitativa que se foquem em descrever ou caracterizar qualidade de requisitos;
+    \item Artigos que se foquem em avaliar qualidade de requisitos utilizados em metodologias ágeis;
+    \item Artigos que se foquem em caracterizar qualidade de requisitos utilizados em metodologias ágeis;
+    \item Artigos publicados até 2016 (data de confecção deste estudo);
+\end{itemize}
+
+\subsection{Critérios de exclusão de estudos}
+
+Foram desconsiderados nesta pesquisa os artigos que se enquadrarem em pelo menos um dos critérios abaixo:
+
+\begin{itemize}[noitemsep,nolistsep]
+    \item Artigos que não tenham relação com a área de engenharia de requisitos;
+    \item Artigos que não tenham relação com qualidade de requisitos (que fale de qualidade de produto, por exemplo);
+    \item Artigos que não tratem de metodologias ágeis (que não faça referência alguma a metodologias ágeis);
+    \item Artigos escritos em outro idioma que não o inglês;
+    \item Artigos que não sejam da área de Ciência da Computação ou da área de Business, Management and Accounting.
+\end{itemize}
+
+\subsection{Seleção dos resultados}
+
+Após a execução da busca na base de dados da Scopus, os resultados foram exportados para a ferramenta STaRT \cite{Start_2012}. A partir do uso da ferramenta, a lista foi revisada através da análise do título e \textit{abstract} de cada um dos trabalhos retornados, com a finalidade de decidirmos se a leitura do artigo todo poderia responder as questões de pesquisa ou se eram descartados por algum critério de explusão.
+
+A leitura de todos os trabalhos escolhidos após essa fase de revisão foi necessária afim de extrairmos qual a definição de qualidade de requisitos era utilizada (\textbf{QP1}) e quais aspectos eram levados em consideração (\textbf{QP2}). Somente aqueles que respondiam ambas as perguntas fizeram parte dos nossos resultados finais.

@@ -1,0 +1,32 @@
+sour cream (french) == creme de leite (procurar loja mexicana) e cilantro
+
+
+pergunta 4) se nao, como tu garante que teu trabalho ta bem feito ? e se um cenario for ambiguo (assim e assim e assado)?
+
+se falar com brasileiro, faz em portugues e transcreve em portugues
+
+codificacao == interpretar a resposta de cada resposta
+
+(Lauri) analise tematica == resposta por resposta para as perguntas aberta
+
+tambem pode analisar pelos criterios - como cada resposta concordou/discordou de cada criterio
+
+
+
+* analisar um feature file ou um scenario ?
+
+* quais criterios ? consegue dar uma nota para os criterios e ordenar por prioridade?
+
+* consegue dar uma nota para o feature file ou para o scenario ?
+
+* Interview Script (45 min)
+
+* Post Interview (45 min):
+
+- gostou do script ? mudaria algo ?
+
+- gostaria de ter recebido um conjunto maior de features para falar sobre eles ? eles estao muito longos ?
+
+- lista dos entrevistados e quem pode ser uma boa 1a pessoa para falar de BDD (sugestao da sabrina: Ana da DBServer)
+
+- analise tematica 101

@@ -1,0 +1,24 @@
+4415 An empirical study of writing effective user stories - INVEST + BABOK3 + BABOK2
+4484 A process to increase the model quality in the context of model-based testing - BABOK3
+4518 Using goal net to model user stories in agile software development - INVEST
+4631 NORMATIC: A visual tool for modeling non-functional requirements in agile processes - INVEST + BABOK3 + BABOK2
+4650 Ontology based application model for feature driven development - INVEST + BABOK3 + BABOK2
+4816 Rule-based assessment of test quality - INVEST + BABOK3 + BABOK2
+4852 Testing with guarantees and the failure of regression testing in eXtreme programming - BABOK3 + BABOK2
+4875 Generating complete, unambiguous, and verifiable requirements from stories, scenarios, and use cases - BABOK3 + BABOK2
+4911 Using business rules in extreme requirements - INVEST + BABOK3 + BABOK2
+4924 A Framework to Diminish the Gap between the Business Specialist and the Software Designer - BABOK3 + BABOK2
+4930 Forging high-quality User Stories: Towards a discipline for Agile Requirements - INVEST + BABOK3 + BABOK2
+4945 Use of Method for Elicitation, Documentation, and Validation of Software User Requirements (MEDoV) in Agile Software Development Projects - BABOK3 + BABOK2
+4968 Requirements Engineering Quality Revealed through Functional Size Measurement: An Empirical Study in an Agile Context - INVEST + BABOK3
+4975 Quality criteria for just-in-time requirements: just enough, just-in-time? - INVEST + BABOK3 + BABOK2
+4415.13 5 Common mistakes we make writing User Stories - INVEST + BABOK3 + BABOK2
+4415.14 5 Common User Story Mistakes - INVEST + BABOK3 + BABOK2
+4415.16 Improving the User Story Agile Technique Using the INVEST Criteria - INVEST
+4415.15 INVEST in Good Stories and SMART Tasks - INVEST
+4518.3 Improving agile requirements: the quality user story framework and tool - INVEST + BABOK3 + BABOK2
+4518.23 User Stories Applied: For Agile Software Development: Addison-Wesley Professional - INVEST
+4875.6 A systematic literature review on quality criteria for agile requirements specifications - INVEST + BABOK3 + BABOK2
+4930.5 A Quality Framework for Agile Requirements: A Practitioner’s Perspective - INVEST + BABOK3 + BABOK2
+4930.5 Rapid quality assurance with requirements smells. - INVEST + BABOK3 + BABOK2
+4930.1 The use and effectiveness of user stories in practice. - INVEST

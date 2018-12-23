@@ -1,0 +1,111 @@
+\begin{thebibliography}{}
+
+\bibitem[ElAttar and Miller 2012]{Attar_2012}
+ElAttar, M. and Miller, J. (2012).
+\newblock Constructing high quality use case models: a systematic review of
+  current practices.
+\newblock {\em Requirements Engineering}, 17:187--201.
+
+\bibitem[Fabbri et~al. 2012]{Start_2012}
+Fabbri, S., Hernandes, E.~M., Thommazo, A.~D., Belgamo, A., Zamboni, A., and
+  Silva, C. (2012).
+\newblock Managing literature reviews information through visualization.
+\newblock In {\em International Conference on Enterprise Information Systems},
+  pages 36--45.
+
+\bibitem[Heikkila et~al. 2015]{Heikkil_2015}
+Heikkila, V.~T., Damian, D., Lassenius, C., and Paasivaara, M. (2015).
+\newblock A mapping study on requirements engineering in agile software
+  development.
+\newblock In {\em Euromicro Conference on Software Engineering and Advanced
+  Applications}.
+
+\bibitem[IIBA 2009]{Babok_2009}
+IIBA (2009).
+\newblock {\em A Guide to the Business Analysis Body of Knowledge (BABOK Guide)
+  2nd Edition}.
+\newblock International Institute of Business Analysis.
+
+\bibitem[IIBA 2015]{Babok_2015}
+IIBA (2015).
+\newblock {\em A Guide to the Business Analysis Body of Knowledge (BABOK Guide)
+  3rd Edition}.
+\newblock International Institute of Business Analysis.
+
+\bibitem[Inayat et~al. 2015]{Inayat_2015}
+Inayat, I., Salim, S.~S., Marczak, S., Daneva, M., and Shamshirband, S. (2015).
+\newblock A systematic literature review on agile requirements engineering
+  practices and challenges.
+\newblock {\em Computers in Human Behavior}.
+
+\bibitem[Kent~Beck et~al. 2001]{Agile_Manifesto_2001}
+Kent~Beck, Alistair~Cockburn, M.~F. et~al. (2001).
+\newblock Agile manifesto: Manifesto for agile software development.
+\newblock Visited in: 2016-08-13.
+
+\bibitem[Kitchenham and Charters 2007]{Kitchenham_2007}
+Kitchenham, B. and Charters, S. (2007).
+\newblock Guidelines for performing systematic literature reviews in software
+  engineering.
+\newblock Technical Report EBSE 2007-001, Keele University and Durham
+  University Joint Report.
+
+\bibitem[Langenfeld et~al. 2016]{Langenfeld_2016}
+Langenfeld, V., Post, A., and Podelski, A. (2016).
+\newblock Requirements defects over a project lifetime: An empirical analysis
+  of defect data from a 5-year automotive project at bosch.
+\newblock {\em Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages
+  145--160.
+
+\bibitem[Medeiros et~al. 2015]{Medeiros_2015}
+Medeiros, J., Alves, D., Vasconcelos, A., Silva, C., and Wanderley, E. (2015).
+\newblock Requirements engineering in agile projects: A systematic mapping
+  based in evidences of industry.
+\newblock In {\em Ibero-American Conference on Software Engineering}, pages
+  460--473.
+
+\bibitem[Paetsch et~al. 2003]{Paetsch_2003}
+Paetsch, F., Eberlein, A., and Maurer, F. (2003).
+\newblock Requirements engineering and agile software development.
+\newblock In {\em Enabling Technologies: Infrastructure for Collaborative
+  Enterprises}, pages 308--313.
+
+\bibitem[Patel and Ramachandran 2010]{Best_Practices_Guidelines_2014}
+Patel, C. and Ramachandran, M. (2010).
+\newblock Best practices guidelines for agile requirements engineering
+  practices.
+\newblock {\em Handbook of Research on Software Engineering and Productivity
+  Technologies: Implications of Globalization}.
+
+\bibitem[Smart 2014]{Smart2014}
+Smart, J. (2014).
+\newblock {\em BDD in Action: Behavior-Driven Development for the Whole
+  Software Lifecycle}.
+\newblock Manning Publications, Shelter Island, NY.
+
+\bibitem[{The standish group} 2015]{CHAOS_2015}
+{The standish group} (2015).
+\newblock {CHAOS}.
+\newblock https://www.projectsmart.co.uk/white-papers/chaos\\-report.pdf.
+\newblock Visited in: 2016-08-13.
+
+\bibitem[Tiwari and Gupta 2015]{Tiwari_2015}
+Tiwari, S. and Gupta, A. (2015).
+\newblock A systematic literature review of use case specifications research.
+\newblock {\em Information and Software Technology}, 67:128--158.
+
+\bibitem[Usman et~al. 2015]{Mendes_2015}
+Usman, M., Mendes, E., and B\"{o}rstler, J. (2015).
+\newblock Effort estimation in agile software development: A survey on the
+  state of the practice.
+\newblock In {\em Proceedings of the International Conference on Evaluation and
+  Assessment in Software Engineering}. ACM.
+
+\bibitem[Wake 2003]{SMART_INVEST_2013}
+Wake, B. (2003).
+\newblock {INVEST} in good stories and {SMART} tasks.
+\newblock http://xp123.com/articles/invest-in-good-stories-and-smart-tasks/.
+\newblock Visited in: 2016-08-13.
+
+\end{thebibliography}

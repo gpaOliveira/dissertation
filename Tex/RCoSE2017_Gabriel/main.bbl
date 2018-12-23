@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+
+\bibitem{Smart_2014}
+J.~Smart, {\em BDD in Action: Behavior-Driven Development for the Whole
+  Software Lifecycle}.
+\newblock Manning Publications, 2014.
+
+\bibitem{Fitzgerald_Stol_2014}
+B.~Fitzgerald and K.-J. Stol, ``Continuous software engineering and beyond:
+  Trends and challenges,'' in {\em Proceedings of the 1st International
+  Workshop on Rapid Continuous Software Engineering}, 2014.
+
+\bibitem{Neely_Stolt_2013}
+S.~Neely and S.~Stolt, ``Continuous delivery? easy! just change everything
+  (well, maybe it is not that easy),'' in {\em Agile Conference}, 2013.
+
+\bibitem{Humble_Farley_2010}
+J.~Humble and D.~Farley, {\em Continuous Delivery: Reliable Software Releases
+  Through Build, Test, and Deployment Automation}.
+\newblock Addison-Wesley Professional, 2010.
+
+\bibitem{CHAOS_2015}
+{The standish group}, ``{CHAOS}.''
+  \url{https://www.projectsmart.co.uk/white-papers/chaos-report.pdf}, 2015.
+\newblock Visited in: Jan. 2017.
+
+\bibitem{Phalp_et_dot_al_2011}
+K.~Phalp, A.~Adlem, S.~Jeary, J.~Vincent, and J.~M. Kanyaru, ``The role of
+  comprehension in requirements and implications for use case descriptions.,''
+  {\em Software Quality Journal}, 2011.
+
+\bibitem{Gartner_2012}
+M.~Gartner, {\em ATDD by Example: A Practical Guide to Acceptance Test-Driven
+  Development}.
+\newblock Addison-Wesley Professional, 2012.
+
+\bibitem{Jeffries_2001}
+R.~Jeffries, ``Essential xp: Card, conversation, confirmation.''
+  \url{http://ronjeffries.com/xprog/articles/expcardconversationconfirmation},
+  2001.
+\newblock Visited in: Jan. 2017.
+
+\bibitem{Babok_2015}
+IIBA, {\em A Guide to the Business Analysis Body of Knowledge (BABOK Guide) 3rd
+  Edition}.
+\newblock International Institute of Business Analysis, 2015.
+
+\bibitem{Babok_2009}
+IIBA, {\em A Guide to the Business Analysis Body of Knowledge (BABOK Guide) 2nd
+  Edition}.
+\newblock International Institute of Business Analysis, 2009.
+
+\bibitem{Cockburn_2000}
+A.~Cockburn, {\em Writing Effective Use Cases}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., 2000.
+
+\bibitem{Cohn_2004}
+M.~Cohn, {\em User Stories Applied: For Agile Software Development}.
+\newblock Addison Wesley Longman Publishing Co., Inc., 2004.
+
+\bibitem{Lucassen_et_dot_al_2015}
+G.~Lucassen, F.~Dalpiaz, J.~VanDerWerf, and S.~Brinkkemper, ``Forging
+  high-quality user stories: Towards a discipline for agile requirements,'' in
+  {\em International Requirements Engineering Conference}, 2015.
+
+\bibitem{VisionBoard}
+R.~Pichler, ``The product vision board.''
+  \url{http://www.romanpichler.com/blog/the-product-vision-board}, 2011.
+\newblock Visited in: Jan. 2017.
+
+\end{thebibliography}

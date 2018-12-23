@@ -1,0 +1,27 @@
+
+\documentclass[10pt,conference,letterpaper]{IEEEtran} 
+\usepackage[utf8]{inputenc}
+\let\labelindent\relax % enumitem package and IEEETran dont like each other
+\usepackage{blindtext, graphicx, array, color, subfiles, enumitem, csquotes, url}
+
+\graphicspath{ {images/} }
+
+% correct bad hyphenation here
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+\subfile{sections/0.title.authors}
+
+\maketitle
+
+\subfile{sections/1.abstract}
+\subfile{sections/2.introduction}
+\subfile{sections/3.background}
+\subfile{sections/4.study}
+\subfile{sections/5.discussion}
+
+\bibliographystyle{ieeetr}
+\bibliography{sections/bib}
+
+\end{document}

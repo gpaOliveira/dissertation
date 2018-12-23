@@ -1,0 +1,68 @@
+\chapter{\label{chap:chap5}{Proposed Question-Based Checklist}}
+
+This chapter takes the newly defined attributes from Section \ref{chap:chap4_analysis} and transform them into a question-based checklist in Table \ref{tbl:questionnaire}, as follows, that we believe could be suited to evaluate BDD scenarios -- thus, answering our RQ2. The output of those questions are meant to help the evaluator decide how good her BDD scenarios are and, if not satisfactory, may be the input of additional conversations around those scenarios.
+
+\begin{table}[t]
+    \caption{Question-based checklist for BDD scenarios}
+    \centering
+    \label{tbl:questionnaire}
+    \begin{tabular}{|m{0.5cm}|m{10cm}|m{2cm}|m{2cm}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{|c|}{\textbf{Question}} & \multicolumn{1}{|c|}{\textbf{Scope}} & \multicolumn{1}{|c|}{\textbf{Attribute}}\\
+        \hline
+        1 & The feature file business value or outcome can be identified by its description? & Feature & Unique\\
+        \hline
+        2 & The feature file have any missing scenarios? & Feature & Complete \\
+        \hline
+        3 & The scenario carries all the information needed to understand it? & Scenario & Complete\\
+        \hline
+        4 & The scenario have steps that can be removed without affecting its understanding? & Scenario & Essential\\
+        \hline
+        5 & How different each scenario is from the others? & Scenario & Unique\\
+        \hline
+        6 & The scenario single action can be identified on its title and match what the scenario is doing? & Scenario & Singular\\
+        \hline
+        7 & The scenario outcome or verifications can be identified on its title and match what the scenario is doing? & Scenario & Singular\\
+        \hline
+        8 & This scenario respects Gherkin keywords meaning and its natural order? & Scenario & Integrous\\
+        \hline
+        9 & Does that step correctly employs business terms, including a proper actor? & Step & Ubiquitous\\
+        \hline
+        10 & Does that step have details that can be removed without affecting its meaning? & Step & Essential\\
+        \hline
+        11 & Does that step express "what" it is doing by being written in a declarative way? & Step & Focused\\
+        \hline
+        12 & Does the step allow different interpretations by being vague or misleading? & Step & Clear\\
+        \hline
+    \end{tabular}
+\end{table}
+
+% Scope
+The question-based checklist is aimed to evaluate a feature file, a group of BDD scenarios, similar to the ones on Diaspora project that were evaluated by the participants. This scope decision came from the fact that no participant was inclined to analyze a scenario per time -- all of them read the feature file rapidly before focusing in one scenario per time. Unfortunately, none of our interview questions focused on the scope of their evaluation, to understand what was their rationale in doing so, so we assume the participants natural behavior is a good enough guidance for us. 
+
+Questions 1 and 2 are suited for the feature level, while Questions 3 to 8 scopes are on the scenario level, and therefore should be used to analyze each scenario at once, and Questions 9 to 12 scopes are on the steps level, and therefore should be used to analyze each step at a time. We recommend the evaluator of the quality of BDD scenarios to answer Questions 1 and 2 by looking at the bigger picture first -- the feature file as a whole, then proceeding to analyze every scenario on it with Questions 3 to 12.
+
+% Feature section
+Question 1 focuses the analysis on the feature description, so the evaluator can check if the intended business outcome or business value is expressed in that area -- a characteristic of the unique attribute. It can be represented in an user story format, like the one found in Figure \ref{fig:feature_description_example}, as recommended by some participants (P11, P15, P17), but this is not enforced on BDD technique nor on this question-based checklist as the real purpose of that description is to make evident to the evaluator the business outcome or value of that feature -- a trait P8 has not seen in that figure. Figure \ref{fig:complete_profile_photos_feature} also shows a feature title that could be re-think -- P4 said it to lack completeness, but Question 1 could certainly be the one to reason about that matter.
+
+Question 2 focus is also on the feature level, but it aims to have the evaluator question how completely the BDD scenarios cover that feature. The question purpose is to motivate the evaluator on having a glimpse of all the scenarios in order to check what are they testing, in the hope that the evaluator can identify missing BDD scenarios that should be part of that feature file coverage using his own knowledge about the system. For example, thoughts such as the ones shown by P4 when analyzing the feature file in Figure \ref{fig:complete_profile_photos_feature} are advisable, as he questions: there is no thing in this feature if Robert deletes a profile photo, so can Alice continue to see it?
+
+% Scenario section
+Question 3 aims to avoid scenarios that need additional information to be understood. One evaluator should be able to "follow the steps", as the scenario is "self contained" enough to allow anyone from the team to do that, as in the scenario in Figure \ref{fig:testable_as_can_follow_steps}. However, scenarios are not meant to be as complete as test cases, so a certain balance has to be achieved. 
+
+Therefore, Question 4 targets unnecessary steps, that adds more information than what is essential to validate the behavior being tested, like on the scenario found in Figure \ref{fig:atomic_small_bad_example}. This question also intends to evaluate how additional constructions available on the Gherkin language were used, raising questions such as: is the link between the background section and every scenario strong enough? can a background be generated to avoid steps repetition, such as in Figure \ref{fig:concise_long_background}? is the use of data tables necessary, such as in Figure \ref{fig:concise_unnecessary_details_parameters_repetition}? is the use of scenario outline and example tables necessary? 
+
+Similarly, Question 5 aims to question the need of a scenario in that feature file. The answer to that question may well come from the completeness analysis on Question 2, but here the focus is on how different a scenario is from the others in the sense of the business value this scenario bring to the whole feature file. The evaluator may even wonder why this scenario is being tested at this acceptance test level and not under unit test or integration test levels, or even why this needs to be automated at all.
+
+Question 6 and 7 are meant to evaluate the relationship between what is advertised in the scenario title and the actual steps' descriptions. In Question 6, the evaluator is asked to focus on the scenario single action, represented on the When step. The evaluator should question if the action is represented in a single step (and if not, why not) and if the action writing is aligned with the scenario title. In an analogous way, in Question 7 the evaluator is asked to focus on the scenario verifications and outcomes, found on the Then steps, and in how aligned they are with the purpose expressed in the title. Ideas of a better writing strategy, such as the one in Figure \ref{fig:breaking_scenarios_to_allow_better_titles}, can be raised when the evaluator is thinking on those questions
+
+Question 8 validates the integrity of the Gherkin rules on every scenario, allowing the evaluator to question if Given steps are really representing pre-conditions, if When steps are representing actions and if Then steps are representing outcomes. If necessary, the evaluator can question the statements tenses as well. Also, this question protects against violations on the order of those keywords, such as the violation shown in Figure \ref{fig:steps_order_alternating_when_then}. 
+
+% Steps section
+Question 9 assumes that all the steps are using correct business terms in a consistently way, empowering scenarios with an ubiquitous language that technical and non-technical people could understand. Examples such as in Figure \ref{fig:not_understandable_due_to_technical_jargon} are not recommended. Additionally, the actor performing every step action should represent a business role rather than "I" or "the user".
+
+Question 10, similar to Question 4, aims to reduce unnecessary information, but on the step level rather than on the scenario level. If some details are important to be added to represent how different the scenario data is from others, maybe a data table would be needed, like in Figure \ref{fig:concise_unnecessary_details_parameters_repetition}. Additionally, if a data table is present, the evaluator should question what is the need of it to understand the step description.
+
+Question 11 brings the evaluator to question how focused a step is on the "what" is being done rather than in expressing "how" it is doing that. If the step is not written in a declarative way, such as in Figure \ref{fig:concise_focused_declarative}, then the evaluator should question it now.
+
+Finally, Question 12 aims to balance the need to express actions with fewer words and details with the need to make the scenario understandable for every team member involved. If a step is too abstract or vague that makes the evaluator confused about what would be the actual user flow to perform that step, than it needs to be clearer than it is. 

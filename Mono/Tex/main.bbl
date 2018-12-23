@@ -1,0 +1,202 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{MAV{\etalchar{+}}15}
+\pretolerance=2500
+\hyphenpenalty=10000
+\tolerance=200
+\emergencystretch=15em
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\urlprefix}{\bblcaptured}
+\providecommand{\selectlanguage}[1]{\relax}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{#2}
+
+\bibitem[Adz11]{Adzic_2011}
+Adzic, G. \enquote{Specification by Example: How Successful Teams Deliver the
+  Right Software}. Manning Publications Co., 2011.
+\bibAnnoteFile{Adzic_2011}
+
+\bibitem[AM04]{Alexander_2004}
+Alexander, I.~F.; Maiden, N. \enquote{Scenarios,Stories, Use Cases: Through the
+  Systems Development Life-Cycle}. Wiley Publishing, 2004.
+\bibAnnoteFile{Alexander_2004}
+
+\bibitem[Coc00]{Cockburn_2000}
+Cockburn, A. \enquote{Writing Effective Use Cases}. Addison-Wesley Longman
+  Publishing Co., Inc., 2000.
+\bibAnnoteFile{Cockburn_2000}
+
+\bibitem[Coh04]{Cohn_2004}
+Cohn, M. \enquote{User Stories Applied: For Agile Software Development}.
+  Addison Wesley Longman Publishing Co., Inc., 2004.
+\bibAnnoteFile{Cohn_2004}
+
+\bibitem[CR08]{Cao_2008}
+Cao, L.; Ramesh, B. \enquote{Agile requirements engineering practices: An
+  empirical study}, \textit{IEEE Software}, 2008.
+\bibAnnoteFile{Cao_2008}
+
+\bibitem[DOJ{\etalchar{+}}93]{Davis_1993}
+Davis, A.; Overmyer, S.; Jordan, K.; Caruso, J.; Dandashi, F.; Dinh, A.;
+  Kincaid, G.; Ledeboer, G.; Reynolds, P.; Sitaram, P.; Ta, A.; Theofanos, M.
+  \enquote{Identifying and measuring quality in a software requirements
+  specification}. \capitalize{\bblin{}}: Proceedings of the First International
+  Software Metrics Symposium, 1993.
+\bibAnnoteFile{Davis_1993}
+
+\bibitem[Dun01]{Duncan_2001}
+Duncan, R. \enquote{The quality of requirements in extreme programming},
+  \textit{The Journal of Defence Software Engineering}, 2001.
+\bibAnnoteFile{Duncan_2001}
+
+\bibitem[EM12]{Attar_2012}
+ElAttar, M.; Miller, J. \enquote{Constructing high quality use case models: a
+  systematic review of current practices}, \textit{Requirements Engineering},
+  2012.
+\bibAnnoteFile{Attar_2012}
+
+\bibitem[Gar12]{Gartner_2012}
+Gartner, M. \enquote{ATDD by Example: A Practical Guide to Acceptance
+  Test-Driven Development}. Addison-Wesley Professional, 2012.
+\bibAnnoteFile{Gartner_2012}
+
+\bibitem[GFL{\etalchar{+}}13]{Genova_2013}
+G{\'e}nova, G.; Fuentes, J.~M.; Llorens, J.; Hurtado, O.; Moreno, V. \enquote{A
+  framework to measure and improve the quality of textual requirements},
+  \textit{Requirements Engineering}, 2013.
+\bibAnnoteFile{Genova_2013}
+
+\bibitem[Gli00]{Glinz_2000}
+Glinz, M. \enquote{Improving the quality of requirements with scenarios}, 2000.
+\bibAnnoteFile{Glinz_2000}
+
+\bibitem[HDLP15]{Heikkila_et_dot_al_2015}
+Heikkilä, V.~T.; Damian, D.; Lassenius, C.; Paasivaara, M. \enquote{A mapping
+  study on requirements engineering in agile software development}.
+  \capitalize{\bblin{}}: Euromicro Conference on Software Engineering and
+  Advanced Applications, 2015.
+\bibAnnoteFile{Heikkila_et_dot_al_2015}
+
+\bibitem[HH08]{Haugset_and_Hanssen_2008}
+Haugset, B.; Hanssen, G.~K. \enquote{Automated acceptance testing: A literature
+  review and an industrial case study}. \capitalize{\bblin{}}: Agile
+  Conference, 2008.
+\bibAnnoteFile{Haugset_and_Hanssen_2008}
+
+\bibitem[HH11]{Haugset_and_Hanssen_2011}
+Haugset, B.; Hanssen, G.~K. \enquote{The home ground of automated acceptance
+  testing: Mature use of fitnesse}. \capitalize{\bblin{}}: Agile Conference,
+  2011.
+\bibAnnoteFile{Haugset_and_Hanssen_2011}
+
+\bibitem[HZ15]{Heck_and_Zaidman_2015}
+Heck, P.; Zaidman, A. \enquote{Quality criteria for just-in-time requirements:
+  just enough, just-in-time?} \capitalize{\bblin{}}: JITRE, 2015.
+\bibAnnoteFile{Heck_and_Zaidman_2015}
+
+\bibitem[IIB09]{Babok_2009}
+IIBA. \enquote{A Guide to the Business Analysis Body of Knowledge (BABOK Guide)
+  2nd Edition}. International Institute of Business Analysis, 2009.
+\bibAnnoteFile{Babok_2009}
+
+\bibitem[IIB15]{Babok_2015}
+IIBA. \enquote{A Guide to the Business Analysis Body of Knowledge (BABOK Guide)
+  3rd Edition}. International Institute of Business Analysis, 2015.
+\bibAnnoteFile{Babok_2015}
+
+\bibitem[ISM{\etalchar{+}}15]{Inayat_2015}
+Inayat, I.; Salim, S.~S.; Marczak, S.; Daneva, M.; Shamshirband, S. \enquote{A
+  systematic literature review on agile requirements engineering practices and
+  challenges}, \textit{Computers in Human Behavior}, 2015.
+\bibAnnoteFile{Inayat_2015}
+
+\bibitem[JAH00]{Jeffries_2000}
+Jeffries, R.~E.; Anderson, A.; Hendrickson, C. \enquote{Extreme Programming
+  Installed}. Addison-Wesley Professional, 2000.
+\bibAnnoteFile{Jeffries_2000}
+
+\bibitem[Jef01]{Jeffries_2001}
+Jeffries, R. \enquote{Essential xp: Card, conversation, confirmation}.
+  \urlprefix\url{http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/},
+  Jul 2016.
+\bibAnnoteFile{Jeffries_2001}
+
+\bibitem[Kan03]{Kaner_2003}
+Kaner, C. \enquote{The power of 'what if…' and nine ways to fuel your
+  imagination}, \textit{STQE, the software testing and quality engineering
+  magazine}, 2003.
+\bibAnnoteFile{Kaner_2003}
+
+\bibitem[KC07]{Kitchenham_2007}
+Kitchenham, B.; Charters, S. \enquote{Guidelines for performing systematic
+  literature reviews in software engineering}, \bbltechrep{} EBSE 2007-001,
+  Keele University and Durham University Joint Report, 2007.
+\bibAnnoteFile{Kitchenham_2007}
+
+\bibitem[Ken00]{Beck_Fowler_2000}
+Kent~Beck, M.~F. \enquote{Planning Extreme Programming}. Addison-Wesley
+  Professional, 2000.
+\bibAnnoteFile{Beck_Fowler_2000}
+
+\bibitem[LDVB15]{Lucassen_et_dot_al_2015}
+Lucassen, G.; Dalpiaz, F.; VanDerWerf, J.; Brinkkemper, S. \enquote{Forging
+  high-quality user stories: Towards a discipline for agile requirements},
+  2015.
+\bibAnnoteFile{Lucassen_et_dot_al_2015}
+
+\bibitem[MAV{\etalchar{+}}15]{Medeiros_2015}
+Medeiros, J.; Alves, D.; Vasconcelos, A.; Silva, C.; Wanderley, E.
+  \enquote{Requirements engineering in agile projects: A systematic mapping
+  based in evidences of industry}, 2015.
+\bibAnnoteFile{Medeiros_2015}
+
+\bibitem[MM07]{Melnik_2007}
+Melnik, G.; Maurer, F. \enquote{Multiple Perspectives on Executable Acceptance
+  Test-Driven Development}. Springer Berlin Heidelberg, 2007.
+\bibAnnoteFile{Melnik_2007}
+
+\bibitem[MRM04]{Melnik_2004}
+Melnik, G.; Read, K.; Maurer, F. \enquote{Suitability of FIT User Acceptance
+  Tests for Specifying Functional Requirements: Developer Perspective}.
+  Springer Berlin Heidelberg, 2004.
+\bibAnnoteFile{Melnik_2004}
+
+\bibitem[PAJ{\etalchar{+}}11]{Phalp_et_dot_al_2011}
+Phalp, K.; Adlem, A.; Jeary, S.; Vincent, J.; Kanyaru, J.~M. \enquote{The role
+  of comprehension in requirements and implications for use case
+  descriptions.}, \textit{Software Quality Journal}, 2011.
+\bibAnnoteFile{Phalp_et_dot_al_2011}
+
+\bibitem[PEM03]{Paetsch_et_dot_al_2003}
+Paetsch, F.; Eberlein, A.; Maurer, F. \enquote{Requirements engineering and
+  agile software development}. \capitalize{\bblin{}}: Enabling Technologies:
+  Infrastructure for Collaborative Enterprises, 2003.
+\bibAnnoteFile{Paetsch_et_dot_al_2003}
+
+\bibitem[PM10]{Park_2010}
+Park, S.; Maurer, F. \enquote{A Literature Review on Story Test Driven
+  Development}. Springer Berlin Heidelberg, 2010.
+\bibAnnoteFile{Park_2010}
+
+\bibitem[Rin09]{Rinzler_2009}
+Rinzler, B. \enquote{Telling Stories: A Short Path to Writing Better Software
+  Requirements}. John Wiley and Sons, 2009.
+\bibAnnoteFile{Rinzler_2009}
+
+\bibitem[Sma14]{Smart_2014}
+Smart, J.~F. \enquote{BDD in Action: Behavior-driven development for the whole
+  software lifecycle}. Manning Publications Co., 2014.
+\bibAnnoteFile{Smart_2014}
+
+\bibitem[TG15]{Tiwari_2015}
+Tiwari, S.; Gupta, A. \enquote{A systematic literature review of use case
+  specifications research}, \textit{Information and Software Technology}, 2015.
+\bibAnnoteFile{Tiwari_2015}
+
+\end{thebibliography}

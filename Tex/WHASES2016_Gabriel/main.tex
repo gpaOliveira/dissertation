@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{sbc-template}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext, graphicx, arra y, color, subfiles, enumitem, csquotes}
+
+\graphicspath{ {images/} }
+
+%No hyphenation, never
+\exhyphenpenalty=10000
+\hyphenpenalty=10000
+\hyphenchar\font=-1
+
+\sloppy
+
+\title{A Systematic Literature Review on Requirements Quality \\ in Agile Development}
+%\title{A systematic review on requirements quality \\ research at agile methodologies}
+
+
+\author{Anonymous\inst{1}, Anonymous\inst{1}}
+
+\address{Anonymous Address
+  \email{anonymous@email.com, anonymous@email.com}
+}
+
+%\author{Gabriel Oliveira\inst{1}, Sabrina Marczak\inst{1}}
+
+%\address{Faculdade de Informática -- Pontifícia Universidade Católica \\ do Rio Grande do Sul -- Porto Alegre, RS -- Brazil\\
+%  \email{gabriel.pimentel@acad.pucrs.br, sabrina.marczak@pucrs.br}
+%}
+
+\begin{document}
+
+\maketitle
+
+\subfile{sections/1.abstract}
+
+\subfile{sections/2.introduction}
+
+\subfile{sections/3.background}
+
+\subfile{sections/4.method}
+
+\subfile{sections/5.results}
+
+\subfile{sections/6.conclusion}
+
+\bibliographystyle{sbc}
+\bibliography{sections/bib}
+
+\subfile{sections/7.appendix}
+
+\newpage
+\subfile{sections/7.appendix}
+
+% that's all folks
+\end{document}
+

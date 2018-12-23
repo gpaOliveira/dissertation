@@ -1,0 +1,125 @@
+
+=========================== Interview
+
+
+0) Intro
+
+> Research Goal
+
+> We are recording !
+
+> Count to 10 before speaking !
+
+> Reinforces that you need their opinion and there's no right and wrong !!!!
+
+
+1) Whats your role on the project and for how long do you use BDD? 
+
+
+
+
+2) What's your main task on the project?
+
+
+
+3) How do you/your-project use BDD scenarios? Do they help on your main task? How?
+
+
+
+4) What do you pay attention to when reviewing/writing BDD scenarios? (use the list below to provoque answers, do not show it)
+
+* Steps too long/too short
+* Step few/many
+* Business language usage
+* Title description
+* Keywords (Given/When/Then) usage and order
+* Repetition of steps (Background/context usage)
+* Parameters are ok or not?
+* Tables are ok or not?
+
+5) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/comments.feature) and chose ONE feature file to evaluate
+
+
+
+
+7) Do you think any of those words below could help when reviewing/writing BDD scenarios? 
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small
+* testable
+* understandable
+* unambiguous
+* valuable
+
+8) What could be their meaning for BDD?
+
+
+
+
+9) As an exercise, please go to (https://github.com/diaspora/diaspora/blob/develop/features/desktop/comments.feature) and chose ANOONE feature file to evaluate in light of those attributes shown before.
+
+
+
+10) To what extent has the quality criteria helped you assess quality? (Not at all / Neutral / A little / Fair / Much)
+
+
+
+11) What quality attributes did you find difficult or unclear to use on the evaluation ? Explain why.
+
+
+
+12) How your criteria maps to those attributes?
+
+* concise 
+* estimable 
+* feasible
+* negotiable
+* prioritized
+* small
+* testable
+* understandable
+* unambiguous
+* valuable
+
+13) Do you miss any other criteria in the list of quality criteria? If yes which one?
+
+
+
+14) General remarks about the quality criteria BDD scenario subject
+
+
+
+
+=========================== Debriefing
+
+== Key points:
+
+?
+
+== Most Surprising:
+
+?
+
+== Pretty much what I expected:
+
+?
+
+== Problems and fixes I didnt expected:
+
+?
+
+== What worked well:
+
+?
+
+== What didn't worked so well and could be changed:
+
+?
+
+== Other comments
+
+?
